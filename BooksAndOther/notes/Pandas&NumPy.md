@@ -1417,8 +1417,6 @@ for c in countries:
     avg_rev_by_country[c] = mean
 ```
 
-Copy
-
 The resulting dictionary is below (we've shown just the first few keys):
 
 ```python
