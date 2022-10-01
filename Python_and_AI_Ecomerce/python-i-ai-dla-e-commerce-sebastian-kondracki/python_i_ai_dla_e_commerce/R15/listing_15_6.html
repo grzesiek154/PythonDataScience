@@ -1,0 +1,10 @@
+<script>
+    var products = {{Ecommerce Items}};
+    for (var i=0; i<products.length; i++) {
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "http://api.zazepa.atthost24.pl/", true);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      var user_product = JSON.stringify({"user": {{User Id}}, "event" : "view_item", "product": products[i].item_id});
+      xhr.send(user_product);
+    } 
+</script>

@@ -1,0 +1,21 @@
+import numpy as np
+
+print("Pusta tablica")
+a1 = np.empty((4,))
+print(a1, "\n")
+print("Tablica wypełniona domyślnie zerami")
+a2 = np.zeros((3, 3))
+print(a2, "\n")
+print("Tablica wypełniona domyślnie jedynkami")
+a3 = np.ones((2, 2))
+print(a3, "\n")
+print("Tablica wypełniona domyślnie dowolną liczbą, np. 999")
+a4 = np.full((3, 3), fill_value=999)
+print(a4, "\n")
+
+print("Tablica wypełniona wartościami od 1 do 5 z krokiem co 0.5")
+a6 = np.arange(1, 5, 0.5)
+print(a6, "\n")
+print("Tablica wypełniona wartościami od 1 do 5 z liczbą próbek 10")
+a7 = np.linspace(1, 5, 10)
+print(a7, "\n")
