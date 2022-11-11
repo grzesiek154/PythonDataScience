@@ -46,7 +46,7 @@ Modern computer processors contain components that have particular computer  arc
 
 Visualizing SISD vs SIMD component processes
 
-- SISD: This is the structure for how Python for-loops are processed—One  instruction, per one data element, per one moment in time, in order to  produce one result. The neat thing about this is that it is flexible —  you may implement any operation on your data. The drawback is that it is not optimum for processing large amounts of data.
+- SISD: This is the structure for how Python for-loops are processed—One  instruction, per one data element, per one moment in time, in order to  produce one result. The neat (fajna) thing about this is that it is flexible —  you may implement any operation on your data. The drawback is that it is not optimum for processing large amounts of data.
 - SIMD: This is the structure for how NumPy and Pandas vectorizations are processed—One instruction per *any number of* data elements per one moment in time, in order to produce *multiple* results. Contemporary CPUs have a component to process SIMD operations in *each of its cores,* allowing for parallel processing.
 
 # NumPy
@@ -129,15 +129,13 @@ Next, let's compare working with ndarrays and list of lists to select one or mor
 
 As we see above, we can select rows in ndarrays very similarly to lists of lists. In reality, what we're seeing is a kind of shortcut. For any 2D array, the full syntax for selecting data is the following:
 
-```
+```python
 ndarray[row_index,column_index]
 
 # or if you want to select all
 # columns for a given set of rows
 ndarray[row_index]
 ```
-
-Copy
 
 . . . where `row_index` defines the location along the row axis and `column_index` defines the location along the column axis.
 
@@ -547,14 +545,14 @@ The `c[:,1] > 2` Boolean operation compares just one column's values and produce
 
 The pseudocode syntax for this code is as follows, first using an intermediate variable:
 
-```
+```python
 bool = array[:, column_for_comparison] == value_for_comparison
 array[bool, column_for_assignment] = new_value
 ```
 
 . . . and then all in one line:
 
-```
+```python
 array[array[:, column_for_comparison] == value_for_comparison, column_for_assignment] = new_value
 ```
 
@@ -574,6 +572,170 @@ The primary data structure in pandas is called a [**dataframe**](http://pandas.p
 
 
 ![anatomy of a dataframe](images/df_anatomy_static_resized.svg)
+
+
+
+## **Series vs DataFrame**
+
+https://www.naukri.com/learning/articles/series-vs-dataframe-in-pandas/
+
+Let’s summarize the difference between the two structures in a table:
+
+| **Pandas Series**                                            | **Pandas DataFrame**                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| One-dimensional                                              | Two-dimensional                                              |
+| Homogenous – Series elements must be of the same data type.  | Heterogenous – DataFrame elements can have different data types. |
+| Size-immutable – Once created, the size of a Series object cannot be changed. | Size-mutable – Elements can be dropped or added in an existing DataFrame. |
+
+
+
+## **Pandas Series**
+
+- **[Creating a Pandas Series Using Dictionary](https://www.naukri.com/learning/articles/series-vs-dataframe-in-pandas/#s1)**
+- **[Creating a Pandas Series Using ndarray](https://www.naukri.com/learning/articles/series-vs-dataframe-in-pandas/#s2)**
+- **[Creating a Pandas Series Using Scalar Values](https://www.naukri.com/learning/articles/series-vs-dataframe-in-pandas/#s3)**
+
+As stated above, Pandas Series is a one-dimensional labeled array whose object size cannot be changed. You can also see it as the primary building block for a DataFrame, making up its rows and columns. 
+
+Following is the basic method to create a Series:
+
+```
+#pandas.Seriesseries = pd.Series(data=None, index=None, dtype=None, name=None)Copy code
+```
+
+| **Index** | **Data**  |
+| --------- | --------- |
+| 0         | element 1 |
+| 1         | element 2 |
+| 2         | element 3 |
+| 3         | element 4 |
+
+The *data* parameter can take any of the following data types:
+
+- Python dictionary (dict)
+- ndarray
+- A scalar value
+
+The *index* parameter accepts list data type that allows you to label your index axis.
+
+The *dtype* parameter sets the data type of the Series.
+
+The *name* parameter allows you to name your Series.
+
+### **Creating a Pandas Series Using Dictionary**
+
+If *data* is of dict type and *index* is not specified, the dict keys will be the index labels.
+
+```python
+#Creating a Series from dictdata = {'Mon': 22, 'Tues': 23, 'Wed': 23, 'Thurs': 24, 'Fri': 23, 'Sat': 22, 'Sun': 21}series = pd.Series(data=data, name='series_from_dict')print(series)Copy code
+```
+
+![Creating a Pandas Series Using Dictionary](images/IOokZbGI6YJolpipgO_CaC7GMS-kh9WmD_M3_4HzpFWvhE6ePMhDa_F91xYQ_3kGdsDAWGQh4TI3v5rPIqgOJyRSjqP5bfWjy-QPtU7iW4LjB8LheZInWxNSNIBWOTz9Wd7YfqFX)
+
+### **Creating a Pandas Series Using ndarray**
+
+If *data* is a ndarray, *the index* must be of the same length as the array. If *index* is not specified, it will be created automatically with values: [0, …, len(data) – 1].
+
+NumPy library has a function **random.randint()** that produces a ndarray populated with random integers, let’s use that here:
+
+```python
+#Creating a Series from ndarraydata = np.random.randn(5)series = pd.Series(data=data,                    index=['one', 'two', 'three', 'four', 'five'],                   name='series_from_ndarray')print(series)Copy code
+```
+
+![Creating a Pandas Series Using ndarray](images/RjwGWT7XZhUwDnRZMHd0E663kbz4Z7xTpPf8Zy1NLEOW1sRuEHzHck9YUXiWy_7zNLzi5RVcgTxlc8a3FlFHdi_QWQl778apny4H9UyuSWt95VdokSNNoImiFOvieg3G_c7PaB7W)
+
+### **Creating a Pandas Series Using Scalar Values**
+
+The *data* can be assigned a single value. The *index* has to be provided in this case. The given value will be repeated up to the length of the index.
+
+```
+#Creating a Series from a scalar valueseries = pd.Series(data=7.3,                    index=['a', 'b', 'c', 'd'],                   name='series_from_scalar')print(series)Copy code
+```
+
+![Creating a Pandas Series Using Scalar Values](images/fjqWXqB4K3PJwjAd3Amx24QpkLh7CZBFMBMZycqURqX5Di6os9mo0wjgpKEk-rkDGnpYBOzY2gbEDt1v9IH9ItLqMh6l_IZRdKnS6bK9kV2wYyCoBlaWjBmjA3SAawQjV1It9RyR)
+
+
+
+
+
+## **Pandas DataFrame**
+
+Pandas DataFrame, on the other hand, is a two-dimensional structure with columns and rows whose size can be changed. You can also think of it as a dictionary of Series objects. 
+
+- **[Creating a Pandas DataFrame Using a Dictionary of Pandas Series](https://www.naukri.com/learning/articles/series-vs-dataframe-in-pandas/#c1)**
+- **[Creating a Pandas DataFrame Using a Dictionary of Lists or ndarrays](https://www.naukri.com/learning/articles/series-vs-dataframe-in-pandas/#c2)**
+- **[Creating a Pandas DataFrame Using a List of Dictionaries](https://www.naukri.com/learning/articles/series-vs-dataframe-in-pandas/#c3)**
+- **[Creating a Pandas DataFrame Using a Series](https://www.naukri.com/learning/articles/series-vs-dataframe-in-pandas/#c4)**
+
+Following is the basic method to create a DataFrame:
+
+```
+#pandas.DataFramedf = pd.DataFrame(data=None, index=None, columns=None, dtype=None)Copy code
+```
+
+| **Index** | **COlumn 1** | **COLUMN 2** |      |
+| --------- | ------------ | ------------ | ---- |
+| 0         | element 1    | element a    |      |
+| 1         | element 2    | element b    |      |
+| 2         | element 3    | element c    |      |
+| 3         | element 4    | element d    |      |
+
+The *data* parameter can take any of the following data types:
+
+- Dictionary (dict) of – 1D ndarray, lists, or Series 
+- 2D ndarray
+- Pandas Series
+- Another Pandas DataFrame
+
+The *index* parameter can be passed optionally, and it accepts row labels.
+
+The *columns* parameter can also be passed optionally, and it accepts column labels.
+
+The *dtype* parameter sets the data type of the DataFrame.
+
+### **Creating a Pandas DataFrame Using a Dictionary of Pandas Series**
+
+The *index* must be the same length as the Series. If *index* is not specified, it will be created automatically with values: [0, …, len(data) – 1].
+
+```
+#Creating a DataFrame from a dictionary of Seriesdata = pd.DataFrame({    "Class 1": pd.Series([22, 33, 38], index=["math avg", "science avg",  "english avg"]),    "Class 2": pd.Series([45, 28, 36], index=["math avg", "science avg",  "english avg"]),    "Class 3": pd.Series([32, 41, 47], index=["math avg", "science avg",  "english avg"])}) data Copy code
+```
+
+![Creating a Pandas DataFrame Using a Dictionary of Pandas Series](images/Pbb6yzjU2iXnQMeF2FrZrayeHyCfI_1zPx1RIg-aTVeSyqYM7ZM0cx28dE2Th6gLbxlYO2N3xwGb6jGv3AkSAMZq7KdRv5rC48VyA8qfKDTVeG7QD4ezM0l2hvEor2fiS_mq6ltM)
+
+### **Creating a Pandas DataFrame Using a Dictionary of Lists or ndarrays**
+
+The ndarrays must all be of the same length. The *index* must be the same length as the arrays. If the *index* is not specified, the result will be range(n), where n is the array length.
+
+Let’s create the same DataFrame, but this time using lists/ndarrays:
+
+```
+#Creating a DataFrame from a dictionary of listsdata = {    "Class 1": [22, 33, 38],    "Class 2": [45, 28, 36],     "Class 3": [32, 41, 47]}df = pd.DataFrame(data=data, index=['math avg', 'science avg', 'english avg']) dfCopy code
+```
+
+![Creating a Pandas DataFrame Using a Dictionary of Lists or ndarrays](images/kJPMo18-afj2fydM9nX8jxdbixo5z3RmqWFC_0I3KTejFB8x0fthKA00OcwU0aH3mO_G_sDMjD-LnjVeBi0pZSflCerQyQLvo3zHpox5R9tmWkMQgmCDRXZmPH6d5uvYpd0QmaaL)
+
+### **Creating a Pandas DataFrame Using a List of Dictionaries**
+
+```
+#Creating a DataFrame from a list of dictionariesdata = [{"col1": 1, "col2": 2}, {"col1": 5, "col2": 10, "col3": 20}] pd.DataFrame(data)Copy code
+```
+
+![Creating a Pandas DataFrame Using a List of Dictionaries](images/9XKLpv9LchrCZJm7sH12oGcHhLTUzP3qfcqSLP_nCUZR3vcM8bp82xLsCYNFErwBJJswVT4Lbgy6z6s3MqFgI-fzxg1W779fMm6ye3852RttxE-GqvR8PCC8oS5oLbaJD069dBMx)
+
+### **Creating a Pandas DataFrame Using a Series**
+
+When you create a DataFrame using a Series, the resulting DataFrame will have one column whose name is the original name of the Series:
+
+```
+#Creating a DataFrame from a Seriesdata = pd.DataFrame({"Col1": pd.Series([22, 33, 38])})data Copy code
+```
+
+![Creating a Pandas DataFrame Using a Series](images/qvAkCdelD0SSlPwtwyLZvTWtxbF7SLbCkkZykd9u7EqC1JJHLrqGhtubVv5jvaLSsqBiE0RLf-kV7Ku9C--uKmMumpK6gF7OLc8RafLpGDZHBWDVqqOsm-JHaVVjgeUqYLv0R36w)
+
+After the creation of a DataFrame, you can query it and select, add, or delete columns from it, i.e., perform [Data Manipulation](https://www.naukri.com/learning/articles/data-manipulation/). 
+
+Pandas DataFrame can be queried in multiple ways – such as [loc[\] and iloc[] methods](https://www.naukri.com/learning/articles/difference-between-loc-and-iloc-in-pandas/) – *.iloc[]* can be used to query using the index/position of the value and *.loc[]* to query using the user-defined keys.
 
 
 
@@ -635,11 +797,9 @@ If we wanted an overview of all the dtypes used in our dataframe, along with its
 
 Since our axis in pandas have labels, we can select data using those labels — unlike in NumPy, where we needed to know the exact index location. To do this, we can use the [`DataFrame.loc[\]` attribute](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.loc.html#pandas.DataFrame.loc). The syntax for `DataFrame.loc[]` is:
 
-```
+```python
 df.loc[row_label, column_label]
 ```
-
-Copy
 
 Notice that we use brackets (`[]`) instead of parentheses (`()`) when selecting by location.
 
@@ -705,7 +865,7 @@ A summary of the techniques we've learned so far is below:
 
 
 
-Select by LabelExplicit SyntaxCommon ShorthandSingle column
+## Select by LabelExplicit SyntaxCommon ShorthandSingle column
 
 `df.loc[:,"col1"]``df["col1"]`List of columns`df.loc[:,["col1", "col7"]]``df[["col1", "col7"]]`Slice of columns`df.loc[:,"col1":"col4"]`
 
@@ -721,23 +881,19 @@ We use the same syntax to select rows from a dataframe as we do for columns:
 df.loc[row_label, column_label]
 ```
 
-Copy
-
 We'll again use a selection of our data, stored as the variable `f500_selection`:
 
 ![f500_selection dataframe](images/loc_original.svg)
 
 **Select a single row**
 
-```
+```python
 single_row = f500_selection.loc["Sinopec Group"]
 print(type(single_row))
 print(single_row)
 ```
 
-Copy
-
-```
+```python
 class 'pandas.core.series.Series'
 
 rank             3
@@ -746,8 +902,6 @@ profits     1257.9
 country      China
 Name: Sinopec Group, dtype: object
 ```
-
-Copy
 
 Note the object returned is a *series* because it is one-dimensional. Since this series has to store integer, float, and string values, pandas uses the `object` dtype, since none of the numeric types could cater for all values.
 
@@ -759,9 +913,9 @@ print(type(list_rows))
 print(list_rows)
 ```
 
-Copy
 
-```
+
+```python
 class 'pandas.core.frame.DataFrame'
 
               rank  revenues  profits country
@@ -769,21 +923,19 @@ Toyota Motor     5    254694  16899.3   Japan
 Walmart          1    485873  13643.0     USA
 ```
 
-Copy
+
 
 **Select a slice object with labels**
 
 For selection using slices, we can use the shortcut below. This is the reason we can't use this shortcut for columns - because it's reserved for use with rows:
 
-```
+```python
 slice_rows = f500_selection["State Grid":"Toyota Motor"]
 print(type(slice_rows))
 print(slice_rows)
 ```
 
-Copy
-
-```
+```python
 class 'pandas.core.frame.DataFrame'
 
                           rank  revenues  profits country
@@ -846,7 +998,7 @@ In the resulting series, we can see each unique non-null value in the column and
 
 Let's see what happens when we use the `Series.value_counts()` method with a dataframe. First, we'll select the `sector` and `industry` columns to create a dataframe named `sectors_industries`:
 
-```
+```python
 sectors_industries = f500[["sector", "industry"]]
 print(type(sectors_industries))
 ```
@@ -1057,23 +1209,17 @@ First, we create a boolean series by comparing the values in the sector column t
 ampersand_bool = f500["sector"] == "Motor Vehicles & Parts"
 ```
 
-Copy
-
 Next, we use that boolean series and the string `"sector"` to perform the assignment.
 
 ```
 f500.loc[ampersand_bool,"sector"] = "Motor Vehicles and Parts"
 ```
 
-Copy
-
 Just like we saw in the NumPy lesson earlier in this course, we can remove the intermediate step of creating a boolean series, and combine everything into one line. This is the most common way to write pandas code to perform assignment using boolean arrays:
 
 ```
 f500.loc[f500["sector"] == "Motor Vehicles & Parts","sector"] = "Motor Vehicles and Parts"
 ```
-
-Copy
 
 Now we can follow this pattern to replace the values in the `previous_rank` column. We'll replace these values with `np.nan`. Just like in NumPy, `np.nan` is used in pandas to represent values that can't be represented numerically, most commonly missing values.
 
@@ -1082,8 +1228,6 @@ To make comparing the values in this column before and after our operation easie
 ```
 prev_rank_before = f500["previous_rank"].value_counts(dropna=False).head()
 ```
-
-Copy
 
 This uses `Series.value_counts()` and [`Series.head()`](http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.head.html) to display the 5 most common values in the `previous_rank` column, but adds an additional `dropna=False` parameter, which stops the `Series.value_counts()` method from excluding null values when it makes its calculation, as shown in the [`Series.value_counts()` documentation](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.value_counts.html#pandas.Series.value_counts).
 
@@ -1117,8 +1261,6 @@ first_column = f500.iloc[:,0]
 print(first_column)
 ```
 
-Copy
-
 ```
 0                        Walmart
 1                     State Grid
@@ -1130,15 +1272,13 @@ Copy
 Name: company, dtype: object
 ```
 
-Copy
-
 To specify a positional slice, we can take advantage of the same shortcut that we use with labels. Here's how we would select the rows between index positions one to four (inclusive):
 
 ```
 second_to_sixth_rows = f500[1:5]
 ```
 
-Copy
+
 
 ```
 company  rank  revenues ... employees  total_stockholder_equity
@@ -1148,7 +1288,7 @@ company  rank  revenues ... employees  total_stockholder_equity
 4       Toyota Motor     5    254694 ...    364445                    157210
 ```
 
-Copy
+
 
 In the example above, the row at index position `5` is not included, just as if we were slicing with a Python list or NumPy ndarray. Recall that `loc[]` handles slicing differently:
 
@@ -1188,8 +1328,6 @@ first_null_prev_rank = null_previous_rank.iloc[0]
 print(first_null_prev_rank)
 ```
 
-Copy
-
 ```
 company          Legal & General Group
 rank                                49
@@ -1197,17 +1335,13 @@ previous_rank                      NaN
 Name: 48, dtype: object
 ```
 
-Copy
-
 Let's see what happens when we use `DataFrame.loc[]` instead of `DataFrame.iloc[]`:
 
 ```
 first_null_prev_rank = null_previous_rank.loc[0]
 ```
 
-Copy
-
-```
+```python
 ---------------------------------------------------------------------------
 KeyError                                  Traceback (most recent call last)
 /python3.4/site-packages/pandas/core/indexing.py in _has_valid_type(self, key, axis)
@@ -1448,6 +1582,211 @@ for country in unique_countries:
     top_employer_by_country[country] = first_selected_row["company"]
     
 ```
+
+
+
+## Calculating **Pearson correlation coefficient**
+
+To calculate the Pearson's r between any two columns, we can use the [`Series.corr()` method](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.corr.html). For instance, this is how we can calculate the two correlations above:
+
+```
+bike_sharing['temp'].corr(bike_sharing['cnt'])
+```
+
+```
+0.6274940090334918
+```
+
+```
+bike_sharing['windspeed'].corr(bike_sharing['cnt'])
+```
+
+```
+-0.23454499742167
+```
+
+The order of columns doesn't matter when we use `Series.corr()`. Below, the r values are the same, although we use the columns in reverse order:
+
+```
+# Previously: bike_sharing['temp'].corr(bike_sharing['cnt'])
+bike_sharing['cnt'].corr(bike_sharing['temp'])
+```
+
+```
+0.6274940090334918
+```
+
+```python
+# Previously: bike_sharing['windspeed'].corr(bike_sharing['cnt'])
+bike_sharing['cnt'].corr(bike_sharing['windspeed'])
+```
+
+
+
+```python
+-0.23454499742167
+```
+
+`Series.corr()` uses a math formula that only works with numbers. This means that `Series.corr()` only works with numerical columns — if we use string or datetime columns, we'll get an error.
+
+As a side note, teaching the math behind Pearson's r is beyond the scope of this visualization lesson. Here, we focus on how to interpret and visualize correlation.
+
+The `Series.corr()` method only allows us to calculate the correlation between two numerical columns. We can get an overview of correlations using the [`DataFrame.corr()` method](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.corr.html), which calculates the Pearson's r between all pairs of numerical columns.
+
+```python
+bike_sharing.corr()
+```
+
+|            | instant   | season    | yr        | mnth      | holiday   | weekday   | workingday | weathersit | temp      | atemp     | hum       | windspeed | casual    | registered | cnt       |
+| ---------- | --------- | --------- | --------- | --------- | --------- | --------- | ---------- | ---------- | --------- | --------- | --------- | --------- | --------- | ---------- | --------- |
+| instant    | 1.000000  | 0.412224  | 0.866025  | 0.496702  | 0.016145  | -0.000016 | -0.004337  | -0.021477  | 0.150580  | 0.152638  | 0.016375  | -0.112620 | 0.275255  | 0.659623   | 0.628830  |
+| season     | 0.412224  | 1.000000  | -0.001844 | 0.831440  | -0.010537 | -0.003080 | 0.012485   | 0.019211   | 0.334315  | 0.342876  | 0.205445  | -0.229046 | 0.210399  | 0.411623   | 0.406100  |
+| yr         | 0.866025  | -0.001844 | 1.000000  | -0.001792 | 0.007954  | -0.005461 | -0.002013  | -0.048727  | 0.047604  | 0.046106  | -0.110651 | -0.011817 | 0.248546  | 0.594248   | 0.566710  |
+| mnth       | 0.496702  | 0.831440  | -0.001792 | 1.000000  | 0.019191  | 0.009509  | -0.005901  | 0.043528   | 0.220205  | 0.227459  | 0.222204  | -0.207502 | 0.123006  | 0.293488   | 0.279977  |
+| holiday    | 0.016145  | -0.010537 | 0.007954  | 0.019191  | 1.000000  | -0.101960 | -0.253023  | -0.034627  | -0.028556 | -0.032507 | -0.015937 | 0.006292  | 0.054274  | -0.108745  | -0.068348 |
+| weekday    | -0.000016 | -0.003080 | -0.005461 | 0.009509  | -0.101960 | 1.000000  | 0.035790   | 0.031087   | -0.000170 | -0.007537 | -0.052232 | 0.014282  | 0.059923  | 0.057367   | 0.067443  |
+| workingday | -0.004337 | 0.012485  | -0.002013 | -0.005901 | -0.253023 | 0.035790  | 1.000000   | 0.061200   | 0.052660  | 0.052182  | 0.024327  | -0.018796 | -0.518044 | 0.303907   | 0.061156  |
+| weathersit | -0.021477 | 0.019211  | -0.048727 | 0.043528  | -0.034627 | 0.031087  | 0.061200   | 1.000000   | -0.120602 | -0.121583 | 0.591045  | 0.039511  | -0.247353 | -0.260388  | -0.297391 |
+| temp       | 0.150580  | 0.334315  | 0.047604  | 0.220205  | -0.028556 | -0.000170 | 0.052660   | -0.120602  | 1.000000  | 0.991702  | 0.126963  | -0.157944 | 0.543285  | 0.540012   | 0.627494  |
+| atemp      | 0.152638  | 0.342876  | 0.046106  | 0.227459  | -0.032507 | -0.007537 | 0.052182   | -0.121583  | 0.991702  | 1.000000  | 0.139988  | -0.183643 | 0.543864  | 0.544192   | 0.631066  |
+| hum        | 0.016375  | 0.205445  | -0.110651 | 0.222204  | -0.015937 | -0.052232 | 0.024327   | 0.591045   | 0.126963  | 0.139988  | 1.000000  | -0.248489 | -0.077008 | -0.091089  | -0.100659 |
+| windspeed  | -0.112620 | -0.229046 | -0.011817 | -0.207502 | 0.006292  | 0.014282  | -0.018796  | 0.039511   | -0.157944 | -0.183643 | -0.248489 | 1.000000  | -0.167613 | -0.217449  | -0.234545 |
+| casual     | 0.275255  | 0.210399  | 0.248546  | 0.123006  | 0.054274  | 0.059923  | -0.518044  | -0.247353  | 0.543285  | 0.543864  | -0.077008 | -0.167613 | 1.000000  | 0.395282   | 0.672804  |
+| registered | 0.659623  | 0.411623  | 0.594248  | 0.293488  | -0.108745 | 0.057367  | 0.303907   | -0.260388  | 0.540012  | 0.544192  | -0.091089 | -0.217449 | 0.395282  | 1.000000   | 0.945517  |
+| cnt        | 0.628830  | 0.406100  | 0.566710  | 0.279977  | -0.068348 | 0.067443  | 0.061156   | -0.297391  | 0.627494  | 0.631066  | -0.100659 | -0.234545 | 0.672804  | 0.945517   | 1.000000  |
+
+Most often, we're only interested in finding the correlation for just a few columns. For example, what if we only want to see the correlation for the `cnt`, `casual`, and `registered` columns? The `DataFrame.corr()` method returns a `DataFrame`, which means we can select the `cnt`, `casual`, and `registered` columns directly.
+
+```
+bike_sharing.corr()[['cnt', 'casual', 'registered']]
+```
+
+|            | cnt       | casual    | registered |
+| ---------- | --------- | --------- | ---------- |
+| instant    | 0.628830  | 0.275255  | 0.659623   |
+| season     | 0.406100  | 0.210399  | 0.411623   |
+| yr         | 0.566710  | 0.248546  | 0.594248   |
+| mnth       | 0.279977  | 0.123006  | 0.293488   |
+| holiday    | -0.068348 | 0.054274  | -0.108745  |
+| weekday    | 0.067443  | 0.059923  | 0.057367   |
+| workingday | 0.061156  | -0.518044 | 0.303907   |
+| weathersit | -0.297391 | -0.247353 | -0.260388  |
+| temp       | 0.627494  | 0.543285  | 0.540012   |
+| atemp      | 0.631066  | 0.543864  | 0.544192   |
+| hum        | -0.100659 | -0.077008 | -0.091089  |
+| windspeed  | -0.234545 | -0.167613 | -0.217449  |
+| casual     | 0.672804  | 1.000000  | 0.395282   |
+| registered | 0.945517  | 0.395282  | 1.000000   |
+| cnt        | 1.000000  | 0.672804  | 0.945517   |
+
+
+
+## pandas.DataFrame.corr
+
+`DataFrame.corr()` method is used to calculate the correlation between all pairs of numerical columns. You apply it to a DataFrame, there`re no required arguments to pass. The output is a DataFrame, like the one from the [previous screen](https://app.dataquest.io/m/521/scatter-plots-and-correlations/7/measuring-pearsons-r):
+
+```python
+df.corr()
+```
+
+If you need to know the correlation between some of the columns of the dataframe and not all of them, you can select them after applying the method. So, this code `bike_sharing.corr()[['cnt', 'casual', 'registered']]` actually consists of 2 steps:
+**1 step**: calculate the correlations between all pairs of numerical columns of the dataframe `bike_sharing`
+**2 step**: select the `['cnt', 'casual', 'registered']` columns from the correlation dataframe.
+We could express the same in 2 lines instead of 1:
+
+```python
+correlation_df = bike_sharing.corr()
+correlation_df[['cnt', 'casual', 'registered']]
+```
+
+The difference between the `bike_sharing.corr()[['cnt', 'casual', 'registered']]` and the `bike_sharing.corr()['workingday'][['casual', 'registered']]`is that the former one returns the correlation between the selected 3 columns and all the columns of the dataframe and the latter one returns only the correlation of the `workingday` column with 2 other columns, the `casual` and the `registered`.
+
+
+
+## Frequency Intervals
+
+However, if we generate a frequency table for the `cnt` column (which describes the total number of bike rentals), it's almost impossible to distinguish any pattern. And that's because `cnt` has 696 unique values (below, we see a truncated table).
+
+```
+bike_sharing['cnt'].value_counts()
+```
+
+```python
+5119    2
+4401    2
+1977    2
+6824    2
+5191    2
+       ..
+6273    1
+5501    1
+4760    1
+1683    1
+4097    1
+Name: cnt, Length: 696, dtype: int64
+```
+
+To solve this problem, we can group the unique values into equal intervals. Below, we group the table into ten equal intervals by using the `bins=10` argument inside the `Series.value_counts()` method:
+
+```
+bike_sharing['cnt'].value_counts(bins=10)
+```
+
+```python
+(4368.0, 5237.2]    137
+(3498.8, 4368.0]    122
+(5237.2, 6106.4]     81
+(6975.6, 7844.8]     79
+(6106.4, 6975.6]     76
+(2629.6, 3498.8]     73
+(1760.4, 2629.6]     71
+(891.2, 1760.4]      62
+(7844.8, 8714.0]     17
+(13.307, 891.2]      13
+Name: cnt, dtype: int64
+```
+
+The unique values are now number intervals. `(4368.0, 5237.2]` is a number interval. The `(` character indicates that the starting number is not included, while the `]` indicates that the ending number is included. The interval `(4368.0, 5237.2]` contains all numbers greater than 4368.0 and less than or equal to 5237.2.
+
+We can better understand the structure of the table above if we sort the intervals in ascending order.
+
+```
+bike_sharing['cnt'].value_counts(bins=10).sort_index()
+```
+
+```python
+(13.307, 891.2]      13
+(891.2, 1760.4]      62
+(1760.4, 2629.6]     71
+(2629.6, 3498.8]     73
+(3498.8, 4368.0]    122
+(4368.0, 5237.2]    137
+(5237.2, 6106.4]     81
+(6106.4, 6975.6]     76
+(6975.6, 7844.8]     79
+(7844.8, 8714.0]     17
+Name: cnt, dtype: int64
+```
+
+
+
+## Filtering Results
+
+https://towardsdatascience.com/8-ways-to-filter-pandas-dataframes-d34ba585c1b8
+
+
+
+
+
+------
+
+# Data Frame and SQL
+
+## groupby()
+
+https://realpython.com/pandas-groupby/
+
+
 
 
 

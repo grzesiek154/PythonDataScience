@@ -574,6 +574,145 @@ The table below shows some of the different operations that we can make between 
 
 ------
 
+# Loops
+
+https://treyhunner.com/2016/04/how-to-loop-with-indexes-in-python/
+
+### while
+
+If we wanted to mimic the behavior of our traditional C-style `for` loop in Python, we could use a `while` loop:
+
+```python
+colors = ["red", "green", "blue", "purple"] i = 0 while i < len(colors):    print(colors[i])    i += 1 
+```
+
+This involves the same 4 steps as the `for` loops in other languages (note that we’re setting, checking, and incrementing `i`) but it’s not quite as compact.
+
+This method of looping in Python is very uncommon.
+
+### range of length
+
+I often see new Python programmers attempt to recreate traditional `for` loops in a slightly more creative fashion in Python:
+
+```python
+colors = ["red", "green", "blue", "purple"] for i in range(len(colors)):    print(colors[i]) 
+```
+
+This first creates a range corresponding to the indexes in our list (`0` to `len(colors) - 1`). We can loop over this range using Python’s for-in loop (really a [foreach](https://en.wikipedia.org/wiki/Foreach_loop)).
+
+This provides us with the index of each item in our `colors` list, which is the same way that C-style `for` loops work. To get the actual color, we use `colors[i]`.
+
+### for-in: the usual way
+
+Both the while loop and range-of-len methods rely on looping over indexes. But we don’t actually care about the indexes: we’re only using these indexes for the purpose of retrieving elements from our list.
+
+Because we don’t actually care about the indexes in our loop, there is **a much simpler method of looping** we can use:
+
+
+
+```python
+colors = ["red", "green", "blue", "purple"] for color in colors:    print(color) 
+```
+
+So instead of retrieving the item indexes and looking up each element, we can just loop over our list using a plain for-in loop.
+
+The other two methods we discussed are sometimes referred to as [anti-patterns](https://en.wikipedia.org/wiki/Anti-pattern) because they are programming patterns which are widely considered unidiomatic.
+
+## What if we need indexes?
+
+What if we actually need the indexes? For example, let’s say we’re printing out president names along with their numbers (based on list indexes).
+
+### range of length
+
+We could use `range(len(our_list))` and then lookup the index like before:
+
+```python
+presidents = ["Washington", "Adams", "Jefferson", "Madison", "Monroe", "Adams", "Jackson"] for i in range(len(presidents)):    print("President {}: {}".format(i + 1, presidents[i])) 
+```
+
+But there’s a more idiomatic way to accomplish this task: use the `enumerate` function.
+
+### enumerate
+
+Python’s built-in `enumerate` function allows us to loop over a list and retrieve both the index and the value of each item in the list:
+
+```
+presidents = ["Washington", "Adams", "Jefferson", "Madison", "Monroe", "Adams", "Jackson"] for num, name in enumerate(presidents, start=1):    print("President {}: {}".format(num, name)) 
+```
+
+The `enumerate` function gives us an iterable where each element is a tuple that contains the index of the item and the original item value.
+
+This function is meant for solving the task of:
+
+1. Accessing each item in a list (or another iterable)
+2. Also getting the index of each item accessed
+
+So whenever we need item indexes while looping, we should think of `enumerate`.
+
+**Note**: the `start=1` option to `enumerate` here is optional. If we didn’t specify this, we’d start counting at `0` by default.
+
+## What if we need to loop over multiple things?
+
+Often when we use list indexes, it’s to look something up in another list.
+
+### enumerate
+
+For example, here we’re looping over two lists at the same time using indexes to look up corresponding elements:
+
+
+
+```
+colors = ["red", "green", "blue", "purple"] ratios = [0.2, 0.3, 0.1, 0.4] for i, color in enumerate(colors):    ratio = ratios[i]    print("{}% {}".format(ratio * 100, color)) 
+```
+
+Note that we only need the index in this scenario because we’re using it to lookup elements at the same index in our second list. What we really want is to loop over two lists simultaneously: the indexes just provide a means to do that.
+
+### zip
+
+We don’t actually care about the index when looping here. Our real goal is to loop over two lists at once. This need is common enough that there’s a special built-in function just for this.
+
+Python’s `zip` function allows us to **loop over multiple lists at the same time**:
+
+
+
+```python
+colors = ["red", "green", "blue", "purple"] ratios = [0.2, 0.3, 0.1, 0.4] for color, ratio in zip(colors, ratios):    print("{}% {}".format(ratio * 100, color)) 
+```
+
+The `zip` function takes multiple lists and returns an iterable that provides a tuple of the corresponding elements of each list as we loop over it.
+
+Note that `zip` with different size lists will stop after the shortest list runs out of items. You may want to look into [itertools.zip_longest](https://docs.python.org/3/library/itertools.html#itertools.zip_longest) if you need different behavior. Also note that `zip` in Python 2 returns a list but `zip` in Python 3 returns a lazy iterable. In Python 2, `itertools.izip` is equivalent to the newer Python 3 `zip` function.
+
+## Looping cheat sheet
+
+Here’s a very short looping cheat sheet that might help you remember the preferred construct for each of these three looping scenarios.
+
+Loop over a single list with a regular for-in:
+
+```
+for n in numbers:    print(n) 
+```
+
+Loop over multiple lists at the same time with `zip`:
+
+```python
+for header, rows in zip(headers, columns):    print("{}: {}".format(header, ", ".join(rows))) 
+```
+
+Loop over a list while keeping track of indexes with `enumerate`:
+
+```python
+for num, line in enumerate(lines):    print("{0:03d}: {}".format(num, line)) 
+```
+
+
+
+
+
+
+
+------
+
 
 
 # Strings
@@ -781,6 +920,12 @@ The `list()` constructor returns a list.
 
 https://www.educative.io/edpresso/the-with-statement-in-python
 
+https://towardsdatascience.com/what-is-behind-the-python-with-statement-89c74be3a6bd
+
+https://realpython.com/python-with-statement/
+
+https://docs.python.org/3/reference/compound_stmts.html#the-with-statement
+
 The **`with` statement** in Python is used for resource management and exception handling. You’d most likely find it when working with file streams. For example, the statement ensures that the file stream process doesn’t block other processes if an exception is raised, but terminates properly.
 
 The code block below shows the `try`-`finally` approach to file stream resource management.
@@ -822,6 +967,54 @@ Here, `with` is used to query an SQLite database and return its content.
 # Dictionaries
 
 https://www.dataquest.io/blog/python-dictionary-tutorial/
+
+Python dictionaries are immensely flexible because they allow anything to be stored as a value, from primitive types like strings and floats to more complicated types like objects and even other dictionaries (more on this later).
+
+By contrast, there are limitations to what can be used as a key. A key is required to be an **immutable** object in Python, meaning that it cannot be alterable. This rule allows strings, integers, and tuples as keys, but excludes lists and dictionaries since they are **mutable**, or able to be altered. The rationale is simple: if any changes happen to a key without you knowing, you won’t be able to access the value anymore, rendering the dictionary useless. Thus, only immutable objects are allowed to be keys.
+
+A key must also be unique within a dictionary. The key-value structuring of a dictionary is what makes it so powerful, and throughout this post we’ll delve into its basic operations, use cases, and their advantages and disadvantages.
+
+## Creation and Deletion
+
+To create an empty dictionary, we can either use the `dict()` function with no inputs, or assign a pair of curly brackets with nothing in between to a variable. We can confirm that both methods will produce the same result.
+
+```python
+empty = {}
+also_empty = dict()
+empty == also_empty
+>>> True
+```
+
+```python
+empty["First key"] = "First value"
+empty["First key"]
+>>> "First value"
+```
+
+Alternatively, you can also create a dictionary and pre-populate it with key-value pairs. There are two ways to do this. The first is to use brackets containing the key-value pairs. Each key and value are separated by a `:`, while individual pairs are separated by a comma.
+
+While you can fit everything on one line, it’s better to split up your key-value pairs among different lines to improve readability.
+
+```python
+data = {
+"beer_data": beers,
+"brewery_data": breweries
+}
+```
+
+The second way to create a Python dictionary is through the `dict()` method. You can supply the keys and values either as keyword arguments or as a list of tuples. We will recreate the `data` dictionary from above using the `dict()` methods and providing the key-value pairs appropriately.
+
+```python
+# Using keyword arguments
+data2 = dict(beer_data=beers, brewery_data=breweries)
+# Using a list of tuples
+tuple_list = [("brewery_data", breweries), ("beer_data", beers)]
+data3 = dict(tuple_list)
+```
+
+
+
+
 
 ## `zip()`
 
@@ -948,9 +1141,7 @@ We call tuples **immutable** data types, because we can't change their state aft
 
 
 
-![img](images/py1m6_mutable_immutable.svg)
-
-
+![Python Datatypes](images/pd12.png)
 
 ### How we can create tuple
 
@@ -1148,7 +1339,7 @@ set()
 
 If you remember your basic high school math, you'll probably recall mathematical set operations like *union*, *intersection*, *difference* and *symmetric difference*. Well, you can achieve the same thing with Python sets.
 
-## 1. Set Union
+### 1. Set Union
 
 The union of two sets is the set of *all the elements* of both the sets without duplicates. You can use the `union()` method or the `|` syntax to find the union of a Python set.
 
@@ -1162,7 +1353,7 @@ The union of two sets is the set of *all the elements* of both the sets without 
 {1, 2, 3, 4, 5}
 ```
 
-## 2. Set Intersection
+### 2. Set Intersection
 
 The intersection of two sets is the set of *all the common elements* of both the sets. You can use the `intersection()` method of the `&` operator to find the intersection of a Python set.
 
@@ -1176,7 +1367,7 @@ The intersection of two sets is the set of *all the common elements* of both the
 {4, 5, 6}
 ```
 
-## 3. Set Difference
+### 3. Set Difference
 
 The difference between two sets is the set of all the elements in first set that *are not* present in the second set. You would use the `difference()` method or the `-` operator to achieve this in Python.
 
@@ -1193,7 +1384,7 @@ The difference between two sets is the set of all the elements in first set that
 {8, 9, 7}
 ```
 
-## 4. Set Symmetric Difference
+### 4. Set Symmetric Difference
 
 The symmetric difference between two sets is the set of all the elements that are *either in* the first set *or* the second set *but not in both*. 
 
@@ -1486,6 +1677,79 @@ These functions all take a single argument. You may have noticed that, in the de
 ```
 
 The lambda function assigned to `full_name` takes two arguments and returns a [string](https://realpython.com/python-strings/) interpolating the two parameters `first` and `last`. As expected, the definition of the lambda lists the arguments with no parentheses, whereas calling the function is done exactly like a normal Python function, with parentheses surrounding the arguments.
+
+
+
+## Lists Comprehensions
+
+https://www.pythonforbeginners.com/basics/list-comprehensions-in-python#htoc-syntax
+
+To understand the list comprehension, imagine it like this: you’re going to perform an expression on each item in the list. The expression will determine what item is eventually stored in the output list. 
+
+Not only can you perform expressions on an entire list in a single line of code, but, as we’ll see later, it’s possible to add conditional statements in the form of filters, which allows for more precision in the way lists are handled.
+
+**Example: Creating a list with list comprehensions**
+
+```python
+# construct a basic list using range() and list comprehensions
+# syntax
+# [ expression for item in list ]
+digits = [x for x in range(10)]
+```
+
+**Example: Using list comprehensions with strings**
+
+```python
+# a list of the names of popular authors
+authors = ["Ernest Hemingway","Langston Hughes","Frank Herbert","Toni Morrison",
+    "Emily Dickson","Stephen King"]
+
+# create an acronym from the first letter of the author's names
+letters = [ name[0] for name in authors ]
+print(letters)
+```
+
+
+
+## Generator expressions vs list comprehensions
+
+https://www.pythontutorial.net/advanced-python/python-generator-expressions/
+
+The following shows how to use the list comprehension to generate square numbers from 0 to 4:
+
+```python
+square_list = [n** 2 for n in range(5)]
+```
+
+And this defines a square number generator:
+
+```python
+square_generator = (n** 2 for n in range(5))
+```
+
+### 1) Syntax
+
+In terms of syntax, a generator expression uses parentheses `()` while a list comprehension uses the square brackets `[]`.
+
+### 2) Memory utilization
+
+A list comprehension returns a list while a generator expression returns a generator object.
+
+It means that a list comprehension returns a complete list of elements upfront. However, a generator expression returns a list of elements, one at a time, based on request.
+
+A list comprehension is eager while a generator expression is lazy.
+
+In other words, a list comprehension creates all elements right away and loads all of them into the memory.
+
+Conversely, a generator expression creates a single element based on request. It loads only one single element to the memory.
+
+### 3) Iterable vs iterator
+
+A list comprehension returns an [iterable](https://www.pythontutorial.net/python-basics/python-iterables/). It means that you can iterate over the result of a list comprehension again and again.
+
+However, a generator expression returns an [iterator](https://www.pythontutorial.net/advanced-python/python-iterators/), specifically a lazy iterator. It becomes exhausting when you complete iterating over it.
+
+
 
 ------
 
