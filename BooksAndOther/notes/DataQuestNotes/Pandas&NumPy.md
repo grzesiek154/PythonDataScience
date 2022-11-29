@@ -179,7 +179,7 @@ Lastly, if we want to select a 2D slice, we can use slices for both dimensions:
 
 
 
-## NumPy vectorized operations (adding culumns)
+## NumPy vectorized operations (adding columns)
 
 As we saw on the previous two screens, NumPy ndarrays allow us to select data much more easily. Beyond this, the selection is much faster when working with **vectorized operations** because the operations apply to multiple data points at once.
 
@@ -627,7 +627,9 @@ The *name* parameter allows you to name your Series.
 If *data* is of dict type and *index* is not specified, the dict keys will be the index labels.
 
 ```python
-#Creating a Series from dictdata = {'Mon': 22, 'Tues': 23, 'Wed': 23, 'Thurs': 24, 'Fri': 23, 'Sat': 22, 'Sun': 21}series = pd.Series(data=data, name='series_from_dict')print(series)Copy code
+#Creating a Series from dictdata = {'Mon': 22, 'Tues': 23, 'Wed': 23, 'Thurs': 24, 'Fri': 23, 'Sat': 22, 'Sun': 21}
+series = pd.Series(data=data, name='series_from_dict')
+print(series)
 ```
 
 ![Creating a Pandas Series Using Dictionary](images/IOokZbGI6YJolpipgO_CaC7GMS-kh9WmD_M3_4HzpFWvhE6ePMhDa_F91xYQ_3kGdsDAWGQh4TI3v5rPIqgOJyRSjqP5bfWjy-QPtU7iW4LjB8LheZInWxNSNIBWOTz9Wd7YfqFX)
@@ -653,6 +655,18 @@ The *data* can be assigned a single value. The *index* has to be provided in thi
 ```
 
 ![Creating a Pandas Series Using Scalar Values](images/fjqWXqB4K3PJwjAd3Amx24QpkLh7CZBFMBMZycqURqX5Di6os9mo0wjgpKEk-rkDGnpYBOzY2gbEDt1v9IH9ItLqMh6l_IZRdKnS6bK9kV2wYyCoBlaWjBmjA3SAawQjV1It9RyR)
+
+
+
+### Series - Rename the value of index 
+
+#### Convert day of week number to day string 
+
+```python
+# by_dayofweek['traffic_volume'] is a series datatype
+by_dayofweek['traffic_volume'].rename(index = lambda x: calendar.day_name[x], inplace=True)    
+
+```
 
 
 
@@ -1477,14 +1491,14 @@ The result gives us two companies from `f500_sel` that are both Chinese and have
 
 Then, we can use the [`DataFrame.sort_values()` method](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sort_values.html) to sort the rows on the `employees` column. To do so, we pass the column name to the method:
 
-```
+```python
 sorted_rows = selected_rows.sort_values("employees")
 print(sorted_rows[["company", "country", "employees"]].head())
 ```
 
-Copy
 
-```
+
+```python
 _                               company country  employees
 204                         Noble Group   China       1000
 458             Yango Financial Holding   China      10234
@@ -1493,20 +1507,18 @@ _                               company country  employees
 182            Amer International Group   China      17852
 ```
 
-Copy
+
 
 By default, the `sort_values()` method will sort the rows in *ascending* order — from smallest to largest.
 
 To sort the rows in *descending* order instead, so the company with the largest number of employees appears first, we can set the `ascending` parameter to `False`:
 
-```
+```python
 sorted_rows = selected_rows.sort_values("employees", ascending=False)
 print(sorted_rows[["company", "country", "employees"]].head())
 ```
 
-Copy
-
-```
+```python
 _                       company country  employees
 3      China National Petroleum   China    1512048
 118            China Post Group   China     941211
@@ -1515,13 +1527,13 @@ _                       company country  employees
 37   Agricultural Bank of China   China     501368
 ```
 
-Copy
-
 Now, we can see that the Chinese company that employs the most people is China National Petroleum
 
 
 
-## aggregation
+## Data aggregation
+
+### Aggregation
 
 Aggregation is where we apply a statistical operation to groups of our data. Let's say that we wanted to calculate the average revenue for each country in the data set. Our process might look like this:
 
@@ -1567,7 +1579,7 @@ The resulting dictionary is below (we've shown just the first few keys):
 
 
 
-## top employer by country
+### top employer by country
 
 
 
@@ -1582,6 +1594,769 @@ for country in unique_countries:
     top_employer_by_country[country] = first_selected_row["company"]
     
 ```
+
+
+
+
+
+### The GroupBy Operation
+
+Let's break down the code we wrote on the previous screen into three steps:
+
+1. *split* the DataFrame into groups
+2. *apply* a function to each group
+3. *combine* the results into one data structure
+
+```python
+mean_happiness = {}
+regions = happiness2015['Region'].unique()
+
+for r in regions:
+    #1. Split the DataFrame into groups.
+    region_group = happiness2015[happiness2015['Region'] == r]
+    #2. Apply a function to each group.
+    region_mean = region_group['Happiness Score'].mean()
+    #3. Combine the results into one data structure.
+    mean_happiness[r] = region_mean
+```
+
+![Split_apply_combine](images/split_apply_combine.svg)
+
+As with many other common tasks, pandas has a built-in operation for this process. The [`groupby` operation](https://pandas.pydata.org/pandas-docs/stable/groupby.html) performs the "split-apply-combine" process on a DataFrame, but it condenses it into two steps:
+
+1. create a GroupBy object
+2. call a function on the GroupBy object
+
+The GroupBy object (distinct from a DataFrame or series object) allows us to split the DataFrame into groups, but only in an abstract sense. Nothing actually gets computed until a function is called on the GroupBy object.
+
+You can think of the `groupby` operation like this. Imagine a DataFrame as a structure made of stacking blocks in all different colors and sizes.
+
+![Groupby_Dataframe](images/Groupby_Dataframe.svg)
+
+You know you'll eventually want to group the blocks according to color, but you don't know yet what you want to do with them after. Using the `groupby` process, we would first create a mapping document, the GroupBy object, containing information on how to group the blocks by color and where each block is in the original structure.
+
+![Groupby_Mapping](images/Groupby_Mapping.svg)
+
+Once we create the mapping document, we can use it to easily rearrange the blocks into different structures. For example, let's say our manager asks us first to build another structure using the biggest block from each color.
+
+![Groupby_Largest](images/Groupby_Largest.svg)
+
+Then, she asks us to build another structure using the block size that appears most frequently in each color.
+
+![Groupby_Frequent](images/Groupby_Frequent.svg)
+
+Creating the initial mapping document, or GroupBy object, allows us to optimize our work, because we no longer have to refer back to the original DataFrame. By working with the `groupby` operation, we make our code faster, more flexible, and easier to read.
+
+### Creating GroupBy Objects
+
+The first step in the groupby operation is to create a GroupBy object:
+
+![Groupby_Full](images/Groupby_Full.svg)
+
+To create a GroupBy object, we use the [`DataFrame.groupby()` method](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.groupby.html):
+
+```
+df.groupby('col')
+```
+
+Copy
+
+`col` is the column you want to use to group the dataset. Note that you can also group the data set on multiple columns by passing a list into the `DataFrame.groupby()` method. However, for our purposes here, we'll focus on grouping the data by just one column in this lesson.
+
+When choosing the column, think about which columns you could use to split the dataset into groups. To put it another way, look at columns with the same value for multiple rows.
+
+![Groups](images/Groups.svg)
+
+We can see from the rows above that the `Region` column fits this criteria. Let's confirm the number of regions and the number of unique values in each region for the entire DataFrame with the `Series.value_counts()` method:
+
+```python
+happiness2015['Region'].value_counts()
+```
+
+```python
+Sub-Saharan Africa                 40
+Central and Eastern Europe         29
+Latin America and Caribbean        22
+Western Europe                     21
+Middle East and Northern Africa    20
+Southeastern Asia                   9
+Southern Asia                       7
+Eastern Asia                        6
+Australia and New Zealand           2
+North America                       2
+Name: Region, dtype: int64
+```
+
+Since there's a small number of groups, and each group contains more than one unique value, we can confirm the Region column is a good candidate to group by.
+
+Next, let's create a Groupby object and group the DataFrame by the `Region` column:
+
+```
+happiness2015.groupby('Region')
+```
+
+Finally, let's print the results:
+
+```
+print(happiness2015.groupby('Region'))
+```
+
+```
+< pandas.core.groupby.groupby.DataFrameGroupBy object at 0x7f77882fa470 >
+```
+
+Don't be alarmed! This isn't an error. This is telling us that an object of type GroupBy was returned, just like we expected.
+
+Before we start aggregating data, we'll build some intuition around GroupBy objects. We'll start by using the [`GroupBy.get_group()` method](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.core.groupby.GroupBy.get_group.html) to select data for a certain group.
+
+For example, to select the data for just the `North America` group, we'd pass `'North America'` into the `get_group()` method:
+
+```python
+grouped = happiness2015.groupby('Region')
+grouped.get_group('North America')
+```
+
+
+
+### GroupBy.groups
+
+We can also use the [`GroupBy.groups` attribute](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.core.groupby.GroupBy.groups.html) to get more information about the GroupBy object:
+
+```
+grouped = happiness2015.groupby('Region')
+grouped.groups
+```
+
+
+
+The result is a dictionary in which each key corresponds to a region name. See below for the first couple of keys:
+
+```python
+{'Australia and New Zealand': Int64Index([8, 9], dtype='int64'),
+ 'Central and Eastern Europe': Int64Index([ 30,  43,  44,  51,  53,  54,  55,  58,  59,  61,  63,  68,  69,
+              72,  76,  79,  82,  85,  86,  88,  92,  94,  95, 103, 105, 110, 126, 129, 133], dtype='int64'),
+ 'Eastern Asia': Int64Index([37, 45, 46, 71, 83, 99],dtype='int64'),
+ 'Latin America and Caribbean': Int64Index([ 11,  13,  15,  22,  24,  26,  29,  31,  32,  39,  40,  41,  42,
+              47,  50,  52,  56,  57,  64,  97, 104, 118], dtype='int64'),
+ 'Middle East and Northern Africa': Int64Index([ 10,  19,  21,  27,  34,  38,  48,  62,  67,  75,  81,  91, 
+              102, 106, 107, 109, 111, 134, 135, 155],dtype='int64'),
+ 'North America': Int64Index([4, 14], dtype='int64'),
+ ...
+ }
+```
+
+Notice that the values include the index for each row in the original `happiness2015` DataFrame with the corresponding region name. To prove this, let's again look at the data for the Australia and New Zealand group:
+
+```
+'Australia and New Zealand': Int64Index([8, 9], dtype='int64')
+```
+
+Then, let's filter on indices 8 and 9 in `happiness2015`:
+
+```
+happiness2015.iloc[8:10]
+```
+
+
+
+|      | Country     | Region                    | Happiness Rank | Happiness Score | Standard Error | Economy (GDP per Capita) | Family  | Health (Life Expectancy) | Freedom | Trust (Government Corruption) | Generosity | Dystopia Residual |
+| ---- | ----------- | ------------------------- | -------------- | --------------- | -------------- | ------------------------ | ------- | ------------------------ | ------- | ----------------------------- | ---------- | ----------------- |
+| 8    | New Zealand | Australia and New Zealand | 9              | 7.286           | 0.03371        | 1.25018                  | 1.31967 | 0.90837                  | 0.63938 | 0.42922                       | 0.47501    | 2.26425           |
+| 9    | Australia   | Australia and New Zealand | 10             | 7.284           | 0.04083        | 1.33358                  | 1.30923 | 0.93156                  | 0.65124 | 0.35637                       | 0.43562    | 2.26646           |
+
+And we see that those rows correspond to Australia and New Zealand! Notice that the `get_group()` method also returned the same DataFrame above.
+
+
+
+### Common Aggregation Methods with Groupby
+
+In the previous exercise, we confirmed that the values for the "North America" group returned by `grouped.groups` *do* correspond to the countries in North_America in the `happiness2015` DataFrame.
+
+Now that we have a good understanding of GroupBy objects, let's use them to aggregate our data. In order to aggregate our data, we must call a function on the GroupBy object.
+
+![Groupby_Full](images/Groupby_Full.svg)
+
+A basic example of aggregation is computing the number of rows for each of the groups. We can use the `GroupBy.size()` method to confirm the size of each region group:
+
+```python
+grouped = happiness2015.groupby('Region')
+grouped.size()
+```
+
+```python
+Region
+Australia and New Zealand           2
+Central and Eastern Europe         29
+Eastern Asia                        6
+Latin America and Caribbean        22
+Middle East and Northern Africa    20
+North America                       2
+Southeastern Asia                   9
+Southern Asia                       7
+Sub-Saharan Africa                 40
+Western Europe                     21 
+dtype: int64
+```
+
+Notice that the result is a Series and contains just one value for each group. Each value represents the number of rows in each group. For example, the "Australia and New Zealand" group contains two rows.
+
+Pandas has built in a number of other [common aggregation methods](https://pandas.pydata.org/pandas-docs/stable/groupby.html):
+
+| Methods | Description                               |
+| ------- | ----------------------------------------- |
+| mean()  | Calculates the mean of groups.            |
+| sum()   | Calculates the sum of group values.       |
+| size()  | Calculates the size of the groups.        |
+| count() | Calculates the count of values in groups. |
+| min()   | Calculates the minimum of group values.   |
+| max()   | Calculates the maximum of group values.   |
+
+
+
+### Aggregating Specific Columns with Groupby
+
+You may have noticed that `Region` appears in a different row than the rest of the column names. Because we grouped the DataFrame by region, the unique values in `Region` are used as the index. Up until now, we've mostly worked with DataFrames with a numeric index.
+
+![Index_Example](images/Index_Example.svg)
+
+In some cases, we may want to only aggregate one particular column in the original DataFrame. GroupBy objects actually support column indexing, just like DataFrames. You can select specific columns for a GroupBy object the same way you would for a DataFrame:
+
+| **Select by Label** | **Syntax**                |
+| ------------------- | ------------------------- |
+| Single column       | GroupBy["col1"]           |
+| List of columns     | GroupBy[["col1", "col2"]] |
+
+
+
+### Introduction to the Agg() Method
+
+https://pandas.pydata.org/pandas-docs/stable/user_guide/groupby.html
+
+However, if we want to apply *more than one* kind of aggregation to a column at a time?
+
+For example, suppose we want to calculate *both* the mean and the maximum happiness score for each region. Using what we've learned so far, we'd first have to calculate the mean, like we did above, and then calculate the maximum separately.
+
+Luckily, however, the [`GroupBy.agg()` method](https://pandas.pydata.org/pandas-docs/version/0.22/generated/pandas.core.groupby.DataFrameGroupBy.agg.html) can perform both aggregations at once. We can use the following syntax:
+
+![Agg_Syntax](images/Agg_Syntax.svg)
+
+Note that when we pass the functions into the `agg()` method as arguments, we don't use parentheses after the function names. For example, when we use `np.mean`, we refer to the function object itself and treat it like a variable, whereas `np.mean()` would be used to call the function and get the returned value.
+
+We can also pass the function names in as strings, but we won't cover that in this lesson. (You can refer to [this documentation](https://pandas.pydata.org/pandas-docs/stable/groupby.html) for more information on this topic.)
+
+```python
+import numpy as np
+grouped = happiness2015.groupby('Region')
+happy_grouped = grouped['Happiness Score']
+def dif(group):
+    return (group.max() - group.mean())
+
+happy_mean_max = happy_grouped.agg([np.mean, np.max])
+mean_max_dif = happy_grouped.agg(dif)
+```
+
+
+
+### Computing Multiple and Custom Aggregations with the Agg() Method
+
+
+
+To compute multiple aggregations at once, we passed a list of the function names into the `agg` method:
+
+```python
+import numpy as np
+grouped = happiness2015.groupby('Region')
+happy_grouped = grouped['Happiness Score']
+happy_mean_max = happy_grouped.agg([np.mean, np.max])
+```
+
+|                                 | mean     | amax  |
+| ------------------------------- | -------- | ----- |
+| Region                          |          |       |
+| Australia and New Zealand       | 7.285000 | 7.286 |
+| Central and Eastern Europe      | 5.332931 | 6.505 |
+| Eastern Asia                    | 5.626167 | 6.298 |
+| Latin America and Caribbean     | 6.144682 | 7.226 |
+| Middle East and Northern Africa | 5.406900 | 7.278 |
+| North America                   | 7.273000 | 7.427 |
+| Southeastern Asia               | 5.317444 | 6.798 |
+| Southern Asia                   | 4.580857 | 5.253 |
+| Sub-Saharan Africa              | 4.202800 | 5.477 |
+| Western Europe                  | 6.689619 | 7.587 |
+
+Our result is a DataFrame containing *both* the mean and maximum happiness scores for each region. Note that the columns are named for the functions themselves. Because `np.max` is an alias for [`np.amax`](https://docs.scipy.org/doc/numpy/reference/generated/numpy.amax.html), the column for the maximum is named `amax`.
+
+We also used a custom function to aggregate the data:
+
+```python
+def dif(group):
+    return(group.max() - group.mean())
+happy_grouped.agg(dif)
+```
+
+```python
+Region
+Australia and New Zealand          0.001000
+Central and Eastern Europe         1.172069
+Eastern Asia                       0.671833
+Latin America and Caribbean        1.081318
+Middle East and Northern Africa    1.871100
+North America                      0.154000
+Southeastern Asia                  1.480556
+Southern Asia                      0.672143
+Sub-Saharan Africa                 1.274200
+Western Europe                     0.897381
+Name: Happiness Score, dtype: float64
+```
+
+Above, we calculated the difference between the mean and maximum values for each region. Because the `agg()` method allows us to create custom aggregation functions, it gives us much more flexibility in how we can transform our data.
+
+Up until this point, we've deliberately split creating the GroupBy object and calling a function into separate steps to make it easier to understand. However, if you read through other teaching resources, you may see instances when the statements are combined:
+
+```
+happiness2015.groupby('Region')['Happiness Score'].agg(dif)
+```
+
+Both approaches will return the same result. However, if you plan on computing multiple aggregations with the same GroupBy object, we recommend that you save the object to a variable first. (You may want to save it to a variable in every cases to make your code easier to understand. As we compute more complex aggregations, the syntax can become confusing!)
+
+
+
+### Aggregation with Pivot Tables
+
+In the previous exercise, we tried to predict the results of the following code:
+
+```python
+happiness_means = happiness2015.groupby('Region')['Happiness Score'].mean()
+```
+
+
+
+When you printed `happiness_means`, you should've seen that the values in the `Region` column are the index of the resulting series and the `Happiness Score` column contained the values that would be aggregated:
+
+![PV_Syntax](images/PV_Syntax.svg)
+
+`Index` and `values` are actually arguments used in another method used to aggregate data — the [`DataFrame.pivot_table()` method](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.pivot_table.html). This `df.pivot_table()` method can perform the same kinds of aggregations as the `df.groupby` method and make the code for complex aggregations easier to read.
+
+If you're an Excel user, you may have already drawn comparisons between the groupby operation and Excel pivot tables. If you've never used Excel, don't worry! You don't need to know Excel for this lesson. We'll demonstrate the `pivot_table()` method next.
+
+Below, we use the `df.pivot_table()` method to perform the same aggregation as above.
+
+```python
+happiness2015.pivot_table(values='Happiness Score', index='Region', aggfunc=np.mean)
+```
+
+
+
+|                                 | Happiness Score |
+| ------------------------------- | --------------- |
+| Region                          |                 |
+| Australia and New Zealand       | 7.285000        |
+| Central and Eastern Europe      | 5.332931        |
+| Eastern Asia                    | 5.626167        |
+| Latin America and Caribbean     | 6.144682        |
+| Middle East and Northern Africa | 5.406900        |
+| North America                   | 7.273000        |
+| Southeastern Asia               | 5.317444        |
+| Southern Asia                   | 4.580857        |
+| Sub-Saharan Africa              | 4.202800        |
+| Western Europe                  | 6.689619        |
+
+Keep in mind that this method returns a DataFrame, so we can apply normal DataFrame filtering and methods to the result. For example, let's use the `DataFrame.plot()` method to create a visualization. Note that we exclude `aggfunc` below because the mean is the default aggregation function of `df.pivot_table()`.
+
+```python
+pv_happiness = happiness2015.pivot_table('Happiness Score', 'Region')
+pv_happiness.plot(kind='barh', title='Mean Happiness Scores by Region', xlim=(0,10), legend=False)
+```
+
+![Mean_happiness](images/mean_happiness.png)
+
+### Aggregating Multiple Columns and Functions with Pivot Tables
+
+In the previous exercise, we learned that when we set the `margins` parameter equal to `True`, `All` will be added to the index of the resulting DataFrame and the corresponding value will be the result of applying the aggregation method to the entire column. In our example, `All` is the mean of the `Happiness Score` column.
+
+![PV Plot](images/Pv_plot.png)
+
+The `pivot_table` method also allows us to aggregate multiple columns and apply multiple functions at once.
+
+Below, we aggregate both the "Happiness Score" and "Family" columns in `happiness2015` and group by the "Region" column:
+
+```python
+happiness2015.pivot_table(['Happiness Score', 'Family'], 'Region')
+```
+
+
+
+|                                 | Family   | Happiness Score |
+| ------------------------------- | -------- | --------------- |
+| Region                          |          |                 |
+| Australia and New Zealand       | 1.314450 | 7.285000        |
+| Central and Eastern Europe      | 1.053042 | 5.332931        |
+| Eastern Asia                    | 1.099427 | 5.626167        |
+| Latin America and Caribbean     | 1.104720 | 6.144682        |
+| Middle East and Northern Africa | 0.920490 | 5.406900        |
+| North America                   | 1.284860 | 7.273000        |
+| Southeastern Asia               | 0.940468 | 5.317444        |
+| Southern Asia                   | 0.645321 | 4.580857        |
+| Sub-Saharan Africa              | 0.809085 | 4.202800        |
+| Western Europe                  | 1.247302 | 6.689619        |
+
+To apply multiple functions, we can pass a list of the functions into the aggfunc parameter:
+
+```python
+happiness2015.pivot_table('Happiness Score', 'Region', aggfunc=[np.mean, np.min , np.max], margins=True)
+```
+
+
+
+|                                 | mean            | amin            | amax            |
+| ------------------------------- | --------------- | --------------- | --------------- |
+|                                 | Happiness Score | Happiness Score | Happiness Score |
+| Region                          |                 |                 |                 |
+| Australia and New Zealand       | 7.285000        | 7.284           | 7.286           |
+| Central and Eastern Europe      | 5.332931        | 4.218           | 6.505           |
+| Eastern Asia                    | 5.626167        | 4.874           | 6.298           |
+| Latin America and Caribbean     | 6.144682        | 4.518           | 7.226           |
+| Middle East and Northern Africa | 5.406900        | 3.006           | 7.278           |
+| North America                   | 7.273000        | 7.119           | 7.427           |
+| Southeastern Asia               | 5.317444        | 3.819           | 6.798           |
+| Southern Asia                   | 4.580857        | 3.575           | 5.253           |
+| Sub-Saharan Africa              | 4.202800        | 2.839           | 5.477           |
+| Western Europe                  | 6.689619        | 4.857           | 7.587           |
+| All                             | 5.375734        | 2.839           | 7.587           |
+
+
+
+## Combining Data Using Pandas
+
+https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html
+
+### Adding columns to data frame
+
+```python
+happiness2015['Year'] = 2015
+happiness2016['Year'] = 2016
+happiness2017['Year'] = 2017
+```
+
+```python
+#inserting at specific index
+happiness2015.insert(12, 'Year', 2015, allow_duplicates=True)
+happiness2016.insert(13, 'Year', 2016, allow_duplicates=True)
+happiness2017.insert(12, 'Year', 2017, allow_duplicates=True)
+```
+
+
+
+### Combining Dataframes with the Concat Function
+
+Let's start by exploring the [`pd.concat()` function](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.concat.html). The `concat()` function combines dataframes one of two ways:
+
+1. Stacked: Axis = 0 (This is the default option.)
+
+![Concat_Updated](images/Concat_Updated.svg)
+
+1. Side by Side: Axis = 1
+
+![Concat_Axis1](images/Concat_Axis1.svg)
+
+Since `concat` is a function, not a method, we use the syntax below:
+
+![Concat_syntax](images/Concat_syntax.svg)
+
+
+
+### Combining Dataframes with Different Shapes Using the Concat Function
+
+In the last exercise, we saw that the analogy of "gluing" dataframes together doesn't fully describe what happens when concatenating dataframes of different shapes. Instead, the function combined the data according to the corresponding column names:
+
+![Concat_dif_shapes](images/Concat_dif_shapes_python_3.8.svg)
+
+Note that because the `Standard Error` column didn't exist in `head_2016`, `NaN` values were created to signify those values are missing. By default, the `concat` function will keep ALL of the data, no matter if missing values are created.
+
+Also, notice again the indexes of the original dataframes didn't change. If the indexes aren't meaningful, it can be better to reset them. This is especially true when we create duplicate indexes, because they could cause errors as we perform other data cleaning tasks.
+
+Luckily, the `concat` function has a parameter, `ignore_index`, that can be used to clear the existing index and reset it in the result. Let's practice using it next.
+
+```python
+concat_update_index = pd.concat([head_2015, head_2016], ignore_index=True)
+```
+
+
+
+### Joining Dataframes with the Merge Function
+
+Next, we'll explore the [`pd.merge()` function](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.merge.html) - a function that can execute high performance database-style joins. Note that unlike the `concat` function, the `merge` function only combines dataframes horizontally (axis=1) and can only combine two dataframes at a time. However, it can be valuable when we need to combine very large dataframes quickly and provides more flexibility in terms of how data can be combined, as we'll see in the next couple screens.
+
+With the `merge()` function, we'll combine dataframes on a **key**, a shared index or column. When choosing a key, it's good practice to use keys with unique values to avoid duplicating data.
+
+You can think of keys as creating a link from one dataframe to another using the common values or indexes. For example, in the diagram below, we linked the dataframes using common values in the `Country` columns.
+
+![Merge_link](images/Merge_link.svg)
+
+In the diagram below, we use those common country values to join or merge the dataframes.
+
+![Merge](images/Merge.svg)
+
+We'll use the following syntax:
+
+![Merge_syntax](images/Merge_syntax.svg)
+
+
+
+### Joining on Columns with the Merge Function
+
+Joining `three_2015` and `three_2016` in the last exercise resulted in a dataframe with just one row:
+
+```
+pd.merge(left=three_2015, right=three_2016, on='Country')
+```
+
+Copy
+
+|      | Country | Happiness Rank_x | Year_x | Happiness Rank_y | Year_y |
+| ---- | ------- | ---------------- | ------ | ---------------- | ------ |
+| 0    | Norway  | 4                | 2015   | 4                | 2016   |
+
+Let's look back to `three_2015` and `three_2016` to understand why. Since we joined the dataframes on the `Country` column, or used it as the key, the `merge()` function looked to match elements in the `Country` column in BOTH dataframes.
+
+![Join_columns](images/Join_columns.svg)
+
+The one country returned in `merged` was "Norway", the only element that appeared in the `Country` column in BOTH `three_2015` and `three_2016`.
+
+This way of combining, or *joining*, data is called an *inner* join. An inner join returns only the intersection of the keys, or the elements that appear in both dataframes with a common key.
+
+The term "join" originates from SQL (or structured query language), a language used to work with databases. If you're a SQL user, you'll recognize the following concepts. If you've never used SQL, don't worry! No prior knowledge is neccessary for this lesson, but we will learn SQL later in this path.
+
+There are actually four different types of joins:
+
+1. **Inner**: only includes elements that appear in both dataframes with a common key
+2. **Outer**: includes all data from both dataframes
+3. **Left**: includes all of the rows from the "left" dataframe along with any rows from the "right" dataframe with a common key; the result retains all columns from both of the original dataframes
+4. **Right**: includes all of the rows from the "right" dataframe along with any rows from the "left" dataframe with a common key; the result retains all columns from both of the original dataframes
+
+If the definition for *outer* joins sounds familiar, it's because we've already seen examples of outer joins! Recall that when we combined data using the `concat` function, it kept all of the data from all dataframes, no matter if missing values were created.
+
+Since it's much more common to use inner and left joins for database-style joins, we'll focus on these join types for the remainder of the lesson, but encourage you to explore the other options on your own.
+
+
+
+```python
+merged_left = pd.merge(left=three_2015, right=three_2016, on='Country', how='left')
+merged_left_updated = pd.merge(left=three_2016, right=three_2015, on='Country', how='left')
+```
+
+
+
+### Left Joins with the Merge Function
+
+Recall that a left join includes all of the rows from the "left" dataframe along with any rows from the "right" dataframe with a common key.
+
+![Left_join](images/Left_join.svg)
+
+Since the `Country` column was used as the key, only countries that appear in BOTH dataframes have a value in every column. "Norway" was the only value in the `Country` column in BOTH dataframes, so it's the only row with a value in every column.
+
+When we interchanged the "left" and the "right" dataframes, the values changed:
+
+```
+pd.merge(left=three_2016, right=three_2015, how='left', on='Country')
+```
+
+Copy
+
+|      | Country | Happiness Rank_x | Year_x | Happiness Rank_y | Year_y |
+| ---- | ------- | ---------------- | ------ | ---------------- | ------ |
+| 0    | Iceland | 3                | 2016   | NaN              | NaN    |
+| 1    | Norway  | 4                | 2016   | 4.0              | 2015.0 |
+| 2    | Finland | 5                | 2016   | NaN              | NaN    |
+
+This time, we kept all of the rows from `three_2016`. "Norway" was still the only value in the `Country` column in BOTH dataframes, so it's the only row with a value in every column.
+
+![Left_join](images/Left_join_update.svg)
+
+In summary, we'd use a left join when we don't want to drop any data from the *left* dataframe.
+
+Note that a *right join* works the same as a left join, except it includes all of the rows from the "right" dataframe. Since it's far more common in practice to use a left join, we won't cover right joins in detail.
+
+You may have also noticed above that the `merge` function added a suffix of either `_x` or `_y` to columns of the same name to distinguish between them.
+
+|      | Country | Happiness Rank_x | Year_x | Happiness Rank_y | Year_y |
+| ---- | ------- | ---------------- | ------ | ---------------- | ------ |
+|      |         |                  |        |                  |        |
+
+### Join on Index with the Merge Function
+
+Now that we have a good understanding of how to join dataframes on specific columns, let's look at another way to join dataframes - on the index.
+
+![Index](images/Index.svg)
+
+In this screen, we'll work with the following two subsets of `happiness2015` and `happiness2016`:
+
+```
+four_2015 = happiness2015[['Country','Happiness Rank','Year']].iloc[2:6]
+```
+
+Copy
+
+|      | Country | Happiness Rank | Year |
+| ---- | ------- | -------------- | ---- |
+| 2    | Denmark | 3              | 2015 |
+| 3    | Norway  | 4              | 2015 |
+| 4    | Canada  | 5              | 2015 |
+| 5    | Finland | 6              | 2015 |
+
+```
+three_2016 = happiness2016[['Country','Happiness Rank','Year']].iloc[2:5]
+```
+
+Copy
+
+|      | Country | Happiness Rank | Year |
+| ---- | ------- | -------------- | ---- |
+| 2    | Iceland | 3              | 2016 |
+| 3    | Norway  | 4              | 2016 |
+| 4    | Finland | 5              | 2016 |
+
+We'll join `happiness2015` and `happiness2016` on index using an *inner* join, so that the result contains only the elements in the key that appear in BOTH dataframes. First, though, let's make a prediction. How many rows and columns do you think the result will have? Write down your answer before you continue reading.
+
+To join on the index, we'll set the `left_index` and `right_index` parameters to `True`:
+
+```python
+pd.merge(left=four_2015, right=three_2016, left_index=True, right_index=True, suffixes=('_2015','_2016'))
+```
+
+Below is the result:
+
+|      | Country_2015 | Happiness Rank_2015 | Year_2015 | Country_2016 | Happiness Rank_2016 | Year_2016 |
+| ---- | ------------ | ------------------- | --------- | ------------ | ------------------- | --------- |
+| 2    | Denmark      | 3                   | 2015      | Iceland      | 3                   | 2016      |
+| 3    | Norway       | 4                   | 2015      | Norway       | 4                   | 2016      |
+| 4    | Canada       | 5                   | 2015      | Finland      | 5                   | 2016      |
+
+Was your prediction correct? Based on our experience with joining on columns, you may have predicted the output would have just two rows, since only "Finland" and "Norway" appear in both dataframes. When we join on index, however, our result will contain only common *indexes*.
+
+![Join_index](images/Join_index.svg)
+
+
+
+### pd.contact and pd.merge summary
+
+Let's summarize what we learned in this lesson:
+
+|                                                              | **pd.concat()**                                              | **pd.merge()**                                               |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Default Join Type                                            | Outer                                                        | Inner                                                        |
+| Can Combine More Than Two Dataframes at a Time?              | Yes                                                          | No                                                           |
+| Can Combine Dataframes Vertically (axis=0) or Horizontally (axis=1)? | Both                                                         | Horizontally                                                 |
+| Syntax                                                       | **Concat (Vertically)** concat([df1,df2,df3])  **Concat (Horizontally)** concat([df1,df2,df3], axis = 1) | **Merge (Join on Columns)** merge(left = df1, right = df2, how = 'join_type', on = 'Col')  **Merge (Join on Index)** merge(left = df1, right = df2, how = 'join_type', left_index = True, right_index = True) |
+
+
+
+------
+
+
+
+## Transforming Data with Pandas
+
+https://www.jstatsoft.org/article/view/v059i10
+
+### Apply a Function Element-wise Using the Map and Apply Methods
+
+n the last exercise, we created a function that calculates the percentage of 'High' and 'Low' values in each column and applied it to `factors_impact`:
+
+```
+def v_counts(col):
+    num = col.value_counts()
+    den = col.size
+    return num/den
+v_counts_pct = factors_impact.apply(v_counts)
+```
+
+Copy
+
+The result is a dataframe containing the percentage of 'High' and 'Low' values in each column:
+
+|      | Economy  | Family   | Health   | Freedom | Trust | Generosity |
+| ---- | -------- | -------- | -------- | ------- | ----- | ---------- |
+| High | 0.417722 | 0.563291 | 0.012658 | NaN     | NaN   | NaN        |
+| Low  | 0.582278 | 0.436709 | 0.987342 | 1.0     | 1.0   | 1.0        |
+
+In general, we should only use the `apply()` method when a vectorized function does not exist. Recall that pandas uses *vectorization*, the process of applying operations to whole series at once, to optimize performance. When we use the `apply()` method, we're actually looping through rows, so a vectorized method can perform an equivalent task faster than the `apply()` method.
+
+Next, we'll compare two different ways of performing an analysis task. First, we'll use the `df.apply()` method to transform the data. Then, we'll look at an alternate way to perform the same task with vectorized methods.
+
+One thing you probably didn't notice about the factor columns is that the sum of the six factors and the `Dystopia Residual` column equals the happiness score:
+
+```python
+#Calculate the sum of the factor columns in each row.
+happiness2015['Factors Sum'] = happiness2015[['Economy', 'Family', 'Health', 'Freedom', 'Trust', 'Generosity', 'Dystopia Residual']].sum(axis=1)
+
+#Display the first five rows of the result and the Happiness Score column.
+happiness2015[['Happiness Score', 'Factors Sum']].head()
+```
+
+
+
+|      | Happiness Score | Factors Sum |
+| ---- | --------------- | ----------- |
+| 0    | 7.587           | 7.58696     |
+| 1    | 7.561           | 7.56092     |
+| 2    | 7.527           | 7.52708     |
+| 3    | 7.522           | 7.52222     |
+| 4    | 7.427           | 7.42694     |
+
+The values we calculated in the `Factors Sum` column are slightly different than the values in the `Happiness Score` column, but the differences are so minor that we can attribute them to rounding. Because the sum of the seven columns equal the happiness score, we can convert them to percentages and analyze them as proportions of the happiness score instead.
+
+
+
+### Reshaping Data with the Melt Function
+
+In the last exercise, we used the `df.apply()` method to convert the six factor columns and the `Dystopia Residual` column to percentages. Below are the first five rows of the result:
+
+|      | Economy   | Family    | Health    | Freedom  | Trust    | Generosity | Dystopia Residual |
+| ---- | --------- | --------- | --------- | -------- | -------- | ---------- | ----------------- |
+| 0    | 18.406617 | 17.787136 | 12.408462 | 8.772506 | 5.532885 | 3.911691   | 33.180177         |
+| 1    | 17.224177 | 18.545563 | 12.535908 | 8.315963 | 1.870784 | 5.770401   | 35.736146         |
+| 2    | 17.609672 | 18.075993 | 11.620035 | 8.627342 | 6.424472 | 4.535539   | 33.108011         |
+| 3    | 19.396437 | 17.694097 | 11.768280 | 8.903616 | 4.852832 | 4.613002   | 32.774661         |
+| 4    | 17.857681 | 17.808132 | 12.193753 | 8.522553 | 4.437458 | 6.168170   | 33.011445         |
+
+However, it would be easier to convert these numbers into percentages, plot the results, and perform other data analysis tasks if we first reshaped the dataframe so that one column holds the values for all six factors and the `Dystopia Residual` column. We can accomplish this with the [`pd.melt()` function](https://pandas.pydata.org/pandas-docs/version/0.22/generated/pandas.melt.html).
+
+To demonstrate this function, let's just work with a subset of `happiness2015` called `happy_two`.
+
+|      | Country     | Happiness Score | Economy | Family  | Health  |
+| ---- | ----------- | --------------- | ------- | ------- | ------- |
+| 0    | Switzerland | 7.587           | 1.39651 | 1.34951 | 0.94143 |
+| 1    | Iceland     | 7.561           | 1.30232 | 1.40223 | 0.94784 |
+
+Below, we use the `melt` function to reshape `happy_two` so that the values for `Economy`, `Family`, and `Health` reside in the same column:
+
+```
+pd.melt(happy_two, id_vars=['Country'], value_vars=['Economy', 'Family', 'Health'])
+```
+
+Copy
+
+Below are the results:
+
+|      | Country     | variable | value   |
+| ---- | ----------- | -------- | ------- |
+| 0    | Switzerland | Economy  | 1.39651 |
+| 1    | Iceland     | Economy  | 1.30232 |
+| 2    | Switzerland | Family   | 1.34951 |
+| 3    | Iceland     | Family   | 1.40223 |
+| 4    | Switzerland | Health   | 0.94143 |
+| 5    | Iceland     | Health   | 0.94784 |
+
+Now, we can use vectorized operations to transform the `value` column at once!
+
+Here's a summary of the syntax we used to work with the `melt` function:
+
+![Melt_syntax](images/Melt_Syntax.svg)
+
+
+
+
 
 
 

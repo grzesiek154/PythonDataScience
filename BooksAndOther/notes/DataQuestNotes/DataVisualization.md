@@ -431,9 +431,45 @@ plt.show()
 
 
 
-## Scatter Plot
+# Scatter Plot
+
+https://medium.com/@row3no6/scatter-plot-visualization-and-relationship-in-python-39729bb0e4df
+
+## What is scatter plot?
+
+A scatter plot is a type of data visualization that shows the relationship between different variables. This data is shown by placing various data points between an x- and y-axis. Essentially, each of these data points looks “scattered” around the graph, giving this type of data visualization its name.
+
+Scatter plots can provide answers to the following questions:
+
+1. Are variables X and Y related?
+2. Are variables X and Y linearly related?
+3. Are variables X and Y non-linearly related?
+4. Does the variation in Y change depending on X?
+5. Are there outliers?
+
+![0_ganMkFpLel6OoLNV](images/0_ganMkFpLel6OoLNV.png)
+
+## When To Use a Scatter Plot
+
+Let’s dive into the best times to use a scatter plot to visualize your data set.
+
+Use a scatter plot to determine whether or not two variables have a relationship or correlation.
+
+Use a scatter plot when your independent variable has multiple values for your dependent variable.
+
+Use a scatter plot when you have two variables that pair well together.
+
+## When Not to Use a Scatter Plot
+
+Avoid a scatter plot when your data is not at all related.
+
+Avoid a scatter plot when you have too large a set of data.
 
 Let's start by creating a scatter plot using the [`plt.scatter()` function](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.scatter.html):
+
+
+
+## How to Create a Scatter Plot
 
 ```python
 plt.scatter(bike_sharing['temp'], bike_sharing['cnt'])
@@ -462,7 +498,7 @@ Seen from right to left, the direction of the points is downward — as the temp
 
 
 
-### Calculating **Pearson correlation coefficient**
+## Calculating **Pearson correlation coefficient**
 
 To calculate the Pearson's r between any two columns, we can use the [`Series.corr()` method](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.corr.html). For instance, this is how we can calculate the two correlations above:
 
@@ -558,13 +594,57 @@ bike_sharing.corr()[['cnt', 'casual', 'registered']]
 
 
 
-## Bar Plot
+# Bar Plot
+
+https://chartio.com/learn/charts/bar-chart-complete-guide/
+
+https://medium.com/@komal.bhlla/bar-charts-what-they-are-when-to-use-them-guidelines-for-creating-64f0720a88d1
+
+## What is a bar chart
+
+A bar or column chart depicts the quantitative values across various subcategories (or groups) of data. The bars represent the groups whereas the height of the bars correspond to their numerical value. The groups and the numerical values are shown along different graph axes.
 
 Bar plots work especially well for visualizing frequency tables when the number of unique values is low.
 
 If there are many unique values, then the bar plot looks too crowded, and it becomes more difficult to see any pattern.
 
 Bar plots work well when generating the frequency tables for categorical columns. For numerical columns, we need to use a histogram — a graph type that we'll learn about later in this lesson.
+
+## Kinds of bar charts
+
+### a. Vertical
+
+A vertical bar graph illustrates data points in the form of bars in a vertical direction (column-wise).
+
+In vertical bar graph, the category variable can be written in a diagonal way along the x axis making it hard for lengthy categories’ names to fit easily. Below is a vertical bar graph representing the weekly time spent on different entertainment activities by seniors in Halifax.
+
+
+
+![image-20221127130822143](images/image-20221127130822143.png)
+
+### b. Horizontal
+
+A horizontal bar graph illustrates data points in a horizontal direction (row-wise). Horizontal bar graphs give ample space for category names on the left (see below) as compared to vertical bar graph. A horizontal bar graph would be apt if the category names are lengthy.
+
+![img](https://miro.medium.com/max/501/1*DAm2pQ4zT6GfS0AXy1mZ0A.png)
+
+
+
+### c. Clustered
+
+Clustered may be present in horizontal or vertical arrangement. These charts depict multiple sequences within each category at sub-category level.
+
+However, it is important to note that the number of sequences (or sub-categories) should be carefully planned as too many may make it complicated to understand the trends. Below is a clustered column chart depicting the weekly time spent on different leisure activities across young, middle-aged and senior age group in Halifax.
+
+![image-20221127131046557](images/image-20221127131046557.png)
+
+### d. Stacked
+
+Stacked and 100% Stacked charts may be displayed in horizontal or vertical arrangement. As compared to clustered column chart, this chart has an advantage that overall figure for each group can be easily assessed. The disadvantage is that stacked charts make it complex to judge how much each sub-group contribute to the total figure individually within a group.
+
+![image-20221127131123123](images/image-20221127131123123.png)
+
+
 
 For instance, this is how the bar plot for the casual users averages looks — we can generate a bar plot using the [`plt.bar()` function](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.bar.html):
 
@@ -601,7 +681,7 @@ plt.show()
 
 If we look at the x-tick labels, we only see numbers (from 0 to 6). If we wanted to add day names instead, we can use the [`plt.xticks()` function](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.xticks.html). The `ticks` parameter takes in the x-coordinates, and the `labels` parameter takes in the corresponding new labels:
 
-```
+```python
 plt.bar(weekday_averages['weekday'], weekday_averages['casual'])
 plt.xticks(ticks=[0, 1, 2, 3, 4, 5, 6],
           labels=['Sunday', 'Monday', 'Tuesday', 'Wednesday',
@@ -609,7 +689,7 @@ plt.xticks(ticks=[0, 1, 2, 3, 4, 5, 6],
 plt.show()
 ```
 
-Copy
+
 
 ![img](images/m3_screen3_2.png)
 
@@ -646,7 +726,7 @@ plt.show()
 
 
 
-## Histogram
+# Histogram
 
 https://www.investopedia.com/terms/h/histogram.asp
 
@@ -1437,6 +1517,10 @@ plt.show()
 ![img](images/screen3_4.png)
 
 Let's recreate our horizontal bar plot about coronavirus using the OO interface.
+
+### Canvas
+
+The Canvas is a rectangular area intended for drawing pictures or other complex layouts. You can place graphics, text, widgets or frames on a Canvas.
 
 ### figsize()
 
