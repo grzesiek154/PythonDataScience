@@ -2412,7 +2412,7 @@ Name: CurrencyUnit, dtype: object
 
 It's also good to know that vectorized string methods can be *chained*. For example, suppose we needed to split each element in the `CurrencyUnit` column into a list of strings using the `Series.str.split()` method *and* capitalize the letters using the `Series.str.upper()` method. You can use the following syntax to apply more than one method at once:
 
-```
+```python
 merged['CurrencyUnit'].str.upper().str.split()
 ```
 
@@ -2753,7 +2753,7 @@ If we wanted to extract the second, abbreviated year, we'd have to specify two m
 
 Let's add those two groups to our regex and try to extract them again:
 
-```
+```python
 pattern = r"(?P<first_year>[1-2][0-9]{3})(/)?(?P<second_year>[0-9]{2})?"
 years = merged['IESurvey'].str.extractall(pattern)
 </second_year></first_year>
@@ -2893,6 +2893,24 @@ plt.show()
 
 
 ------
+
+## Date column manipulation
+
+
+
+### to_datetime
+
+![image-20221206211219473](images/image-20221206211219473.png)
+
+
+
+------
+
+
+
+
+
+
 
 
 
@@ -3478,3 +3496,656 @@ laptops.loc[laptops["os"] == "macOS", "os_version"] = "X
 ```
 
 For rows with `No OS` values, let's replace the missing value in the `os_version` column with the value `Version Unknown`.
+
+
+
+# Working With Missing And Duplicate Data
+
+https://pandas.pydata.org/pandas-docs/stable/user_guide/missing_data.html
+
+## Identifying Missing Values
+
+In the last exercise, we confirmed that each data set contains the same number of rows.
+
+Recall that the dataframes were updated so that each contains the same countries, even if the happiness score, happiness rank, etc. were missing. However, that also means that each likely contains missing values, like the one we reviewed in the previous screen:
+
+|      | Country                  | Region | Happiness Rank | Happiness Score | Lower Confidence Interval | Upper Confidence Interval | Economy (GDP per Capita) | Family | Health (Life Expectancy) | Freedom | Trust (Government Corruption) | Generosity | Dystopia Residual | Year |
+| ---- | ------------------------ | ------ | -------------- | --------------- | ------------------------- | ------------------------- | ------------------------ | ------ | ------------------------ | ------- | ----------------------------- | ---------- | ----------------- | ---- |
+| 157  | Central African Republic | NaN    | NaN            | NaN             | NaN                       | NaN                       | NaN                      | NaN    | NaN                      | NaN     | NaN                           | NaN        | NaN               | 2016 |
+
+In pandas, missing values are generally represented by the `NaN` value, as seen in the dataframe above, or the `None` value.
+
+However, it's good to note that pandas will not automatically identify values such as `n/a`, `-`, or `--` as `NaN` or `None`, but they may also indicate data is missing. See [here](https://stackoverflow.com/questions/40011531/in-pandas-when-using-read-csv-how-to-assign-a-nan-to-a-value-thats-not-the#answer-40011736) for more information on how to use the `pd.read_csv()` function to read those values in as `NaN`.
+
+Once we ensure that all missing values were read in correctly, we can use the [`Series.isnull()` method](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.isnull.html) to identify rows with missing values:
+
+```
+missing = happiness2015['Happiness Score'].isnull()
+happiness2015[missing]
+```
+
+Copy
+
+|      | Country           | Region | Happiness Rank | Happiness Score | Standard Error | Economy (GDP per Capita) | Family | Health (Life Expectancy) | Freedom | Trust (Government Corruption) | Generosity | Dystopia Residual | Year |
+| ---- | ----------------- | ------ | -------------- | --------------- | -------------- | ------------------------ | ------ | ------------------------ | ------- | ----------------------------- | ---------- | ----------------- | ---- |
+| 158  | Belize            | NaN    | NaN            | NaN             | NaN            | NaN                      | NaN    | NaN                      | NaN     | NaN                           | NaN        | NaN               | 2015 |
+| 160  | Namibia           | NaN    | NaN            | NaN             | NaN            | NaN                      | NaN    | NaN                      | NaN     | NaN                           | NaN        | NaN               | 2015 |
+| 161  | Puerto Rico       | NaN    | NaN            | NaN             | NaN            | NaN                      | NaN    | NaN                      | NaN     | NaN                           | NaN        | NaN               | 2015 |
+| 162  | Somalia           | NaN    | NaN            | NaN             | NaN            | NaN                      | NaN    | NaN                      | NaN     | NaN                           | NaN        | NaN               | 2015 |
+| 163  | Somaliland Region | NaN    | NaN            | NaN             | NaN            | NaN                      | NaN    | NaN                      | NaN     | NaN                           | NaN        | NaN               | 2015 |
+| 164  | South Sudan       | NaN    | NaN            | NaN             | NaN            | NaN                      | NaN    | NaN                      | NaN     | NaN                           | NaN        | NaN               | 2015 |
+
+However, when working with bigger data sets, it's easier to get a summary of the missing values as follows:
+
+```python
+happiness2015.isnull().sum()
+```
+
+```python
+Country                          0
+Region                           6
+Happiness Rank                   6
+Happiness Score                  6
+Standard Error                   6
+Economy (GDP per Capita)         6
+Family                           6
+Health (Life Expectancy)         6
+Freedom                          6
+Trust (Government Corruption)    6
+Generosity                       6
+Dystopia Residual                6
+Year                             0
+dtype: int64
+```
+
+The result is a series in which:
+
+- The index contains the names of the columns in `happiness2015`.
+- The corresponding value is the number of null values in each column.
+
+In `happiness2015`, all columns except for the `Country` and `Year` columns have six missing values.
+
+Let's confirm the number of missing values in `happiness2016` and `happiness2017` next.
+
+
+
+
+
+### Correcting Data Cleaning Errors that Result in Missing Values
+
+In the previous exercise, you should've confirmed that `happiness2016` and `happiness2017` also contain missing values in all columns except for `Country` and `Year`. It's good to check for missing values *before* transforming data to make sure we don't unintentionally introduce missing values.
+
+If we *do* introduce missing values after transforming data, we'll have to determine if the data is really missing or if it's the result of some kind of error. As we progress through this lesson, we'll use the following workflow to clean our missing values, starting with checking for errors:
+
+1. Check for errors in data cleaning/transformation.
+2. Use data from additional sources to fill missing values.
+3. Drop row/column.
+4. Fill missing values with reasonable estimates computed from the available data.
+
+Let's return to a task we completed in a previous lesson - combining the 2015, 2016, and 2017 World Happiness Reports. Recall that we can use the [`pd.concat()` function](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.concat.html) to combine them:
+
+```python
+combined = pd.concat([happiness2015, happiness2016, happiness2017], ignore_index=True)
+```
+
+Next, let's check for missing values in `combined`:
+
+```python
+combined.isnull().sum()
+```
+
+```python
+Country                            0
+Region                           177
+Happiness Rank                   177
+Happiness Score                  177
+Standard Error                   334
+Economy (GDP per Capita)         177
+Family                            22
+Health (Life Expectancy)         177
+Freedom                           22
+Trust (Government Corruption)    177
+Generosity                        22
+Dystopia Residual                177
+Year                               0
+Lower Confidence Interval        335
+Upper Confidence Interval        335
+Happiness.Rank                   337
+Happiness.Score                  337
+Whisker.high                     337
+Whisker.low                      337
+Economy..GDP.per.Capita.         337
+Health..Life.Expectancy.         337
+Trust..Government.Corruption.    337
+Dystopia.Residual                337
+dtype: int64
+```
+
+We can see above that our dataframe has many missing values and these missing values follow a pattern. Most columns fall into one of the following categories:
+
+- 177 missing values (about 1/3 of the total values)
+- 337 missing values (about 2/3 of the total values)
+
+You may have also noticed that some of the column names differ only by punctuation, which caused the dataframes to be combined incorrectly:
+
+```python
+Trust (Government Corruption)
+Trust..Government.Corruption.
+```
+
+In the next exercise, we'll update the column names to make them uniform and combine the dataframes again. To clean the column names, we recommend using a technique we haven't covered yet, described in [this Stack Overflow answer](https://stackoverflow.com/questions/39741429/pandas-replace-a-character-in-all-column-names).
+
+As you start to work on more data cleaning tasks, you'll inevitably encounter scenarios you don't know specifically how to handle. Stack Overflow is a great place to reference to get answers for these questions, as other people have likely already asked the same question and solicited answers.
+
+As a reminder, below is a list of common string methods you can use to clean the columns:
+
+| Method               | Description                                                  |
+| -------------------- | ------------------------------------------------------------ |
+| Series.str.split()   | Splits each element in the Series.                           |
+| Series.str.strip()   | Strips whitespace from each string in the Series.            |
+| Series.str.lower()   | Converts strings in the Series to lowercase.                 |
+| Series.str.upper()   | Converts strings in the Series to uppercase.                 |
+| Series.str.get()     | Retrieves the ith element of each element in the Series.     |
+| Series.str.replace() | Replaces a regex or string in the Series with another string. |
+| Series.str.cat()     | Concatenates strings in a Series.                            |
+| Series.str.extract() | Extracts substrings from the Series matching a regex pattern. |
+
+Let's clean the column names next.
+
+```python
+happiness2017.columns = happiness2017.columns.str.replace('.', ' ').str.replace('\s+', ' ').str.strip().str.upper()
+
+happiness2015.columns = happiness2015.columns.str.strip().str.upper().str.replace('(','').str.replace(')','')
+happiness2016.columns = happiness2016.columns.str.strip().str.upper().str.replace('(','').str.replace(')','')
+
+combined = pd.concat([happiness2015, happiness2016, happiness2017], ignore_index=True)
+missing = combined.isnull().sum()
+```
+
+
+
+
+
+### Visualizing Missing Data
+
+In the last exercise, we corrected some of the missing values by fixing the column names. Note that we *could* have cleaned the column names without changing the capitalization. It's good practice, however, to make the capitalization uniform, because a stray uppercase or lowercase letter could've reintroduced missing values.
+
+We also confirmed there are still values missing:
+
+```
+COUNTRY                          0
+DYSTOPIA RESIDUAL               22
+ECONOMY GDP PER CAPITA          22
+FAMILY                          22
+FREEDOM                         22
+GENEROSITY                      22
+HAPPINESS RANK                  22
+HAPPINESS SCORE                 22
+HEALTH LIFE EXPECTANCY          22
+LOWER CONFIDENCE INTERVAL      335
+REGION                         177
+STANDARD ERROR                 334
+TRUST GOVERNMENT CORRUPTION     22
+UPPER CONFIDENCE INTERVAL      335
+WHISKER HIGH                   337
+WHISKER LOW                    337
+YEAR                             0
+dtype: int64
+```
+
+We can learn more about where these missing values are located by visualizing them with a [**heatmap**](https://seaborn.pydata.org/generated/seaborn.heatmap.html), a graphical representation of our data in which values are represented as colors. We'll use the seaborn library to create the heatmap.
+
+Note below that we first reset the index to be the `YEAR` column so that we'll be able to see the corresponding year on the left side of the heatmap:
+
+```
+import seaborn as sns
+combined_updated = combined.set_index('YEAR')
+sns.heatmap(combined_updated.isnull(), cbar=False)
+```
+
+![heatmap_year](images/heatmap_year.png)
+
+To understand this visualization, imagine we took `combined`, highlighted missing values in light gray and all other values in black, and then shrunk it so that we could easily view the entire dataframe at once.
+
+Since we concatenated `happiness2015`, `happiness2016`, and `happiness2017` by stacking them, note that the top third of the dataframe corresponds to the 2015 data, the second third corresponds to the 2016 data, and the bottom third corresponds to the 2017 data.
+
+We can make the following observations:
+
+- No values are missing in the `COUNTRY` column.
+- There are some rows in the 2015, 2016, and 2017 data with missing values in all columns EXCEPT the `COUNTRY` column.
+- Some columns only have data populated for one year.
+- It looks like the `REGION` data is missing for the year 2017.
+
+Let's check that the last statement is correct in the next exercise.
+
+```python
+regions_2017 = combined[combined['YEAR'] == 2017]['REGION']
+type(combined[combined['YEAR'] == 2017]['REGION'])
+missing = regions_2017.isnull().sum()
+```
+
+
+
+
+
+### Using Data From Additional Sources to Fill in Missing Values
+
+In the last exercise, we confirmed that the `REGION` column is missing from the 2017 data. Since we need the regions to analyze our data, let's turn our attention there next.
+
+Before we drop or replace any values, let's first see if there's a way we can use other available data to correct the values.
+
+1. Check for errors in data cleaning/transformation.
+2. *Use data from additional sources to fill missing values.*
+3. Drop row/column.
+4. Fill missing values with reasonable estimates computed from the available data.
+
+Recall once more that each year contains the same countries. Since the regions are fixed values - the region a country was assigned to in 2015 or 2016 won't change - we should be able to assign the 2015 or 2016 region to the 2017 row.
+
+In order to do so, we'll use the following strategy:
+
+1. Create a dataframe containing all of the countries and corresponding regions from the `happiness2015`, `happiness2016`, and `happiness2017` dataframes.
+2. Use the [`pd.merge()` function](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.merge.html) to assign the `REGION` in the dataframe above to the corresponding country in `combined`.
+3. The result will have two region columns - the original column with missing values will be named `REGION_x`. The updated column without missing values will be named `REGION_y`. We'll drop `REGION_x` to eliminate confusion.
+
+Note that there *are* other ways to complete this task. We encourage you to explore them on your own.
+
+
+
+```python
+combined = pd.merge(left=combined, right=regions, on='COUNTRY', how='left')
+combined = combined.drop('REGION_x', axis=1)
+missing = combined.isnull().sum()
+```
+
+
+
+
+
+### Identifying Duplicates Values
+
+In the previous screen, we used the 2015 and 2016 data to fill in the missing region values for the 2017 data. Note that we renamed the corrected region column to `REGION` separately to avoid confusion in the following exercises.
+
+Before we decide how to handle the rest of our missing values, let's first check our dataframe for duplicate rows.
+
+We'll use the [`DataFrame.duplicated()` method](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.duplicated.html) to check for duplicate values. If no parameters are specified, the method will check for any rows in which **all** columns have the same values.
+
+Since we should only have one country for each year, we can be a little more thorough by defining rows with ONLY the same country and year as duplicates. To accomplish this, let's pass a list of the `COUNTRY` and `YEAR` column names into the `df.duplicated()` method:
+
+```
+dups = combined.duplicated(['COUNTRY', 'YEAR'])
+combined[dups]
+```
+
+|      | COUNTRY | DYSTOPIA RESIDUAL | ECONOMY GDP PER CAPITA | FAMILY | FREEDOM | GENEROSITY | HAPPINESS RANK | HAPPINESS SCORE | HEALTH LIFE EXPECTANCY | LOWER CONFIDENCE INTERVAL | REGION | STANDARD ERROR | TRUST GOVERNMENT CORRUPTION | UPPER CONFIDENCE INTERVAL | WHISKER HIGH | WHISKER LOW | YEAR |
+| ---- | ------- | ----------------- | ---------------------- | ------ | ------- | ---------- | -------------- | --------------- | ---------------------- | ------------------------- | ------ | -------------- | --------------------------- | ------------------------- | ------------ | ----------- | ---- |
+|      |         |                   |                        |        |         |            |                |                 |                        |                           |        |                |                             |                           |              |             |      |
+
+Since the dataframe is empty, we can tell that there are no rows with exactly the same country AND year.
+
+However, one thing to keep in mind is that the `df.duplicated()` method will only look for *exact* matches, so if the capitalization for country names isn't exactly the same, they won't be identified as duplicates. To be extra thorough, we can first standardize the capitalization for the `COUNTRY` column and then check for duplicates again.
+
+```python
+combined['COUNTRY'] = combined['COUNTRY'].str.upper()
+dups = combined.duplicated(['COUNTRY', 'YEAR'])
+combined[dups]
+dups.sum()
+```
+
+
+
+
+
+### Correcting Duplicates Values
+
+In the previous screen, we standardized the capitalization of the values in the `COUNTRY` column and identified that we actually do have three duplicate rows!
+
+```
+combined['COUNTRY'] = combined['COUNTRY'].str.upper()
+dups = combined.duplicated(['COUNTRY', 'YEAR'])
+```
+
+Copy
+
+|      | COUNTRY           | DYSTOPIA RESIDUAL | ECONOMY GDP PER CAPITA | FAMILY | FREEDOM | GENEROSITY | HAPPINESS RANK | HAPPINESS SCORE | HEALTH LIFE EXPECTANCY | LOWER CONFIDENCE INTERVAL | REGION             | STANDARD ERROR | TRUST GOVERNMENT CORRUPTION | UPPER CONFIDENCE INTERVAL | WHISKER HIGH | WHISKER LOW | YEAR |
+| ---- | ----------------- | ----------------- | ---------------------- | ------ | ------- | ---------- | -------------- | --------------- | ---------------------- | ------------------------- | ------------------ | -------------- | --------------------------- | ------------------------- | ------------ | ----------- | ---- |
+| 162  | SOMALILAND REGION | NaN               | NaN                    | NaN    | NaN     | NaN        | NaN            | NaN             | NaN                    | NaN                       | Sub-Saharan Africa | NaN            | NaN                         | NaN                       | NaN          | NaN         | 2015 |
+| 326  | SOMALILAND REGION | NaN               | NaN                    | NaN    | NaN     | NaN        | NaN            | NaN             | NaN                    | NaN                       | Sub-Saharan Africa | NaN            | NaN                         | NaN                       | NaN          | NaN         | 2016 |
+| 489  | SOMALILAND REGION | NaN               | NaN                    | NaN    | NaN     | NaN        | NaN            | NaN             | NaN                    | NaN                       | Sub-Saharan Africa | NaN            | NaN                         | NaN                       | NaN          | NaN         | 2017 |
+
+Let's inspect all the rows for `SOMALILAND REGION` in `combined`.
+
+```python
+combined[combined['COUNTRY'] == 'SOMALILAND REGION']
+```
+
+
+
+|      | COUNTRY           | DYSTOPIA RESIDUAL | ECONOMY GDP PER CAPITA | FAMILY  | FREEDOM | GENEROSITY | HAPPINESS RANK | HAPPINESS SCORE | HEALTH LIFE EXPECTANCY | LOWER CONFIDENCE INTERVAL | REGION             | STANDARD ERROR | TRUST GOVERNMENT CORRUPTION | UPPER CONFIDENCE INTERVAL | WHISKER HIGH | WHISKER LOW | YEAR |
+| ---- | ----------------- | ----------------- | ---------------------- | ------- | ------- | ---------- | -------------- | --------------- | ---------------------- | ------------------------- | ------------------ | -------------- | --------------------------- | ------------------------- | ------------ | ----------- | ---- |
+| 90   | SOMALILAND REGION | 2.11032           | 0.18847                | 0.95152 | 0.46582 | 0.50318    | 91.0           | 5.057           | 0.43873                | NaN                       | Sub-Saharan Africa | 0.06161        | 0.39928                     | NaN                       | NaN          | NaN         | 2015 |
+| 162  | SOMALILAND REGION | NaN               | NaN                    | NaN     | NaN     | NaN        | NaN            | NaN             | NaN                    | NaN                       | Sub-Saharan Africa | NaN            | NaN                         | NaN                       | NaN          | NaN         | 2015 |
+| 260  | SOMALILAND REGION | 2.43801           | 0.25558                | 0.75862 | 0.39130 | 0.51479    | 97.0           | 5.057           | 0.33108                | 4.934                     | Sub-Saharan Africa | NaN            | 0.36794                     | 5.18                      | NaN          | NaN         | 2016 |
+| 326  | SOMALILAND REGION | NaN               | NaN                    | NaN     | NaN     | NaN        | NaN            | NaN             | NaN                    | NaN                       | Sub-Saharan Africa | NaN            | NaN                         | NaN                       | NaN          | NaN         | 2016 |
+| 488  | SOMALILAND REGION | NaN               | NaN                    | NaN     | NaN     | NaN        | NaN            | NaN             | NaN                    | NaN                       | Sub-Saharan Africa | NaN            | NaN                         | NaN                       | NaN          | NaN         | 2017 |
+| 489  | SOMALILAND REGION | NaN               | NaN                    | NaN     | NaN     | NaN        | NaN            | NaN             | NaN                    | NaN                       | Sub-Saharan Africa | NaN            | NaN                         | NaN                       | NaN          | NaN         | 2017 |
+
+Now, we can see that there are two rows for 2015, 2016, and 2017 each.
+
+Next, let's use the [`df.drop_duplicates()` method](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.drop_duplicates.html) to drop the duplicate rows. Like the `df.duplicated()` method, the `df.drop_duplicates()` method will define duplicates as rows in which **all** columns have the same values. We'll have to specify that rows with the same values in only the `COUNTRY` and `YEAR` columns should be dropped.
+
+It's also important to note that by default, the `drop_duplicates()` method will only keep the *first* duplicate row. To keep the last duplicate row, set the `keep` parameter to `'last'`. Sometimes, this will mean sorting the dataframe *before* dropping the duplicate rows.
+
+In our case, since the second duplicate row above contains more missing values than the first row, we'll keep the first row.
+
+```python
+combined['COUNTRY'] = combined['COUNTRY'].str.upper()
+combined = combined.drop_duplicates(['COUNTRY', 'YEAR'], keep='first')
+```
+
+
+
+### Handle Missing Values by Dropping Columns
+
+Now that we've corrected the duplicate values in the dataframe, let's turn our attention back to the rest of our missing values. So far, to correct missing values we:
+
+1. Corrected the errors we made when combining our dataframes.
+2. Used the 2015 and 2016 region values to fill in the missing regions for 2017.
+
+Many of the methods in pandas are designed to exclude missing values without removing them, so at this point, we *could* leave the rest of the missing values as is, depending on the question we're trying to answer.
+
+However, leaving missing values in the dataframe could cause issues with other transformation tasks and change the distribution of our data set. Also note that missing data has to be dropped or replaced to work with machine learning algorithms, so if you're interested in continuing in the data science path, it's important to know how to handle them.
+
+Next, we'll consider dropping columns with missing data:
+
+1. Check for errors in data cleaning/transformation.
+2. Use data from additional sources to fill missing values.
+3. *Drop row/column.*
+4. Fill missing values with reasonable estimates computed from the available data.
+
+First, let's confirm how many missing values are now left in the dataframe:
+
+```
+combined.isnull().sum()
+```
+
+Copy
+
+```
+COUNTRY                          0
+REGION                           0
+HAPPINESS RANK                  19
+HAPPINESS SCORE                 19
+STANDARD ERROR                 331
+ECONOMY GDP PER CAPITA          19
+FAMILY                          19
+HEALTH LIFE EXPECTANCY          19
+FREEDOM                         19
+TRUST GOVERNMENT CORRUPTION     19
+GENEROSITY                      19
+DYSTOPIA RESIDUAL               19
+YEAR                             0
+LOWER CONFIDENCE INTERVAL      332
+UPPER CONFIDENCE INTERVAL      332
+WHISKER HIGH                   334
+WHISKER LOW                    334
+dtype: int64
+```
+
+We can see above that a couple columns contain over 300 missing values. Let's start by analyzing these columns since they account for most of the missing values left in the dataframe.
+
+When deciding if you should drop a row or column, carefully consider whether you'll lose information that could alter your analysis. Instead of just saying, *"If x percentage of the data is missing, we'll drop it."*, it's better to also ask the following questions:
+
+1. Is the missing data needed to accomplish our end goal?
+2. How will removing or replacing the missing values affect our analysis?
+
+To answer the first question, let's establish our end goal:
+
+- End Goal: We want to analyze happiness scores and the factors that contribute to happiness scores by year and region.
+
+Since missing values make up more than half of the following columns and we don't need them to accomplish our end goal, we'll drop them:
+
+- `STANDARD ERROR`
+- `LOWER CONFIDENCE INTERVAL`
+- `UPPER CONFIDENCE INTERVAL`
+- `WHISKER HIGH`
+- `WHISKER LOW`
+
+We'll use the [`DataFrame.drop()` method](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.drop.html) to drop them next.
+
+
+
+### Handle Missing Values by Dropping Columns Continued
+
+In the last exercise, we used the `df.drop()` method to drop columns we don't need for our analysis.
+
+However, as you start working with bigger datasets, it can sometimes be tedious to create a long list of column names to drop. Instead we can use the [`DataFrame.dropna()` method](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.dropna.html) to complete the same task.
+
+By default, the `dropna()` method will drop *rows* with *any* missing values. To drop columns, we can set the `axis` parameter equal to `1`, just like with the `df.drop()` method:
+
+```
+df.dropna(axis=1)
+```
+
+Copy
+
+However, this would result in dropping columns with *any* missing values - we only want to drop certain columns. Instead, we can also use the `thresh` parameter to only drop columns if they contain below a certain number of *non-null* values.
+
+So far, we've used the `df.isnull()` method to confirm the number of *missing* values in each column. To confirm the number of values that are NOT missing, we can use the [`DataFrame.notnull()`method](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.notnull.html):
+
+```
+combined.notnull().sum().sort_values()
+```
+
+```
+WHISKER LOW                    155
+WHISKER HIGH                   155
+LOWER CONFIDENCE INTERVAL      157
+UPPER CONFIDENCE INTERVAL      157
+STANDARD ERROR                 158
+HEALTH LIFE EXPECTANCY         470
+DYSTOPIA RESIDUAL              470
+ECONOMY GDP PER CAPITA         470
+FAMILY                         470
+FREEDOM                        470
+GENEROSITY                     470
+HAPPINESS RANK                 470
+HAPPINESS SCORE                470
+TRUST GOVERNMENT CORRUPTION    470
+COUNTRY                        489
+REGION                         489
+YEAR                           489
+dtype: int64
+```
+
+Above, we can see that the columns we'd like to drop - `LOWER CONFIDENCE INTERVAL`, `STANDARD ERROR`, `UPPER CONFIDENCE INTERVAL`, `WHISKER HIGH`, and `WHISKER LOW` - only contain between 155 and 158 non null values. As a result, we'll set the `thresh` parameter equal to 159 in the `df.dropna()` method to drop them.
+
+### Analyzing Missing Data
+
+In the last exercise, we dropped columns we don't need for our analysis and confirmed that a couple columns still have missing values:
+
+```
+combined.isnull().sum()
+```
+
+Copy
+
+```
+COUNTRY                         0
+REGION                          0
+HAPPINESS RANK                 19
+HAPPINESS SCORE                19
+ECONOMY GDP PER CAPITA         19
+FAMILY                         19
+HEALTH LIFE EXPECTANCY         19
+FREEDOM                        19
+TRUST GOVERNMENT CORRUPTION    19
+GENEROSITY                     19
+DYSTOPIA RESIDUAL              19
+YEAR                            0
+dtype: int64
+```
+
+Copy
+
+To make a decision about how to handle the rest of the missing data, we'll analyze if it's better to just drop the rows or replace the missing values with other values.
+
+Let's return to the following questions:
+
+1. Is the missing data needed to accomplish our end goal?
+   - Yes, we need the data to accomplish our goal of analyzing happiness scores and contributing factors by region and year.
+2. How will removing or replacing the missing values affect our analysis?
+
+Let's break the second question down into a couple more specific questions:
+
+1. What percentage of the data is missing?
+2. Will dropping missing values cause us to lose valuable information in other columns?
+3. Can we identify any patterns in the missing data?
+
+*Question: What percentage of the data is missing?*
+
+As we saw when looking at the results of `combined.isnull().sum()` above, if missing values exist in a column of our dataframe, they account for about 4 percent of the total values (19 missing out of 489 values per column).
+
+Generally speaking, the lower the percentage of missing values, the less likely dropping them will significantly impact the analysis.
+
+*Question: Will dropping missing values cause us to lose valuable information in other columns?*
+
+To answer this question, let's visualize the missing data once more. Note below that before we create the heatmap, we first set the index of `combined` to the `REGION` column and sort the values:
+
+```python
+sorted = combined.set_index('REGION').sort_values(['REGION', 'HAPPINESS SCORE'])
+sns.heatmap(sorted.isnull(), cbar=False)
+```
+
+![heatmap_regions](images/heatmap_regions.png)
+
+As a reminder, in the heatmap above, the missing values are represented with light gray and all other values with black. From this visualization, we can confirm that if the data is missing, it's missing in almost every column. We'll conclude that dropping the missing values won't cause us to lose valuable information in other columns.
+
+*Question: Can we identify any patterns in the missing data?*
+
+From the visualization above, we can also identify that only three regions contain missing values:
+
+- Sub-Saharan Africa
+- Middle East and Northern Africa
+- Latin America and Carribbean
+
+The Sub-Saharan Africa region contains the most missing values, accounting for about 9 percent of that regions's values. Since we'd like to analyze the data according to region, we should also think about how these values impact the analysis for this region specifically.
+
+
+
+### Handling Missing Values with Imputation
+
+In the last screen, we confirmed:
+
+- Only about 4 percent of the values in each column are missing.
+- Dropping rows with missing values won't cause us to lose information in other columns.
+
+As a result, it *may* be best to drop the remaining missing values.
+
+However, before we make a decision, let's consider handling the missing values by replacing them with estimated values, also called *imputation*.
+
+1. Check for errors in data cleaning/transformation.
+2. Use data from additional sources to fill missing values.
+3. Drop row/column.
+4. *Fill missing values with reasonable estimates computed from the available data.*
+
+There are many options for choosing the replacement value, including:
+
+- A constant value
+- The mean of the column
+- The median of the column
+- The mode of the column
+
+For non-numeric columns, common replacement values include the most frequent value or a string like "Unknown" that is used to treat missing values as a separate category.
+
+For numeric columns, it's very common to replace missing values with the mean. Since the rest of the columns in `combined` with missing data are all numeric, we'll explore this option next.
+
+First, let's build some intuition around this technique by analyzing how replacing missing values with the mean affects the distribution of the data. In order to do so, we'll use the [`Series.fillna()` method](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.fillna.html) to replace the missing values with the mean.
+
+Note that we must pass the replacement value into the `Series.fillna()` method. For example, if we wanted to replace all of the missing values in the `HAPPINESS SCORE` column with `0`, we'd use the following syntax:
+
+```
+combined[`HAPPINESS SCORE`].fillna(0)
+```
+
+Copy
+
+Next, let's replace the missing happiness scores with the mean.
+
+
+
+```python
+happiness_mean = combined['HAPPINESS SCORE'].mean()
+combined['HAPPINESS SCORE UPDATED'] = combined['HAPPINESS SCORE'].fillna(happiness_mean)
+print(combined['HAPPINESS SCORE UPDATED'].mean)
+```
+
+
+
+### Dropping Rows
+
+In the last exercise, we confirmed that replacing missing values with the Series mean doesn't change the mean of the Series.
+
+If we were to plot the distributions before and after replacing the missing values with the mean, we'd see that the shape of the distribution changes as more values cluster around the mean. Note that the mean is represented with the red and green lines in the plots below:
+
+![Happiness_means_original](images/Happiness_means_original.png)
+
+![Happiness_means](images/Happiness_means.png)
+
+As we decide to use this approach, we should ask the following questions - are the missing happiness scores *likely* to be close to the mean? Or is it more likely that the scores are very high or very low? If the missing values lie at extremes, the mean won't be a good estimate for them.
+
+![Missing_values](images/Missing_values.svg)
+
+Recall that when we visualized the missing data, we determined that the Sub-Saharan Africa region contained the most missing values. Since we'd like to analyze the data according to region, let's look more closely at the means for each region:
+
+```
+combined.pivot_table(index='REGION', values='HAPPINESS SCORE', margins=True)
+```
+
+Copy
+
+|                                 | HAPPINESS SCORE |
+| ------------------------------- | --------------- |
+| REGION                          |                 |
+| Australia and New Zealand       | 7.302500        |
+| Central and Eastern Europe      | 5.371184        |
+| Eastern Asia                    | 5.632333        |
+| Latin America and Caribbean     | 6.069074        |
+| Middle East and Northern Africa | 5.387879        |
+| North America                   | 7.227167        |
+| Southeastern Asia               | 5.364077        |
+| Southern Asia                   | 4.590857        |
+| Sub-Saharan Africa              | 4.150957        |
+| Western Europe                  | 6.693000        |
+| All                             | 5.370728        |
+
+As a reminder, the `All` row in the table above represents the mean happiness score for the whole world - the value that we used to replace our missing values. We can see that the world mean happiness score, 5.370728, is over 1 point higher than the mean happiness score for the Sub-Saharan Africa region, 4.150957.
+
+Also, if we think about the reasons why a country may not have participated in the happiness survey - war, natural disaster, etc - many of them would likely result in a lower happiness score than even the region's mean. We'll conclude that the mean for the whole world wouldn't be a good estimate for them.
+
+As a result, we'll decide that of these two options, it's better to drop the rows with missing values. Let's do that next.
+
+
+
+### Next steps
+
+In the last step, we concluded that in this case, it was better to drop the remaining rows with missing values rather than replace the missing values with the mean.
+
+However, it's also good to know that other techniques for handling missing values *do* exist. Since this lesson is meant to be an introduction to this topic, we didn't cover them, but if you're interested in learning more, you can start [here](https://pandas.pydata.org/pandas-docs/stable/user_guide/missing_data.html).
+
+Although there is no perfect way to handle missing values and each situation is different, now we know the basic techniques and built some intuition around them to better inform our decisions. Below is the workflow we used to clean missing values:
+
+1. Check for errors in data cleaning/transformation.
+2. Use data from additional sources to fill missing values.
+3. Drop row/column.
+4. Fill missing values with reasonable estimates computed from the available data.
+
+We also started to set a more defined data cleaning workflow, in which we:
+
+- Set a goal for the project.
+- Researched and tried to understand the data.
+- Determined what data was needed to complete our analysis.
+- Added columns.
+- Cleaned specific data types.
+- Combined data sets.
+- Removed duplicate values.
+- Handled the missing values.
