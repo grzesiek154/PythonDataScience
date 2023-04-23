@@ -1048,6 +1048,21 @@ a['min'] + b['min'] + c['min'] # throws KeyError
 a.get('min', 0) + b.get('min', 0) + c.get('min', 0) # 150
 ```
 
+
+
+## iterate over a dictionary
+
+https://realpython.com/iterate-through-dictionary-python/#modifying-values-and-keys
+
+### Iterating Through `.keys()`
+
+```python
+for key in a_dict.keys():
+     print(key)
+```
+
+
+
 ------
 
 
@@ -1678,6 +1693,101 @@ These functions all take a single argument. You may have noticed that, in the de
 
 The lambda function assigned to `full_name` takes two arguments and returns a [string](https://realpython.com/python-strings/) interpolating the two parameters `first` and `last`. As expected, the definition of the lambda lists the arguments with no parentheses, whereas calling the function is done exactly like a normal Python function, with parentheses surrounding the arguments.
 
+If a function is particularly complex, it may be a better choice to define a regular function rather than create a lambda, even if it will only be used once. For instance, this function below, which extracts digits from a string and then adds one to the resultant integer:
+
+```
+def extract_and_increment(string):
+    digits = re.search(r"\d+", string).group()
+    incremented = int(digits) + 1
+    return incremented
+```
+
+It becomes tough to understand in its lambda form:
+
+```
+extract_and_increment = lambda string: int(re.search(r"\d+", string).group()) + 1
+```
+
+Being mindful of this will ensure our code remains easy to read and understand.
+
+
+
+### Using Lambda Functions to Analyze JSON data
+
+As we mentioned briefly on the previous screen, assigning a lambda to a variable so it can be called by name is a pretty uncommon pattern. The primary use of lambda functions is to define a function in place, like when we are providing a function as an argument.
+
+So we have a more precise understanding of how a lambda function works, let's look at how our solution from the previous screen is executed:
+
+
+
+![lambda execution steps](images/lambda_in_place_1.svg)
+
+
+
+Let's look at how this works in common usage with `min()`, `max()`, and `sorted()`. We'll use the JSON object from the previous few screens so it's easier to observe what is happening:
+
+```
+jprint(json_obj)
+```
+
+```
+[
+    {
+        "age": 36,
+        "favorite_foods": ["Pumpkin", "Oatmeal"],
+        "name": "Sabine"
+    },
+    {
+        "age": 40,
+        "favorite_foods": ["Chicken", "Pizza", "Chocolate"],
+        "name": "Zoe"
+    },
+    {
+        "age": 40,
+        "favorite_foods": ["Caesar Salad"],
+        "name": "Heidi"
+    }
+]
+```
+
+Let's start by using a lambda function with `sorted()` to sort the items in our JSON list alphabetically by name:
+
+
+
+![lambda example one](images/lambda_example_1.svg)
+
+
+
+Next, we'll use a lambda function with `min()` to calculate the item in our JSON list with the smallest age:
+
+
+
+![lambda example two](images/lambda_example_2.svg)
+
+
+
+Lastly, we'll use a lambda function with `max()` to calculate the item in our JSON list with the largest number of favorite foods:
+
+
+
+![lambda example three](images/lambda_example_3.svg)
+
+
+
+Over the past three screens, we have:
+
+- Learned that functions can be passed as arguments.
+- Created functions and used them to calculate the minimum, maximum, and to sort lists of lists.
+- Learned about lambda functions and how to create them.
+- Learned how to use a lambda function to pass an argument in place when calculating minimums, maximums, and sorting lists of lists.
+
+#### Exercise solution
+
+```python
+hn_sorted_points = sorted(hn_clean, key=lambda d: d['points'], reverse=True)
+top_5_titles = [dictionary['title'] for dictionary in hn_sorted_points[0:5]]
+```
+
 
 
 ## Lists Comprehensions
@@ -1708,6 +1818,363 @@ authors = ["Ernest Hemingway","Langston Hughes","Frank Herbert","Toni Morrison",
 letters = [ name[0] for name in authors ]
 print(letters)
 ```
+
+
+
+### Lists Comprehensions - dataquest
+
+To convert this to a list comprehension, we follow the same pattern:
+
+
+
+![loop vs list comp 2](images/loop_vs_lc_2.svg)
+
+
+
+The "transformation" step of our list comprehension can be anything, including a function or method. In the example below, we are applying a function to a list of floats to round them to integers:
+
+```python
+floats = [2.1, 8.7, 4.2, 8.9]
+
+rounded = []
+for f in floats:
+    rounded.append(round(f))
+
+print(rounded)
+```
+
+```
+[2, 9, 4, 9]
+```
+
+To convert to a list comprehension, we simply rearrange the components:
+
+
+
+![loop vs list comp 3](images/loop_vs_lc_3.svg)
+
+
+
+Just like in a normal loop, we can use any name for our iterator variable. Here, we have used `f`.
+
+For the last example, we'll apply a method to each string in a list to capitalize it. We won't color the different components, so we can get used to how that looks.
+
+```python
+letters = ['a', 'b', 'c', 'd']
+
+caps = []
+for l in letters:
+    caps.append(l.upper())
+```
+
+Even though we've used a different kind of transformation, the ordering of the list comprehension remains the same:
+
+```
+caps = [l.upper() for l in letters]
+print(caps)
+```
+
+```
+['A', 'B', 'C', 'D']
+```
+
+Let's recap what we have learned so far. A list comprehension can be used where we:
+
+- Iterated over values in a list.
+- Performed a transformation on those values.
+- Assigned the result to a new list.
+
+To transform a loop to a list comprehension, in brackets we:
+
+- Start with the code that transforms each item.
+- Continue with our for statement (without a colon).
+
+We are going to write a list comprehension version of the code from the previous screen. To help, we've provided a copy of the code with the components labeled.
+
+
+
+![loop vs list comp 3](images/loop_components_hn.svg)
+
+
+
+### Using List Comprehensions to Transform and Create Lists
+
+List comprehensions can be used for many different things. Three common applications are:
+
+1. Transforming a list
+2. Creating a new list
+3. Reducing a list
+
+On this screen, we're going to look at the first two of these applications.
+
+The first application, **transforming a list**, is the category that all the examples you've seen so far fit under. You are taking an existing list, applying a transformation to every value, and assigning it to a variable.
+
+The example below uses a list comprehension to transform a list of square numbers into their "square roots":
+
+
+
+![transforming a list](images/lc_application_1.svg)
+
+
+
+The second application, **creating a new list**, is useful for creating test data or data that is based on a set of numbers.
+
+As an example, let's create a list of generic columns names that we could use to create a dataframe using the [`range()` function](https://docs.python.org/3/library/stdtypes.html#range) and the [`str.format()` method](https://docs.python.org/3/library/stdtypes.html#str.format) to combine numbers and text:
+
+
+
+![creating a list 2](images/lc_application_2_2.svg)
+
+
+
+We can then use this to create an empty dataframe with labels:
+
+```python
+cols = ["col_{}".format(i) for i in range(1,5)]
+data = np.zeros((4,4))
+
+df = pd.DataFrame(data, columns=cols)
+print(df)
+```
+
+```python
+_  col_1  col_2  col_3  col_4
+0    0.0    0.0    0.0    0.0
+1    0.0    0.0    0.0    0.0
+2    0.0    0.0    0.0    0.0
+3    0.0    0.0    0.0    0.0
+```
+
+
+
+### Using List Comprehensions to Reduce a List
+
+The last common application of list comprehensions is **reducing a list**. Let's say we had a list of integers and we wanted to remove any integers that were smaller than 50. We could do this by adding an if statement to our loop:
+
+
+
+![reducing a list 1](images/lc_application_3_1.svg)
+
+
+
+Our loop has one new component — the if statement, which we've colored yellow. Notice that instead of a transformation, we have just the list item itself (`i`) in red. Both if statements and transformations are optional in list comprehensions, but we must include some value to populate the elements in the new list.
+
+To include an if statement in a list comprehension, we include it at the very end, before the closing bracket:
+
+
+
+![reducing a list 2](images/lc_application_3_2.svg)
+
+
+
+We can use this technique to quickly and easily filter our data set using an if statement. Let's look at how we could use this to quickly count the number of stories that have comments. We'll start with a version using a loop:
+
+```python
+has_comments = []
+
+for d in hn_clean:
+    if d['numComments'] > 0:
+        has_comments.append(d)
+
+num_comments = len(has_comments)
+print(num_comments)
+```
+
+```
+9279
+```
+
+Now, let's use a list comprehension to perform the same calculation:
+
+```python
+has_comments = [d for d in hn_clean if d['numComments'] > 0]
+
+num_comments = len(has_comments)
+print(num_comments)
+```
+
+```
+9279
+```
+
+
+
+## Passing Functions as Arguments
+
+In previous lessons, we learned to use Python's built-in functions to analyze data in lists, like [`min()`](https://docs.python.org/3/library/functions.html#min), [`max()`](https://docs.python.org/3.7/library/functions.html#max), and [`sorted()`](https://docs.python.org/3.7/library/functions.html#sorted).
+
+What if we wanted to use these functions to work with data in JSON form? Let's use our demo JSON object to try and see what happens. First, we'll quickly remind ourselves of the data:
+
+```
+jprint(json_obj)
+```
+
+Copy
+
+```
+[
+    {
+        "age": 36,
+        "favorite_foods": ["Pumpkin", "Oatmeal"],
+        "name": "Sabine"
+    },
+    {
+        "age": 40,
+        "favorite_foods": ["Chicken", "Pizza", "Chocolate"],
+        "name": "Zoe"
+    },
+    {
+        "age": 40,
+        "favorite_foods": ["Caesar Salad"],
+        "name": "Heidi"
+    }
+]
+```
+
+Copy
+
+Let's try and use Python to return the dictionary of the person with the lowest age:
+
+```
+min(json_obj)
+```
+
+Copy
+
+```
+---------------------------------------------------------
+TypeError               Traceback (most recent call last)
+<ipython-input-290-60cd4510e136> in module()
+----> 1 min(json_obj)
+
+TypeError: unorderable types: dict() < dict()
+```
+
+Copy
+
+We get an error because Python doesn't have any way to tell whether one dictionary object is "greater" than another.
+
+There is a way we can actually tell functions like `min()`, `max()`, and `sorted()` how to sort complex objects like dictionaries and lists of lists. We do this by using the optional `key` argument. The official Python documentation contains the following excerpts that describe how the argument works:
+
+> *The `key` argument specifies a one-argument ordering function like that used for `list.sort()`.*
+>
+> *`key` specifies a function of one argument that is used to extract a comparison key from each list element. The key corresponding to each item in the list is calculated once and then used for the entire sorting process.*
+
+These excerpts tell us we need to specify a *function* as an argument to control the comparison between values. Up until now, we've only passed variables or values as arguments, but not functions!
+
+We'll learn the specifics of this particular application in a moment, but for now, we're going to explore how to pass a function as an argument.
+
+Let's define a very simple function as an example:
+
+```
+def greet():
+    return "hello"
+
+greet()
+```
+
+
+
+```
+'hello'
+```
+
+
+
+If we try to examine the type of our function, we are unsuccessful:
+
+```
+t = type(greet())
+print(t)
+```
+
+```
+str
+```
+
+What happens is that `greet()` is executed first; it returns the string `"hello"`, and then the `type()` function tells us the type of that string:
+
+
+
+![type of function](images/type_of_func_1.svg)
+
+
+
+We need to find a way to look at the function itself, rather than the result of the function. The key to this is the parentheses: `()`.
+
+The parentheses are what tells Python to execute the function, so if we omit the parentheses we can treat a function like a variable, rather than working with the output of the function:
+
+```
+t = type(greet)
+print(t)
+```
+
+
+
+```
+function
+```
+
+There are other variable-like behaviors we can also use when we omit the parentheses from a function. For instance, we can assign a function to a new variable name:
+
+```
+greet_2 = greet
+
+greet_2()
+```
+
+```
+'hello'
+```
+
+Now that we understand how to treat a function as variable, let's look at how we can run a function inside another function by passing it as an argument:
+
+```python
+def run_func(func):
+    print("RUNNING FUNCTION: {}".format(func))
+    return func()
+
+run_func(greet)
+```
+
+```
+RUNNING FUNCTION: function greet at 0x12a64c400
+'hello'
+```
+
+
+
+![passing a function as an argument](images/func_as_arg.svg)
+
+
+
+Now that we have some intuition on how to pass functions as arguments, let's see how we use a function to control the behavior of the `sorted()` function:
+
+
+
+![sorting a list of lists using a key function](images/sorted_key.svg)
+
+
+
+Let's look at the same thing in code form:
+
+```python
+def get_age(json_dict):
+    return json_dict['age']
+
+youngest = min(json_obj, key=get_age)
+jprint(youngest)
+```
+
+```
+{
+    "age": 36,
+    "favorite_foods": ["Pumpkin", "Oatmeal"],
+    "name": "Sabine"
+}
+```
+
+
 
 
 
@@ -2073,7 +2540,51 @@ import re
 
 The `re` library in Python provides several functions that make it a skill worth mastering. You will see some of them closely in this tutorial.
 
+## raw strings  eg. (r'hello\b world')
 
+https://note.nkmk.me/en/python-raw-string-escape/#:~:text=In%20Python%2C%20strings%20prefixed%20with,paths%20and%20regular%20expression%20patterns.
+
+In Python, strings prefixed with `r` or `R`, such as `r'...'` and `r"..."`, are called raw strings and treat backslashes `\` as literal characters. Raw strings are useful when handling strings that use a lot of backslashes, such as Windows paths and regular expression patterns.
+
+In Python, a backslash followed by certain characters represents an [escape sequence](https://en.wikipedia.org/wiki/Escape_sequences_in_C#Table_of_escape_sequences) — like the `\n` sequence — which we previously learned represents a new line. These escape sequences can result in unintended consequences for our regular expressions. Let's take a look at a string containing the substring `\b`:
+
+```
+print('hello\b world')
+```
+
+Copy
+
+```
+hell world
+```
+
+Copy
+
+The escape sequence `\b` represents a backspace, so the final letter from our string is removed. The character sequence `\b` has a special meaning in regular expressions (which we'll learn about later), so we need a way to write these characters without triggering the escape sequence.
+
+One way is to add an extra backslash before the "b":
+
+```
+print('hello\\b world')
+```
+
+```
+hello\b world
+```
+
+This can make regular expressions even more difficult to read and interpret, so instead we use [raw strings](https://docs.python.org/3/reference/lexical_analysis.html#string-and-bytes-literals), which we denote by prefixing our string with the `r` character. Let's take a look at the code from above with a raw string:
+
+```
+print(r'hello\b world')
+```
+
+```
+hello\b world
+```
+
+
+
+We strongly recommend using raw strings for every regex you write, rather than remember which sequences are escape sequences and using raw strings selectively. That way, you'll never encounter a situation where you forget or overlook something which causes your regex to break.
 
 ## Special Characters
 
@@ -2121,14 +2632,519 @@ The `re` library in Python provides several functions that make it a skill worth
 
   Matches only at the end of the string.
 
+
+
+Some stories submitted to Hacker News include a topic tag in brackets, like `[pdf]`. Here are a few examples of story titles with these tags:
+
+```python
+[video] Google Self-Driving SUV Sideswipes Bus
+New Directions in Cryptography by Diffie and Hellman (1976) [pdf]
+Wallace and Gromit  The Great Train Chase (1993) [video]
+```
+
+To match the substring `"[pdf]"`, we can use backslashes to escape both the open and closing brackets: `\[pdf\]`.
+
+![escaping characters](images/escaped_character_syntax_breakdown.svg)
+
+
+
+To match unknown characters using regular expressions, we use **character classes**. Character classes allow us to match certain groups of characters. We've actually seen two examples of character classes already:
+
+1. The set notation using brackets to match any of a number of characters.
+2. The range notation, which we used to match ranges of digits (like `[0-9]`).
+
+Let's look at a summary of syntax for some of the regex character classes:
+
+![character classes one](images/character_classes_v2_1.svg)
+
+
+
+Just like with quantifiers, there are some other common character classes which we'll use a lot.
+
+
+
+![character classes two](images/character_classes_v2_2.svg)
+
+
+
+The one that we'll be using to match characters in tags is `\w`, which represents any number or letter. Each character class represents a single character, so to match multiple characters (e.g. words like `video` and `pdf`), we'll need to combine them with quantifiers.
+
+In order to match word characters between our brackets, we can combine the word character class (`\w`) with the 'one or more' quantifier (`+`), giving us a combined pattern of `\w+`.
+
+Let's quickly recap the concepts we learned in this screen:
+
+- We can use a backslash to escape characters that have special meaning in regular expressions (e.g. `\[` will match an open bracket character).
+- Character classes let us match certain groups of characters (e.g. `\w` will match any word character).
+- Character classes can be combined with quantifiers when we want to match different numbers of characters.
+
+
+
 ## search(pattern, input_text)
 
 Szuka peirwszego dopasowania wyrażenia regularnego (pattern) w łańcuchu tekstowym podanym jako drugi paramter (input_text)
 
+The `re.search()` function will return a [`Match` object](https://docs.python.org/3/library/re.html#match-objects) if the pattern is found anywhere within the string. If the pattern is not found, `re.search()` returns `None`:
+
 - Jeśli true zwraca obiekt typu Match jeśli false zwraca None.
 - Zwraca tylko pierwsze dopasowanie
 
-compile()
+
+
+```python
+m = re.search("and", "antidote")
+print(m)
+
+None
+```
+
+
+
+## Counting Matches with pandas Methods
+
+```python
+pattern = "[Bb]lue"
+
+pattern_contained = eg_series.str.contains(pattern)
+print(pattern_contained)
+```
+
+One of the neat things about boolean masks is that you can use the [`Series.sum()` method](http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.sum.html) to sum all the values in the boolean mask, with each `True` value counting as `1`, and each `False` as `0`. This means that we can easily count the number of values in the original series that matched our pattern:
+
+```python
+pattern_count = pattern_contained.sum()
+print(pattern_count)
+```
+
+```
+2
+```
+
+If we wanted, we could use method chaining to do the whole operation on one line:
+
+```
+pattern_count = eg_series.str.contains(pattern).sum()
+print(pattern_count)
+```
+
+```
+2
+```
+
+## **capture groups**
+
+Capture groups allow us to specify one or more groups within our match that we can access separately. In this lesson, we'll learn how to use one capture group per regular expression, but in the next lesson we'll learn some more complex capture group patterns.
+
+We specify capture groups using parentheses. Let's add an open and close parentheses to the pattern we wrote in the previous screen, and break down how each character in our regular expression works:
+
+
+
+![capture tag text](images/tags_syntax_breakdown_v2.svg)
+
+
+
+We'll learn how to access capture groups in pandas by looking at just the first five matching titles from the previous exercise:
+
+```
+tag_5 = tag_titles.head()
+print(tag_5)
+```
+
+```
+67      Analysis of 114 propaganda sources from ISIS, Jabhat al-Nusra, al-Qaeda [pdf]
+101                                Munich Gunman Got Weapon from the Darknet [German]
+160                                      File indexing and searching for Plan 9 [pdf]
+163    Attack on Kunduz Trauma Centre, Afghanistan  Initial MSF Internal Review [pdf]
+196                                            [Beta] Speedtest.net  HTML5 Speed Test
+Name: title, dtype: object
+```
+
+We use the [`Series.str.extract()` method](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.str.extract.html) to extract the match within our parentheses:
+
+```
+pattern = r"(\[\w+\])"
+tag_5_matches = tag_5.str.extract(pattern)
+print(tag_5_matches)
+```
+
+```
+67        [pdf]
+101    [German]
+160       [pdf]
+163       [pdf]
+196      [Beta]
+Name: title, dtype: object
+```
+
+We can move our parentheses inside the brackets to get just the text:
+
+```python
+pattern = r"\[(\w+)\]"
+tag_5_matches = tag_5.str.extract(pattern, expand=False)
+print(tag_5_matches)
+```
+
+```
+67        pdf
+101    German
+160       pdf
+163       pdf
+196      Beta
+Name: title, dtype: object
+```
+
+Note that we specify `expand=False` with the `Series.str.extract()` method to return a series. If we then use `Series.value_counts()` we can quickly get a frequency table of the tags:
+
+```
+tag_5_freq = tag_5_matches.value_counts()
+print(tag_5_freq)
+```
+
+```
+pdf       3
+Beta      1
+German    1
+Name: title, dtype: int64
+```
+
+
+
+### Using Capture Groups to Extract Data
+
+So far we've used capture groups to extract all or most of the text in our regular expression pattern. Capture groups can also be useful to extract specific data from within our expression.
+
+Let's look at a sample of Hacker News titles that mention Python:
+
+```
+Developing a computational pipeline using the asyncio module in Python 3
+Python 3 on Google App Engine flexible environment now in beta
+Python 3.6 proposal, PEP 525: Asynchronous Generators
+How async/await works in Python 3.5.0
+Ubuntu Drops Python 2.7 from the Default Install in 16.04
+Show HN: First Release of Transcrypt Python3.5 to JavaScript Compiler
+```
+
+All of these examples have a number after the word "Python," which indicates a version number. Sometimes a space precedes the number, sometimes it doesn't. We can use the following regular expression to match these cases:
+
+
+
+![Python versions regex pattern](images/python_versions_fixed.svg)
+
+
+
+We can use capture groups to extract the version of Python that is mentioned most often in our dataset by wrapping parentheses around the part of our regular expression which captures the version number.
+
+We'll use a capture group to capture the version number after the word "Python," and then build a frequency table of the different versions.
+
+```python
+pattern = r"[Pp]ython ([\d\.]+)"
+py_versions = titles.str.extract(pattern, expand=False)
+py_versions_freq = dict(py_versions.value_counts())
+```
+
+
+
+### Using Capture Groups in a RegEx Pattern
+
+### 
+
+Let's say we wanted to identify strings that had words with double letters, like the "ee" in "feed." Because we don't know ahead of time what letters might be repeated, we need a way to specify a capture group and then to repeat it. We can do this with **backreferences**.
+
+Whenever we have one or more capture groups, we can refer to them using integers left to right as shown in this regex that matches the string `HelloGoodbye`:
+
+
+
+![backreference syntax 1](images/backreference_syntax_1.svg)
+
+
+
+Within a regular expression, we can use a backslash followed by that integer to refer to the group:
+
+
+
+![backreference syntax 2](images/backreference_syntax_2.svg)
+
+
+
+The regular expression above will match the text `HelloGoodbyeGoodbyeHello`. Let's look at how we could write a regex to capture instances of the same two word characters in a row:
+
+
+
+![backreference syntax 3](images/backreference_syntax_3.svg)
+
+
+
+Let's see this in action using Python:
+
+```
+test_cases = [
+              "I'm going to read a book.",
+              "Green is my favorite color.",
+              "My name is Aaron.",
+              "No doubles here.",
+              "I have a pet eel."
+             ]
+
+for tc in test_cases:
+    print(re.search(r"(\w)\1", tc))
+```
+
+Copy
+
+```
+_sre.SRE_Match object; span=(21, 23), match='oo'
+_sre.SRE_Match object; span=(2, 4), match='ee'
+None
+None
+_sre.SRE_Match object; span=(13, 15), match='ee'
+```
+
+Copy
+
+Notice that there was no match for the word `Aaron`, despite it containing a double "a." This is because the uppercase and lowercase "a" are two different characters, so the backreference does not match.
+
+We can easily achieve the same thing using pandas:
+
+```
+test_cases = pd.Series(test_cases)
+print(test_cases.str.contains(r"(\w)\1"))
+```
+
+Copy
+
+```
+0     True
+1     True
+2    False
+3    False
+4     True
+dtype: bool
+```
+
+
+
+
+
+## Negative Character Classes
+
+Earlier, we counted the titles that included Python — let's write a simple regular expression to match Java (another popular language), and use our function to look at the matches:
+
+```
+first_10_matches(r"[Jj]ava")
+```
+
+```
+268                                   Show HN: Hire JavaScript - Top JavaScript Talent
+437                        Unikernel Power Comes to Java, Node.js, Go, and Python Apps
+581                          Python integration for the Duktape Javascript interpreter
+812      Ask HN: Are there any projects or compilers which convert JavaScript to Java?
+1024                                                      Pippo  Web framework in Java
+1047    If you write JavaScript tools or libraries, bundle your code before publishing
+1094                            Rollup.js: A next-generation JavaScript module bundler
+1163                                              V8 JavaScript Engine: V8 Release 5.4
+1196                                                Proposed JavaScript Standard Style
+1315                                        Show HN: Design by Contract for JavaScript
+Name: title, dtype: object
+```
+
+We can see that there are a number of matches that contain `Java` as part of the word `JavaScript`. We want to exclude these titles from matching so we get an accurate count.
+
+One way to do this is by using **negative character classes**. Negative character classes are character classes that match every character *except* a character class. Let's look at a table of the common negative character classes:
+
+
+
+![negative character classes](images/negative_character_classes.svg)
+
+
+
+```python
+def first_10_matches(pattern):
+    """
+    Return the first 10 story titles that match
+    the provided regular expression
+    """
+    all_matches = titles[titles.str.contains(pattern)]
+    first_10 = all_matches.head(10)
+    return first_10
+
+pattern = r"[Jj]ava[^Ss]"
+
+first_10_matches(pattern)
+
+java_titles = titles[titles.str.contains(pattern)]
+```
+
+
+
+## Word Boundaries
+
+https://www.rexegg.com/regex-boundaries.html#:~:text=(direct%20link)-,Word%20Boundary%3A%20%5Cb,string%20or%20a%20space%20character).
+
+The word boundary \b matches positions where one side is a word character (usually a letter, digit or underscore—but see below for variations across engines) and the other side is not a word character (for instance, it may be the beginning of the string or a space character).
+
+The regex \bcat\b would therefore match *cat* in *a black cat*, but it wouldn't match it in *catatonic*, *tomcat* or *certificate*. Removing one of the boundaries, \bcat would match *cat* in *catfish*, and cat\b would match *cat* in *tomcat*, but not vice-versa. Both, of course, would match *cat* on its own.
+
+Word boundaries are useful when you want to match a sequence of letters (or digits) on their own, or to ensure that they occur at the beginning or the end of a sequence of characters.
+
+Be aware, though, that \bcat\b will not match *cat* in *_cat* or in *cat25* because there is no boundary between an underscore and a letter, nor between a letter and a digit: these all belong to what regex defines as *word characters*. If you want to create a "real word boundary" (where a *word* is only allowed to have letters), see [the recipe below](https://www.rexegg.com/regex-boundaries.html#real-word-boundary) in the section on DYI boundaries.
+
+On the previous screen, we used a negative set to find all of the mentions of "Java" in our dataset:
+
+```
+first_10_matches(r"[Jj]ava[^Ss]")
+```
+
+```
+437                       Unikernel Power Comes to Java, Node.js, Go, and Python Apps
+812     Ask HN: Are there any projects or compilers which convert JavaScript to Java?
+1841                                                Adopting RxJava on the Airbnb App
+1973                                      Node.js vs. Java: Which Is Faster for APIs?
+2094                                                Java EE and Microservices in 2016
+2368    Code that is valid in both PHP and Java, and produces the same output in both
+2494      Ask HN: I've been a java dev for a couple of years, should I move langauge?
+2752                                            Eventsourcing for Java 0.4.0 released
+2911                                            2016 JavaOne Intel Keynote  32mn Talk
+3453      What are the Differences Between Java Platforms from Desktops to Wearables?
+Name: title, dtype: object
+```
+
+While the negative set was effective in removing any bad matches that mention JavaScript, it also had the side-effect of removing any titles where `Java` occurs at the end of the string, like this title:
+
+```
+Pippo  Web framework in Java
+```
+
+This is because the negative set `[^Ss]` must match one character. Instances at the end of a string aren't followed by any characters, so there is no match.
+
+A different approach to take in cases like these is to use the **word boundary anchor**, specified using the syntax `\b`. A word boundary matches the position between a word character and a non-word character, or a word character and the start/end of a string. The diagram below shows all the word boundaries in an example string:
+
+
+
+![word boundaries](images/word_boundaries.svg)
+
+
+
+Let's look at how using a word boundary changes the match from the string in the example above:
+
+```python
+string = "Sometimes people confuse JavaScript with Java"
+pattern_1 = r"Java[^S]"
+
+m1 = re.search(pattern_1, string)
+print(m1)
+```
+
+```python
+None
+```
+
+The regular expression returns `None`, because there is no substring that contains `Java` followed by a character that *isn't* `S`.
+
+Let's instead use word boundaries in our regular expression:
+
+```python
+pattern_2 = r"\bJava\b"
+
+m2 = re.search(pattern_2, string)
+print(m2)
+```
+
+```
+_sre.SRE_Match object; span=(41, 45), match='Java'
+```
+
+With the word boundary, our pattern matches the `Java` at the end of the string.
+
+
+
+### Counting Mentions of the 'C' Language
+
+![Regex to match mentions of the 'C' language](images/c_regex_1.svg)
+
+
+
+```python
+pattern = r"\b[Cc]\b[^\.\+]"
+```
+
+
+
+## Matching at the Start and End of Strings
+
+So far, we've used regular expressions to match substrings contained anywhere within text. There are often scenarios where we want to specifically match a pattern at the start and end of strings.
+
+On the previous screen, we learned that the **word boundary anchor** matches the space between a word character and a non-word character. More generally in regular expressions, an **anchor** matches something that isn't a character, as opposed to character classes which match specific characters.
+
+Other than the word boundary anchor, the other two most common anchors are the **beginning anchor** and the **end anchor**, which represent the start and the end of the string.
+
+
+
+![positional anchors](images/positional_anchors.svg)
+
+
+
+Note that the `^` character is used both as a beginning anchor and to indicate a negative set, depending on whether the character preceding it is a `[` or not.
+
+Let's start with a few test cases that all contain the substring `Red` at different parts of the string, as well as a test function:
+
+```
+test_cases = pd.Series([
+    "Red Nose Day is a well-known fundraising event",
+    "My favorite color is Red",
+    "My Red Car was purchased three years ago"
+])
+print(test_cases)
+```
+
+Copy
+
+```
+0    Red Nose Day is a well-known fundraising event
+1                          My favorite color is Red
+2          My Red Car was purchased three years ago
+dtype: object
+```
+
+Copy
+
+If we want to match the word `Red` only if it occurs at the start of the string, we add the beginning anchor to the start of our regular expression:
+
+```
+test_cases.str.contains(r"^Red")
+```
+
+Copy
+
+```
+0     True
+1    False
+2    False
+dtype: bool
+```
+
+Copy
+
+If we want to match the word `Red` only if it occurs at the end of the string, we add the end anchor to the end of our regular expression:
+
+```
+test_cases.str.contains(r"Red$")
+```
+
+Copy
+
+```
+0    False
+1     True
+2    False
+dtype: bool
+```
+
+
+
+
+
+
+
+## compile()
 
 When you need to use an expression several times in a single program, using `compile()` to save the resulting regular expression object for reuse is more efficient than saving it as a string. This is because the compiled versions of the most recent patterns passed to `compile()` and the module-level matching functions are cached.
 
@@ -2178,6 +3194,8 @@ print(new_email_address)
 
 ## Quantifier
 
+![quantifier example](images/quantifier_example.svg)
+
 Okreslają , ile razy jakiś znak lub ciąg znakó mosi wystąpic w danych wyjściowych, aby uznać je za prawdziwe.
 
 | Quantifier          | Name          | Meaning                                            |
@@ -2192,6 +3210,24 @@ Okreslają , ile razy jakiś znak lub ciąg znakó mosi wystąpic w danych wyjś
 
 
 kropka (.) - oznacz jeden dowolny znak
+
+
+
+The specific type of quantifier we saw above is called a numeric quantifier. Here are the different types of numeric quantifiers we can use:
+
+
+
+![quantifiers](images/quantifiers_numeric.svg)
+
+
+
+You might notice that the last two examples above omit the first and last character as wildcards, in the same way that we can omit the first or last indicies when slicing lists.
+
+In addition to numeric quantifiers, there are single characters in regex that specify some common quantifiers that you're likely to use. A summary of them is below.
+
+
+
+![quantifiers](images/quantifiers_other.svg)
 
  
 
@@ -2210,7 +3246,46 @@ A set is a set of characters inside a pair of square brackets `[]` with a specia
 | [a-zA-Z]   | Returns a match for any character alphabetically between `a` and `z`, lower case OR upper case | [Try it »](https://www.w3schools.com/python/trypython.asp?filename=demo_regex_set7) |
 | [+]        | In sets, `+`, `*`, `.`, `|`, `()`, `$`,`{}` has no special meaning, so `[+]` means: return a match for any `+` character in the string |                                                              |
 
+The first of these we'll learn is called a **set**. A set allows us to specify two or more characters that can match in a single character's position.
 
+We define a set by placing the characters we want to match for in square brackets:
+
+
+
+![basic matches](images/set_syntax_breakdown.svg)
+
+
+
+The regular expression above will match the strings `mend`, `send`, and `bend`.
+
+Let's look at how we can add sets to match more of our example strings from earlier:
+
+
+
+![basic matches](images/basic_match_2.svg)
+
+
+
+Let's take another look at the list of strings we used earlier:
+
+```python
+string_list = ["Julie's favorite color is Blue.",
+               "Keli's favorite color is Green.",
+               "Craig's favorite colors are blue and red."]
+```
+
+If you look closely, you'll notice the first string contains the substring `Blue` with a capital letter, where the third string contains the substring `blue` in all lowercase. We can use the set `[Bb]` for the first character so that we can match both variations, and then use that to count how many times `Blue` or `blue` occur in the list:
+
+```python
+blue_mentions = 0
+pattern = "[Bb]lue"
+
+for s in string_list:
+    if re.search(pattern, s):
+        blue_mentions += 1
+
+print(blue_mentions)
+```
 
 ## Flags
 
@@ -2235,6 +3310,208 @@ match2 = re.search(pattern, input_text, re.I)
 match3 = re.search(pattern, input_text, re.IGNORECASE)
 match4 = re.search(pattern_with_flag, input_text)
 ```
+
+Both `re.search()` and the pandas regular expression methods accept an optional `flags` argument. This argument accepts one or more flags, which are special variables in the re module that modify the behavior of the regex interpreter.
+
+A [list of all available flags](https://docs.python.org/3/library/re.html#re.A) is in the documentation, but by far the most common and the most useful is the [`re.IGNORECASE` flag](https://docs.python.org/3/library/re.html#re.I), which is also available using the alias `re.I` for convenience.
+
+When you use this flag, all uppercase letters will match their lowercase equivalents and vice versa. Let's look at an example without using the flag:
+
+```
+email_tests = pd.Series(['email', 'Email', 'eMail', 'EMAIL'])
+email_tests.str.contains(r"email")
+```
+
+```python
+0     True
+1    False
+2    False
+3    False
+dtype: bool
+```
+
+Now let's look at what happens when we use the flag:
+
+```
+import re
+email_tests.str.contains(r"email",flags=re.I)
+```
+
+```
+0    True
+1    True
+2    True
+3    True
+dtype: bool
+```
+
+No matter what the capitalization is, our regular expression matches.
+
+## Lookarounds 
+
+### Using Lookarounds to Control Matches Based on Surrounding Text
+
+### 
+
+Let's look at the result of the previous exercise:
+
+```
+365                                             The new C standards are worth it
+444                                  Moz raises $10m Series C from Foundry Group
+521                                 Fuchsia: Micro kernel written in C by Google
+1307                                   Show HN: Yupp, yet another C preprocessor
+1326                                            The C standard formalized in Coq
+1365                                                 GNU C Library 2.23 released
+1429    Cysignals: signal handling (SIGINT, SIGSEGV, ) for calling C from Python
+1620                                               SDCC  Small Device C Compiler
+1949         Rewriting a Ruby C Extension in Rust: How a Naive One-Liner Beats C
+2195                    MyHTML  HTML Parser on Pure C with POSIX Threads Support
+Name: title, dtype: object
+```
+
+It looks like we're getting close. In our first 10 matches we have one irrelevant result, which is about "Series C," a term used to represent a particular type of startup fundraising.
+
+Additionally, we've run into the same issue as we did in the previous lesson — by using a negative set, we may have eliminated any instances where the last character of the title is "C" (the second last line of output matches in spite of the fact that it ends with "C," because it also has "C" earlier in the string).
+
+Neither of these can be avoided using negative sets, which are used to allow multiple matches for a *single* character. Instead we'll need a new tool: **lookarounds**.
+
+Lookarounds let us define a character or sequence of characters that either must or must not come before or after our regex match. There are four types of lookarounds:
+
+
+
+![Lookarounds](images/lookarounds.svg)
+
+
+
+These tips can help you remember the syntax for lookarounds:
+
+- Inside the parentheses, the first character of a lookaround is always `?`.
+- If the lookaround is a **lookbehind**, the next character will be `<`, which you can think of as an arrow head pointing *behind* the match.
+- The next character indicates whether the lookaround is positive (`=`) or negative (`!`).
+
+Let's create some test data that we'll use to illustrate how lookarounds work:
+
+```python
+test_cases = ['Red_Green_Blue',
+              'Yellow_Green_Red',
+              'Red_Green_Red',
+              'Yellow_Green_Blue',
+              'Green']
+```
+
+We'll also create a function that will loop over our test cases and tell us whether our pattern matches. We'll use the `re` module rather than pandas since it tells us the exact text that matches, which will help us understand how the lookaround is working:
+
+```python
+def run_test_cases(pattern):
+    for tc in test_cases:
+        result = re.search(pattern, tc)
+        print(result or "NO MATCH")
+```
+
+In each instance, we'll aim to match the substring `Green` depending on the characters that precede or follow it. Let's start by using a **positive lookahead** to include instances where the match is followed by the substring `_Blue`. We'll include the underscore character in the lookahead, otherwise we will get zero matches:
+
+```
+run_test_cases(r"Green(?=_Blue)")
+```
+
+```python
+_sre.SRE_Match object; span=(4, 9), match='Green'
+NO MATCH
+NO MATCH
+_sre.SRE_Match object; span=(7, 12), match='Green'
+NO MATCH
+```
+
+Notice how the matches themselves are purely the text `Green` and don't include the lookahead. Let's look at a **negative lookahead** to include instances where the match is not followed by the substring `_Red`:
+
+```
+run_test_cases(r"Green(?!_Red)")
+```
+
+```python
+_sre.SRE_Match object; span=(4, 9), match='Green'
+NO MATCH
+NO MATCH
+_sre.SRE_Match object; span=(7, 12), match='Green'
+_sre.SRE_Match object; span=(0, 5), match='Green'
+```
+
+Next we'll use a **positive lookbehind** to include instances where the match is preceded by the substring `Red_`:
+
+```
+run_test_cases(r"(?<=Red_)Green")
+```
+
+```
+_sre.SRE_Match object; span=(4, 9), match='Green'
+NO MATCH
+_sre.SRE_Match object; span=(4, 9), match='Green'
+NO MATCH
+NO MATCH
+```
+
+And finally, using a **negative lookbehind** to include instances where the match isn't preceded by the substring `Yellow_`:
+
+```
+run_test_cases(r"(?<!Yellow_)Green")
+```
+
+```
+_sre.SRE_Match object; span=(4, 9), match='Green'
+NO MATCH
+_sre.SRE_Match object; span=(4, 9), match='Green'
+NO MATCH
+_sre.SRE_Match object; span=(0, 5), match='Green'
+```
+
+The contents of a lookaround can include any other regular expression component. For instance, here is an example where we match only cases that are followed by exactly five characters:
+
+```
+run_test_cases(r"Green(?=.{5})")
+```
+
+```
+_sre.SRE_Match object; span=(4, 9), match='Green'
+NO MATCH
+NO MATCH
+_sre.SRE_Match object; span=(7, 12), match='Green'
+NO MATCH
+```
+
+The second and third test cases are followed by four characters, not five, and the last test case isn't followed by anything.
+
+Sometimes programming languages won't implement support for all lookarounds (notably, lookbehinds are not in the official JavaScript specification). As an example, to get full support in the [RegExr](https://regexr.com/) tool, you'll need to set it to use the PCRE regex engine.
+
+In this exercise, we're going to use lookarounds to refine the regular expression we built on the last screen to capture mentions of the "C" programming language. As a reminder, here is the last of the regular expressions we attempted to use with this exercise earlier, and the resultant titles that match:
+
+```
+first_10_matches(r"\b[Cc]\b[^.+]")
+```
+
+```
+364                                             The new C standards are worth it
+444                                  Moz raises $10m Series C from Foundry Group
+521                                 Fuchsia: Micro kernel written in C by Google
+1308                                   Show HN: Yupp, yet another C preprocessor
+1327                                            The C standard formalized in Coq
+1366                                                 GNU C Library 2.23 released
+1430    Cysignals: signal handling (SIGINT, SIGSEGV, ) for calling C from Python
+1621                                               SDCC  Small Device C Compiler
+1950         Rewriting a Ruby C Extension in Rust: How a Naive One-Liner Beats C
+2196                    MyHTML  HTML Parser on Pure C with POSIX Threads Support
+Name: title, dtype: object
+```
+
+Let's now use lookarounds to exclude the matches we don't want. We want to:
+
+- Keep excluding matches that are followed by `.` or `+`, but still match cases where "C" falls at the end of the sentence.
+- Exclude matches that have the word 'Series' immediately preceding them.
+
+This exercise is a little harder than those you've seen so far in this course — it's okay if it takes you a few attempts!
+
+
+
+
 
 
 
@@ -2312,3 +3589,145 @@ console = Console()
 console.print(table)
 ```
 
+
+
+
+
+
+
+------
+
+
+
+# JSON format
+
+## json.load() vs json.loads()
+
+One of the places where the JSON format is commonly used is in the results returned by an [Application programming interface](https://en.wikipedia.org/wiki/Application_programming_interface) (**API**). APIs are interfaces that can be used to send and transmit data between different computer systems. We'll learn about how to work with APIs in a later course.
+
+The data set from this lesson — `hn_2014.json` — was downloaded from the Hacker News API. It's a different set of data from the CSV we've been using in the previous two lessons, and it contains data about stories from Hacker News in 2014.
+
+To read a file from JSON format, we use the [`json.load()` function](https://docs.python.org/3.7/library/json.html#json.load). Note that the function is `json.load()` without an "s" at the end. The `json.loads()` function is used for loading JSON data from a string ("loads" is short for "load string"), whereas the `json.load()` function is used to load from a file object. Let's look at how we would read that in our data:
+
+```
+import json
+file = open("hn_2014.json")
+hn = json.load(file)
+
+print(type(hn))
+```
+
+```
+class 'list'
+```
+
+Our `hn` variable is a list. Let's find out how many objects are in the list, and the type of the first object (which will almost always be the type of every object in the list in JSON data):
+
+```
+print(len(hn))
+print(type(hn[0]))
+```
+
+```
+35806
+class 'dict'
+```
+
+Our data set contains 35,806 dictionary objects, each representing a Hacker News story. In order to understand the format of our data set, we'll print the keys of the first dictionary:
+
+```
+print(hn[0].keys())
+```
+
+```
+dict_keys(['author', 'numComments', 'points', 'url', 'storyText', 'createdAt', 'tags', 'createdAtI', 'title', 'objectId'])
+```
+
+
+
+## json.dumps() and dictionary 'del'
+
+The function will use the [`json.dumps()` function](https://docs.python.org/3.7/library/json.html#json.dumps) ("dump string") which does the opposite of the `json.loads()` function — it takes a JSON object and returns a string version of it. The `json.dumps()` function accepts arguments that can specify formatting for the string, which we'll use to make things easier to read:
+
+```python
+def jprint(obj):
+    # create a formatted string of the Python JSON object
+    text = json.dumps(obj, sort_keys=True, indent=4)
+    print(text)
+
+first_story = hn[0]
+jprint(first_story)
+```
+
+```python
+{
+    "author": "dragongraphics",
+    "createdAt": "2014-05-29T08:07:50Z",
+    "createdAtI": 1401350870,
+    "numComments": 0,
+    "objectId": "7815238",
+    "points": 2,
+    "storyText": "",
+    "tags": [
+        "story",
+        "author_dragongraphics",
+        "story_7815238"
+    ],
+    "title": "Are we getting too Sassy? Weighing up micro-optimisation vs. maintainability",
+    "url": "http://ashleynolan.co.uk/blog/are-we-getting-too-sassy"
+}
+```
+
+You may notice that the `createdAt` and `createdAtI` keys both have the date and time data in two different formats. Because the format of `createdAt` is much easier to understand, let's do some data cleaning by deleting the `createdAtI` key from every dictionary.
+
+To delete a key from a dictionary, we can use the [`del` statement](https://docs.python.org/3.7/reference/simple_stmts.html#del). Let's learn the syntax by looking at a simple example:
+
+```python
+d = {'a': 1, 'b': 2, 'c': 3}
+del d['a']
+print(d)
+```
+
+```
+{'b': 2, 'c': 3}
+```
+
+We can create a function using `del` that will return a copy of our dictionary with the key removed:
+
+```python
+def del_key(dict_, key):
+    # create a copy so we don't
+    # modify the original dict
+    modified_dict = dict_.copy()
+    del modified_dict[key]
+    return modified_dict
+```
+
+Let's use this function to delete the `createdAtI` key from first_story:
+
+```python
+first_story = del_key(first_story, 'createdAtI')
+jprint(first_story)
+```
+
+```python
+{
+    "author": "dragongraphics",
+    "createdAt": "2014-05-29T08:07:50Z",
+    "numComments": 0,
+    "objectId": "7815238",
+    "points": 2,
+    "storyText": "",
+    "tags": [
+        "story",
+        "author_dragongraphics",
+        "story_7815238"
+    ],
+    "title": "Are we getting too Sassy? Weighing up micro-optimisation vs. maintainability",
+    "url": "http://ashleynolan.co.uk/blog/are-we-getting-too-sassy"
+}
+```
+
+The dictionary returned by the function no longer includes the `createdAtI` key.
+
+Let's use a loop and the `del_key()` function to remove the `createdAtI` key from every story in our Hacker News data set:

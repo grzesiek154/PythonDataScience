@@ -1006,9 +1006,76 @@ Now, we're going to add a title to each bar plot to show which is the plot for r
 
 Bar Plot, Histogram and Distribution Takeaways
 
+------
+
+# Box Plot
+
+https://blog.hubspot.com/website/pandas-boxplot
+
+https://www.machinelearningplus.com/plots/python-boxplot/
 
 
 
+## Boxplot in Pandas
+
+A boxplot is created by calculating the quartiles of a data set, which divide the number range into four pieces based on their distribution.
+
+To understand quartiles better, let's break each one down:
+
+- **Median**: the value in the middle of the distribution
+- **Lower quartile**: the midpoint between the median and lowest value in the range
+- **Upper quartile**: the midpoint between the median and highest value in the range
+- **Lower boundary**: the lowest value in the distribution
+- **Higher boundary**: the highest value in the distribution
+
+You can see each of these values marked on the boxplot diagram below.
+
+![Boxplot with median, quartiles, and boundaries labeled](images/Pandas Boxplot (V4)-4.png)
+
+
+
+
+
+Box plot is method to graphically show the spread of a numerical variable through quartiles.
+
+From the below image you can see what information we generally get from a box plot.
+
+[![img](images/representation.png)](https://www.machinelearningplus.com/wp-content/uploads/2020/04/representation.png)
+
+ 
+
+
+
+## How to interpret the box plot?
+
+The bottom of the (green) box is the 25% percentile and the top is the 75% percentile value of the data.
+
+So, essentially the box represents the **middle 50% of all the datapoints** which represents the core region when the data is situated. The height of the boxplot is also called the **Inter Quartile Range (IQR)**, which mathematically is the difference between the 75th and 25th percentile values of the data.
+
+The thick line in the middle of the box represents the median. Whereas, the upper and lower whisker marks 1.5 times the IQR from the top (and bottom) of the box.
+
+But, why whiskers matter?
+
+Because, **the points that lie outside the whiskers, that is, (1.5 x IQR) in both directions are generally considered as outliers**.
+
+
+
+`df` is the DataFrame we created before, for plotting boxplot we use the command `DataFrame.plot.box()`.
+
+```python
+# Boxplot with Pandas
+df.plot.box(title='Boxplot with pandas');
+```
+
+[![img](images/simple-boxplot.png)](https://www.machinelearningplus.com/wp-content/uploads/2020/04/simple-boxplot.png)
+
+
+
+
+
+
+
+------
 
 
 

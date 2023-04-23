@@ -1,4 +1,14 @@
-# Vector
+# Useful articles
+
+https://medium.com/analytics-vidhya/understanding-vectorization-in-numpy-and-pandas-188b6ebc5398
+
+https://www.dataquest.io/blog/settingwithcopywarning/
+
+https://pandas.pydata.org/docs/user_guide/dsintro.html
+
+https://numpy.org/devdocs/user/absolute_beginners.html#welcome-to-numpy
+
+# aVector
 
 ## In graphic
 
@@ -1244,6 +1254,17 @@ prev_rank_before = f500["previous_rank"].value_counts(dropna=False).head()
 ```
 
 This uses `Series.value_counts()` and [`Series.head()`](http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.head.html) to display the 5 most common values in the `previous_rank` column, but adds an additional `dropna=False` parameter, which stops the `Series.value_counts()` method from excluding null values when it makes its calculation, as shown in the [`Series.value_counts()` documentation](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.value_counts.html#pandas.Series.value_counts).
+
+
+
+### Indexing by multiple column values
+
+
+
+```python
+all_individual_tasks_2022_filtered = all_individual_tasks_2022.loc[(all_individual_tasks_2022['Summary'] == 'Configure') | (all_individual_tasks_2022['Summary'] == 'Communicate')]
+
+```
 
 
 
@@ -3519,12 +3540,10 @@ However, it's good to note that pandas will not automatically identify values su
 
 Once we ensure that all missing values were read in correctly, we can use the [`Series.isnull()` method](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.isnull.html) to identify rows with missing values:
 
-```
+```python
 missing = happiness2015['Happiness Score'].isnull()
 happiness2015[missing]
 ```
-
-Copy
 
 |      | Country           | Region | Happiness Rank | Happiness Score | Standard Error | Economy (GDP per Capita) | Family | Health (Life Expectancy) | Freedom | Trust (Government Corruption) | Generosity | Dystopia Residual | Year |
 | ---- | ----------------- | ------ | -------------- | --------------- | -------------- | ------------------------ | ------ | ------------------------ | ------- | ----------------------------- | ---------- | ----------------- | ---- |
@@ -3571,7 +3590,7 @@ Let's confirm the number of missing values in `happiness2016` and `happiness2017
 
 
 
-### Correcting Data Cleaning Errors that Result in Missing Values
+## Correcting Data Cleaning Errors that Result in Missing Values
 
 In the previous exercise, you should've confirmed that `happiness2016` and `happiness2017` also contain missing values in all columns except for `Country` and `Year`. It's good to check for missing values *before* transforming data to make sure we don't unintentionally introduce missing values.
 
@@ -3666,7 +3685,7 @@ missing = combined.isnull().sum()
 
 
 
-### Visualizing Missing Data
+## Visualizing Missing Data
 
 In the last exercise, we corrected some of the missing values by fixing the column names. Note that we *could* have cleaned the column names without changing the capitalization. It's good practice, however, to make the capitalization uniform, because a stray uppercase or lowercase letter could've reintroduced missing values.
 
@@ -3726,9 +3745,160 @@ missing = regions_2017.isnull().sum()
 
 
 
+## Visualizing Missing Data with Plots
+
+Earlier, we used a table of numbers to understand the number of missing values in our dataframe. A different approach we can take is to use a plot to visualize the missing values. The function below uses `seaborn.heatmap()` to represent null values as light squares and non-null values as dark squares:
+
+```
+def plot_null_matrix(df, figsize=(18,15)):
+    # initiate the figure
+    plt.figure(figsize=figsize)
+    # create a boolean dataframe based on whether values are null
+    df_null = df.isnull()
+    # create a heatmap of the boolean dataframe
+    sns.heatmap(~df_null, cbar=False, yticklabels=False)
+    plt.xticks(rotation=90, size='x-large')
+    plt.show()
+```
+
+Copy
+
+Let's look at how the function works by using it to plot just the first row of our `mvc` dataframe. We'll display the first row as a table immediately below so it's easy to compare:
+
+```
+plot_null_matrix(mvc.head(1), figsize=(18,1))
+```
+
+Copy
+
+![Plot output](images/matrix_first_row.png)
+
+```
+print(mvc.head(1))
+```
+
+Copy
+
+|      | unique_key | date       | time  | borough   | location               | on_street      | cross_street | off_street | pedestrians_injured | cyclist_injured | motorist_injured | total_injured | pedestrians_killed | cyclist_killed | motorist_killed | total_killed | vehicle_1         | vehicle_2 | vehicle_3 | vehicle_4 | vehicle_5 | cause_vehicle_1       | cause_vehicle_2 | cause_vehicle_3 | cause_vehicle_4 | cause_vehicle_5 |
+| ---- | ---------- | ---------- | ----- | --------- | ---------------------- | -------------- | ------------ | ---------- | ------------------- | --------------- | ---------------- | ------------- | ------------------ | -------------- | --------------- | ------------ | ----------------- | --------- | --------- | --------- | --------- | --------------------- | --------------- | --------------- | --------------- | --------------- |
+| 0    | 3869058    | 2018-03-23 | 21:40 | MANHATTAN | (40.742832, -74.00771) | WEST 15 STREET | 10 AVENUE    | NaN        | 0                   | 0               | 0                | 0.0           | 0                  | 0              | 0               | 0.0          | PASSENGER VEHICLE | NaN       | NaN       | NaN       | NaN       | Following Too Closely | Unspecified     | NaN             | NaN             | NaN             |
+
+Each value is represented by a dark square, and each missing value is represented by a light square.
+
+Let's look at what a plot matrix looks like for the whole dataframe:
+
+```
+plot_null_matrix(mvc)
+```
+
+Copy
+
+![Plot output](images/matrix_df_1.png)
+
+We can make some immediate interpretations about our dataframe:
+
+- The first three columns have few to no missing values.
+- The next five columns have missing values scattered throughout, with each column seeming to have its own density of missing values.
+- The next eight columns are the `injury` and `killed` columns we just cleaned, and only have a few missing values.
+- The last 10 columns seem to break into two groups of five, with each group of five having similar patterns of null/non-null values.
+
+Let's examine the pattern in the last 10 columns a little more closely. We can calculate the relationship between two sets of columns, known as **correlation**. To calculate this we use the [`dataframe.corr()` method](http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.corr.html) (You'll learn more about correlation in a later course). Here's what that looks like:
+
+```python
+cols_with_missing_vals = mvc.columns[mvc.isnull().sum() > 0]
+missing_corr = mvc[cols_with_missing_vals].isnull().corr()
+print(missing_corr)
+```
+
+|                 | borough   | location  | on_street | cross_street | off_street | total_injured | total_killed | vehicle_1 | vehicle_2 | vehicle_3 | vehicle_4 | vehicle_5 | cause_vehicle_1 | cause_vehicle_2 | cause_vehicle_3 | cause_vehicle_4 | cause_vehicle_5 |
+| --------------- | --------- | --------- | --------- | ------------ | ---------- | ------------- | ------------ | --------- | --------- | --------- | --------- | --------- | --------------- | --------------- | --------------- | --------------- | --------------- |
+| borough         | 1.000000  | 0.190105  | -0.350190 | 0.409107     | 0.362189   | -0.001632     | 0.005582     | -0.018325 | -0.077516 | -0.061932 | -0.020406 | -0.010733 | -0.012115       | -0.058596       | -0.060542       | -0.020158       | -0.011348       |
+| location        | 0.190105  | 1.000000  | -0.073975 | -0.069719    | 0.084579   | -0.002951     | 0.015496     | -0.010466 | -0.033842 | -0.000927 | 0.004655  | -0.005797 | -0.003458       | -0.021373       | 0.000684        | 0.004604        | -0.004841       |
+| on_street       | -0.350190 | -0.073975 | 1.000000  | 0.557767     | -0.991030  | 0.001143      | -0.002344    | -0.001889 | 0.119647  | 0.020867  | 0.004172  | -0.002768 | 0.001307        | 0.087374        | 0.017426        | 0.002737        | -0.003107       |
+| cross_street    | 0.409107  | -0.069719 | 0.557767  | 1.000000     | -0.552763  | 0.001451      | 0.004112     | -0.017018 | 0.043799  | -0.049910 | -0.021137 | -0.012003 | -0.009102       | 0.031189        | -0.052159       | -0.022074       | -0.013455       |
+| off_street      | 0.362189  | 0.084579  | -0.991030 | -0.552763    | 1.000000   | -0.001233     | 0.002323     | 0.001812  | -0.121129 | -0.022404 | -0.004074 | 0.002492  | -0.001738       | -0.088187       | -0.019120       | -0.002580       | 0.002863        |
+| total_injured   | -0.001632 | -0.002951 | 0.001143  | 0.001451     | -0.001233  | 1.000000      | -0.000046    | 0.039382  | 0.013522  | -0.010366 | 0.001222  | 0.000620  | 0.056627        | 0.012968        | -0.009910       | 0.001263        | 0.000636        |
+| total_killed    | 0.005582  | 0.015496  | -0.002344 | 0.004112     | 0.002323   | -0.000046     | 1.000000     | -0.000327 | 0.008017  | 0.001057  | 0.000462  | 0.000234  | -0.000229       | 0.009888        | 0.001091        | 0.000477        | 0.000240        |
+| vehicle_1       | -0.018325 | -0.010466 | -0.001889 | -0.017018    | 0.001812   | 0.039382      | -0.000327    | 1.000000  | 0.151516  | 0.019972  | 0.008732  | 0.004425  | 0.604281        | 0.180678        | 0.020624        | 0.009022        | 0.004545        |
+| vehicle_2       | -0.077516 | -0.033842 | 0.119647  | 0.043799     | -0.121129  | 0.013522      | 0.008017     | 0.151516  | 1.000000  | 0.131813  | 0.057631  | 0.029208  | 0.106214        | 0.784402        | 0.132499        | 0.058050        | 0.029264        |
+| vehicle_3       | -0.061932 | -0.000927 | 0.020867  | -0.049910    | -0.022404  | -0.010366     | 0.001057     | 0.019972  | 0.131813  | 1.000000  | 0.437214  | 0.221585  | 0.014000        | 0.106874        | 0.961316        | 0.448525        | 0.225067        |
+| vehicle_4       | -0.020406 | 0.004655  | 0.004172  | -0.021137    | -0.004074  | 0.001222      | 0.000462     | 0.008732  | 0.057631  | 0.437214  | 1.000000  | 0.506810  | 0.006121        | 0.046727        | 0.423394        | 0.963723        | 0.515058        |
+| vehicle_5       | -0.010733 | -0.005797 | -0.002768 | -0.012003    | 0.002492   | 0.000620      | 0.000234     | 0.004425  | 0.029208  | 0.221585  | 0.506810  | 1.000000  | 0.003102        | 0.023682        | 0.214580        | 0.490537        | 0.973664        |
+| cause_vehicle_1 | -0.012115 | -0.003458 | 0.001307  | -0.009102    | -0.001738  | 0.056627      | -0.000229    | 0.604281  | 0.106214  | 0.014000  | 0.006121  | 0.003102  | 1.000000        | 0.131000        | 0.014457        | 0.006324        | 0.003186        |
+| cause_vehicle_2 | -0.058596 | -0.021373 | 0.087374  | 0.031189     | -0.088187  | 0.012968      | 0.009888     | 0.180678  | 0.784402  | 0.106874  | 0.046727  | 0.023682  | 0.131000        | 1.000000        | 0.110362        | 0.048277        | 0.024322        |
+| cause_vehicle_3 | -0.060542 | 0.000684  | 0.017426  | -0.052159    | -0.019120  | -0.009910     | 0.001091     | 0.020624  | 0.132499  | 0.961316  | 0.423394  | 0.214580  | 0.014457        | 0.110362        | 1.000000        | 0.437440        | 0.220384        |
+| cause_vehicle_4 | -0.020158 | 0.004604  | 0.002737  | -0.022074    | -0.002580  | 0.001263      | 0.000477     | 0.009022  | 0.058050  | 0.448525  | 0.963723  | 0.490537  | 0.006324        | 0.048277        | 0.437440        | 1.000000        | 0.503805        |
+| cause_vehicle_5 | -0.011348 | -0.004841 | -0.003107 | -0.013455    | 0.002863   | 0.000636      | 0.000240     | 0.004545  | 0.029264  | 0.225067  | 0.515058  | 0.973664  | 0.003186        | 0.024322        | 0.220384        | 0.503805        | 1.000000        |
+
+Each value is between −1−1 and 11, and represents the relationship between two columns. A number close to −1−1 or 11 represents a strong relationship, where a number in the middle (close to 00) represents a weak relationship.
+
+If you look closely, you can see a diagonal line of 11s going from top left to bottom right. These values represent each columns relationship with *itself*, which of course is a perfect relationship. The values on the top/right of this "line of 11s" mirror the values on the bottom/left of this line: The table actually repeats every value twice!
+
+Correlation tables can be hard to interpret. We can convert our table into a plot which will make this a lot easier. Let's see what this plot looks like:
 
 
-### Using Data From Additional Sources to Fill in Missing Values
+
+![A null correlation plot](images/correlations_df.png)
+
+
+
+In our correlation plot:
+
+- The "line of 11s" and the repeated values are removed so that it's not visually overwhelming.
+- Values very close to 00, where there is little to no relationship, aren't labeled.
+- Values close to 11 are dark blue and values close to −1−1 are dark red — the depth of color represents the strength of the relationship.
+
+We provided a helper function to create correlation plots. Let's create a correlation plot of just those last 10 columns to see if we can more closely identify the pattern we saw earlier in the matrix plot.
+
+
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+def plot_null_correlations(df):
+    # create a correlation matrix only for columns with at least
+    # one missing value
+    cols_with_missing_vals = df.columns[df.isnull().sum() > 0]
+    missing_corr = df[cols_with_missing_vals].isnull().corr()
+    
+```python
+# create a mask to avoid repeated values and make
+# the plot easier to read
+missing_corr = missing_corr.iloc[1:, :-1]
+mask = np.triu(np.ones_like(missing_corr), k=1)
+
+# plot a heatmap of the values
+plt.figure(figsize=(20,14))
+ax = sns.heatmap(missing_corr, vmin=-1, vmax=1, cbar=False,
+                 cmap='RdBu', mask=mask, annot=True)
+
+# format the text in the plot to make it easier to read
+for text in ax.texts:
+    t = float(text.get_text())
+    if -0.05 < t < 0.01:
+        text.set_text('')
+    else:
+        text.set_text(round(t, 2))
+    text.set_fontsize('x-large')
+plt.xticks(rotation=90, size='x-large')
+plt.yticks(rotation=0, size='x-large')
+
+plt.show()
+
+veh_cols = mvc[[col for col in mvc.columns if 'vehicle' in col]]
+
+plot_null_correlations(veh_cols)
+```
+
+
+
+![image-20230117080252871](images/image-20230117080252871.png)
+
+
+
+
+
+## Using Data From Additional Sources to Fill in Missing Values
 
 In the last exercise, we confirmed that the `REGION` column is missing from the 2017 data. Since we need the regions to analyze our data, let's turn our attention there next.
 
@@ -3761,7 +3931,7 @@ missing = combined.isnull().sum()
 
 
 
-### Identifying Duplicates Values
+## Identifying Duplicates Values
 
 In the previous screen, we used the 2015 and 2016 data to fill in the missing region values for the 2017 data. Note that we renamed the corrected region column to `REGION` separately to avoid confusion in the following exercises.
 
@@ -3795,16 +3965,14 @@ dups.sum()
 
 
 
-### Correcting Duplicates Values
+## Correcting Duplicates Values
 
 In the previous screen, we standardized the capitalization of the values in the `COUNTRY` column and identified that we actually do have three duplicate rows!
 
-```
+```python
 combined['COUNTRY'] = combined['COUNTRY'].str.upper()
 dups = combined.duplicated(['COUNTRY', 'YEAR'])
 ```
-
-Copy
 
 |      | COUNTRY           | DYSTOPIA RESIDUAL | ECONOMY GDP PER CAPITA | FAMILY | FREEDOM | GENEROSITY | HAPPINESS RANK | HAPPINESS SCORE | HEALTH LIFE EXPECTANCY | LOWER CONFIDENCE INTERVAL | REGION             | STANDARD ERROR | TRUST GOVERNMENT CORRUPTION | UPPER CONFIDENCE INTERVAL | WHISKER HIGH | WHISKER LOW | YEAR |
 | ---- | ----------------- | ----------------- | ---------------------- | ------ | ------- | ---------- | -------------- | --------------- | ---------------------- | ------------------------- | ------------------ | -------------- | --------------------------- | ------------------------- | ------------ | ----------- | ---- |
@@ -3844,7 +4012,7 @@ combined = combined.drop_duplicates(['COUNTRY', 'YEAR'], keep='first')
 
 
 
-### Handle Missing Values by Dropping Columns
+## Handle Missing Values by Dropping Columns
 
 Now that we've corrected the duplicate values in the dataframe, let's turn our attention back to the rest of our missing values. So far, to correct missing values we:
 
@@ -3868,9 +4036,7 @@ First, let's confirm how many missing values are now left in the dataframe:
 combined.isnull().sum()
 ```
 
-Copy
-
-```
+```python
 COUNTRY                          0
 REGION                           0
 HAPPINESS RANK                  19
@@ -3914,7 +4080,7 @@ We'll use the [`DataFrame.drop()` method](https://pandas.pydata.org/pandas-docs/
 
 
 
-### Handle Missing Values by Dropping Columns Continued
+## Handle Missing Values by Dropping Columns Continued
 
 In the last exercise, we used the `df.drop()` method to drop columns we don't need for our analysis.
 
@@ -3922,11 +4088,9 @@ However, as you start working with bigger datasets, it can sometimes be tedious 
 
 By default, the `dropna()` method will drop *rows* with *any* missing values. To drop columns, we can set the `axis` parameter equal to `1`, just like with the `df.drop()` method:
 
-```
+```python
 df.dropna(axis=1)
 ```
-
-Copy
 
 However, this would result in dropping columns with *any* missing values - we only want to drop certain columns. Instead, we can also use the `thresh` parameter to only drop columns if they contain below a certain number of *non-null* values.
 
@@ -3959,15 +4123,13 @@ dtype: int64
 
 Above, we can see that the columns we'd like to drop - `LOWER CONFIDENCE INTERVAL`, `STANDARD ERROR`, `UPPER CONFIDENCE INTERVAL`, `WHISKER HIGH`, and `WHISKER LOW` - only contain between 155 and 158 non null values. As a result, we'll set the `thresh` parameter equal to 159 in the `df.dropna()` method to drop them.
 
-### Analyzing Missing Data
+## Analyzing Missing Data
 
 In the last exercise, we dropped columns we don't need for our analysis and confirmed that a couple columns still have missing values:
 
 ```
 combined.isnull().sum()
 ```
-
-Copy
 
 ```
 COUNTRY                         0
@@ -4032,7 +4194,7 @@ The Sub-Saharan Africa region contains the most missing values, accounting for a
 
 
 
-### Handling Missing Values with Imputation
+## Handling Missing Values with Imputation
 
 In the last screen, we confirmed:
 
@@ -4067,8 +4229,6 @@ Note that we must pass the replacement value into the `Series.fillna()` method. 
 combined[`HAPPINESS SCORE`].fillna(0)
 ```
 
-Copy
-
 Next, let's replace the missing happiness scores with the mean.
 
 
@@ -4081,7 +4241,7 @@ print(combined['HAPPINESS SCORE UPDATED'].mean)
 
 
 
-### Dropping Rows
+## Dropping Rows
 
 In the last exercise, we confirmed that replacing missing values with the Series mean doesn't change the mean of the Series.
 
@@ -4097,11 +4257,9 @@ As we decide to use this approach, we should ask the following questions - are t
 
 Recall that when we visualized the missing data, we determined that the Sub-Saharan Africa region contained the most missing values. Since we'd like to analyze the data according to region, let's look more closely at the means for each region:
 
-```
+```python
 combined.pivot_table(index='REGION', values='HAPPINESS SCORE', margins=True)
 ```
-
-Copy
 
 |                                 | HAPPINESS SCORE |
 | ------------------------------- | --------------- |
@@ -4124,9 +4282,15 @@ Also, if we think about the reasons why a country may not have participated in t
 
 As a result, we'll decide that of these two options, it's better to drop the rows with missing values. Let's do that next.
 
+## Drooping particular columns by index range
+
+```python
+date_survey_updated = date_survey.drop(date_survey.columns[28:49], axis=1)
+```
 
 
-### Next steps
+
+## Next steps
 
 In the last step, we concluded that in this case, it was better to drop the remaining rows with missing values rather than replace the missing values with the mean.
 
@@ -4149,3 +4313,896 @@ We also started to set a more defined data cleaning workflow, in which we:
 - Combined data sets.
 - Removed duplicate values.
 - Handled the missing values.
+
+
+
+## Verifying the Total Null Columns
+
+To give us a better picture of the null values in the data, let's calculate the percentage of null values in each column. Below, we divide the number of null values in each column by the total number of values in the data set:
+
+```
+null_counts_pct = null_counts / mvc.shape[0] * 100
+```
+
+We'll then add both the counts and percentages to a dataframe to make them easier to compare:
+
+```
+null_df = pd.DataFrame({'null_counts': null_counts, 'null_pct': null_counts_pct})
+# Rotate the dataframe so that rows become columns and vice-versa
+null_df = null_df.T.astype(int)
+
+print(null_df)
+```
+
+|             | unique_key | date | time | borough | location | on_street | cross_street | off_street | pedestrians_injured | cyclist_injured | motorist_injured | total_injured | pedestrians_killed | cyclist_killed | motorist_killed | total_killed | vehicle_1 | vehicle_2 | vehicle_3 | vehicle_4 | vehicle_5 | cause_vehicle_1 | cause_vehicle_2 | cause_vehicle_3 | cause_vehicle_4 | cause_vehicle_5 |
+| ----------- | ---------- | ---- | ---- | ------- | -------- | --------- | ------------ | ---------- | ------------------- | --------------- | ---------------- | ------------- | ------------------ | -------------- | --------------- | ------------ | --------- | --------- | --------- | --------- | --------- | --------------- | --------------- | --------------- | --------------- | --------------- |
+| null_counts | 0          | 0    | 0    | 20646   | 3885     | 13961     | 29249        | 44093      | 0                   | 0               | 0                | 1             | 0                  | 0              | 0               | 5            | 355       | 12262     | 54352     | 57158     | 57681     | 175             | 8692            | 54134           | 57111           | 57671           |
+| null_pct    | 0          | 0    | 0    | 35      | 6        | 24        | 50           | 76         | 0                   | 0               | 0                | 0             | 0                  | 0              | 0               | 0            | 0         | 21        | 93        | 98        | 99        | 0               | 15              | 93              | 98              | 99              |
+
+About a third of the columns have no null values, with the rest ranging from less than 1% to 99%!
+
+To make things easier, let's start by looking at the group of columns that relate to people killed in collisions.
+
+We'll use list comprehension to reduce our summary dataframe to just those columns:
+
+```
+killed_cols = [col for col in mvc.columns if 'killed' in col]
+print(null_df[killed_cols])
+```
+
+|             | pedestrians_killed | cyclist_killed | motorist_killed | total_killed |
+| ----------- | ------------------ | -------------- | --------------- | ------------ |
+| null_counts | 0                  | 0              | 0               | 5            |
+| null_pct    | 0                  | 0              | 0               | 0            |
+
+We can see that each of the individual categories have no missing values, but the `total_killed` column has five missing values.
+
+One option for handling this would be to remove – or drop – those five rows. This would be a reasonably valid choice since it's a tiny portion of the data, but let's think about what other options we have first.
+
+If you think about it, the total number of people killed should be the sum of each of the individual categories. We might be able to "fill in" the missing values with the sums of the individual columns for that row. The technical name for filling in a missing value with a replacement value is called **imputation**.
+
+Let's look at how we could explore the values where the `total_killed` isn't equal to the sum of the other three columns. We'll illustrate this process using a series of diagrams. The diagrams won't contain values, they'll just show a grid to represent the values.
+
+Let's start with a dataframe of just the four columns relating to people killed:
+
+
+
+![Verifying the totals of the killed column, 1](images/verify_totals_1.svg)
+
+
+
+We then select just the first three columns, and manually sum each row:
+
+
+
+![Verifying the totals of the killed column, 2](images/verify_totals_2.svg)
+
+
+
+We then compare the manual sum to the original total column to create a boolean mask where equivalent values are *not* equal:
+
+
+
+![Verifying the totals of the killed column, 3](images/verify_totals_3.svg)
+
+
+
+Lastly, we use the boolean mask to filter the original dataframe to include only rows where the manual sum and original aren't equal:
+
+
+
+![Verifying the totals of the killed column, 4](images/verify_totals_4.svg)
+
+```python
+killed_cols = [col for col in mvc.columns if 'killed' in col]
+killed = mvc[killed_cols].copy()
+
+killed_manual_sum = killed.iloc[:,0:3].sum(axis=1)
+killed_mask = killed_manual_sum != killed['total_killed']
+killed_non_eq = killed[killed_mask]
+```
+
+
+
+## Using Series.mask 
+
+The `killed_non_eq` dataframe we created in the previous exercise contained six rows:
+
+|       | pedestrians_killed | cyclist_killed | motorist_killed | total_killed |
+| ----- | ------------------ | -------------- | --------------- | ------------ |
+| 3508  | 0                  | 0              | 0               | NaN          |
+| 20163 | 0                  | 0              | 0               | NaN          |
+| 22046 | 0                  | 0              | 1               | 0.0          |
+| 48719 | 0                  | 0              | 0               | NaN          |
+| 55148 | 0                  | 0              | 0               | NaN          |
+| 55699 | 0                  | 0              | 0               | NaN          |
+
+We can categorize these into two categories:
+
+1. Five rows where the `total_killed` is not equal to the sum of the other columns because the total value is missing.
+2. One row where the `total_killed` is less than the sum of the other columns.
+
+From this, we can conclude that filling null values with the sum of the columns is a fairly good choice for our imputation, given that only six rows out of around 58,000 don't match this pattern.
+
+We've also identified a row that has suspicious data - one that doesn't sum correctly. Once we have imputed values for all rows with missing values for `total_killed`, we'll mark this suspect row by setting its value to `NaN`.
+
+In order to execute this, we'll learn to use the [`Series.mask()` method](http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.mask.html). `Series.mask()` is useful when you want to replace certain values in a series based off a boolean mask. The syntax for the method is:
+
+```
+Series.mask(bool_mask, val_to_replace)
+```
+
+Let's look at an example with some simple data. We'll start with a series called `fruits`:
+
+
+
+![The 'fruits' Series](images/mask_1.svg)
+
+
+
+Next, we create a boolean series that matches values equal to the string `Banana`:
+
+
+
+![Comparing the 'fruits' series to the string 'Banana'](images/mask_2.svg)
+
+
+
+Lastly, we use `Series.mask()` to replace all the values that match the boolean series with a new value, `Pear`:
+
+
+
+![Replacing the matches with a single value](images/mask_3.svg)
+
+
+
+If we wanted to describe the logic of the code above, we'd say *For each value in the "fruits" series, if the corresponding value in the "bool" series is true, update the value to "Pear," otherwise leave the original value*.
+
+In the first example above, we updated a single value, but we can also update with the matching value from a series that has identical index labels, like this `nums` series:
+
+
+
+![The 'nums' series](images/mask_4.svg)
+
+
+
+Let's look at how we can update the matching values in `fruit` with the corresponding values in `nums`:
+
+
+
+![Replacing the matches  with a series](images/mask_5.svg)
+
+
+
+If we wanted to describe the logic of the code above, we'd say *For each value in the "fruits" series, if the corresponding value in the "bool" series is true, update the value to the corresponding value from "nums," otherwise leave the original value*.
+
+Let's look at how we'd use this technique to update the values in the `total_killed` column. First, we'll replace all null values with the equivalent values from our `killed_manual_sum` series:
+
+```
+killed_null = killed['total_killed'].isnull()
+killed['total_killed'] = killed['total_killed'].mask(killed_null, killed_manual_sum)
+```
+
+Next, we'll replace any values where the manual sum and the total column aren't equal with `np.nan`. This time we'll define the boolean series directly into `Series.mask()`:
+
+```
+killed['total_killed'] = killed['total_killed'].mask(killed['total_killed'] != killed_manual_sum, np.nan)
+```
+
+Now let's look at the values we've changed:
+
+```
+print(killed[killed_mask])
+```
+
+|       | pedestrians_killed | cyclist_killed | motorist_killed | total_killed |
+| ----- | ------------------ | -------------- | --------------- | ------------ |
+| 3508  | 0                  | 0              | 0               | 0.0          |
+| 20163 | 0                  | 0              | 0               | 0.0          |
+| 22046 | 0                  | 0              | 1               | NaN          |
+| 48719 | 0                  | 0              | 0               | 0.0          |
+| 55148 | 0                  | 0              | 0               | 0.0          |
+| 55699 | 0                  | 0              | 0               | 0.0          |
+
+We've gone from five null values to one, and flagged some suspicious data. Let's do the same for the injured columns.
+
+
+
+## Analysis Part
+
+### Analyzing missing data after Series.Mask operation
+
+Let's summarize the count of null values before and after our changes:
+
+```python
+summary = {
+    'injured': [
+        mvc['total_injured'].isnull().sum(),
+        injured['total_injured'].isnull().sum()
+    ],
+    'killed': [
+        mvc['total_killed'].isnull().sum(),
+        killed['total_killed'].isnull().sum()
+    ]
+}
+print(pd.DataFrame(summary, index=['before','after']))
+```
+
+|        | injured | killed |
+| ------ | ------- | ------ |
+| before | 1       | 5      |
+| after  | 21      | 1      |
+
+For the `total_killed` column, the number of values has gone down from 5 to 1. For the `total_injured` column, the number of values has actually gone up — from 1 to 21. This might sound like we've done the opposite of what we set out to do, but what we've actually done is fill all the null values **and** identify values that have suspect data. This will make any analysis we do on this data more accurate in the long run.
+
+Let's assign the values from the `killed` and `injured` dataframe back to the main `mvc` dataframe:
+
+### Analyzing Correlations in Missing Data
+
+
+
+The plot you produced on the previous screen is below:
+
+
+
+![The correlation plot from the previous exercise](images/correlations_vehicles_1.png)
+
+
+
+We outlined a diagonal strip of five squares in green that have a higher correlation than the rest. The pairs of column names that make up these five correlations are:
+
+1. `vehicle_1` and `cause_vehicle_1`
+2. `vehicle_2` and `cause_vehicle_2`
+3. `vehicle_3` and `cause_vehicle_3`
+4. `vehicle_4` and `cause_vehicle_4`
+5. `vehicle_5` and `cause_vehicle_5`
+
+If you think about it, this makes sense. When a vehicle is in an accident, there is likely to be a cause, and vice-versa.
+
+Let's explore the variations in missing values from these five pairs of columns. We'll create a dataframe that counts, for each pair:
+
+- The number of values where the vehicle is missing when the cause is not missing.
+- The number of values where the cause is missing when the vehicle is not missing.
+
+The final structure of our dataframe will look like this:
+
+|      | v_number | vehicle_missing | cause_missing |
+| ---- | -------- | --------------- | ------------- |
+| 0    | 1        | [count]         | [count]       |
+| 1    | 2        | [count]         | [count]       |
+| 2    | 3        | [count]         | [count]       |
+| 3    | 4        | [count]         | [count]       |
+| 4    | 5        | [count]         | [count]       |
+
+
+
+```python
+col_labels = ['v_number', 'vehicle_missing', 'cause_missing']
+
+vc_null_data = []
+
+for v in range(1,6):
+    v_col = 'vehicle_{}'.format(v)
+    c_col = 'cause_vehicle_{}'.format(v)
+    v_null = (mvc[v_col].isnull() & mvc[c_col].notnull()).sum()
+    c_null = (mvc[c_col].isnull() & mvc[v_col].notnull()).sum()
+    vc_null_data.append([v, v_null, c_null])
+    
+    
+vc_null_df = pd.DataFrame(vc_null_data, columns=col_labels)
+```
+
+
+
+### Finding the Most Common Values Across Multiple Columns
+
+The analysis we did on the previous screen indicates that there are roughly 4,500 missing values across the 10 columns. The easiest option for handling these would be to drop the rows with missing values. This would mean losing almost 10% of the total data, which is something we ideally want to avoid.
+
+A better option is to impute the data, like we did earlier. Because the data in these columns is text data, we can't perform a numeric calculation to impute missing data like we did with the `injuries` and `killed` columns.
+
+One common option when imputing is to use the most common value to fill in data. Let's look at the common values across these columns and see if we can use that to make a decision.
+
+We've previously used the [`Series.value_counts()` method](http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html) to find the most common values in a single column. In this case, we want to find the most common values across *multiple* columns. In order to do this, we first need to convert our dataframe of multiple columns into one single column, and then we can use `Series.value_counts()` to count the items.
+
+To convert a dataframe to a single column of values, we use the [`DataFrame.stack()` method,](http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.stack.html#pandas.DataFrame.stack) which stacks a dataframe object into a Series object. Let's look at a diagram of how this works. We'll start with a simple dataframe with three columns containing words:
+
+
+
+![Sample dataframe](images/stack_count_1.svg)
+
+
+
+When we use `DataFrame.stack()`, the values become a series object, with the values from each row "stacked" on top of each other:
+
+
+
+![Stacked dataframe](images/stack_count_2.svg)
+
+
+
+This series object actually has two row indexes. The first index is the original row index, and the second contains the columns that correspond to the value.
+
+Once we have this stacked series, we can just use `Series.value_counts()` to count the values:
+
+
+
+![Counting the values](images/stack_count_3.svg)
+
+
+
+Let's use this technique to count the most common values for the cause set of columns. We'll start by selecting only the columns containing the substring `cause`.
+
+```
+cause_cols = [c for c in mvc.columns if "cause_" in c]
+cause = mvc[cause_cols]
+print(cause.head())
+```
+
+|      | cause_vehicle_1       | cause_vehicle_2     | cause_vehicle_3 | cause_vehicle_4 | cause_vehicle_5 |
+| ---- | --------------------- | ------------------- | --------------- | --------------- | --------------- |
+| 0    | Following Too Closely | Unspecified         | NaN             | NaN             | NaN             |
+| 1    | Backing Unsafely      | Unspecified         | NaN             | NaN             | NaN             |
+| 2    | Following Too Closely | Unspecified         | NaN             | NaN             | NaN             |
+| 3    | Glare                 | Passing Too Closely | NaN             | NaN             | NaN             |
+| 4    | Turning Improperly    | Unspecified         | NaN             | NaN             | NaN             |
+
+Next, we'll stack the values into a single series object:
+
+```
+cause_1d = cause.stack()
+print(cause_1d.head())
+```
+
+```
+0  cause_vehicle_1    Following Too Closely
+   cause_vehicle_2              Unspecified
+1  cause_vehicle_1         Backing Unsafely
+   cause_vehicle_2              Unspecified
+2  cause_vehicle_1    Following Too Closely
+dtype: object
+```
+
+You may notice that the stacked version omits null values - this is fine, as we're just interested in the most common non-null values.
+
+Finally, we count the values in the series:
+
+```
+cause_counts = cause_1d.value_counts()
+top10_causes = cause_counts.head(10)
+print(top10_causes)
+```
+
+```
+Unspecified                       57481
+Driver Inattention/Distraction    17650
+Following Too Closely              6567
+Failure to Yield Right-of-Way      4566
+Passing or Lane Usage Improper     3260
+Passing Too Closely                3045
+Backing Unsafely                   3001
+Other Vehicular                    2523
+Unsafe Lane Changing               2372
+Turning Improperly                 1590
+dtype: int64
+```
+
+The most common non-null value for the cause columns is `Unspecified`, which presumably indicates that the officer reporting the collision was unable to determine the cause for that vehicle.
+
+
+
+### Filling Unknown Values with a Placeholder
+
+Let's look at the values analysis we completed on the previous screen:
+
+```
+print(top10_vehicles)
+```
+
+```
+Sedan                                  33133
+Station Wagon/Sport Utility Vehicle    26124
+PASSENGER VEHICLE                      16026
+SPORT UTILITY / STATION WAGON          12356
+Taxi                                    3482
+Pick-up Truck                           2373
+TAXI                                    1892
+Box Truck                               1659
+Bike                                    1190
+Bus                                     1162
+dtype: int64
+```
+
+```
+print(top_10_causes)
+```
+
+```
+Unspecified                       57481
+Driver Inattention/Distraction    17650
+Following Too Closely              6567
+Failure to Yield Right-of-Way      4566
+Passing or Lane Usage Improper     3260
+Passing Too Closely                3045
+Backing Unsafely                   3001
+Other Vehicular                    2523
+Unsafe Lane Changing               2372
+Turning Improperly                 1590
+dtype: int64
+```
+
+The top "cause" is an "Unspecified" placeholder. This is useful instead of a null value as it makes the distinction between a value that is missing because there were only a certain number of vehicles in the collision versus one that is because the contributing cause for a particular vehicle is unknown.
+
+The vehicles columns don't have an equivalent, but we can still use the same technique. Here's the logic we'll need to do for each pair of vehicle/cause columns:
+
+1. For values where the vehicle is null and the cause is non-null, set the vehicle to `Unspecified`.
+2. For values where the cause is null and the vehicle is not-null, set the cause to `Unspecified`.
+
+We can use `Series.mask()` to replace the values, just like we did earlier in the lesson. Let's look at code to perform this for the `vehicle_1` and `vehicle_cause_1` columns:
+
+```
+# create a mask for each column
+v_missing_mask = mvc['vehicle_1'].isnull() & mvc['cause_vehicle_1'].notnull()
+c_missing_mask = mvc['cause_vehicle_1'].isnull() & mvc['vehicle_1'].notnull()
+
+# replace the values matching the mask for each column
+mvc['vehicle_1'] =  mvc['vehicle_1'].mask(v_missing_mask, "Unspecified")
+mvc['cause_vehicle_1'] =  mvc['cause_vehicle_1'].mask(c_missing_mask, "Unspecified")
+```
+
+Now let's use a loop to fill in these values across all columns. We've created a helper function `summarize_missing()` which contains the logic we used earlier to count missing values across the pairs of columns. Below is a quick demonstration on how it works:
+
+```
+print(summarize_missing())
+```
+
+
+
+|      | vehicle_number | vehicle_missing | cause_missing |
+| ---: | -------------: | --------------: | ------------: |
+|    0 |              1 |             204 |            24 |
+|    1 |              2 |            3793 |           223 |
+|    2 |              3 |             242 |            24 |
+|    3 |              4 |              50 |             3 |
+|    4 |              5 |              10 |             0 |
+
+
+
+
+
+### Investigate Missing Data in the "Location" Columns
+
+Let's view the work we've done across the past few screens by looking at the null correlation plot for the last 10 columns:
+
+```python
+veh_cols = [c for c in mvc.columns if 'vehicle' in c]
+plot_null_correlations(mvc[veh_cols])
+```
+
+![Plot output](images/correlations_vehicles_2.png)
+
+You can see the perfect correlation between each pair of vehicle/cause columns represented by 1.01.0 in each square, which means that there is a perfect relationship between the five pairs of vehicle/cause columns.
+
+Let's now turn our focus to the final set of columns that contain missing values — the columns that relate to the location of the accident. We'll start by looking at the first few rows to refamiliarize ourselves with the data:
+
+```python
+loc_cols = ['borough', 'location', 'on_street', 'off_street', 'cross_street']
+location_data = mvc[loc_cols]
+print(location_data.head())
+```
+
+
+
+|      | borough   | location               | on_street      | off_street          | cross_street   |
+| ---- | --------- | ---------------------- | -------------- | ------------------- | -------------- |
+| 0    | MANHATTAN | (40.742832, -74.00771) | WEST 15 STREET | NaN                 | 10 AVENUE      |
+| 1    | BROOKLYN  | (40.623714, -73.99314) | 16 AVENUE      | NaN                 | 62 STREET      |
+| 2    | NaN       | (40.591755, -73.9083)  | BELT PARKWAY   | NaN                 | NaN            |
+| 3    | QUEENS    | (40.73602, -73.87954)  | GRAND AVENUE   | NaN                 | VANLOON STREET |
+| 4    | BRONX     | (40.884727, -73.89945) | NaN            | 208 WEST 238 STREET | NaN            |
+
+Next, let's look at counts of the null values in each column:
+
+```python
+print(location_data.isnull().sum())
+```
+
+```
+borough         20646
+location         3885
+on_street       13961
+off_street      44093
+cross_street    29249
+dtype: int64
+```
+
+These columns have a lot of missing values! Keep in mind that all of these five columns represent the same thing — the location of the collision. We can potentially use the non-null values to impute some of the null values.
+
+To see where we might be able to do this, let's look for correlations between the missing values:
+
+```
+plot_null_correlations(location_data)
+```
+
+![Plot output](images/correlations_locations.png)
+
+None of these columns have strong correlations except for `off_street` and `on_street` which have a near perfect *negative* correlation. That means for almost every row that has a null value in one column, the other has a non-null value and vice-versa.
+
+The final way we'll look at the null values in these columns is to plot a null matrix, but we'll sort the data first. This will gather some of the null and non-null values together and make patterns more obvious:
+
+```python
+sorted_location_data = location_data.sort_values(loc_cols)
+plot_null_matrix(sorted_location_data)
+```
+
+![Plot output](images/matrix_sorted_locations.png)
+
+Let's make some observations about the missing values across these columns:
+
+1. About two-thirds of rows have non-null values for `borough`, but of those values that are missing, most have non-null values for `location` and one or more of the street name columns.
+2. Less than one-tenth of rows have missing values in the `location` column, but most of these have non-null values in one or more of the street name columns.
+3. Most rows have a non-null value for either `on_street` or `off_street`, and some also have a value for `cross_street`.
+
+Combined, this means that we will be able to impute a lot of the missing values by using the other columns in each row. To do this, we can use geolocation APIs that take either an address or location coordinates, and return information about that location.
+
+
+
+### Imputing Location Data
+
+We prepared the supplemental data using the [GeoPy](http://geopy.readthedocs.io/en/latest/) package, which makes working with Geocoding APIs like the Google Maps API easier. Here's the strategy we used to prepare the supplemental data:
+
+- For rows with `location` values but missing values in either `borough` or the street name columns, we used geocoding APIs to look up the `location` coordinates to find the missing data.
+- For rows with values in the street name columns missing `borough` and/or `location` data, we used geocoding APIs to look up the address to find the missing data.
+
+You can learn more about working with APIs in our [APIs and Web Scraping](https://app.dataquest.io/course/apis-and-scraping) course.
+
+The supplemental data is in a CSV called `supplemental_data.csv`, let's read this into a pandas dataframe and familiarize ourself with the data:
+
+```
+sup_data = pd.read_csv('supplemental_data.csv')
+sup_data.head()
+```
+
+Copy
+
+|      | unique_key | location | on_street    | off_street | borough  |
+| ---- | ---------- | -------- | ------------ | ---------- | -------- |
+| 0    | 3869058    | NaN      | NaN          | NaN        | NaN      |
+| 1    | 3847947    | NaN      | NaN          | NaN        | NaN      |
+| 2    | 3914294    | NaN      | BELT PARKWAY | NaN        | BROOKLYN |
+| 3    | 3915069    | NaN      | NaN          | NaN        | NaN      |
+| 4    | 3923123    | NaN      | NaN          | NaN        | NaN      |
+
+The supplemental data has five columns from our original data set — the `unique_key` that identifies each collision, and four of the five location columns. The `cross_street` column is not included because the geocoding APIs we used don't include data on the nearest cross street to any single location.
+
+Let's take a look at a null matrix for the supplemental data:
+
+```
+plot_null_matrix(sup_data)
+```
+
+![Plot output](images/matrix_sup_data.png)
+
+Apart from the `unique_key` column, you'll notice that there are a lot more missing values than our main data set. This makes sense, as we didn't prepare supplemental data where the original data set had non-null values.
+
+If the `unique_key` column in both the original and supplemental data has the same values in the same order, we'll be able to use `Series.mask()` to add our supplemental data to our original data. We can check this using the [`Series.equals()` method](http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.equals.html):
+
+```
+mvc_keys = mvc['unique_key']
+sup_keys = sup_data['unique_key']
+
+is_equal = mvc_keys.equals(sup_keys)
+print(is_equal)
+```
+
+```
+True
+```
+
+Now that we've verified the data, it's time to use it to impute missing values.
+
+
+
+
+
+### How to check null values before and after imputation
+
+
+
+```python
+sup_data = pd.read_csv('supplemental_data.csv')
+
+location_cols = ['location', 'on_street', 'off_street', 'borough']
+null_before = mvc[location_cols].isnull().sum()
+
+for location in location_cols:
+    
+    # if mvc[location].isnull().sum() > 0:
+    #     print("columns {} contains missing values".format(location))
+    location_null = mvc[location].isnull()
+    mvc[location] = mvc[location].mask(location_null,sup_data[location])
+
+null_after = mvc[location_cols].isnull().sum()   
+```
+
+
+
+
+
+
+
+
+
+
+
+## Data Cleaning - My Workflow
+
+### For two similar data sets
+
+1. Check for the columns if the contain the same data but only column names are different
+2. DataFrame.info() check for the values in columns if the contain strange values like "Not Stated" which should be null
+3. Check if all columns are necessary for the analysis
+
+### How do the drop
+
+To drop columns from a Pandas DataFrame, you can use the DataFrame.drop method. This method takes two main arguments:
+
+labels: a single label or a list of labels to drop. These labels should correspond to the column names of the DataFrame.
+axis: specifies whether to drop rows (0) or columns (1). By default, axis is set to 0, so you'll need to specify axis=1 to drop columns.
+Here's an example of how you can use drop to remove a single column from a DataFrame:
+
+```python
+import pandas as pd
+
+# Load a sample DataFrame
+df = pd.read_csv('data.csv')
+
+# Drop the 'Name' column
+df = df.drop('Name', axis=1)
+```
+
+
+
+You can also use the drop method to remove multiple columns at once by passing a list of column labels to the labels argument. For example:
+
+```python
+import pandas as pd
+
+# Load a sample DataFrame
+df = pd.read_csv('data.csv')
+
+# Drop the 'Name' and 'Age' columns
+df = df.drop(['Name', 'Age'], axis=1)
+```
+
+Keep in mind that the drop method returns a new DataFrame with the specified columns removed, so you'll need to assign the result back to the original DataFrame variable if you want to modify the original DataFrame. If you want to remove columns in place, you can use the inplace parameter:
+
+```python
+import pandas as pd
+
+# Load a sample DataFrame
+df = pd.read_csv('data.csv')
+
+# Drop the 'Name' and 'Age' columns in place
+df.drop(['Name', 'Age'], axis=1, inplace=True)
+```
+
+### How to analyze columns to drop from datagram pandas
+
+There are a few different strategies you can use to analyze which columns to drop from a Pandas DataFrame:
+
+Remove columns with a high percentage of missing values: If a column has a high percentage of missing values (e.g., more than 50%), it may not be useful for analysis. You can use the DataFrame.isnull method to count the number of missing values in each column, and then divide by the total number of rows to calculate the percentage of missing values. You can then use the DataFrame.drop method to remove the columns with a high percentage of missing values.
+
+Remove columns with low variance: If a column has very little variance (e.g., all values are the same or nearly the same), it may not be useful for analysis. You can use the DataFrame.var method to calculate the variance of each column, and then use the DataFrame.drop method to remove the columns with low variance.
+
+Remove columns that are not relevant to the analysis: If a column is not relevant to the analysis you are conducting, you can drop it to simplify the DataFrame and make it easier to work with.
+
+Remove columns with highly correlated values: If two or more columns are highly correlated (i.e., they have a high degree of linear dependence), you may want to remove one of the columns to avoid redundancy. You can use the DataFrame.corr method to calculate the correlation between columns, and then use the DataFrame.drop method to remove the columns with highly correlated values.
+
+It's worth noting that you should be careful when dropping columns from a DataFrame, as removing certain columns may affect the validity of your analysis. Be sure to carefully consider the impact of dropping columns on your analysis before making any changes to your DataFrame.
+
+
+
+
+
+
+
+------
+
+
+
+# Pandas and JSON
+
+## Reading JSON files into pandas
+
+So far, we've worked with our JSON data using pure Python. One other option available to us is to convert the JSON to a pandas dataframe and then use pandas methods to manipulate it.
+
+Pandas has the [`pandas.read_json()` function](http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_json.html), which is designed to read JSON from either a file or a JSON string. In our case, our JSON exists as Python objects already, so we don't need to use this function.
+
+Because the structure of JSON objects can vary a lot, sometimes you will need to prepare your data in order to be able to convert it to a tabular form. In our case, our data is a list of dictionaries, which pandas is easily able to convert to a dataframe.
+
+Let's look at an our example JSON again:
+
+```python
+jprint(json_obj)
+```
+
+```python
+[
+    {
+        "age": 36,
+        "favorite_foods": ["Pumpkin", "Oatmeal"],
+        "name": "Sabine"
+    },
+    {
+        "age": 40,
+        "favorite_foods": ["Chicken", "Pizza", "Chocolate"],
+        "name": "Zoe"
+    },
+    {
+        "age": 40,
+        "favorite_foods": ["Caesar Salad"],
+        "name": "Heidi"
+    }
+]
+```
+
+Each of the dictionaries will become a row in the dataframe, with each key corresponding to a column name.
+
+
+
+![JSON to dataframe](images/json_to_df.svg)
+
+
+
+We can use the [`pandas.DataFrame()` constructor](http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame) and pass the list of dictionaries directly to it to convert the JSON to a dataframe:
+
+```python
+json_df = pd.DataFrame(json_obj)
+print(json_df)
+```
+
+```python
+age                 favorite_foods    name
+0   36             [Pumpkin, Oatmeal]  Sabine
+1   40    [Chicken, Pizza, Chocolate]     Zoe
+2   40                 [Caesar Salad]   Heidi
+```
+
+In this case, the `favorite_foods` column contains the list from the JSON. We'll see a similar thing with the `tags` column for our Hacker News data. We'll learn how to correct that on the next screen, but for now, let's convert our data to a pandas dataframe.
+
+
+
+
+
+## Exploring Tags Using the Apply Function
+
+Let's look at the first few rows of our new `hn_df` dataframe:
+
+|      | author         | createdAt            | numComments | objectId | points | storyText | tags                                          | title                                                        | url                                                          |
+| ---- | -------------- | -------------------- | ----------- | -------- | ------ | --------- | --------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 0    | dragongraphics | 2014-05-29T08:07:50Z | 0           | 7815238  | 2      |           | [story, author_dragongraphics, story_7815238] | Are we getting too Sassy? Weighing up micro-optimisation vs. maintainability | http://ashleynolan.co.uk/blog/are-we-getting-too-sassy       |
+| 1    | jcr            | 2014-05-29T08:05:58Z | 0           | 7815234  | 1      |           | [story, author_jcr, story_7815234]            | Telemba Turns Your Old Roomba and Tablet Into a Telepresence Robot | http://spectrum.ieee.org/automaton/robotics/home-robots/telemba-telepresence-robot |
+| 2    | callum85       | 2014-05-29T08:05:06Z | 0           | 7815230  | 1      |           | [story, author_callum85, story_7815230]       | Apple Agrees to Buy Beats for $3 Billion                     | http://online.wsj.com/articles/apple-to-buy-beats-1401308971 |
+| 3    | d3v3r0         | 2014-05-29T08:00:08Z | 0           | 7815222  | 1      |           | [story, author_d3v3r0, story_7815222]         | Don’t wait for inspiration                                   | http://alexsblog.org/2014/05/29/dont-wait-for-inspiration/   |
+| 4    | timmipetit     | 2014-05-29T07:46:19Z | 0           | 7815191  | 1      |           | [story, author_timmipetit, story_7815191]     | HackerOne Get $9M In Series A Funding To Build Bug Tracking Bounty Programs | http://techcrunch.com/2014/05/28/hackerone-get-9m-in-series-a-funding-to-build-bug-tracking-bounty-programs/ |
+
+Just like the `favorite_food` column in our example data on the previous screen, the `tags` column is a column where each item contains the list of data from our original JSON.
+
+At first glance, it looks like each values in this JSON list contain three items:
+
+1. The string `story`
+2. The name of the author
+3. The story ID
+
+If that's the case, then the column doesn't contain any unique data, and we can remove it. We're going to analyze this column to make sure that's the case.
+
+Let's start by exploring how pandas is storing that data. First, we'll extract the column as a series, and check its type:
+
+```
+tags = hn_df['tags']
+print(tags.dtype)
+```
+
+```
+object
+```
+
+The tags column is stored as an object type. Whenever pandas uses the object type, each item in the series uses a Python object to store the data. Most commonly we see this type used for string data.
+
+We previously learned that we could use the [`Series.apply()` method](http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.apply.html#pandas.Series.apply) to apply a function to every item in a series. Let's look at what we get when we pass the `type()` function as an argument to the column:
+
+```
+tags_types = tags.apply(type)
+type_counts = tags_types.value_counts(dropna=False)
+print(type_counts)
+```
+
+```
+class 'list'    35806
+Name: tags, dtype: int64
+```
+
+All 35,806 items in the column are a Python list type.
+
+Next, let's use `Series.apply()` to check the length of each of those lists. If our hypothesis from earlier is correct, every row will have a list containing three items:
+
+```
+tags_types = tags.apply(len)
+type_lengths = tags_types.value_counts(dropna=False)
+print(type_lengths)
+```
+
+```
+3    33459
+4     2347
+Name: tags, dtype: int64
+```
+
+While most of the item have three values in the list, about 2,000 values contain four values. Let's use a boolean mask to look at the items where the list has four items:
+
+
+
+
+
+## Extracting Tags Using Apply with a Lambda Function
+
+Let's look at the first few items in the `four_tags` series we just created:
+
+```
+print(four_tags.head())
+```
+
+
+
+```
+43      [story, author_alamgir_mand, story_7813869, show_hn]
+86           [story, author_cweagans, story_7812404, ask_hn]
+104    [story, author_nightstrike789, story_7812099, ask_hn]
+107    [story, author_ISeemToBeAVerb, story_7812048, ask_hn]
+109           [story, author_Swizec, story_7812018, show_hn]
+Name: tags, dtype: object
+```
+
+It looks like whenever there are four tags, the extra tag is the last of the four. In this final exercise of the lesson, we're going to use a lambda function to extract this fourth value in cases where there is one. To do this for any single list, we'll need to:
+
+- Check the length of the list.
+- If the length of the list is equal to four, return the last value.
+- If the length of the list isn't equal to four, return a null value.
+
+This is how we could create this as a standard function:
+
+```
+def extract_tag(l):
+    if len(l) == 4:
+        return l[-1]
+    else:
+        return None
+```
+
+
+
+We could use `Series.apply()` to apply this function as is, but to practice working with lambda functions, let's look at how we can complete this operation in a single line.
+
+To achieve this, we'll have to use a special version of an if statement known as a **ternary operator**. You can use the ternary operator whenever you need to return one of two values depending on a boolean expression. The syntax is as follows:
+
+```
+[on_true] if [expression] else [on_false]
+```
+
+The diagram below shows our function using an if statement and its ternary operator equivalent:
+
+
+
+![ternary operator example](images/ternary_operator_eg.svg)
+
+
+
+Let's finish by creating a lambda function version of this function and using apply to extract the tags.
+
+
+
+```python
+cleaned_tags = tags.apply(lambda x: x[-1] if len(x) == 4 else None)
+hn_df['tags'] = cleaned_tags
+```
+
