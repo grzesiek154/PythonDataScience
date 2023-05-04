@@ -114,6 +114,8 @@ We have now determined the elements that make up profiling data in Power BI, whi
 
 # Data Modeling
 
+https://www.youtube.com/watch?v=PMSN7evZFFE
+
 ## **Fact tables**
 
 **Fact tables** contain observational or event data values: sales orders, product counts, prices, transactional dates and times, and quantities. Fact tables can contain several repeated values. For example, one product can appear multiple times in multiple rows, for different customers on different dates. These values can be aggregated to create visuals. For instance, a visual of the total sales orders is an aggregation of all sales orders in the fact table. With fact tables, it is common to see columns that are filled with numbers and dates. The numbers can be units of measurement, such as sale amount, or they can be keys, such as a customer ID. The dates represent time that is being recorded, like order date or shipped date.
@@ -154,6 +156,8 @@ There are two ways to work with tables:
 
 
 ## Why Date Tables
+
+https://www.datacamp.com/tutorial/how-to-create-date-tables-in-power-bi-tutorial
 
 ```
 It doesn't "need" one but it's helpful to express dates in many different ways. You can use a script to generate one rather than load a CSV though.
