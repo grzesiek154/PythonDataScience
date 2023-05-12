@@ -116,6 +116,14 @@ We have now determined the elements that make up profiling data in Power BI, whi
 
 https://www.youtube.com/watch?v=PMSN7evZFFE
 
+## Best Practices
+
+- avoid wide tables - wide tables mean also few relations and this can lead to the potential errors 
+
+- Use narrow tables - star schema 
+
+  https://learn.microsoft.com/en-us/power-bi/guidance/star-schema
+
 ## **Fact tables**
 
 **Fact tables** contain observational or event data values: sales orders, product counts, prices, transactional dates and times, and quantities. Fact tables can contain several repeated values. For example, one product can appear multiple times in multiple rows, for different customers on different dates. These values can be aggregated to create visuals. For instance, a visual of the total sales orders is an aggregation of all sales orders in the fact table. With fact tables, it is common to see columns that are filled with numbers and dates. The numbers can be units of measurement, such as sale amount, or they can be keys, such as a customer ID. The dates represent time that is being recorded, like order date or shipped date.
@@ -138,7 +146,27 @@ When creating this relationship, we can build the visual according to the requir
 
 ![IMG-Screenshot of the Star schema example result.](images/01-data-schema-example-04-ss.png)
 
+Generally, dimension tables contain a relatively small number of rows.  Fact tables, on the other hand, can contain a very large number of rows  and continue to grow over time.
 
+![star-schema-example1](images/star-schema-example1.png)
+
+
+
+## Normalization vs. denormalization
+
+To understand some star schema concepts described in this article,  it's important to know two terms: normalization and denormalization.
+
+*Normalization* is the term used to describe data that's  stored in a way that reduces repetitious data. Consider a table of  products that has a unique key value column, like the product key, and  additional columns describing product characteristics, including product name, category, color, and size. A sales table is considered normalized when it stores only keys, like the product key. In the following image, notice that only the **ProductKey** column records the product.
+
+![Image shows a table of data that includes a Product Key column.](https://learn.microsoft.com/en-us/power-bi/guidance/media/star-schema/normalized-data-example.png)
+
+If, however, the sales table stores product details beyond the key, it's considered *denormalized*. In the following image, notice that the **ProductKey** and other product-related columns record the product.
+
+![Image shows a table of data that includes a Product Key and other product-related columns, including Category, Color, and Size.](https://learn.microsoft.com/en-us/power-bi/guidance/media/star-schema/denormalized-data-example.png)
+
+When you source data from an export file or data extract, it's likely that it represents a denormalized set of data. In this case, use [Power Query](https://learn.microsoft.com/en-us/training/modules/clean-data-power-bi/) to transform and shape the source data into multiple normalized tables.
+
+As described in this article, you should strive to develop optimized  Power BI data models with tables that represent normalized fact and  dimension data. However, there's one exception where a [snowflake dimension](https://learn.microsoft.com/en-us/power-bi/guidance/star-schema#snowflake-dimensions) should be denormalized to produce a single model table.
 
 ## Working with Tables
 
@@ -152,6 +180,19 @@ There are two ways to work with tables:
 
 - Configuring data models and building relationships between tables
 - Configuring table and column properties
+
+
+
+## Star schema relevance to Power BI models
+
+Consider that each Power BI report visual generates a query that is  sent to the Power BI model (which the Power BI service calls a dataset). These queries are used to filter, group, and summarize model data. A  well-designed model, then, is one that provides tables for filtering and grouping, and tables for summarizing. This design fits well with star  schema principles:
+
+- Dimension tables support *filtering* and *grouping*
+- Fact tables support *summarization*
+
+There's no table property that modelers set to configure the table  type as dimension or fact. It's in fact determined by the model  relationships. A model relationship establishes a filter propagation  path between two tables, and it's the **Cardinality** property of the relationship that determines the table type. A common relationship cardinality is *one-to-many* or its inverse *many-to-one*. The "one" side is always a dimension-type table while the "many" side  is always a fact-type table. For more information about relationships,  see [Model relationships in Power BI Desktop](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-relationships-understand).
+
+
 
 
 
