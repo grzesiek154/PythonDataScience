@@ -1,0 +1,816 @@
+,Issue key,Issue id,Status,Reporter,Created,Due Date,Resolved,Customer,Type of Request,source,Iteration
+0,CI-8939,485970,Closed,mmaciejczyk,06/Jul/23 3:30 PM,13/Jul/23 12:00 AM,27/Jul/23 3:59 PM,Rheinmetall,Incident Request (IR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+1,CI-8937,485918,Import in Production,mmaciejczyk,06/Jul/23 12:47 PM,13/Jul/23 12:00 AM,,Porsche,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+2,CI-8936,485909,Import in Production,alejandro.ruizrobles,06/Jul/23 12:29 PM,13/Jul/23 12:00 AM,,ProcurX,SR - Partner,DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+3,CI-8933,485825,Closed,alejandro.ruizrobles,06/Jul/23 9:30 AM,13/Jul/23 12:00 AM,11/Jul/23 12:00 PM,Numiga,SR - Partner,DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+4,CI-8930,485789,Closed,yutaka.yasumi,06/Jul/23 8:08 AM,13/Jul/23 12:00 AM,31/Jul/23 11:36 AM,msg systems,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+5,CI-8929,485777,Closed,yutaka.yasumi,06/Jul/23 7:57 AM,13/Jul/23 12:00 AM,25/Jul/23 1:32 PM,Amadeus,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+6,CI-8928,485756,Communicate,askarja,05/Jul/23 8:32 PM,12/Jul/23 12:00 AM,,dm-drogerie markt,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+7,CI-8927,485750,Communicate,mmaciejczyk,05/Jul/23 6:41 PM,12/Jul/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+8,CI-8923,485418,Closed,alejandro.ruizrobles,04/Jul/23 1:42 PM,11/Jul/23 12:00 AM,11/Jul/23 12:07 PM,Numiga,SR - Partner,DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+9,CI-8922,485403,Configure,alejandro.ruizrobles,04/Jul/23 12:58 PM,14/Jul/23 12:00 AM,,ProcurX,SR - Partner,DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+10,CI-8921,485367,Closed,yutaka.yasumi,04/Jul/23 11:19 AM,07/Jul/23 12:00 AM,20/Jul/23 1:49 PM,Eutelsat,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+11,CI-8919,485193,Closed,mmaciejczyk,03/Jul/23 2:29 PM,10/Jul/23 12:00 AM,24/Jul/23 10:45 AM,CEPSA,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+12,CI-8918,485165,Verify,mmaciejczyk,03/Jul/23 1:11 PM,10/Jul/23 12:00 AM,,Porsche,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+13,CI-8912,484852,Communicate,mmaciejczyk,30/Jun/23 1:57 PM,07/Jul/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+14,CI-8911,484730,Closed,ssanz,30/Jun/23 10:12 AM,07/Jul/23 12:00 AM,14/Jul/23 11:11 AM,Allianz,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+15,CI-8910,484664,Configure,askarja,29/Jun/23 9:05 PM,27/Jul/23 12:00 AM,,Porsche,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+16,CI-8909,484660,Configure,askarja,29/Jun/23 8:46 PM,07/Jul/23 12:00 AM,,Bentley,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+17,CI-8899,484449,Closed,askarja,29/Jun/23 11:37 AM,06/Jul/23 12:00 AM,12/Jul/23 12:53 AM,CMS Hasche Sigle,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+18,CI-8893,484357,Closed,yutaka.yasumi,29/Jun/23 1:58 AM,30/Jun/23 12:00 AM,11/Jul/23 7:29 AM,MFTBC,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+19,CI-8892,484345,Closed,mmaciejczyk,28/Jun/23 5:46 PM,07/Jul/23 12:00 AM,13/Jul/23 10:39 AM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+20,CI-8883,484083,Import in Production,yutaka.yasumi,28/Jun/23 5:20 AM,05/Jul/23 12:00 AM,,Burda,Incident Request (IR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+22,CI-8874,483783,Review,askarja,26/Jun/23 8:21 PM,03/Jul/23 12:00 AM,,Porsche,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+23,CI-8866,483461,Closed,yutaka.yasumi,26/Jun/23 2:15 AM,28/Jun/23 12:00 AM,12/Jul/23 4:52 AM,TotalEnergies,Incident Request (IR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+24,CI-8846,483197,Configure,kgostynska,23/Jun/23 8:51 AM,10/Jul/23 12:00 AM,,LKW Walter,Incident Request (IR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+25,CI-8842,482934,Closed,yutaka.yasumi,22/Jun/23 11:21 AM,23/Jun/23 12:00 AM,12/Jul/23 4:52 AM,Numiga,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+26,CI-8840,482850,Closed,yutaka.yasumi,22/Jun/23 9:36 AM,29/Jun/23 12:00 AM,15/Jul/23 3:05 AM,Vaillant,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+27,CI-8814,481732,Closed,nsanchezruiz,19/Jun/23 10:57 AM,26/Jun/23 12:00 AM,21/Jul/23 11:57 AM,OBB,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+28,CI-8813,481583,Closed,nsanchezruiz,19/Jun/23 9:25 AM,23/Jun/23 12:00 AM,10/Jul/23 12:15 PM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+29,CI-8810,481221,Closed,alejandro.ruizrobles,16/Jun/23 2:33 PM,26/Jun/23 12:00 AM,11/Jul/23 2:02 PM,Numiga,SR - Partner,DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+30,CI-8808,480770,Closed,askarja,15/Jun/23 7:52 PM,22/Jun/23 12:00 AM,25/Jul/23 5:01 PM,VW,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+31,CI-8806,480285,Closed,askarja,14/Jun/23 6:07 PM,21/Jun/23 12:00 AM,12/Jul/23 12:53 AM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+32,CI-8805,480283,Closed,askarja,14/Jun/23 5:40 PM,21/Jun/23 12:00 AM,12/Jul/23 10:19 PM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+33,CI-8804,480256,Closed,ssanz,14/Jun/23 4:15 PM,21/Jun/23 12:00 AM,10/Jul/23 3:59 PM,Amadeus,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+34,CI-8801,480040,Closed,nsanchezruiz,14/Jun/23 12:26 PM,21/Jun/23 12:00 AM,25/Jul/23 10:31 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+35,CI-8800,480038,Configure,kgostynska,14/Jun/23 12:23 PM,21/Jun/23 12:00 AM,,Eutelsat,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+36,CI-8753,478233,Closed,jbonnavion,08/Jun/23 4:41 PM,15/Jun/23 12:00 AM,24/Jul/23 3:41 PM,ProcurX,SR - Partner,DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+37,CI-8745,477471,Closed,kgostynska,07/Jun/23 8:28 AM,14/Jun/23 12:00 AM,21/Jul/23 12:05 PM,Egis,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+38,CI-8729,476852,Verify,mmaciejczyk,05/Jun/23 3:08 PM,12/Jun/23 12:00 AM,,Holtzbrink,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+39,CI-8705,475958,Closed,nsanchezruiz,01/Jun/23 9:26 AM,08/Jun/23 12:00 AM,04/Aug/23 8:59 AM,DER,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+40,CI-8702,475830,Communicate,mmaciejczyk,31/May/23 3:59 PM,07/Jun/23 12:00 AM,,Endress Hauser,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+41,CI-8689,475132,Closed,yutaka.yasumi,30/May/23 1:14 AM,06/Jun/23 12:00 AM,19/Jul/23 9:47 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+42,CI-8688,475122,Closed,ssanz,29/May/23 5:01 PM,05/Jun/23 12:00 AM,14/Jul/23 11:07 AM,Allianz,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+43,CI-8682,474597,Closed,yutaka.yasumi,26/May/23 3:31 AM,09/Jun/23 12:00 AM,12/Jul/23 1:51 AM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+44,CI-8679,474387,Configure,lsada,25/May/23 9:19 AM,01/Jun/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+45,CI-8672,474081,Configure,ssanz,23/May/23 3:45 PM,30/May/23 12:00 AM,,Porsche,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+46,CI-8659,473378,Communicate,mmaciejczyk,19/May/23 12:33 PM,26/May/23 12:00 AM,,Rehau,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+47,CI-8636,472259,Closed,yutaka.yasumi,16/May/23 12:56 AM,26/May/23 12:00 AM,26/Jul/23 8:40 AM,CMS Hasche Sigle,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+48,CI-8632,471970,Configure,yutaka.yasumi,15/May/23 2:03 AM,19/May/23 12:00 AM,,Hugo Boss,Incident Request (IR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+49,CI-8629,471820,Closed,ssanz,12/May/23 2:33 PM,19/May/23 12:00 AM,20/Jul/23 8:50 AM,Allianz,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+50,CI-8607,471146,Verify,mmaciejczyk,10/May/23 5:01 PM,17/May/23 12:00 AM,,Lufthansa City Center,Incident Request (IR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+51,CI-8600,470619,Communicate,kgostynska,09/May/23 2:19 PM,16/May/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+52,CI-8599,470611,Communicate,kgostynska,09/May/23 2:05 PM,16/May/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+53,CI-8567,468092,Verify,mmaciejczyk,26/Apr/23 1:16 PM,03/May/23 12:00 AM,,CMS Hasche Sigle,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+54,CI-8562,467852,Closed,nsanchezruiz,25/Apr/23 4:05 PM,08/May/23 12:00 AM,25/Jul/23 10:31 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+55,CI-8544,466548,Verify,askarja,20/Apr/23 10:01 AM,27/Apr/23 12:00 AM,,Rheinmetall,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+56,CI-8499,465411,Configure,nsanchezruiz,17/Apr/23 1:53 PM,24/Apr/23 12:00 AM,26/Jul/23 9:16 AM,Porsche,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+57,CI-8489,465210,Closed,kgostynska,17/Apr/23 9:43 AM,24/Apr/23 12:00 AM,12/Jul/23 8:39 AM,ArcelorMittal,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+58,CI-8460,464251,Communicate,mmaciejczyk,11/Apr/23 2:50 PM,18/Apr/23 12:00 AM,10/May/23 11:15 AM,Burda,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+59,CI-8433,463279,Communicate,mmaciejczyk,05/Apr/23 5:12 PM,12/Apr/23 12:00 AM,,Traton SE,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+60,CI-8421,462572,Review,askarja,03/Apr/23 9:14 PM,12/Apr/23 12:00 AM,,Holtzbrink,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+61,CI-8325,456733,Communicate,mmaciejczyk,16/Mar/23 1:20 PM,23/Mar/23 12:00 AM,07/Jun/23 9:42 AM,CMS Hasche Sigle,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+62,CI-8294,454905,Communicate,mmaciejczyk,10/Mar/23 11:19 AM,17/Mar/23 12:00 AM,,VW,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+63,CI-8219,450562,Closed,kgostynska,22/Feb/23 1:28 PM,01/Mar/23 12:00 AM,11/Jul/23 12:37 PM,Amadeus,Incident Request (IR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+64,CI-8177,448686,Closed,ssanz,15/Feb/23 4:35 PM,22/Feb/23 12:00 AM,25/Jul/23 12:32 PM,Allianz,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+65,CI-8164,448243,Closed,achattopadhyay,14/Feb/23 1:51 PM,21/Feb/23 12:00 AM,10/Jul/23 12:07 PM,Amadeus,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+67,CI-7858,435107,Clarify,ssanz,13/Dec/22 12:22 PM,20/Dec/22 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+68,CI-7253,408597,Closed,ssanz,16/Aug/22 2:54 PM,09/Dec/22 12:00 AM,25/Jul/23 3:19 PM,OBB,Service Request (SR),DataSets\in_progress_PI23.3-1.csv,PI23.3-1
+0,CI-9024,490537,Clarify,kgostynska,27/Jul/23 4:12 PM,03/Aug/23 12:00 AM,,Rheinmetall,Incident Request (IR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+1,CI-9023,490511,Communicate,kgostynska,27/Jul/23 3:34 PM,03/Aug/23 12:00 AM,,VW,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+2,CI-9022,490478,Review,kuhnc,27/Jul/23 2:13 PM,04/Aug/23 12:00 AM,,OBB,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+3,CI-9018,490278,Closed,alejandro.ruizrobles,26/Jul/23 8:53 PM,28/Jul/23 12:00 AM,08/Aug/23 9:48 AM,DERPART,SR - Partner,DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+4,CI-9017,490268,Closed,askarja,26/Jul/23 5:55 PM,07/Aug/23 12:00 AM,08/Aug/23 11:31 AM,Porsche,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+5,CI-9016,490210,Communicate,mmaciejczyk,26/Jul/23 2:34 PM,02/Aug/23 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+6,CI-9015,490207,Closed,askarja,26/Jul/23 2:29 PM,02/Aug/23 12:00 AM,01/Aug/23 1:14 AM,Porsche,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+7,CI-9014,490176,Communicate,kgostynska,26/Jul/23 1:11 PM,02/Aug/23 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+8,CI-9013,490172,Review,nsanchezruiz,26/Jul/23 12:54 PM,02/Aug/23 12:00 AM,,OBB,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+9,CI-9011,490091,Closed,yutaka.yasumi,26/Jul/23 9:00 AM,31/Jul/23 12:00 AM,02/Aug/23 3:55 AM,MFTBC,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+10,CI-9009,490026,Configure,mmaciejczyk,25/Jul/23 4:26 PM,01/Aug/23 12:00 AM,,Porsche,Incident Request (IR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+11,CI-9008,489987,Communicate,ssanz,25/Jul/23 3:27 PM,01/Aug/23 12:00 AM,,Apleona,Incident Request (IR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+12,CI-9006,489967,Closed,nsanchezruiz,25/Jul/23 2:56 PM,26/Jul/23 12:00 AM,04/Aug/23 8:58 AM,Hugo Boss,Incident Request (IR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+13,CI-9005,489749,Configure,nsanchezruiz,25/Jul/23 9:46 AM,01/Aug/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+14,CI-9001,489686,Closed,ritsuko.shimizu,25/Jul/23 4:15 AM,28/Jul/23 12:00 AM,04/Aug/23 2:59 AM,Product Management,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+15,CI-9000,489666,Communicate,mmaciejczyk,24/Jul/23 4:55 PM,31/Jul/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+16,CI-8999,489633,Closed,alejandro.ruizrobles,24/Jul/23 3:46 PM,31/Jul/23 12:00 AM,02/Aug/23 3:37 PM,ProcurX,SR - Partner,DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+17,CI-8996,489505,Review,kgostynska,24/Jul/23 9:27 AM,01/Aug/23 12:00 AM,,Endress Hauser,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+18,CI-8994,489493,Communicate,kgostynska,24/Jul/23 8:46 AM,01/Aug/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+19,CI-8993,489264,Verify,ssanz,21/Jul/23 2:18 PM,28/Jul/23 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+20,CI-8991,489114,Communicate,yutaka.yasumi,21/Jul/23 2:54 AM,28/Jul/23 12:00 AM,,Porsche,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+22,CI-8977,488319,Import to Customer Test System,mmaciejczyk,17/Jul/23 3:39 PM,24/Jul/23 12:00 AM,,Holtzbrink,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+23,CI-8973,488242,Configure,askarja,17/Jul/23 12:53 PM,24/Jul/23 12:00 AM,,Burda,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+24,CI-8966,487772,Communicate,mmaciejczyk,13/Jul/23 3:26 PM,20/Jul/23 12:00 AM,,Nedschroef,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+25,CI-8960,487528,Closed,askarja,13/Jul/23 1:01 AM,20/Jul/23 12:00 AM,01/Aug/23 11:50 PM,Holtzbrink,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+26,CI-8959,487526,Closed,askarja,13/Jul/23 12:51 AM,20/Jul/23 12:00 AM,01/Aug/23 11:49 PM,Holtzbrink,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+27,CI-8954,487170,Closed,askarja,11/Jul/23 6:00 PM,18/Jul/23 12:00 AM,31/Jul/23 12:42 PM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+28,CI-8952,487041,Communicate,agheorghe,11/Jul/23 12:27 PM,12/Jul/23 12:00 AM,,TotalEnergies,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+29,CI-8949,486647,Configure,nsanchezruiz,10/Jul/23 2:01 PM,17/Jul/23 12:00 AM,,OBB,Incident Request (IR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+30,CI-8947,486492,Closed,alejandro.ruizrobles,10/Jul/23 10:16 AM,17/Jul/23 12:00 AM,01/Aug/23 10:12 AM,Munckhof,SR - Partner,DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+31,CI-8943,486406,Communicate,yutaka.yasumi,10/Jul/23 1:55 AM,14/Jul/23 12:00 AM,,Apleona,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+32,CI-8942,486173,Configure,ssanz,07/Jul/23 12:38 PM,14/Jul/23 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+33,CI-8941,486015,Closed,yutaka.yasumi,07/Jul/23 1:27 AM,14/Jul/23 12:00 AM,01/Aug/23 8:18 AM,Porsche,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+34,CI-8937,485918,Import in Production,mmaciejczyk,06/Jul/23 12:47 PM,13/Jul/23 12:00 AM,,Porsche,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+35,CI-8936,485909,Import in Production,alejandro.ruizrobles,06/Jul/23 12:29 PM,13/Jul/23 12:00 AM,,ProcurX,SR - Partner,DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+36,CI-8930,485789,Closed,yutaka.yasumi,06/Jul/23 8:08 AM,13/Jul/23 12:00 AM,31/Jul/23 11:36 AM,msg systems,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+37,CI-8928,485756,Communicate,askarja,05/Jul/23 8:32 PM,12/Jul/23 12:00 AM,,dm-drogerie markt,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+38,CI-8927,485750,Communicate,mmaciejczyk,05/Jul/23 6:41 PM,12/Jul/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+39,CI-8922,485403,Configure,alejandro.ruizrobles,04/Jul/23 12:58 PM,14/Jul/23 12:00 AM,,ProcurX,SR - Partner,DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+40,CI-8918,485165,Verify,mmaciejczyk,03/Jul/23 1:11 PM,10/Jul/23 12:00 AM,,Porsche,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+41,CI-8912,484852,Communicate,mmaciejczyk,30/Jun/23 1:57 PM,07/Jul/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+42,CI-8910,484664,Configure,askarja,29/Jun/23 9:05 PM,27/Jul/23 12:00 AM,,Porsche,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+43,CI-8909,484660,Configure,askarja,29/Jun/23 8:46 PM,07/Jul/23 12:00 AM,,Bentley,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+44,CI-8883,484083,Import in Production,yutaka.yasumi,28/Jun/23 5:20 AM,05/Jul/23 12:00 AM,,Burda,Incident Request (IR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+45,CI-8876,483789,Import in Production,askarja,26/Jun/23 11:46 PM,03/Jul/23 12:00 AM,,Heidelberg Cement,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+46,CI-8874,483783,Review,askarja,26/Jun/23 8:21 PM,03/Jul/23 12:00 AM,,Porsche,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+47,CI-8846,483197,Configure,kgostynska,23/Jun/23 8:51 AM,10/Jul/23 12:00 AM,,LKW Walter,Incident Request (IR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+48,CI-8800,480038,Configure,kgostynska,14/Jun/23 12:23 PM,21/Jun/23 12:00 AM,,Eutelsat,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+49,CI-8729,476852,Verify,mmaciejczyk,05/Jun/23 3:08 PM,12/Jun/23 12:00 AM,,Holtzbrink,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+50,CI-8705,475958,Closed,nsanchezruiz,01/Jun/23 9:26 AM,08/Jun/23 12:00 AM,04/Aug/23 8:59 AM,DER,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+51,CI-8702,475830,Communicate,mmaciejczyk,31/May/23 3:59 PM,07/Jun/23 12:00 AM,,Endress Hauser,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+52,CI-8679,474387,Configure,lsada,25/May/23 9:19 AM,01/Jun/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+53,CI-8672,474081,Configure,ssanz,23/May/23 3:45 PM,30/May/23 12:00 AM,,Porsche,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+54,CI-8659,473378,Communicate,mmaciejczyk,19/May/23 12:33 PM,26/May/23 12:00 AM,,Rehau,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+55,CI-8632,471970,Configure,yutaka.yasumi,15/May/23 2:03 AM,19/May/23 12:00 AM,,Hugo Boss,Incident Request (IR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+56,CI-8607,471146,Verify,mmaciejczyk,10/May/23 5:01 PM,17/May/23 12:00 AM,,Lufthansa City Center,Incident Request (IR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+57,CI-8600,470619,Communicate,kgostynska,09/May/23 2:19 PM,16/May/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+58,CI-8599,470611,Communicate,kgostynska,09/May/23 2:05 PM,16/May/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+59,CI-8567,468092,Verify,mmaciejczyk,26/Apr/23 1:16 PM,03/May/23 12:00 AM,,CMS Hasche Sigle,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+60,CI-8544,466548,Verify,askarja,20/Apr/23 10:01 AM,27/Apr/23 12:00 AM,,Rheinmetall,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+61,CI-8460,464251,Communicate,mmaciejczyk,11/Apr/23 2:50 PM,18/Apr/23 12:00 AM,10/May/23 11:15 AM,Burda,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+62,CI-8433,463279,Communicate,mmaciejczyk,05/Apr/23 5:12 PM,12/Apr/23 12:00 AM,,Traton SE,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+63,CI-8421,462572,Review,askarja,03/Apr/23 9:14 PM,12/Apr/23 12:00 AM,,Holtzbrink,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+64,CI-8325,456733,Communicate,mmaciejczyk,16/Mar/23 1:20 PM,23/Mar/23 12:00 AM,07/Jun/23 9:42 AM,CMS Hasche Sigle,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+65,CI-8294,454905,Communicate,mmaciejczyk,10/Mar/23 11:19 AM,17/Mar/23 12:00 AM,,VW,Service Request (SR),DataSets\in_progress_PI23.3-2.csv,PI23.3-2
+0,CI-8370,459864,Closed,ssanz,24/Mar/23 4:23 PM,31/Mar/23 12:00 AM,05/Apr/23 1:04 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+1,CI-8369,459796,Closed,kgostynska,24/Mar/23 3:03 PM,31/Mar/23 12:00 AM,04/May/23 11:31 AM,Rheinmetall,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+2,CI-8368,459754,Closed,ssanz,24/Mar/23 2:27 PM,31/Mar/23 12:00 AM,18/May/23 11:44 AM,Holtzbrink,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+3,CI-8367,459734,Closed,kgostynska,24/Mar/23 1:42 PM,31/Mar/23 12:00 AM,06/Jun/23 1:52 PM,OBB,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+4,CI-8366,459522,Closed,nsanchezruiz,24/Mar/23 9:41 AM,31/Mar/23 12:00 AM,05/Apr/23 8:40 AM,Customer not yet listed,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+5,CI-8365,459516,Closed,nsanchezruiz,24/Mar/23 9:30 AM,31/Mar/23 12:00 AM,05/Apr/23 8:41 AM,Customer not yet listed,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+6,CI-8364,459501,Closed,nsanchezruiz,24/Mar/23 8:41 AM,31/Mar/23 12:00 AM,04/Apr/23 9:24 AM,Customer not yet listed,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+7,CI-8361,459339,Closed,lsada,23/Mar/23 2:57 PM,06/Apr/23 12:00 AM,12/Jun/23 10:49 AM,Spiegel,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+8,CI-8360,459333,Closed,nsanchezruiz,23/Mar/23 2:52 PM,29/Mar/23 12:00 AM,05/Apr/23 9:39 AM,Customer not yet listed,Incident Request (IR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+9,CI-8359,459293,Closed,ssanz,23/Mar/23 1:59 PM,30/Mar/23 12:00 AM,01/Apr/23 4:22 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+10,CI-8358,459227,Closed,ssanz,23/Mar/23 11:55 AM,28/Mar/23 12:00 AM,25/Apr/23 3:54 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+11,CI-8354,458717,Closed,nsanchezruiz,22/Mar/23 11:13 AM,27/Mar/23 12:00 AM,25/Apr/23 9:58 AM,OBB,Incident Request (IR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+12,CI-8349,458448,Closed,yutaka.yasumi,22/Mar/23 2:59 AM,22/Mar/23 12:00 AM,03/Apr/23 12:41 AM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+13,CI-8348,458444,Closed,yutaka.yasumi,22/Mar/23 1:22 AM,29/Mar/23 12:00 AM,19/Apr/23 2:54 PM,Vaillant,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+14,CI-8347,458433,Closed,askarja,21/Mar/23 7:58 PM,29/Mar/23 12:00 AM,13/Jun/23 5:27 PM,Deutschlandradio,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+15,CI-8346,458273,Closed,askarja,21/Mar/23 1:50 PM,28/Mar/23 12:00 AM,07/Apr/23 2:04 AM,Porsche,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+16,CI-8345,458258,Closed,nsanchezruiz,21/Mar/23 1:28 PM,27/Mar/23 12:00 AM,04/Apr/23 1:10 PM,Audi,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+17,CI-8344,458212,Closed,nsanchezruiz,21/Mar/23 12:57 PM,23/Mar/23 12:00 AM,03/Apr/23 10:29 AM,Allianz,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+18,CI-8339,457228,Closed,ssanz,17/Mar/23 4:51 PM,24/Mar/23 12:00 AM,19/May/23 8:37 AM,Allianz,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+19,CI-8338,457190,Closed,alejandro.ruizrobles,17/Mar/23 3:17 PM,21/Mar/23 12:00 AM,24/Apr/23 6:12 PM,Numiga,SR - Partner,DataSets\in_progress_PI6 IP.csv,PI6 IP
+20,CI-8328,456902,Closed,nsanchezruiz,16/Mar/23 4:57 PM,23/Mar/23 12:00 AM,27/Apr/23 1:27 PM,msg systems,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+22,CI-8322,456676,Closed,yutaka.yasumi,16/Mar/23 11:59 AM,23/Mar/23 12:00 AM,03/Apr/23 12:42 AM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+23,CI-8321,456627,Closed,yutaka.yasumi,16/Mar/23 11:21 AM,20/Mar/23 12:00 AM,29/Mar/23 4:29 PM,Lufthansa City Center,Incident Request (IR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+24,CI-8318,456512,Closed,yutaka.yasumi,16/Mar/23 1:31 AM,20/Mar/23 12:00 AM,19/Apr/23 2:53 PM,Amadeus,Incident Request (IR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+25,CI-8316,456446,Closed,ssanz,15/Mar/23 4:46 PM,22/Mar/23 12:00 AM,14/Apr/23 12:32 PM,Allianz,Incident Request (IR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+26,CI-8315,456393,Closed,jbonnavion,15/Mar/23 3:03 PM,22/Mar/23 12:00 AM,13/Apr/23 2:22 PM,DERPART,SR - Partner,DataSets\in_progress_PI6 IP.csv,PI6 IP
+27,CI-8312,456181,Closed,alejandro.ruizrobles,15/Mar/23 9:51 AM,22/Mar/23 12:00 AM,29/Mar/23 3:51 PM,Numiga,SR - Partner,DataSets\in_progress_PI6 IP.csv,PI6 IP
+28,CI-8303,455701,Closed,kgostynska,14/Mar/23 9:47 AM,21/Mar/23 12:00 AM,08/May/23 8:18 AM,LKW Walter,Incident Request (IR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+29,CI-8302,455636,Closed,yutaka.yasumi,14/Mar/23 7:30 AM,21/Mar/23 12:00 AM,15/May/23 10:59 AM,Vaillant,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+30,CI-8294,454905,Communicate,mmaciejczyk,10/Mar/23 11:19 AM,17/Mar/23 12:00 AM,,VW,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+31,CI-8289,454808,Closed,yutaka.yasumi,10/Mar/23 7:21 AM,13/Mar/23 12:00 AM,03/Apr/23 1:18 AM,Ineos,Incident Request (IR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+32,CI-8286,454791,Closed,yutaka.yasumi,10/Mar/23 1:33 AM,17/Mar/23 12:00 AM,15/May/23 5:50 AM,Continental,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+33,CI-8285,454741,Closed,nsanchezruiz,09/Mar/23 4:25 PM,20/Mar/23 12:00 AM,21/Apr/23 9:12 AM,DER,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+34,CI-8283,454650,Closed,nsanchezruiz,09/Mar/23 2:15 PM,23/Mar/23 12:00 AM,04/Apr/23 3:26 PM,Porsche,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+35,CI-8279,454369,Closed,mmaciejczyk,08/Mar/23 6:04 PM,15/Mar/23 12:00 AM,30/Mar/23 3:22 PM,Lufthansa City Center,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+36,CI-8277,454229,Closed,ssanz,08/Mar/23 3:09 PM,15/Mar/23 12:00 AM,18/Apr/23 2:15 PM,TUI AG,Incident Request (IR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+37,CI-8273,453848,Closed,ssanz,07/Mar/23 1:31 PM,08/Mar/23 12:00 AM,10/Apr/23 10:50 AM,Allianz,Incident Request (IR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+38,CI-8270,453483,Closed,ssanz,06/Mar/23 1:40 PM,13/Mar/23 12:00 AM,08/May/23 11:49 AM,Allianz,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+39,CI-8269,453481,Closed,ssanz,06/Mar/23 1:36 PM,13/Mar/23 12:00 AM,08/May/23 11:48 AM,Allianz,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+40,CI-8261,453139,Closed,yutaka.yasumi,06/Mar/23 1:37 AM,13/Mar/23 12:00 AM,05/Apr/23 6:52 AM,Spiegel,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+41,CI-8254,452951,Closed,ssanz,03/Mar/23 1:15 PM,10/Mar/23 12:00 AM,05/May/23 7:12 PM,Allianz,Incident Request (IR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+42,CI-8249,452780,Closed,yutaka.yasumi,03/Mar/23 2:44 AM,17/Mar/23 12:00 AM,05/Apr/23 9:30 AM,CEPSA,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+43,CI-8242,452464,Closed,yutaka.yasumi,02/Mar/23 1:04 AM,09/Mar/23 12:00 AM,06/Apr/23 4:26 PM,Burda,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+44,CI-8239,452166,Closed,yutaka.yasumi,01/Mar/23 2:16 AM,06/Mar/23 12:00 AM,29/Mar/23 9:54 AM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+45,CI-8238,452000,Closed,nsanchezruiz,28/Feb/23 1:28 PM,31/Mar/23 12:00 AM,12/Jun/23 2:50 PM,Fiege,Incident Request (IR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+46,CI-8236,451837,Closed,yutaka.yasumi,28/Feb/23 12:45 AM,07/Mar/23 12:00 AM,13/Apr/23 4:29 PM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+47,CI-8219,450562,Communicate,kgostynska,22/Feb/23 1:28 PM,01/Mar/23 12:00 AM,,Amadeus,Incident Request (IR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+48,CI-8190,449259,Closed,askarja,17/Feb/23 2:48 PM,24/Feb/23 12:00 AM,05/Apr/23 12:08 PM,Eberspacher,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+49,CI-8185,449035,Closed,yutaka.yasumi,17/Feb/23 9:59 AM,20/Feb/23 12:00 AM,04/Apr/23 3:22 PM,Munckhof,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+50,CI-8184,448971,Closed,yutaka.yasumi,17/Feb/23 1:56 AM,24/Feb/23 12:00 AM,04/Apr/23 4:33 PM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+51,CI-8177,448686,Verify,ssanz,15/Feb/23 4:35 PM,22/Feb/23 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+52,CI-8176,448625,Closed,ssanz,15/Feb/23 3:47 PM,22/Feb/23 12:00 AM,14/Apr/23 1:31 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+53,CI-8164,448243,Communicate,achattopadhyay,14/Feb/23 1:51 PM,21/Feb/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+54,CI-8159,447939,Closed,wkatthan,13/Feb/23 12:19 PM,16/Feb/23 12:00 AM,24/Apr/23 12:53 PM,ArcelorMittal,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+55,CI-8144,447479,Closed,nsanchezruiz,09/Feb/23 3:29 PM,20/Feb/23 12:00 AM,29/Apr/23 4:07 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+56,CI-8134,446994,Closed,ccasper,08/Feb/23 10:09 AM,24/Feb/23 12:00 AM,19/Apr/23 3:11 PM,TUI AG,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+57,CI-8118,446512,Closed,askarja,06/Feb/23 8:05 PM,13/Feb/23 12:00 AM,19/Apr/23 1:24 AM,TeamBank AG,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+58,CI-8093,445763,Closed,alejandro.ruizrobles,02/Feb/23 8:59 AM,09/Feb/23 12:00 AM,08/Jun/23 3:06 PM,Numiga,SR - Partner,DataSets\in_progress_PI6 IP.csv,PI6 IP
+59,CI-8048,443357,Closed,nsanchezruiz,24/Jan/23 1:34 PM,06/Feb/23 12:00 AM,03/Apr/23 3:44 PM,msg systems,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+60,CI-8006,441299,Closed,yutaka.yasumi,13/Jan/23 7:58 AM,17/Jan/23 12:00 AM,04/Apr/23 4:32 PM,Porsche,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+61,CI-7904,437478,Verify,ssanz,20/Dec/22 5:24 PM,26/Dec/22 12:00 AM,,Bentley,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+62,CI-7900,437096,Closed,ssanz,19/Dec/22 3:44 PM,26/Dec/22 12:00 AM,05/Apr/23 1:07 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+63,CI-7858,435107,Verify,ssanz,13/Dec/22 12:22 PM,20/Dec/22 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+64,CI-7829,433155,Closed,ssanz,06/Dec/22 1:18 PM,13/Dec/22 12:00 AM,29/Apr/23 4:15 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+65,CI-7788,431813,Closed,yutaka.yasumi,01/Dec/22 1:54 AM,08/Dec/22 12:00 AM,05/Apr/23 6:54 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+67,CI-7688,427631,Closed,askarja,11/Nov/22 3:58 PM,21/Nov/22 12:00 AM,20/Apr/23 10:15 AM,Rheinmetall,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+68,CI-7550,420892,Closed,yutaka.yasumi,12/Oct/22 5:05 PM,19/Oct/22 12:00 AM,04/Apr/23 4:34 PM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+69,CI-7486,418256,Closed,yutaka.yasumi,03/Oct/22 6:41 AM,10/Oct/22 12:00 AM,31/Mar/23 2:37 AM,Continental,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+70,CI-7253,408597,Explain,ssanz,16/Aug/22 2:54 PM,09/Dec/22 12:00 AM,,OBB,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+71,CI-7205,406532,Closed,nsanchezruiz,04/Aug/22 11:54 AM,02/May/23 12:00 AM,10/Apr/23 8:47 AM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+72,CI-5953,349721,Closed,hwiedenroth,05/Nov/21 5:04 PM,03/Dec/21 12:00 AM,11/Apr/23 9:04 AM,Allianz,Service Request (SR),DataSets\in_progress_PI6 IP.csv,PI6 IP
+0,CI-7970,439508,Closed,yutaka.yasumi,06/Jan/23 4:38 AM,13/Jan/23 12:00 AM,10/Feb/23 7:13 AM,Amadeus,Incident Request (IR),DataSets\in_progress_PI6.1.csv,PI6.1
+1,CI-7969,439500,Closed,yutaka.yasumi,06/Jan/23 1:44 AM,13/Jan/23 12:00 AM,30/Jan/23 2:46 AM,Eberspacher,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+2,CI-7968,439497,Closed,yutaka.yasumi,06/Jan/23 1:41 AM,13/Jan/23 12:00 AM,16/Jan/23 8:49 AM,Porsche,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+3,CI-7967,439494,Closed,yutaka.yasumi,06/Jan/23 1:08 AM,13/Jan/23 12:00 AM,25/Jan/23 7:11 AM,CMS Hasche Sigle,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+4,CI-7966,439389,Closed,nsanchezruiz,05/Jan/23 12:25 PM,09/Jan/23 12:00 AM,09/Jan/23 11:15 AM,Damm,Incident Request (IR),DataSets\in_progress_PI6.1.csv,PI6.1
+5,CI-7963,439220,Closed,yutaka.yasumi,05/Jan/23 4:38 AM,12/Jan/23 12:00 AM,30/Jan/23 2:46 AM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+6,CI-7962,439217,Closed,yutaka.yasumi,05/Jan/23 3:49 AM,12/Jan/23 12:00 AM,20/Feb/23 5:17 AM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+7,CI-7956,439129,Closed,nsanchezruiz,04/Jan/23 3:17 PM,09/Jan/23 12:00 AM,11/Jan/23 10:34 AM,Eberspacher,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+8,CI-7952,438984,Closed,alejandro.ruizrobles,04/Jan/23 9:45 AM,11/Jan/23 12:00 AM,18/Jan/23 2:19 PM,Numiga,SR - Partner,DataSets\in_progress_PI6.1.csv,PI6.1
+9,CI-7950,438853,Closed,nsanchezruiz,03/Jan/23 3:50 PM,04/Jan/23 12:00 AM,09/Feb/23 1:09 PM,Porsche,Incident Request (IR),DataSets\in_progress_PI6.1.csv,PI6.1
+10,CI-7949,438746,Closed,nsanchezruiz,03/Jan/23 10:53 AM,10/Jan/23 12:00 AM,20/Jan/23 9:41 AM,Hugo Boss,Incident Request (IR),DataSets\in_progress_PI6.1.csv,PI6.1
+11,CI-7948,438711,Closed,alejandro.ruizrobles,03/Jan/23 10:07 AM,12/Jan/23 12:00 AM,12/Jan/23 11:25 AM,Numiga,SR - Partner,DataSets\in_progress_PI6.1.csv,PI6.1
+12,CI-7942,438603,Closed,nsanchezruiz,02/Jan/23 11:54 AM,05/Jan/23 12:00 AM,24/Jan/23 4:22 PM,Red Electrica,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+13,CI-7940,438429,Closed,ssanz,30/Dec/22 10:21 AM,06/Jan/23 12:00 AM,17/Feb/23 8:26 AM,Heidelberg Cement,Incident Request (IR),DataSets\in_progress_PI6.1.csv,PI6.1
+14,CI-7935,438259,Closed,nsanchezruiz,28/Dec/22 9:20 AM,02/Jan/23 12:00 AM,19/Jan/23 2:55 PM,msg systems,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+15,CI-7931,438225,Closed,nsanchezruiz,27/Dec/22 12:36 PM,12/Jan/23 12:00 AM,13/Jan/23 12:11 PM,msg systems,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+16,CI-7927,437936,Closed,ssanz,22/Dec/22 3:16 PM,29/Dec/22 12:00 AM,17/Jan/23 4:00 PM,Numiga,Incident Request (IR),DataSets\in_progress_PI6.1.csv,PI6.1
+17,CI-7926,437932,Closed,nsanchezruiz,22/Dec/22 3:08 PM,02/Jan/23 12:00 AM,23/Jan/23 4:31 PM,Porsche,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+18,CI-7923,437910,Closed,ssanz,22/Dec/22 2:17 PM,01/Mar/23 12:00 AM,02/Mar/23 11:57 AM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+19,CI-7915,437749,Closed,ssanz,21/Dec/22 3:20 PM,28/Dec/22 12:00 AM,14/Feb/23 12:42 PM,Porsche,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+20,CI-7912,437698,Closed,ssanz,21/Dec/22 1:07 PM,28/Dec/22 12:00 AM,15/Feb/23 11:23 AM,Continental,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+22,CI-7909,437653,Closed,ssanz,21/Dec/22 11:46 AM,28/Dec/22 12:00 AM,17/Mar/23 8:55 AM,Continental,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+23,CI-7908,437587,Closed,nsanchezruiz,21/Dec/22 9:47 AM,02/Jan/23 12:00 AM,25/Jan/23 1:06 PM,Amadeus,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+24,CI-7906,437493,Closed,yutaka.yasumi,21/Dec/22 4:10 AM,23/Dec/22 12:00 AM,30/Jan/23 2:50 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+25,CI-7904,437478,Verify,ssanz,20/Dec/22 5:24 PM,26/Dec/22 12:00 AM,,Bentley,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+26,CI-7901,437144,Closed,ssanz,19/Dec/22 5:10 PM,26/Dec/22 12:00 AM,12/Jan/23 2:01 PM,Porsche,Incident Request (IR),DataSets\in_progress_PI6.1.csv,PI6.1
+27,CI-7900,437096,Closed,ssanz,19/Dec/22 3:44 PM,26/Dec/22 12:00 AM,05/Apr/23 1:07 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+28,CI-7895,436853,Closed,nsanchezruiz,19/Dec/22 10:18 AM,02/Jan/23 12:00 AM,23/Feb/23 1:17 PM,Osram,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+29,CI-7894,436761,Closed,yutaka.yasumi,19/Dec/22 7:29 AM,23/Dec/22 12:00 AM,10/Feb/23 7:15 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+30,CI-7893,436757,Closed,yutaka.yasumi,19/Dec/22 6:42 AM,23/Dec/22 12:00 AM,30/Jan/23 2:49 AM,Heidelberg Cement,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+31,CI-7890,436670,Closed,nsanchezruiz,16/Dec/22 3:30 PM,01/Jan/23 12:00 AM,10/Jan/23 11:33 AM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+32,CI-7889,436629,Closed,nsanchezruiz,16/Dec/22 2:58 PM,01/Jan/23 12:00 AM,11/Jan/23 10:28 AM,Continental,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+33,CI-7884,436451,Closed,nsanchezruiz,16/Dec/22 11:15 AM,26/Dec/22 12:00 AM,10/Jan/23 9:29 AM,CEPSA,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+34,CI-7873,436035,Closed,ssanz,15/Dec/22 12:05 PM,22/Dec/22 12:00 AM,31/Jan/23 10:03 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+35,CI-7870,435725,Closed,yutaka.yasumi,15/Dec/22 7:06 AM,22/Dec/22 12:00 AM,11/Jan/23 4:33 AM,msg systems,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+36,CI-7867,435618,Closed,ssanz,14/Dec/22 1:05 PM,21/Dec/22 12:00 AM,06/Mar/23 9:18 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+37,CI-7862,435348,Closed,ssanz,13/Dec/22 3:49 PM,20/Dec/22 12:00 AM,09/Feb/23 1:37 AM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+38,CI-7861,435312,Closed,ssanz,13/Dec/22 3:15 PM,20/Dec/22 12:00 AM,01/Mar/23 3:56 PM,Audi,Incident Request (IR),DataSets\in_progress_PI6.1.csv,PI6.1
+39,CI-7858,435107,Verify,ssanz,13/Dec/22 12:22 PM,20/Dec/22 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+40,CI-7854,434742,Closed,nsanchezruiz,12/Dec/22 3:44 PM,21/Dec/22 12:00 AM,17/Jan/23 3:57 PM,Rewe Group,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+41,CI-7850,434539,Closed,nsanchezruiz,12/Dec/22 10:23 AM,26/Dec/22 12:00 AM,22/Mar/23 1:41 PM,Apleona,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+42,CI-7841,433827,Closed,fkazmierczak,08/Dec/22 10:34 AM,08/Jan/23 12:00 AM,07/Feb/23 10:49 AM,Allianz,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+43,CI-7840,433819,Closed,ssanz,08/Dec/22 10:31 AM,15/Dec/22 12:00 AM,17/Feb/23 8:48 AM,Allianz,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+44,CI-7835,433426,Closed,yutaka.yasumi,07/Dec/22 7:42 AM,14/Dec/22 12:00 AM,19/Jan/23 5:41 AM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+45,CI-7829,433155,Closed,ssanz,06/Dec/22 1:18 PM,13/Dec/22 12:00 AM,29/Apr/23 4:15 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+46,CI-7816,432641,Closed,yutaka.yasumi,05/Dec/22 10:09 AM,09/Dec/22 12:00 AM,03/Mar/23 2:03 PM,CEPSA,Incident Request (IR),DataSets\in_progress_PI6.1.csv,PI6.1
+47,CI-7807,432492,Closed,alejandro.ruizrobles,03/Dec/22 1:20 PM,15/Dec/22 12:00 AM,21/Mar/23 4:54 PM,Numiga,SR - Partner,DataSets\in_progress_PI6.1.csv,PI6.1
+48,CI-7795,432002,Closed,nsanchezruiz,01/Dec/22 1:05 PM,15/Dec/22 12:00 AM,13/Feb/23 10:17 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+49,CI-7788,431813,Closed,yutaka.yasumi,01/Dec/22 1:54 AM,08/Dec/22 12:00 AM,05/Apr/23 6:54 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+50,CI-7787,431734,Closed,ssanz,30/Nov/22 4:24 PM,06/Dec/22 12:00 AM,10/Feb/23 9:35 AM,Allianz,Incident Request (IR),DataSets\in_progress_PI6.1.csv,PI6.1
+51,CI-7776,431457,Closed,yutaka.yasumi,30/Nov/22 6:00 AM,05/Dec/22 12:00 AM,10/Jan/23 2:27 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+52,CI-7706,428491,Closed,ssanz,16/Nov/22 11:36 AM,23/Nov/22 12:00 AM,17/Feb/23 8:25 AM,Allianz,Incident Request (IR),DataSets\in_progress_PI6.1.csv,PI6.1
+53,CI-7700,428349,Closed,alejandro.ruizrobles,15/Nov/22 4:39 PM,22/Nov/22 12:00 AM,12/Apr/23 1:53 PM,Numiga,SR - Partner,DataSets\in_progress_PI6.1.csv,PI6.1
+54,CI-7699,428346,Closed,ssanz,15/Nov/22 4:36 PM,22/Nov/22 12:00 AM,17/Jan/23 2:55 PM,ArcelorMittal,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+55,CI-7688,427631,Closed,askarja,11/Nov/22 3:58 PM,21/Nov/22 12:00 AM,20/Apr/23 10:15 AM,Rheinmetall,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+56,CI-7686,427598,Closed,askarja,11/Nov/22 2:58 PM,18/Nov/22 12:00 AM,24/Jan/23 3:38 PM,Traton SE,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+57,CI-7682,427526,Closed,askarja,11/Nov/22 12:49 PM,18/Nov/22 12:00 AM,24/Jan/23 10:39 AM,Nedschroef,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+58,CI-7674,427373,Closed,ssanz,10/Nov/22 4:11 PM,17/Nov/22 12:00 AM,17/Feb/23 8:24 AM,Allianz,Incident Request (IR),DataSets\in_progress_PI6.1.csv,PI6.1
+59,CI-7669,426820,Closed,yutaka.yasumi,09/Nov/22 11:15 AM,16/Nov/22 12:00 AM,24/Jan/23 12:40 PM,Burda,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+60,CI-7604,423551,Closed,nsanchezruiz,26/Oct/22 1:11 PM,26/Oct/22 12:00 AM,22/Feb/23 4:04 PM,Rewe Group,Incident Request (IR),DataSets\in_progress_PI6.1.csv,PI6.1
+61,CI-7597,423336,Closed,ssanz,25/Oct/22 4:47 PM,01/Nov/22 12:00 AM,07/Feb/23 9:04 AM,DER,Incident Request (IR),DataSets\in_progress_PI6.1.csv,PI6.1
+62,CI-7576,421964,Closed,ssanz,18/Oct/22 5:56 PM,25/Oct/22 12:00 AM,17/Jan/23 1:07 PM,Ineos,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+63,CI-7563,421362,Closed,ssanz,14/Oct/22 2:05 PM,21/Oct/22 12:00 AM,23/Feb/23 11:52 AM,Egis,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+64,CI-7550,420892,Closed,yutaka.yasumi,12/Oct/22 5:05 PM,19/Oct/22 12:00 AM,04/Apr/23 4:34 PM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+65,CI-7495,418725,Closed,askarja,04/Oct/22 10:13 PM,12/Oct/22 12:00 AM,24/Jan/23 3:35 PM,TUI AG,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+67,CI-7486,418256,Closed,yutaka.yasumi,03/Oct/22 6:41 AM,10/Oct/22 12:00 AM,31/Mar/23 2:37 AM,Continental,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+68,CI-7475,417874,Closed,nsanchezruiz,29/Sep/22 1:35 PM,10/Oct/22 12:00 AM,15/Feb/23 2:50 PM,OBB,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+69,CI-7409,414401,Closed,askarja,15/Sep/22 3:13 AM,22/Sep/22 12:00 AM,24/Jan/23 10:37 AM,Porsche,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+70,CI-7393,413617,Closed,askarja,11/Sep/22 11:39 PM,19/Sep/22 12:00 AM,24/Jan/23 10:37 AM,Eberspacher,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+71,CI-7392,413615,Closed,askarja,11/Sep/22 11:10 PM,19/Sep/22 12:00 AM,24/Jan/23 10:36 AM,Rheinmetall,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+72,CI-7375,411778,Closed,debert,01/Sep/22 12:49 PM,15/Sep/22 12:00 AM,27/Jan/23 11:47 AM,OBB,Incident Request (IR),DataSets\in_progress_PI6.1.csv,PI6.1
+73,CI-7373,411758,Closed,debert,01/Sep/22 12:11 PM,15/Sep/22 12:00 AM,13/Feb/23 6:41 AM,OBB,Incident Request (IR),DataSets\in_progress_PI6.1.csv,PI6.1
+74,CI-7365,411330,Closed,askarja,30/Aug/22 9:48 PM,14/Sep/22 12:00 AM,24/Jan/23 10:35 AM,Rheinmetall,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+75,CI-7253,408597,Explain,ssanz,16/Aug/22 2:54 PM,09/Dec/22 12:00 AM,,OBB,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+76,CI-7235,408302,Closed,askarja,13/Aug/22 1:35 PM,06/Sep/22 12:00 AM,24/Jan/23 10:30 AM,Rheinmetall,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+77,CI-7229,407702,Closed,ssanz,10/Aug/22 12:43 PM,17/Aug/22 12:00 AM,17/Jan/23 3:55 PM,Vaillant,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+78,CI-7227,407574,Closed,askarja,10/Aug/22 12:39 AM,30/Sep/22 12:00 AM,24/Jan/23 11:52 AM,Rheinmetall,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+79,CI-7226,407535,Closed,,09/Aug/22 3:05 PM,16/Aug/22 12:00 AM,18/Jan/23 6:29 AM,Porsche,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+80,CI-7221,407289,Closed,askarja,08/Aug/22 11:50 PM,15/Aug/22 12:00 AM,24/Jan/23 10:31 AM,Audi,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+81,CI-7205,406532,Closed,nsanchezruiz,04/Aug/22 11:54 AM,02/May/23 12:00 AM,10/Apr/23 8:47 AM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+82,CI-7178,405141,Closed,askarja,27/Jul/22 4:18 PM,03/Aug/22 12:00 AM,24/Jan/23 10:32 AM,msg systems,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+83,CI-7167,404691,Closed,askarja,25/Jul/22 1:03 PM,01/Aug/22 12:00 AM,24/Jan/23 10:34 AM,Rheinmetall,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+84,CI-7156,403721,Closed,askarja,19/Jul/22 6:23 PM,26/Jul/22 12:00 AM,27/Jan/23 8:00 PM,Traton SE,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+85,CI-7080,401042,Closed,ssanz,05/Jul/22 4:41 PM,08/Jul/22 12:00 AM,24/Jan/23 10:14 AM,CEPSA,Incident Request (IR),DataSets\in_progress_PI6.1.csv,PI6.1
+86,CI-7029,398756,Closed,askarja,23/Jun/22 2:32 PM,30/Jun/22 12:00 AM,27/Jan/23 7:55 PM,TeamBank AG,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+87,CI-6926,393799,Closed,,25/May/22 12:42 PM,12/Jul/22 12:00 AM,27/Jan/23 7:53 PM,Aquila Capital,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+88,CI-6911,393585,Closed,,24/May/22 3:11 PM,11/Aug/22 12:00 AM,24/Jan/23 10:33 AM,VW,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+89,CI-6901,393357,Closed,,23/May/22 1:21 PM,30/May/22 12:00 AM,21/Mar/23 1:06 PM,Porsche,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+90,CI-6825,389774,Closed,,11/May/22 11:16 AM,16/May/22 12:00 AM,24/Jan/23 12:32 PM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6.1.csv,PI6.1
+0,CI-8071,444032,Closed,yutaka.yasumi,27/Jan/23 2:43 AM,31/Jan/23 12:00 AM,10/Mar/23 8:02 AM,Vaillant,Incident Request (IR),DataSets\in_progress_PI6.2.csv,PI6.2
+1,CI-8063,443892,Closed,ccasper,26/Jan/23 2:34 PM,01/Feb/23 12:00 AM,01/Feb/23 9:42 AM,Egis,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+2,CI-8057,443742,Closed,yutaka.yasumi,26/Jan/23 7:23 AM,31/Jan/23 12:00 AM,30/Jan/23 2:07 AM,Heidelberg Cement,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+3,CI-8055,443734,Closed,yutaka.yasumi,26/Jan/23 3:10 AM,31/Jan/23 12:00 AM,14/Mar/23 2:18 AM,Eberspacher,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+4,CI-8054,443576,Closed,tsteinhaeuser,25/Jan/23 10:54 AM,01/Feb/23 12:00 AM,10/Feb/23 9:53 AM,Expense Development,Incident Request (IR),DataSets\in_progress_PI6.2.csv,PI6.2
+5,CI-8052,443529,Closed,yutaka.yasumi,25/Jan/23 9:22 AM,31/Jan/23 12:00 AM,17/Mar/23 12:58 AM,Porsche,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+6,CI-8051,443518,Closed,yutaka.yasumi,25/Jan/23 8:52 AM,27/Jan/23 12:00 AM,10/Feb/23 7:11 AM,Daimler (MFTBC),Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+7,CI-8048,443357,Closed,nsanchezruiz,24/Jan/23 1:34 PM,06/Feb/23 12:00 AM,03/Apr/23 3:44 PM,msg systems,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+8,CI-8047,443341,Closed,alejandro.ruizrobles,24/Jan/23 12:33 PM,31/Jan/23 12:00 AM,09/Feb/23 5:16 PM,Numiga,SR - Partner,DataSets\in_progress_PI6.2.csv,PI6.2
+9,CI-8046,443331,Closed,nsanchezruiz,24/Jan/23 12:24 PM,31/Jan/23 12:00 AM,14/Mar/23 4:18 PM,Porsche,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+10,CI-8041,443211,Closed,yutaka.yasumi,24/Jan/23 5:46 AM,31/Jan/23 12:00 AM,10/Mar/23 8:05 AM,Rewe Group,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+11,CI-8040,443165,Closed,ccasper,23/Jan/23 4:42 PM,31/Jan/23 12:00 AM,03/Feb/23 11:44 AM,Allianz,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+12,CI-8039,443101,Closed,alejandro.ruizrobles,23/Jan/23 1:30 PM,31/Jan/23 12:00 AM,31/Jan/23 5:57 PM,Numiga,SR - Partner,DataSets\in_progress_PI6.2.csv,PI6.2
+13,CI-8033,442712,Closed,nsanchezruiz,19/Jan/23 4:18 PM,30/Jan/23 12:00 AM,31/Jan/23 2:37 PM,ArcelorMittal,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+14,CI-8023,441964,Closed,alejandro.ruizrobles,17/Jan/23 10:11 AM,27/Jan/23 12:00 AM,31/Jan/23 12:41 PM,ProcurX,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+15,CI-8015,441601,Closed,yutaka.yasumi,16/Jan/23 2:20 AM,23/Jan/23 12:00 AM,08/Feb/23 2:50 AM,Grupo Red Electrica,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+16,CI-8011,441392,Closed,yutaka.yasumi,13/Jan/23 11:49 AM,18/Jan/23 12:00 AM,30/Jan/23 2:44 AM,Munckhof,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+17,CI-8008,441342,Closed,nsanchezruiz,13/Jan/23 10:16 AM,18/Jan/23 12:00 AM,23/Feb/23 8:43 AM,Egis,Incident Request (IR),DataSets\in_progress_PI6.2.csv,PI6.2
+18,CI-8006,441299,Closed,yutaka.yasumi,13/Jan/23 7:58 AM,17/Jan/23 12:00 AM,04/Apr/23 4:32 PM,Porsche,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+19,CI-8003,441150,Closed,yutaka.yasumi,12/Jan/23 12:20 PM,19/Jan/23 12:00 AM,02/Feb/23 2:00 AM,apoBank,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+20,CI-8002,441123,Closed,yutaka.yasumi,12/Jan/23 11:35 AM,19/Jan/23 12:00 AM,10/Feb/23 7:12 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+22,CI-7994,440981,Closed,yutaka.yasumi,12/Jan/23 5:04 AM,19/Jan/23 12:00 AM,08/Feb/23 2:51 AM,Grupo Red Electrica,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+23,CI-7993,440978,Closed,yutaka.yasumi,12/Jan/23 4:48 AM,19/Jan/23 12:00 AM,06/Feb/23 1:51 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+24,CI-7990,440916,Closed,alejandro.ruizrobles,11/Jan/23 4:50 PM,18/Jan/23 12:00 AM,08/Mar/23 4:45 PM,Numiga,SR - Partner,DataSets\in_progress_PI6.2.csv,PI6.2
+25,CI-7981,440603,Closed,yutaka.yasumi,11/Jan/23 2:03 AM,18/Jan/23 12:00 AM,10/Feb/23 7:13 AM,Vaillant,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+26,CI-7978,440139,Closed,nsanchezruiz,10/Jan/23 9:18 AM,17/Jan/23 12:00 AM,30/Jan/23 12:50 PM,Burda,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+27,CI-7970,439508,Closed,yutaka.yasumi,06/Jan/23 4:38 AM,13/Jan/23 12:00 AM,10/Feb/23 7:13 AM,Amadeus,Incident Request (IR),DataSets\in_progress_PI6.2.csv,PI6.2
+28,CI-7969,439500,Closed,yutaka.yasumi,06/Jan/23 1:44 AM,13/Jan/23 12:00 AM,30/Jan/23 2:46 AM,Eberspacher,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+29,CI-7963,439220,Closed,yutaka.yasumi,05/Jan/23 4:38 AM,12/Jan/23 12:00 AM,30/Jan/23 2:46 AM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+30,CI-7962,439217,Closed,yutaka.yasumi,05/Jan/23 3:49 AM,12/Jan/23 12:00 AM,20/Feb/23 5:17 AM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+31,CI-7940,438429,Closed,ssanz,30/Dec/22 10:21 AM,06/Jan/23 12:00 AM,17/Feb/23 8:26 AM,Heidelberg Cement,Incident Request (IR),DataSets\in_progress_PI6.2.csv,PI6.2
+32,CI-7923,437910,Closed,ssanz,22/Dec/22 2:17 PM,01/Mar/23 12:00 AM,02/Mar/23 11:57 AM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+33,CI-7915,437749,Closed,ssanz,21/Dec/22 3:20 PM,28/Dec/22 12:00 AM,14/Feb/23 12:42 PM,Porsche,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+34,CI-7912,437698,Closed,ssanz,21/Dec/22 1:07 PM,28/Dec/22 12:00 AM,15/Feb/23 11:23 AM,Continental,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+35,CI-7910,437680,Closed,ssanz,21/Dec/22 12:20 PM,28/Dec/22 12:00 AM,16/Feb/23 1:49 PM,Enercon,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+36,CI-7909,437653,Closed,ssanz,21/Dec/22 11:46 AM,28/Dec/22 12:00 AM,17/Mar/23 8:55 AM,Continental,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+37,CI-7906,437493,Closed,yutaka.yasumi,21/Dec/22 4:10 AM,23/Dec/22 12:00 AM,30/Jan/23 2:50 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+38,CI-7904,437478,Verify,ssanz,20/Dec/22 5:24 PM,26/Dec/22 12:00 AM,,Bentley,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+39,CI-7900,437096,Closed,ssanz,19/Dec/22 3:44 PM,26/Dec/22 12:00 AM,05/Apr/23 1:07 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+40,CI-7895,436853,Closed,nsanchezruiz,19/Dec/22 10:18 AM,02/Jan/23 12:00 AM,23/Feb/23 1:17 PM,Osram,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+41,CI-7894,436761,Closed,yutaka.yasumi,19/Dec/22 7:29 AM,23/Dec/22 12:00 AM,10/Feb/23 7:15 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+42,CI-7893,436757,Closed,yutaka.yasumi,19/Dec/22 6:42 AM,23/Dec/22 12:00 AM,30/Jan/23 2:49 AM,Heidelberg Cement,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+43,CI-7873,436035,Closed,ssanz,15/Dec/22 12:05 PM,22/Dec/22 12:00 AM,31/Jan/23 10:03 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+44,CI-7867,435618,Closed,ssanz,14/Dec/22 1:05 PM,21/Dec/22 12:00 AM,06/Mar/23 9:18 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+45,CI-7862,435348,Closed,ssanz,13/Dec/22 3:49 PM,20/Dec/22 12:00 AM,09/Feb/23 1:37 AM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+46,CI-7861,435312,Closed,ssanz,13/Dec/22 3:15 PM,20/Dec/22 12:00 AM,01/Mar/23 3:56 PM,Audi,Incident Request (IR),DataSets\in_progress_PI6.2.csv,PI6.2
+47,CI-7858,435107,Verify,ssanz,13/Dec/22 12:22 PM,20/Dec/22 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+48,CI-7850,434539,Closed,nsanchezruiz,12/Dec/22 10:23 AM,26/Dec/22 12:00 AM,22/Mar/23 1:41 PM,Apleona,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+49,CI-7841,433827,Closed,fkazmierczak,08/Dec/22 10:34 AM,08/Jan/23 12:00 AM,07/Feb/23 10:49 AM,Allianz,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+50,CI-7840,433819,Closed,ssanz,08/Dec/22 10:31 AM,15/Dec/22 12:00 AM,17/Feb/23 8:48 AM,Allianz,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+51,CI-7829,433155,Closed,ssanz,06/Dec/22 1:18 PM,13/Dec/22 12:00 AM,29/Apr/23 4:15 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+52,CI-7816,432641,Closed,yutaka.yasumi,05/Dec/22 10:09 AM,09/Dec/22 12:00 AM,03/Mar/23 2:03 PM,CEPSA,Incident Request (IR),DataSets\in_progress_PI6.2.csv,PI6.2
+53,CI-7807,432492,Closed,alejandro.ruizrobles,03/Dec/22 1:20 PM,15/Dec/22 12:00 AM,21/Mar/23 4:54 PM,Numiga,SR - Partner,DataSets\in_progress_PI6.2.csv,PI6.2
+54,CI-7795,432002,Closed,nsanchezruiz,01/Dec/22 1:05 PM,15/Dec/22 12:00 AM,13/Feb/23 10:17 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+55,CI-7788,431813,Closed,yutaka.yasumi,01/Dec/22 1:54 AM,08/Dec/22 12:00 AM,05/Apr/23 6:54 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+56,CI-7787,431734,Closed,ssanz,30/Nov/22 4:24 PM,06/Dec/22 12:00 AM,10/Feb/23 9:35 AM,Allianz,Incident Request (IR),DataSets\in_progress_PI6.2.csv,PI6.2
+57,CI-7706,428491,Closed,ssanz,16/Nov/22 11:36 AM,23/Nov/22 12:00 AM,17/Feb/23 8:25 AM,Allianz,Incident Request (IR),DataSets\in_progress_PI6.2.csv,PI6.2
+58,CI-7700,428349,Closed,alejandro.ruizrobles,15/Nov/22 4:39 PM,22/Nov/22 12:00 AM,12/Apr/23 1:53 PM,Numiga,SR - Partner,DataSets\in_progress_PI6.2.csv,PI6.2
+59,CI-7688,427631,Closed,askarja,11/Nov/22 3:58 PM,21/Nov/22 12:00 AM,20/Apr/23 10:15 AM,Rheinmetall,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+60,CI-7674,427373,Closed,ssanz,10/Nov/22 4:11 PM,17/Nov/22 12:00 AM,17/Feb/23 8:24 AM,Allianz,Incident Request (IR),DataSets\in_progress_PI6.2.csv,PI6.2
+61,CI-7604,423551,Closed,nsanchezruiz,26/Oct/22 1:11 PM,26/Oct/22 12:00 AM,22/Feb/23 4:04 PM,Rewe Group,Incident Request (IR),DataSets\in_progress_PI6.2.csv,PI6.2
+62,CI-7597,423336,Closed,ssanz,25/Oct/22 4:47 PM,01/Nov/22 12:00 AM,07/Feb/23 9:04 AM,DER,Incident Request (IR),DataSets\in_progress_PI6.2.csv,PI6.2
+63,CI-7563,421362,Closed,ssanz,14/Oct/22 2:05 PM,21/Oct/22 12:00 AM,23/Feb/23 11:52 AM,Egis,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+64,CI-7550,420892,Closed,yutaka.yasumi,12/Oct/22 5:05 PM,19/Oct/22 12:00 AM,04/Apr/23 4:34 PM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+65,CI-7489,418470,Closed,askarja,04/Oct/22 7:45 AM,11/Oct/22 12:00 AM,23/Mar/23 1:55 PM,Burda,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+67,CI-7475,417874,Closed,nsanchezruiz,29/Sep/22 1:35 PM,10/Oct/22 12:00 AM,15/Feb/23 2:50 PM,OBB,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+68,CI-7373,411758,Closed,debert,01/Sep/22 12:11 PM,15/Sep/22 12:00 AM,13/Feb/23 6:41 AM,OBB,Incident Request (IR),DataSets\in_progress_PI6.2.csv,PI6.2
+69,CI-7253,408597,Explain,ssanz,16/Aug/22 2:54 PM,09/Dec/22 12:00 AM,,OBB,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+70,CI-7205,406532,Closed,nsanchezruiz,04/Aug/22 11:54 AM,02/May/23 12:00 AM,10/Apr/23 8:47 AM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+71,CI-6901,393357,Closed,,23/May/22 1:21 PM,30/May/22 12:00 AM,21/Mar/23 1:06 PM,Porsche,Service Request (SR),DataSets\in_progress_PI6.2.csv,PI6.2
+0,CI-8190,449259,Closed,askarja,17/Feb/23 2:48 PM,24/Feb/23 12:00 AM,05/Apr/23 12:08 PM,Eberspacher,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+1,CI-8187,449164,Closed,nsanchezruiz,17/Feb/23 1:00 PM,28/Feb/23 12:00 AM,23/Feb/23 3:29 PM,apoBank,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+2,CI-8185,449035,Closed,yutaka.yasumi,17/Feb/23 9:59 AM,20/Feb/23 12:00 AM,04/Apr/23 3:22 PM,Munckhof,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+3,CI-8184,448971,Closed,yutaka.yasumi,17/Feb/23 1:56 AM,24/Feb/23 12:00 AM,04/Apr/23 4:33 PM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+4,CI-8183,448966,Closed,yutaka.yasumi,17/Feb/23 12:10 AM,24/Feb/23 12:00 AM,27/Feb/23 2:48 PM,Wacker,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+5,CI-8181,448929,Closed,nsanchezruiz,16/Feb/23 4:22 PM,28/Feb/23 12:00 AM,24/Feb/23 3:13 PM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+6,CI-8179,448809,Closed,alejandro.ruizrobles,16/Feb/23 10:46 AM,23/Feb/23 12:00 AM,02/Mar/23 9:31 AM,ProcurX,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+7,CI-8177,448686,Verify,ssanz,15/Feb/23 4:35 PM,22/Feb/23 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+8,CI-8176,448625,Closed,ssanz,15/Feb/23 3:47 PM,22/Feb/23 12:00 AM,14/Apr/23 1:31 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+9,CI-8168,448338,Closed,yutaka.yasumi,15/Feb/23 2:30 AM,20/Feb/23 12:00 AM,06/Mar/23 11:13 AM,Vaillant,Incident Request (IR),DataSets\in_progress_PI6.3.csv,PI6.3
+10,CI-8167,448336,Closed,yutaka.yasumi,15/Feb/23 2:08 AM,24/Feb/23 12:00 AM,08/Mar/23 1:31 AM,Amadeus,Incident Request (IR),DataSets\in_progress_PI6.3.csv,PI6.3
+11,CI-8166,448333,Closed,yutaka.yasumi,15/Feb/23 1:22 AM,22/Feb/23 12:00 AM,06/Mar/23 11:41 PM,Porsche,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+12,CI-8164,448243,Communicate,achattopadhyay,14/Feb/23 1:51 PM,21/Feb/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+13,CI-8163,448077,Closed,yutaka.yasumi,14/Feb/23 1:54 AM,21/Feb/23 12:00 AM,17/Mar/23 12:51 AM,Continental,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+14,CI-8159,447939,Closed,wkatthan,13/Feb/23 12:19 PM,16/Feb/23 12:00 AM,24/Apr/23 12:53 PM,ArcelorMittal,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+15,CI-8158,447936,Closed,yutaka.yasumi,13/Feb/23 12:17 PM,17/Feb/23 12:00 AM,10/Mar/23 7:43 AM,Continental,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+16,CI-8151,447784,Closed,yutaka.yasumi,13/Feb/23 2:59 AM,17/Feb/23 12:00 AM,10/Mar/23 7:51 AM,Vaillant,Incident Request (IR),DataSets\in_progress_PI6.3.csv,PI6.3
+17,CI-8150,447782,Closed,yutaka.yasumi,13/Feb/23 1:17 AM,17/Feb/23 12:00 AM,28/Feb/23 1:37 AM,Grupo Red Electrica,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+18,CI-8144,447479,Closed,nsanchezruiz,09/Feb/23 3:29 PM,20/Feb/23 12:00 AM,29/Apr/23 4:07 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+19,CI-8140,447205,Closed,yutaka.yasumi,09/Feb/23 12:24 AM,16/Feb/23 12:00 AM,27/Feb/23 10:46 AM,Burda,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+20,CI-8139,447117,Closed,nsanchezruiz,08/Feb/23 3:00 PM,17/Feb/23 12:00 AM,01/Mar/23 10:38 AM,Allianz,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+22,CI-8137,447073,Closed,nsanchezruiz,08/Feb/23 1:39 PM,14/Feb/23 12:00 AM,07/Mar/23 9:12 AM,Porsche,Incident Request (IR),DataSets\in_progress_PI6.3.csv,PI6.3
+23,CI-8134,446994,Closed,ccasper,08/Feb/23 10:09 AM,24/Feb/23 12:00 AM,19/Apr/23 3:11 PM,TUI AG,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+24,CI-8132,446917,Closed,yutaka.yasumi,08/Feb/23 7:39 AM,15/Feb/23 12:00 AM,22/Mar/23 12:36 AM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+25,CI-8128,446894,Closed,yutaka.yasumi,08/Feb/23 2:02 AM,15/Feb/23 12:00 AM,27/Feb/23 10:46 AM,VW,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+26,CI-8127,446771,Closed,nsanchezruiz,07/Feb/23 2:38 PM,14/Feb/23 12:00 AM,27/Feb/23 9:56 AM,msg systems,Incident Request (IR),DataSets\in_progress_PI6.3.csv,PI6.3
+27,CI-8126,446764,Closed,yutaka.yasumi,07/Feb/23 2:08 PM,14/Feb/23 12:00 AM,27/Feb/23 12:19 AM,Porsche,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+28,CI-8118,446512,Closed,askarja,06/Feb/23 8:05 PM,13/Feb/23 12:00 AM,19/Apr/23 1:24 AM,TeamBank AG,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+29,CI-8105,446288,Closed,yutaka.yasumi,06/Feb/23 8:43 AM,13/Feb/23 12:00 AM,10/Mar/23 8:00 AM,Daimler (MFTBC),Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+30,CI-8099,446053,Closed,nsanchezruiz,03/Feb/23 8:59 AM,06/Feb/23 12:00 AM,07/Mar/23 1:27 PM,Porsche,Incident Request (IR),DataSets\in_progress_PI6.3.csv,PI6.3
+31,CI-8098,446049,Closed,yutaka.yasumi,03/Feb/23 8:46 AM,10/Feb/23 12:00 AM,27/Feb/23 10:51 AM,Continental,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+32,CI-8097,446005,Closed,yutaka.yasumi,03/Feb/23 2:15 AM,06/Feb/23 12:00 AM,24/Mar/23 2:22 AM,Continental,Incident Request (IR),DataSets\in_progress_PI6.3.csv,PI6.3
+33,CI-8093,445763,Closed,alejandro.ruizrobles,02/Feb/23 8:59 AM,09/Feb/23 12:00 AM,08/Jun/23 3:06 PM,Numiga,SR - Partner,DataSets\in_progress_PI6.3.csv,PI6.3
+34,CI-8085,445018,Closed,yutaka.yasumi,31/Jan/23 1:48 AM,07/Feb/23 12:00 AM,03/Mar/23 3:28 AM,Porsche,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+35,CI-8083,444863,Closed,yutaka.yasumi,30/Jan/23 4:24 PM,07/Feb/23 12:00 AM,10/Mar/23 8:01 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+36,CI-8082,444818,Closed,nsanchezruiz,30/Jan/23 3:20 PM,03/Feb/23 12:00 AM,23/Feb/23 12:25 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+37,CI-8081,444805,Closed,yutaka.yasumi,30/Jan/23 3:06 PM,06/Feb/23 12:00 AM,03/Mar/23 3:29 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+38,CI-8077,444452,Closed,yutaka.yasumi,30/Jan/23 2:11 AM,03/Feb/23 12:00 AM,20/Feb/23 5:16 AM,Heidelberg Cement,Incident Request (IR),DataSets\in_progress_PI6.3.csv,PI6.3
+39,CI-8071,444032,Closed,yutaka.yasumi,27/Jan/23 2:43 AM,31/Jan/23 12:00 AM,10/Mar/23 8:02 AM,Vaillant,Incident Request (IR),DataSets\in_progress_PI6.3.csv,PI6.3
+40,CI-8055,443734,Closed,yutaka.yasumi,26/Jan/23 3:10 AM,31/Jan/23 12:00 AM,14/Mar/23 2:18 AM,Eberspacher,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+41,CI-8052,443529,Closed,yutaka.yasumi,25/Jan/23 9:22 AM,31/Jan/23 12:00 AM,17/Mar/23 12:58 AM,Porsche,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+42,CI-8048,443357,Closed,nsanchezruiz,24/Jan/23 1:34 PM,06/Feb/23 12:00 AM,03/Apr/23 3:44 PM,msg systems,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+43,CI-8046,443331,Closed,nsanchezruiz,24/Jan/23 12:24 PM,31/Jan/23 12:00 AM,14/Mar/23 4:18 PM,Porsche,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+44,CI-8041,443211,Closed,yutaka.yasumi,24/Jan/23 5:46 AM,31/Jan/23 12:00 AM,10/Mar/23 8:05 AM,Rewe Group,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+45,CI-8008,441342,Closed,nsanchezruiz,13/Jan/23 10:16 AM,18/Jan/23 12:00 AM,23/Feb/23 8:43 AM,Egis,Incident Request (IR),DataSets\in_progress_PI6.3.csv,PI6.3
+46,CI-8006,441299,Closed,yutaka.yasumi,13/Jan/23 7:58 AM,17/Jan/23 12:00 AM,04/Apr/23 4:32 PM,Porsche,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+47,CI-7990,440916,Closed,alejandro.ruizrobles,11/Jan/23 4:50 PM,18/Jan/23 12:00 AM,08/Mar/23 4:45 PM,Numiga,SR - Partner,DataSets\in_progress_PI6.3.csv,PI6.3
+48,CI-7962,439217,Closed,yutaka.yasumi,05/Jan/23 3:49 AM,12/Jan/23 12:00 AM,20/Feb/23 5:17 AM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+49,CI-7923,437910,Closed,ssanz,22/Dec/22 2:17 PM,01/Mar/23 12:00 AM,02/Mar/23 11:57 AM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+50,CI-7909,437653,Closed,ssanz,21/Dec/22 11:46 AM,28/Dec/22 12:00 AM,17/Mar/23 8:55 AM,Continental,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+51,CI-7904,437478,Verify,ssanz,20/Dec/22 5:24 PM,26/Dec/22 12:00 AM,,Bentley,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+52,CI-7900,437096,Closed,ssanz,19/Dec/22 3:44 PM,26/Dec/22 12:00 AM,05/Apr/23 1:07 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+53,CI-7895,436853,Closed,nsanchezruiz,19/Dec/22 10:18 AM,02/Jan/23 12:00 AM,23/Feb/23 1:17 PM,Osram,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+54,CI-7861,435312,Closed,ssanz,13/Dec/22 3:15 PM,20/Dec/22 12:00 AM,01/Mar/23 3:56 PM,Audi,Incident Request (IR),DataSets\in_progress_PI6.3.csv,PI6.3
+55,CI-7858,435107,Verify,ssanz,13/Dec/22 12:22 PM,20/Dec/22 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+56,CI-7850,434539,Closed,nsanchezruiz,12/Dec/22 10:23 AM,26/Dec/22 12:00 AM,22/Mar/23 1:41 PM,Apleona,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+57,CI-7829,433155,Closed,ssanz,06/Dec/22 1:18 PM,13/Dec/22 12:00 AM,29/Apr/23 4:15 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+58,CI-7816,432641,Closed,yutaka.yasumi,05/Dec/22 10:09 AM,09/Dec/22 12:00 AM,03/Mar/23 2:03 PM,CEPSA,Incident Request (IR),DataSets\in_progress_PI6.3.csv,PI6.3
+59,CI-7807,432492,Closed,alejandro.ruizrobles,03/Dec/22 1:20 PM,15/Dec/22 12:00 AM,21/Mar/23 4:54 PM,Numiga,SR - Partner,DataSets\in_progress_PI6.3.csv,PI6.3
+60,CI-7788,431813,Closed,yutaka.yasumi,01/Dec/22 1:54 AM,08/Dec/22 12:00 AM,05/Apr/23 6:54 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+61,CI-7700,428349,Closed,alejandro.ruizrobles,15/Nov/22 4:39 PM,22/Nov/22 12:00 AM,12/Apr/23 1:53 PM,Numiga,SR - Partner,DataSets\in_progress_PI6.3.csv,PI6.3
+62,CI-7688,427631,Closed,askarja,11/Nov/22 3:58 PM,21/Nov/22 12:00 AM,20/Apr/23 10:15 AM,Rheinmetall,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+63,CI-7604,423551,Closed,nsanchezruiz,26/Oct/22 1:11 PM,26/Oct/22 12:00 AM,22/Feb/23 4:04 PM,Rewe Group,Incident Request (IR),DataSets\in_progress_PI6.3.csv,PI6.3
+64,CI-7582,422229,Closed,ssanz,19/Oct/22 4:24 PM,31/Jan/23 12:00 AM,07/Mar/23 10:43 AM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+65,CI-7563,421362,Closed,ssanz,14/Oct/22 2:05 PM,21/Oct/22 12:00 AM,23/Feb/23 11:52 AM,Egis,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+67,CI-7489,418470,Closed,askarja,04/Oct/22 7:45 AM,11/Oct/22 12:00 AM,23/Mar/23 1:55 PM,Burda,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+68,CI-7486,418256,Closed,yutaka.yasumi,03/Oct/22 6:41 AM,10/Oct/22 12:00 AM,31/Mar/23 2:37 AM,Continental,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+69,CI-7253,408597,Explain,ssanz,16/Aug/22 2:54 PM,09/Dec/22 12:00 AM,,OBB,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+70,CI-7205,406532,Closed,nsanchezruiz,04/Aug/22 11:54 AM,02/May/23 12:00 AM,10/Apr/23 8:47 AM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+71,CI-6901,393357,Closed,,23/May/22 1:21 PM,30/May/22 12:00 AM,21/Mar/23 1:06 PM,Porsche,Service Request (SR),DataSets\in_progress_PI6.3.csv,PI6.3
+0,CI-8294,454905,Communicate,mmaciejczyk,10/Mar/23 11:19 AM,17/Mar/23 12:00 AM,,VW,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+1,CI-8291,454824,Closed,ssanz,10/Mar/23 8:15 AM,10/Mar/23 12:00 AM,16/Mar/23 2:06 PM,Allianz,Incident Request (IR),DataSets\in_progress_PI6.4.csv,PI6.4
+2,CI-8289,454808,Closed,yutaka.yasumi,10/Mar/23 7:21 AM,13/Mar/23 12:00 AM,03/Apr/23 1:18 AM,Ineos,Incident Request (IR),DataSets\in_progress_PI6.4.csv,PI6.4
+3,CI-8286,454791,Closed,yutaka.yasumi,10/Mar/23 1:33 AM,17/Mar/23 12:00 AM,15/May/23 5:50 AM,Continental,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+4,CI-8285,454741,Closed,nsanchezruiz,09/Mar/23 4:25 PM,20/Mar/23 12:00 AM,21/Apr/23 9:12 AM,DER,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+5,CI-8283,454650,Closed,nsanchezruiz,09/Mar/23 2:15 PM,23/Mar/23 12:00 AM,04/Apr/23 3:26 PM,Porsche,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+6,CI-8282,454599,Closed,nsanchezruiz,09/Mar/23 12:22 PM,20/Mar/23 12:00 AM,21/Mar/23 8:59 AM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+7,CI-8279,454369,Closed,mmaciejczyk,08/Mar/23 6:04 PM,15/Mar/23 12:00 AM,30/Mar/23 3:22 PM,Lufthansa City Center,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+8,CI-8277,454229,Closed,ssanz,08/Mar/23 3:09 PM,15/Mar/23 12:00 AM,18/Apr/23 2:15 PM,TUI AG,Incident Request (IR),DataSets\in_progress_PI6.4.csv,PI6.4
+9,CI-8276,453986,Closed,alejandro.ruizrobles,07/Mar/23 5:24 PM,14/Mar/23 12:00 AM,14/Mar/23 9:47 AM,Numiga,SR - Partner,DataSets\in_progress_PI6.4.csv,PI6.4
+10,CI-8274,453948,Closed,ssanz,07/Mar/23 3:43 PM,14/Mar/23 12:00 AM,15/Mar/23 2:09 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+11,CI-8273,453848,Closed,ssanz,07/Mar/23 1:31 PM,08/Mar/23 12:00 AM,10/Apr/23 10:50 AM,Allianz,Incident Request (IR),DataSets\in_progress_PI6.4.csv,PI6.4
+12,CI-8272,453603,Closed,yutaka.yasumi,07/Mar/23 2:13 AM,21/Mar/23 12:00 AM,16/Mar/23 7:38 AM,Spiegel,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+13,CI-8270,453483,Closed,ssanz,06/Mar/23 1:40 PM,13/Mar/23 12:00 AM,08/May/23 11:49 AM,Allianz,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+14,CI-8269,453481,Closed,ssanz,06/Mar/23 1:36 PM,13/Mar/23 12:00 AM,08/May/23 11:48 AM,Allianz,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+15,CI-8262,453141,Closed,yutaka.yasumi,06/Mar/23 2:24 AM,13/Mar/23 12:00 AM,22/Mar/23 2:55 AM,Endress Hauser,Incident Request (IR),DataSets\in_progress_PI6.4.csv,PI6.4
+16,CI-8261,453139,Closed,yutaka.yasumi,06/Mar/23 1:37 AM,13/Mar/23 12:00 AM,05/Apr/23 6:52 AM,Spiegel,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+17,CI-8260,453010,Closed,alejandro.ruizrobles,03/Mar/23 5:56 PM,10/Mar/23 12:00 AM,21/Mar/23 10:14 AM,Numiga,SR - Partner,DataSets\in_progress_PI6.4.csv,PI6.4
+18,CI-8259,453008,Closed,alejandro.ruizrobles,03/Mar/23 5:46 PM,10/Mar/23 12:00 AM,13/Mar/23 9:49 AM,Numiga,SR - Partner,DataSets\in_progress_PI6.4.csv,PI6.4
+19,CI-8257,452981,Closed,nsanchezruiz,03/Mar/23 3:02 PM,13/Mar/23 12:00 AM,21/Mar/23 10:02 AM,Munckhof,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+20,CI-8256,452976,Closed,nsanchezruiz,03/Mar/23 2:45 PM,09/Mar/23 12:00 AM,21/Mar/23 8:53 AM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+22,CI-8251,452791,Closed,yutaka.yasumi,03/Mar/23 5:27 AM,10/Mar/23 12:00 AM,22/Mar/23 3:07 PM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+23,CI-8250,452787,Closed,yutaka.yasumi,03/Mar/23 4:08 AM,07/Mar/23 12:00 AM,15/Mar/23 11:18 AM,CMS Hasche Sigle,Incident Request (IR),DataSets\in_progress_PI6.4.csv,PI6.4
+24,CI-8249,452780,Closed,yutaka.yasumi,03/Mar/23 2:44 AM,17/Mar/23 12:00 AM,05/Apr/23 9:30 AM,CEPSA,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+25,CI-8248,452777,Closed,yutaka.yasumi,03/Mar/23 2:33 AM,17/Mar/23 12:00 AM,15/Mar/23 10:13 AM,Eberspacher,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+26,CI-8247,452731,Closed,alejandro.ruizrobles,02/Mar/23 4:14 PM,16/Mar/23 12:00 AM,21/Mar/23 5:00 PM,Numiga,SR - Partner,DataSets\in_progress_PI6.4.csv,PI6.4
+27,CI-8245,452623,Closed,nsanchezruiz,02/Mar/23 11:17 AM,13/Mar/23 12:00 AM,14/Mar/23 4:26 PM,Amadeus,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+28,CI-8244,452543,Closed,ssanz,02/Mar/23 9:48 AM,09/Mar/23 12:00 AM,15/Mar/23 2:24 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+29,CI-8242,452464,Closed,yutaka.yasumi,02/Mar/23 1:04 AM,09/Mar/23 12:00 AM,06/Apr/23 4:26 PM,Burda,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+30,CI-8240,452387,Closed,nsanchezruiz,01/Mar/23 3:41 PM,13/Mar/23 12:00 AM,14/Mar/23 9:14 AM,Spiegel,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+31,CI-8239,452166,Closed,yutaka.yasumi,01/Mar/23 2:16 AM,06/Mar/23 12:00 AM,29/Mar/23 9:54 AM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+32,CI-8238,452000,Closed,nsanchezruiz,28/Feb/23 1:28 PM,31/Mar/23 12:00 AM,12/Jun/23 2:50 PM,Fiege,Incident Request (IR),DataSets\in_progress_PI6.4.csv,PI6.4
+33,CI-8237,451967,Closed,nsanchezruiz,28/Feb/23 11:30 AM,08/Mar/23 12:00 AM,13/Mar/23 2:13 PM,Porsche,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+34,CI-8236,451837,Closed,yutaka.yasumi,28/Feb/23 12:45 AM,07/Mar/23 12:00 AM,13/Apr/23 4:29 PM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+35,CI-8225,450885,Closed,ssanz,23/Feb/23 1:56 PM,02/Mar/23 12:00 AM,23/Mar/23 4:34 PM,Rehau,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+36,CI-8219,450562,Communicate,kgostynska,22/Feb/23 1:28 PM,01/Mar/23 12:00 AM,,Amadeus,Incident Request (IR),DataSets\in_progress_PI6.4.csv,PI6.4
+37,CI-8218,450520,Closed,mmaciejczyk,22/Feb/23 12:23 PM,01/Mar/23 12:00 AM,16/Mar/23 12:26 PM,Porsche,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+38,CI-8209,450104,Closed,kgostynska,21/Feb/23 11:57 AM,28/Feb/23 12:00 AM,16/Mar/23 3:57 PM,CEPSA,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+39,CI-8190,449259,Closed,askarja,17/Feb/23 2:48 PM,24/Feb/23 12:00 AM,05/Apr/23 12:08 PM,Eberspacher,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+40,CI-8185,449035,Closed,yutaka.yasumi,17/Feb/23 9:59 AM,20/Feb/23 12:00 AM,04/Apr/23 3:22 PM,Munckhof,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+41,CI-8184,448971,Closed,yutaka.yasumi,17/Feb/23 1:56 AM,24/Feb/23 12:00 AM,04/Apr/23 4:33 PM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+42,CI-8177,448686,Verify,ssanz,15/Feb/23 4:35 PM,22/Feb/23 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+43,CI-8176,448625,Closed,ssanz,15/Feb/23 3:47 PM,22/Feb/23 12:00 AM,14/Apr/23 1:31 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+44,CI-8164,448243,Communicate,achattopadhyay,14/Feb/23 1:51 PM,21/Feb/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+45,CI-8163,448077,Closed,yutaka.yasumi,14/Feb/23 1:54 AM,21/Feb/23 12:00 AM,17/Mar/23 12:51 AM,Continental,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+46,CI-8159,447939,Closed,wkatthan,13/Feb/23 12:19 PM,16/Feb/23 12:00 AM,24/Apr/23 12:53 PM,ArcelorMittal,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+47,CI-8144,447479,Closed,nsanchezruiz,09/Feb/23 3:29 PM,20/Feb/23 12:00 AM,29/Apr/23 4:07 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+48,CI-8134,446994,Closed,ccasper,08/Feb/23 10:09 AM,24/Feb/23 12:00 AM,19/Apr/23 3:11 PM,TUI AG,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+49,CI-8132,446917,Closed,yutaka.yasumi,08/Feb/23 7:39 AM,15/Feb/23 12:00 AM,22/Mar/23 12:36 AM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+50,CI-8118,446512,Closed,askarja,06/Feb/23 8:05 PM,13/Feb/23 12:00 AM,19/Apr/23 1:24 AM,TeamBank AG,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+51,CI-8097,446005,Closed,yutaka.yasumi,03/Feb/23 2:15 AM,06/Feb/23 12:00 AM,24/Mar/23 2:22 AM,Continental,Incident Request (IR),DataSets\in_progress_PI6.4.csv,PI6.4
+52,CI-8093,445763,Closed,alejandro.ruizrobles,02/Feb/23 8:59 AM,09/Feb/23 12:00 AM,08/Jun/23 3:06 PM,Numiga,SR - Partner,DataSets\in_progress_PI6.4.csv,PI6.4
+53,CI-8055,443734,Closed,yutaka.yasumi,26/Jan/23 3:10 AM,31/Jan/23 12:00 AM,14/Mar/23 2:18 AM,Eberspacher,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+54,CI-8052,443529,Closed,yutaka.yasumi,25/Jan/23 9:22 AM,31/Jan/23 12:00 AM,17/Mar/23 12:58 AM,Porsche,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+55,CI-8048,443357,Closed,nsanchezruiz,24/Jan/23 1:34 PM,06/Feb/23 12:00 AM,03/Apr/23 3:44 PM,msg systems,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+56,CI-8046,443331,Closed,nsanchezruiz,24/Jan/23 12:24 PM,31/Jan/23 12:00 AM,14/Mar/23 4:18 PM,Porsche,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+57,CI-7909,437653,Closed,ssanz,21/Dec/22 11:46 AM,28/Dec/22 12:00 AM,17/Mar/23 8:55 AM,Continental,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+58,CI-7904,437478,Verify,ssanz,20/Dec/22 5:24 PM,26/Dec/22 12:00 AM,,Bentley,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+59,CI-7900,437096,Closed,ssanz,19/Dec/22 3:44 PM,26/Dec/22 12:00 AM,05/Apr/23 1:07 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+60,CI-7858,435107,Verify,ssanz,13/Dec/22 12:22 PM,20/Dec/22 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+61,CI-7850,434539,Closed,nsanchezruiz,12/Dec/22 10:23 AM,26/Dec/22 12:00 AM,22/Mar/23 1:41 PM,Apleona,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+62,CI-7829,433155,Closed,ssanz,06/Dec/22 1:18 PM,13/Dec/22 12:00 AM,29/Apr/23 4:15 PM,Allianz,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+63,CI-7807,432492,Closed,alejandro.ruizrobles,03/Dec/22 1:20 PM,15/Dec/22 12:00 AM,21/Mar/23 4:54 PM,Numiga,SR - Partner,DataSets\in_progress_PI6.4.csv,PI6.4
+64,CI-7788,431813,Closed,yutaka.yasumi,01/Dec/22 1:54 AM,08/Dec/22 12:00 AM,05/Apr/23 6:54 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+65,CI-7700,428349,Closed,alejandro.ruizrobles,15/Nov/22 4:39 PM,22/Nov/22 12:00 AM,12/Apr/23 1:53 PM,Numiga,SR - Partner,DataSets\in_progress_PI6.4.csv,PI6.4
+67,CI-7550,420892,Closed,yutaka.yasumi,12/Oct/22 5:05 PM,19/Oct/22 12:00 AM,04/Apr/23 4:34 PM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+68,CI-7489,418470,Closed,askarja,04/Oct/22 7:45 AM,11/Oct/22 12:00 AM,23/Mar/23 1:55 PM,Burda,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+69,CI-7486,418256,Closed,yutaka.yasumi,03/Oct/22 6:41 AM,10/Oct/22 12:00 AM,31/Mar/23 2:37 AM,Continental,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+70,CI-7253,408597,Explain,ssanz,16/Aug/22 2:54 PM,09/Dec/22 12:00 AM,,OBB,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+71,CI-7205,406532,Closed,nsanchezruiz,04/Aug/22 11:54 AM,02/May/23 12:00 AM,10/Apr/23 8:47 AM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+72,CI-6901,393357,Closed,,23/May/22 1:21 PM,30/May/22 12:00 AM,21/Mar/23 1:06 PM,Porsche,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+73,CI-5953,349721,Closed,hwiedenroth,05/Nov/21 5:04 PM,03/Dec/21 12:00 AM,11/Apr/23 9:04 AM,Allianz,Service Request (SR),DataSets\in_progress_PI6.4.csv,PI6.4
+0,CI-8809,480772,Communicate,askarja,15/Jun/23 8:43 PM,22/Jun/23 12:00 AM,,VW,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+1,CI-8808,480770,Configure,askarja,15/Jun/23 7:52 PM,22/Jun/23 12:00 AM,,VW,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+2,CI-8807,480768,Closed,alejandro.ruizrobles,15/Jun/23 6:38 PM,22/Jun/23 12:00 AM,28/Jun/23 7:22 PM,Numiga,SR - Partner,DataSets\in_progress_PI7 IP.csv,PI7 IP
+3,CI-8806,480285,Communicate,askarja,14/Jun/23 6:07 PM,21/Jun/23 12:00 AM,,Hugo Boss,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+4,CI-8805,480283,Communicate,askarja,14/Jun/23 5:40 PM,21/Jun/23 12:00 AM,,Hugo Boss,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+5,CI-8804,480256,Import in Production,ssanz,14/Jun/23 4:15 PM,21/Jun/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+6,CI-8803,480198,Closed,nsanchezruiz,14/Jun/23 2:56 PM,21/Jun/23 12:00 AM,22/Jun/23 11:26 AM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+7,CI-8802,480108,Closed,nsanchezruiz,14/Jun/23 1:59 PM,21/Jun/23 12:00 AM,22/Jun/23 12:35 PM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+8,CI-8801,480040,Verify,nsanchezruiz,14/Jun/23 12:26 PM,21/Jun/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+9,CI-8800,480038,Configure,kgostynska,14/Jun/23 12:23 PM,21/Jun/23 12:00 AM,,Eutelsat,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+10,CI-8799,480036,Closed,ssanz,14/Jun/23 12:21 PM,15/Jun/23 12:00 AM,23/Jun/23 6:51 PM,TotalEnergies,Incident Request (IR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+11,CI-8798,479850,Communicate,yutaka.yasumi,14/Jun/23 2:54 AM,21/Jun/23 12:00 AM,,Porsche,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+12,CI-8797,479848,Closed,yutaka.yasumi,14/Jun/23 2:26 AM,21/Jun/23 12:00 AM,23/Jun/23 9:52 AM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+13,CI-8795,479716,Closed,nsanchezruiz,13/Jun/23 1:21 PM,20/Jun/23 12:00 AM,20/Jun/23 1:38 PM,Apleona,Incident Request (IR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+14,CI-8786,479627,Closed,alejandro.ruizrobles,13/Jun/23 11:48 AM,20/Jun/23 12:00 AM,20/Jun/23 12:07 PM,ProcurX,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+15,CI-8762,479034,Closed,mmaciejczyk,12/Jun/23 1:45 PM,19/Jun/23 12:00 AM,23/Jun/23 3:16 PM,Porsche,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+16,CI-8753,478233,Communicate,jbonnavion,08/Jun/23 4:41 PM,15/Jun/23 12:00 AM,,ProcurX,SR - Partner,DataSets\in_progress_PI7 IP.csv,PI7 IP
+17,CI-8751,477625,Closed,alejandro.ruizrobles,07/Jun/23 12:51 PM,16/Jun/23 12:00 AM,19/Jun/23 11:23 AM,Numiga,SR - Partner,DataSets\in_progress_PI7 IP.csv,PI7 IP
+18,CI-8750,477616,Closed,alejandro.ruizrobles,07/Jun/23 12:37 PM,14/Jun/23 12:00 AM,19/Jun/23 11:23 AM,Numiga,SR - Partner,DataSets\in_progress_PI7 IP.csv,PI7 IP
+19,CI-8745,477471,Communicate,kgostynska,07/Jun/23 8:28 AM,14/Jun/23 12:00 AM,,Egis,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+20,CI-8743,477439,Closed,yutaka.yasumi,07/Jun/23 2:52 AM,12/Jun/23 12:00 AM,04/Jul/23 2:48 AM,Hensoldt,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+22,CI-8729,476852,Verify,mmaciejczyk,05/Jun/23 3:08 PM,12/Jun/23 12:00 AM,,Holtzbrink,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+23,CI-8705,475958,Communicate,nsanchezruiz,01/Jun/23 9:26 AM,08/Jun/23 12:00 AM,,DER,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+24,CI-8702,475830,Communicate,mmaciejczyk,31/May/23 3:59 PM,07/Jun/23 12:00 AM,,Endress Hauser,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+25,CI-8689,475132,Communicate,yutaka.yasumi,30/May/23 1:14 AM,06/Jun/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+26,CI-8688,475122,Verify,ssanz,29/May/23 5:01 PM,05/Jun/23 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+27,CI-8682,474597,Import in Production,yutaka.yasumi,26/May/23 3:31 AM,09/Jun/23 12:00 AM,,Endress Hauser,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+28,CI-8679,474387,Configure,lsada,25/May/23 9:19 AM,01/Jun/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+29,CI-8672,474081,Import in Production,ssanz,23/May/23 3:45 PM,30/May/23 12:00 AM,,Porsche,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+30,CI-8659,473378,Communicate,mmaciejczyk,19/May/23 12:33 PM,26/May/23 12:00 AM,,Rehau,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+31,CI-8641,472614,Closed,mmaciejczyk,16/May/23 4:14 PM,23/May/23 12:00 AM,29/Jun/23 5:16 PM,Holtzbrink,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+32,CI-8636,472259,Verify,yutaka.yasumi,16/May/23 12:56 AM,26/May/23 12:00 AM,,CMS Hasche Sigle,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+33,CI-8632,471970,Configure,yutaka.yasumi,15/May/23 2:03 AM,19/May/23 12:00 AM,,Hugo Boss,Incident Request (IR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+34,CI-8631,471896,Closed,alejandro.ruizrobles,12/May/23 5:51 PM,26/May/23 12:00 AM,19/Jun/23 12:06 PM,Numiga,SR - Partner,DataSets\in_progress_PI7 IP.csv,PI7 IP
+35,CI-8629,471820,Clarify,ssanz,12/May/23 2:33 PM,19/May/23 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+36,CI-8619,471620,Closed,ssanz,12/May/23 8:55 AM,17/May/23 12:00 AM,23/Jun/23 6:04 PM,Porsche,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+37,CI-8607,471146,Verify,mmaciejczyk,10/May/23 5:01 PM,17/May/23 12:00 AM,,Lufthansa City Center,Incident Request (IR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+38,CI-8600,470619,Communicate,kgostynska,09/May/23 2:19 PM,16/May/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+39,CI-8599,470611,Communicate,kgostynska,09/May/23 2:05 PM,16/May/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+40,CI-8594,470413,Communicate,askarja,09/May/23 9:01 AM,16/May/23 12:00 AM,,VW,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+41,CI-8567,468092,Import to Test,mmaciejczyk,26/Apr/23 1:16 PM,03/May/23 12:00 AM,,CMS Hasche Sigle,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+42,CI-8562,467852,Configure,nsanchezruiz,25/Apr/23 4:05 PM,08/May/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+43,CI-8544,466548,Verify,askarja,20/Apr/23 10:01 AM,27/Apr/23 12:00 AM,,Rheinmetall,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+44,CI-8508,465493,Communicate,yutaka.yasumi,18/Apr/23 2:16 AM,02/May/23 12:00 AM,,Endress Hauser,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+45,CI-8499,465411,Verify,nsanchezruiz,17/Apr/23 1:53 PM,24/Apr/23 12:00 AM,,Porsche,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+46,CI-8464,464340,Closed,askarja,11/Apr/23 11:13 PM,18/Apr/23 12:00 AM,29/Jun/23 4:44 PM,VW,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+47,CI-8460,464251,Communicate,mmaciejczyk,11/Apr/23 2:50 PM,18/Apr/23 12:00 AM,10/May/23 11:15 AM,Burda,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+48,CI-8433,463279,Communicate,mmaciejczyk,05/Apr/23 5:12 PM,12/Apr/23 12:00 AM,,Traton SE,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+49,CI-8421,462572,Explain,askarja,03/Apr/23 9:14 PM,12/Apr/23 12:00 AM,,Holtzbrink,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+50,CI-8294,454905,Communicate,mmaciejczyk,10/Mar/23 11:19 AM,17/Mar/23 12:00 AM,,VW,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+51,CI-8219,450562,Communicate,kgostynska,22/Feb/23 1:28 PM,01/Mar/23 12:00 AM,,Amadeus,Incident Request (IR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+52,CI-8177,448686,Verify,ssanz,15/Feb/23 4:35 PM,22/Feb/23 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+53,CI-8164,448243,Communicate,achattopadhyay,14/Feb/23 1:51 PM,21/Feb/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+54,CI-7904,437478,Verify,ssanz,20/Dec/22 5:24 PM,26/Dec/22 12:00 AM,,Bentley,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+55,CI-7858,435107,Verify,ssanz,13/Dec/22 12:22 PM,20/Dec/22 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+56,CI-7253,408597,Explain,ssanz,16/Aug/22 2:54 PM,09/Dec/22 12:00 AM,,OBB,Service Request (SR),DataSets\in_progress_PI7 IP.csv,PI7 IP
+0,CI-8477,464753,Closed,yutaka.yasumi,13/Apr/23 12:30 PM,20/Apr/23 12:00 AM,08/May/23 2:14 AM,Lufthansa City Center,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+1,CI-8476,464744,Closed,yutaka.yasumi,13/Apr/23 12:12 PM,20/Apr/23 12:00 AM,24/May/23 7:26 AM,Porsche,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+2,CI-8474,464711,Closed,ssanz,13/Apr/23 10:57 AM,20/Apr/23 12:00 AM,12/May/23 9:36 AM,Allianz,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+3,CI-8472,464670,Closed,kgostynska,13/Apr/23 10:04 AM,20/Apr/23 12:00 AM,02/May/23 11:23 AM,Porsche,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+4,CI-8471,464652,Closed,nsanchezruiz,13/Apr/23 9:35 AM,19/Apr/23 12:00 AM,08/May/23 3:28 PM,OBB,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+5,CI-8469,464620,Closed,yutaka.yasumi,13/Apr/23 8:22 AM,20/Apr/23 12:00 AM,17/May/23 1:15 PM,Endress Hauser,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+6,CI-8468,464601,Closed,yutaka.yasumi,13/Apr/23 4:55 AM,20/Apr/23 12:00 AM,11/May/23 10:42 AM,CMS Hasche Sigle,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+7,CI-8466,464442,Closed,yutaka.yasumi,12/Apr/23 11:33 AM,19/Apr/23 12:00 AM,23/May/23 1:15 AM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+8,CI-8464,464340,Closed,askarja,11/Apr/23 11:13 PM,18/Apr/23 12:00 AM,29/Jun/23 4:44 PM,VW,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+9,CI-8463,464337,Closed,askarja,11/Apr/23 8:06 PM,18/Apr/23 12:00 AM,26/Apr/23 2:18 PM,DZ Bank,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+10,CI-8461,464298,Closed,nsanchezruiz,11/Apr/23 5:11 PM,20/Apr/23 12:00 AM,23/May/23 1:32 PM,Amadeus,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+11,CI-8460,464251,Communicate,mmaciejczyk,11/Apr/23 2:50 PM,18/Apr/23 12:00 AM,10/May/23 11:15 AM,Burda,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+12,CI-8458,464220,Closed,ssanz,11/Apr/23 2:18 PM,12/Apr/23 12:00 AM,14/Apr/23 9:34 AM,TUI AG,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+13,CI-8454,463949,Closed,nsanchezruiz,10/Apr/23 12:30 PM,17/Apr/23 12:00 AM,08/May/23 1:44 PM,CEPSA,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+14,CI-8453,463947,Closed,ssanz,10/Apr/23 12:13 PM,14/Apr/23 12:00 AM,11/Apr/23 4:22 PM,Allianz,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+15,CI-8452,463886,Closed,kgostynska,07/Apr/23 3:59 PM,11/Apr/23 12:00 AM,12/Apr/23 3:17 PM,Porsche,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+16,CI-8438,463546,Closed,mmaciejczyk,06/Apr/23 12:21 PM,13/Apr/23 12:00 AM,22/May/23 4:16 PM,Rewe Group,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+17,CI-8436,463438,Closed,yutaka.yasumi,06/Apr/23 5:26 AM,20/Apr/23 12:00 AM,06/Apr/23 2:02 PM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+18,CI-8435,463434,Closed,yutaka.yasumi,06/Apr/23 2:49 AM,13/Apr/23 12:00 AM,06/Apr/23 10:10 AM,Init AG,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+19,CI-8434,463294,Closed,alejandro.ruizrobles,05/Apr/23 5:43 PM,12/Apr/23 12:00 AM,12/Apr/23 2:31 PM,Numiga,SR - Partner,DataSets\in_progress_PI7.1.csv,PI7.1
+20,CI-8433,463279,Communicate,mmaciejczyk,05/Apr/23 5:12 PM,12/Apr/23 12:00 AM,,Traton SE,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+22,CI-8428,462963,Closed,kgostynska,05/Apr/23 9:19 AM,12/Apr/23 12:00 AM,19/May/23 7:26 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+23,CI-8427,462869,Closed,alejandro.ruizrobles,04/Apr/23 5:02 PM,11/Apr/23 12:00 AM,12/Apr/23 2:10 PM,Numiga,SR - Partner,DataSets\in_progress_PI7.1.csv,PI7.1
+24,CI-8425,462813,Closed,nsanchezruiz,04/Apr/23 2:58 PM,10/Apr/23 12:00 AM,05/Apr/23 11:57 AM,Amadeus,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+25,CI-8424,462772,Closed,kgostynska,04/Apr/23 1:25 PM,11/Apr/23 12:00 AM,05/Apr/23 1:23 PM,Amadeus,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+26,CI-8423,462678,Closed,nsanchezruiz,04/Apr/23 10:51 AM,10/Apr/23 12:00 AM,10/Apr/23 10:48 AM,Allianz,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+27,CI-8422,462576,Closed,yutaka.yasumi,04/Apr/23 6:07 AM,11/Apr/23 12:00 AM,17/Apr/23 8:24 AM,Eberspacher,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+28,CI-8421,462572,Explain,askarja,03/Apr/23 9:14 PM,12/Apr/23 12:00 AM,,Holtzbrink,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+29,CI-8420,462507,Closed,mmaciejczyk,03/Apr/23 3:46 PM,10/Apr/23 12:00 AM,05/Jun/23 3:46 PM,OBB,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+30,CI-8417,462361,Closed,kgostynska,03/Apr/23 10:14 AM,12/Apr/23 12:00 AM,08/May/23 8:48 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+31,CI-8415,462306,Closed,nsanchezruiz,03/Apr/23 8:40 AM,04/Apr/23 12:00 AM,06/Apr/23 4:20 PM,Luther,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+32,CI-8414,462273,Closed,yutaka.yasumi,03/Apr/23 1:55 AM,10/Apr/23 12:00 AM,05/Apr/23 9:29 AM,CEPSA,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+33,CI-8413,462270,Closed,yutaka.yasumi,03/Apr/23 1:43 AM,07/Apr/23 12:00 AM,05/Apr/23 9:22 AM,Grupo Red Electrica,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+34,CI-8412,462267,Closed,yutaka.yasumi,03/Apr/23 12:57 AM,07/Apr/23 12:00 AM,14/Apr/23 9:37 AM,CMS Hasche Sigle,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+35,CI-8399,462015,Closed,kgostynska,31/Mar/23 10:19 AM,07/Apr/23 12:00 AM,08/May/23 8:46 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+36,CI-8398,461872,Closed,ssanz,30/Mar/23 4:52 PM,10/Apr/23 12:00 AM,18/May/23 12:20 PM,Vaillant,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+37,CI-8397,461658,Closed,nsanchezruiz,30/Mar/23 12:16 PM,06/Apr/23 12:00 AM,10/Apr/23 9:05 AM,VW,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+38,CI-8395,461612,Closed,askarja,30/Mar/23 10:43 AM,06/Apr/23 12:00 AM,27/Apr/23 1:12 AM,Eberspacher,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+39,CI-8394,461596,Closed,ssanz,30/Mar/23 10:09 AM,06/Apr/23 12:00 AM,01/Apr/23 3:03 PM,Eberspacher,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+40,CI-8393,461436,Closed,nsanchezruiz,29/Mar/23 4:34 PM,03/Apr/23 12:00 AM,30/Mar/23 10:15 AM,Daimler (MFTBC),Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+41,CI-8386,461366,Closed,nsanchezruiz,29/Mar/23 2:40 PM,10/Apr/23 12:00 AM,10/Apr/23 8:45 AM,VW,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+42,CI-8376,460898,Closed,kgostynska,28/Mar/23 12:50 PM,04/Apr/23 12:00 AM,18/Apr/23 9:51 AM,Spiegel,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+43,CI-8375,460883,Closed,mmaciejczyk,28/Mar/23 12:22 PM,04/Apr/23 12:00 AM,05/Apr/23 5:23 PM,Spiegel,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+44,CI-8373,460496,Closed,nsanchezruiz,27/Mar/23 3:13 PM,03/Apr/23 12:00 AM,10/Apr/23 8:40 AM,Osram,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+45,CI-8370,459864,Closed,ssanz,24/Mar/23 4:23 PM,31/Mar/23 12:00 AM,05/Apr/23 1:04 PM,Allianz,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+46,CI-8369,459796,Closed,kgostynska,24/Mar/23 3:03 PM,31/Mar/23 12:00 AM,04/May/23 11:31 AM,Rheinmetall,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+47,CI-8368,459754,Closed,ssanz,24/Mar/23 2:27 PM,31/Mar/23 12:00 AM,18/May/23 11:44 AM,Holtzbrink,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+48,CI-8367,459734,Closed,kgostynska,24/Mar/23 1:42 PM,31/Mar/23 12:00 AM,06/Jun/23 1:52 PM,OBB,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+49,CI-8366,459522,Closed,nsanchezruiz,24/Mar/23 9:41 AM,31/Mar/23 12:00 AM,05/Apr/23 8:40 AM,Customer not yet listed,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+50,CI-8365,459516,Closed,nsanchezruiz,24/Mar/23 9:30 AM,31/Mar/23 12:00 AM,05/Apr/23 8:41 AM,Customer not yet listed,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+51,CI-8364,459501,Closed,nsanchezruiz,24/Mar/23 8:41 AM,31/Mar/23 12:00 AM,04/Apr/23 9:24 AM,Customer not yet listed,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+52,CI-8361,459339,Closed,lsada,23/Mar/23 2:57 PM,06/Apr/23 12:00 AM,12/Jun/23 10:49 AM,Spiegel,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+53,CI-8360,459333,Closed,nsanchezruiz,23/Mar/23 2:52 PM,29/Mar/23 12:00 AM,05/Apr/23 9:39 AM,Customer not yet listed,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+54,CI-8359,459293,Closed,ssanz,23/Mar/23 1:59 PM,30/Mar/23 12:00 AM,01/Apr/23 4:22 PM,Allianz,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+55,CI-8358,459227,Closed,ssanz,23/Mar/23 11:55 AM,28/Mar/23 12:00 AM,25/Apr/23 3:54 PM,Allianz,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+56,CI-8354,458717,Closed,nsanchezruiz,22/Mar/23 11:13 AM,27/Mar/23 12:00 AM,25/Apr/23 9:58 AM,OBB,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+57,CI-8349,458448,Closed,yutaka.yasumi,22/Mar/23 2:59 AM,22/Mar/23 12:00 AM,03/Apr/23 12:41 AM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+58,CI-8348,458444,Closed,yutaka.yasumi,22/Mar/23 1:22 AM,29/Mar/23 12:00 AM,19/Apr/23 2:54 PM,Vaillant,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+59,CI-8347,458433,Closed,askarja,21/Mar/23 7:58 PM,29/Mar/23 12:00 AM,13/Jun/23 5:27 PM,Deutschlandradio,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+60,CI-8346,458273,Closed,askarja,21/Mar/23 1:50 PM,28/Mar/23 12:00 AM,07/Apr/23 2:04 AM,Porsche,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+61,CI-8345,458258,Closed,nsanchezruiz,21/Mar/23 1:28 PM,27/Mar/23 12:00 AM,04/Apr/23 1:10 PM,Audi,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+62,CI-8344,458212,Closed,nsanchezruiz,21/Mar/23 12:57 PM,23/Mar/23 12:00 AM,03/Apr/23 10:29 AM,Allianz,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+63,CI-8339,457228,Closed,ssanz,17/Mar/23 4:51 PM,24/Mar/23 12:00 AM,19/May/23 8:37 AM,Allianz,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+64,CI-8338,457190,Closed,alejandro.ruizrobles,17/Mar/23 3:17 PM,21/Mar/23 12:00 AM,24/Apr/23 6:12 PM,Numiga,SR - Partner,DataSets\in_progress_PI7.1.csv,PI7.1
+65,CI-8328,456902,Closed,nsanchezruiz,16/Mar/23 4:57 PM,23/Mar/23 12:00 AM,27/Apr/23 1:27 PM,msg systems,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+67,CI-8322,456676,Closed,yutaka.yasumi,16/Mar/23 11:59 AM,23/Mar/23 12:00 AM,03/Apr/23 12:42 AM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+68,CI-8321,456627,Closed,yutaka.yasumi,16/Mar/23 11:21 AM,20/Mar/23 12:00 AM,29/Mar/23 4:29 PM,Lufthansa City Center,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+69,CI-8318,456512,Closed,yutaka.yasumi,16/Mar/23 1:31 AM,20/Mar/23 12:00 AM,19/Apr/23 2:53 PM,Amadeus,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+70,CI-8316,456446,Closed,ssanz,15/Mar/23 4:46 PM,22/Mar/23 12:00 AM,14/Apr/23 12:32 PM,Allianz,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+71,CI-8315,456393,Closed,jbonnavion,15/Mar/23 3:03 PM,22/Mar/23 12:00 AM,13/Apr/23 2:22 PM,DERPART,SR - Partner,DataSets\in_progress_PI7.1.csv,PI7.1
+72,CI-8312,456181,Closed,alejandro.ruizrobles,15/Mar/23 9:51 AM,22/Mar/23 12:00 AM,29/Mar/23 3:51 PM,Numiga,SR - Partner,DataSets\in_progress_PI7.1.csv,PI7.1
+73,CI-8303,455701,Closed,kgostynska,14/Mar/23 9:47 AM,21/Mar/23 12:00 AM,08/May/23 8:18 AM,LKW Walter,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+74,CI-8302,455636,Closed,yutaka.yasumi,14/Mar/23 7:30 AM,21/Mar/23 12:00 AM,15/May/23 10:59 AM,Vaillant,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+75,CI-8294,454905,Communicate,mmaciejczyk,10/Mar/23 11:19 AM,17/Mar/23 12:00 AM,,VW,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+76,CI-8289,454808,Closed,yutaka.yasumi,10/Mar/23 7:21 AM,13/Mar/23 12:00 AM,03/Apr/23 1:18 AM,Ineos,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+77,CI-8286,454791,Closed,yutaka.yasumi,10/Mar/23 1:33 AM,17/Mar/23 12:00 AM,15/May/23 5:50 AM,Continental,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+78,CI-8285,454741,Closed,nsanchezruiz,09/Mar/23 4:25 PM,20/Mar/23 12:00 AM,21/Apr/23 9:12 AM,DER,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+79,CI-8283,454650,Closed,nsanchezruiz,09/Mar/23 2:15 PM,23/Mar/23 12:00 AM,04/Apr/23 3:26 PM,Porsche,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+80,CI-8279,454369,Closed,mmaciejczyk,08/Mar/23 6:04 PM,15/Mar/23 12:00 AM,30/Mar/23 3:22 PM,Lufthansa City Center,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+81,CI-8277,454229,Closed,ssanz,08/Mar/23 3:09 PM,15/Mar/23 12:00 AM,18/Apr/23 2:15 PM,TUI AG,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+82,CI-8273,453848,Closed,ssanz,07/Mar/23 1:31 PM,08/Mar/23 12:00 AM,10/Apr/23 10:50 AM,Allianz,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+83,CI-8270,453483,Closed,ssanz,06/Mar/23 1:40 PM,13/Mar/23 12:00 AM,08/May/23 11:49 AM,Allianz,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+84,CI-8269,453481,Closed,ssanz,06/Mar/23 1:36 PM,13/Mar/23 12:00 AM,08/May/23 11:48 AM,Allianz,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+85,CI-8261,453139,Closed,yutaka.yasumi,06/Mar/23 1:37 AM,13/Mar/23 12:00 AM,05/Apr/23 6:52 AM,Spiegel,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+86,CI-8254,452951,Closed,ssanz,03/Mar/23 1:15 PM,10/Mar/23 12:00 AM,05/May/23 7:12 PM,Allianz,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+87,CI-8249,452780,Closed,yutaka.yasumi,03/Mar/23 2:44 AM,17/Mar/23 12:00 AM,05/Apr/23 9:30 AM,CEPSA,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+88,CI-8242,452464,Closed,yutaka.yasumi,02/Mar/23 1:04 AM,09/Mar/23 12:00 AM,06/Apr/23 4:26 PM,Burda,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+89,CI-8239,452166,Closed,yutaka.yasumi,01/Mar/23 2:16 AM,06/Mar/23 12:00 AM,29/Mar/23 9:54 AM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+90,CI-8238,452000,Closed,nsanchezruiz,28/Feb/23 1:28 PM,31/Mar/23 12:00 AM,12/Jun/23 2:50 PM,Fiege,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+91,CI-8236,451837,Closed,yutaka.yasumi,28/Feb/23 12:45 AM,07/Mar/23 12:00 AM,13/Apr/23 4:29 PM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+92,CI-8219,450562,Communicate,kgostynska,22/Feb/23 1:28 PM,01/Mar/23 12:00 AM,,Amadeus,Incident Request (IR),DataSets\in_progress_PI7.1.csv,PI7.1
+93,CI-8190,449259,Closed,askarja,17/Feb/23 2:48 PM,24/Feb/23 12:00 AM,05/Apr/23 12:08 PM,Eberspacher,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+94,CI-8185,449035,Closed,yutaka.yasumi,17/Feb/23 9:59 AM,20/Feb/23 12:00 AM,04/Apr/23 3:22 PM,Munckhof,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+95,CI-8184,448971,Closed,yutaka.yasumi,17/Feb/23 1:56 AM,24/Feb/23 12:00 AM,04/Apr/23 4:33 PM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+96,CI-8177,448686,Verify,ssanz,15/Feb/23 4:35 PM,22/Feb/23 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+97,CI-8176,448625,Closed,ssanz,15/Feb/23 3:47 PM,22/Feb/23 12:00 AM,14/Apr/23 1:31 PM,Allianz,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+98,CI-8164,448243,Communicate,achattopadhyay,14/Feb/23 1:51 PM,21/Feb/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+99,CI-8159,447939,Closed,wkatthan,13/Feb/23 12:19 PM,16/Feb/23 12:00 AM,24/Apr/23 12:53 PM,ArcelorMittal,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+100,CI-8144,447479,Closed,nsanchezruiz,09/Feb/23 3:29 PM,20/Feb/23 12:00 AM,29/Apr/23 4:07 PM,Allianz,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+101,CI-8134,446994,Closed,ccasper,08/Feb/23 10:09 AM,24/Feb/23 12:00 AM,19/Apr/23 3:11 PM,TUI AG,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+102,CI-8118,446512,Closed,askarja,06/Feb/23 8:05 PM,13/Feb/23 12:00 AM,19/Apr/23 1:24 AM,TeamBank AG,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+103,CI-8093,445763,Closed,alejandro.ruizrobles,02/Feb/23 8:59 AM,09/Feb/23 12:00 AM,08/Jun/23 3:06 PM,Numiga,SR - Partner,DataSets\in_progress_PI7.1.csv,PI7.1
+104,CI-8048,443357,Closed,nsanchezruiz,24/Jan/23 1:34 PM,06/Feb/23 12:00 AM,03/Apr/23 3:44 PM,msg systems,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+105,CI-8006,441299,Closed,yutaka.yasumi,13/Jan/23 7:58 AM,17/Jan/23 12:00 AM,04/Apr/23 4:32 PM,Porsche,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+106,CI-7904,437478,Verify,ssanz,20/Dec/22 5:24 PM,26/Dec/22 12:00 AM,,Bentley,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+107,CI-7900,437096,Closed,ssanz,19/Dec/22 3:44 PM,26/Dec/22 12:00 AM,05/Apr/23 1:07 PM,Allianz,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+108,CI-7858,435107,Verify,ssanz,13/Dec/22 12:22 PM,20/Dec/22 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+109,CI-7829,433155,Closed,ssanz,06/Dec/22 1:18 PM,13/Dec/22 12:00 AM,29/Apr/23 4:15 PM,Allianz,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+110,CI-7788,431813,Closed,yutaka.yasumi,01/Dec/22 1:54 AM,08/Dec/22 12:00 AM,05/Apr/23 6:54 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+111,CI-7700,428349,Closed,alejandro.ruizrobles,15/Nov/22 4:39 PM,22/Nov/22 12:00 AM,12/Apr/23 1:53 PM,Numiga,SR - Partner,DataSets\in_progress_PI7.1.csv,PI7.1
+112,CI-7688,427631,Closed,askarja,11/Nov/22 3:58 PM,21/Nov/22 12:00 AM,20/Apr/23 10:15 AM,Rheinmetall,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+113,CI-7550,420892,Closed,yutaka.yasumi,12/Oct/22 5:05 PM,19/Oct/22 12:00 AM,04/Apr/23 4:34 PM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+114,CI-7486,418256,Closed,yutaka.yasumi,03/Oct/22 6:41 AM,10/Oct/22 12:00 AM,31/Mar/23 2:37 AM,Continental,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+115,CI-7253,408597,Explain,ssanz,16/Aug/22 2:54 PM,09/Dec/22 12:00 AM,,OBB,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+116,CI-7205,406532,Closed,nsanchezruiz,04/Aug/22 11:54 AM,02/May/23 12:00 AM,10/Apr/23 8:47 AM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+117,CI-5953,349721,Closed,hwiedenroth,05/Nov/21 5:04 PM,03/Dec/21 12:00 AM,11/Apr/23 9:04 AM,Allianz,Service Request (SR),DataSets\in_progress_PI7.1.csv,PI7.1
+0,CI-8583,469595,Closed,kgostynska,04/May/23 8:58 AM,11/May/23 12:00 AM,24/May/23 9:27 AM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+1,CI-8581,469414,Closed,alejandro.ruizrobles,03/May/23 1:12 PM,10/May/23 12:00 AM,23/May/23 9:07 PM,Numiga,SR - Partner,DataSets\in_progress_PI7.2.csv,PI7.2
+2,CI-8578,468781,Closed,yutaka.yasumi,28/Apr/23 11:54 AM,05/May/23 12:00 AM,16/May/23 11:15 AM,Amadeus,Incident Request (IR),DataSets\in_progress_PI7.2.csv,PI7.2
+3,CI-8576,468697,Closed,kgostynska,28/Apr/23 9:19 AM,05/May/23 12:00 AM,13/Jun/23 7:25 AM,Vaillant,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+4,CI-8575,468679,Closed,kgostynska,28/Apr/23 8:44 AM,05/May/23 12:00 AM,24/May/23 9:27 AM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+5,CI-8574,468635,Closed,yutaka.yasumi,28/Apr/23 3:47 AM,01/May/23 12:00 AM,08/May/23 4:08 PM,Rehau,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+6,CI-8573,468471,Closed,lsada,27/Apr/23 2:51 PM,12/May/23 12:00 AM,24/May/23 2:00 PM,dm-drogerie markt,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+7,CI-8571,468343,Closed,wkatthan,27/Apr/23 11:42 AM,12/May/23 12:00 AM,25/May/23 1:13 PM,Orange,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+8,CI-8567,468092,Import to Test,mmaciejczyk,26/Apr/23 1:16 PM,03/May/23 12:00 AM,,CMS Hasche Sigle,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+9,CI-8566,468082,Closed,ssanz,26/Apr/23 12:49 PM,05/May/23 12:00 AM,06/Jun/23 1:57 PM,Orange,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+10,CI-8564,467976,Closed,yutaka.yasumi,26/Apr/23 9:37 AM,28/Apr/23 12:00 AM,15/May/23 5:56 AM,Daimler (MFTBC),Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+11,CI-8563,467957,Closed,kgostynska,26/Apr/23 9:31 AM,04/May/23 12:00 AM,19/May/23 9:45 AM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+12,CI-8562,467852,Configure,nsanchezruiz,25/Apr/23 4:05 PM,08/May/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+13,CI-8561,467833,Closed,nsanchezruiz,25/Apr/23 3:24 PM,31/May/23 12:00 AM,31/May/23 3:18 PM,OBB,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+14,CI-8560,467735,Closed,nsanchezruiz,25/Apr/23 11:57 AM,08/May/23 12:00 AM,08/May/23 2:02 PM,OBB,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+15,CI-8558,467585,Closed,yutaka.yasumi,25/Apr/23 8:10 AM,28/Apr/23 12:00 AM,25/May/23 9:24 AM,Spiegel,Incident Request (IR),DataSets\in_progress_PI7.2.csv,PI7.2
+16,CI-8557,467471,Closed,ssanz,24/Apr/23 3:31 PM,28/Apr/23 12:00 AM,18/May/23 12:16 PM,Allianz,Incident Request (IR),DataSets\in_progress_PI7.2.csv,PI7.2
+17,CI-8556,467320,Closed,yutaka.yasumi,24/Apr/23 10:17 AM,16/May/23 12:00 AM,05/Jun/23 1:21 AM,CMS Hasche Sigle,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+18,CI-8555,467318,Closed,nsanchezruiz,24/Apr/23 10:13 AM,02/May/23 12:00 AM,24/May/23 5:00 PM,VW,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+19,CI-8554,467243,Closed,yutaka.yasumi,24/Apr/23 6:44 AM,08/May/23 12:00 AM,10/May/23 4:06 AM,Hensoldt,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+20,CI-8553,467146,Closed,ssanz,22/Apr/23 2:17 PM,29/Apr/23 12:00 AM,30/May/23 4:53 PM,Allianz,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+22,CI-8548,466754,Closed,nsanchezruiz,20/Apr/23 3:07 PM,27/Apr/23 12:00 AM,18/May/23 9:41 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+23,CI-8545,466571,Closed,nsanchezruiz,20/Apr/23 10:19 AM,27/Apr/23 12:00 AM,08/May/23 1:37 PM,Enercon,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+24,CI-8544,466548,Verify,askarja,20/Apr/23 10:01 AM,27/Apr/23 12:00 AM,,Rheinmetall,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+25,CI-8542,466461,Closed,yutaka.yasumi,20/Apr/23 2:40 AM,27/Apr/23 12:00 AM,23/May/23 12:59 AM,Vaillant,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+26,CI-8540,466398,Closed,ssanz,19/Apr/23 4:36 PM,26/Apr/23 12:00 AM,17/May/23 10:26 AM,Allianz,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+27,CI-8539,466314,Closed,kgostynska,19/Apr/23 2:03 PM,26/Apr/23 12:00 AM,10/May/23 2:50 PM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+28,CI-8536,466057,Closed,askarja,19/Apr/23 12:35 AM,27/Apr/23 12:00 AM,05/Jun/23 10:04 PM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+29,CI-8535,466035,Closed,nsanchezruiz,18/Apr/23 5:17 PM,25/Apr/23 12:00 AM,07/Jun/23 11:02 AM,Rehau,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+30,CI-8534,466032,Closed,askarja,18/Apr/23 5:16 PM,25/Apr/23 12:00 AM,10/May/23 7:42 PM,Porsche,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+31,CI-8519,465776,Closed,askarja,18/Apr/23 12:35 PM,25/Apr/23 12:00 AM,05/Jun/23 5:46 PM,Eberspacher,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+32,CI-8518,465773,Closed,yutaka.yasumi,18/Apr/23 12:32 PM,21/Apr/23 12:00 AM,15/May/23 5:54 AM,Continental,Incident Request (IR),DataSets\in_progress_PI7.2.csv,PI7.2
+33,CI-8513,465535,Closed,yutaka.yasumi,18/Apr/23 7:25 AM,25/Apr/23 12:00 AM,02/Jun/23 2:02 PM,CMS Hasche Sigle,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+34,CI-8510,465499,Closed,yutaka.yasumi,18/Apr/23 4:31 AM,25/Apr/23 12:00 AM,08/May/23 2:18 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+35,CI-8508,465493,Communicate,yutaka.yasumi,18/Apr/23 2:16 AM,02/May/23 12:00 AM,,Endress Hauser,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+36,CI-8507,465491,Closed,yutaka.yasumi,18/Apr/23 1:18 AM,24/Apr/23 12:00 AM,23/May/23 1:16 AM,Endress Hauser,Incident Request (IR),DataSets\in_progress_PI7.2.csv,PI7.2
+37,CI-8499,465411,Verify,nsanchezruiz,17/Apr/23 1:53 PM,24/Apr/23 12:00 AM,,Porsche,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+38,CI-8496,465321,Closed,kgostynska,17/Apr/23 11:30 AM,24/Apr/23 12:00 AM,12/May/23 7:40 AM,Continental,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+39,CI-8486,465008,Closed,yutaka.yasumi,14/Apr/23 9:23 AM,21/Apr/23 12:00 AM,08/May/23 2:17 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+40,CI-8484,464974,Closed,yutaka.yasumi,14/Apr/23 2:27 AM,21/Apr/23 12:00 AM,11/May/23 9:21 AM,msg systems,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+41,CI-8477,464753,Closed,yutaka.yasumi,13/Apr/23 12:30 PM,20/Apr/23 12:00 AM,08/May/23 2:14 AM,Lufthansa City Center,Incident Request (IR),DataSets\in_progress_PI7.2.csv,PI7.2
+42,CI-8476,464744,Closed,yutaka.yasumi,13/Apr/23 12:12 PM,20/Apr/23 12:00 AM,24/May/23 7:26 AM,Porsche,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+43,CI-8474,464711,Closed,ssanz,13/Apr/23 10:57 AM,20/Apr/23 12:00 AM,12/May/23 9:36 AM,Allianz,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+44,CI-8471,464652,Closed,nsanchezruiz,13/Apr/23 9:35 AM,19/Apr/23 12:00 AM,08/May/23 3:28 PM,OBB,Incident Request (IR),DataSets\in_progress_PI7.2.csv,PI7.2
+45,CI-8469,464620,Closed,yutaka.yasumi,13/Apr/23 8:22 AM,20/Apr/23 12:00 AM,17/May/23 1:15 PM,Endress Hauser,Incident Request (IR),DataSets\in_progress_PI7.2.csv,PI7.2
+46,CI-8468,464601,Closed,yutaka.yasumi,13/Apr/23 4:55 AM,20/Apr/23 12:00 AM,11/May/23 10:42 AM,CMS Hasche Sigle,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+47,CI-8466,464442,Closed,yutaka.yasumi,12/Apr/23 11:33 AM,19/Apr/23 12:00 AM,23/May/23 1:15 AM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+48,CI-8464,464340,Closed,askarja,11/Apr/23 11:13 PM,18/Apr/23 12:00 AM,29/Jun/23 4:44 PM,VW,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+49,CI-8461,464298,Closed,nsanchezruiz,11/Apr/23 5:11 PM,20/Apr/23 12:00 AM,23/May/23 1:32 PM,Amadeus,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+50,CI-8460,464251,Communicate,mmaciejczyk,11/Apr/23 2:50 PM,18/Apr/23 12:00 AM,10/May/23 11:15 AM,Burda,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+51,CI-8454,463949,Closed,nsanchezruiz,10/Apr/23 12:30 PM,17/Apr/23 12:00 AM,08/May/23 1:44 PM,CEPSA,Incident Request (IR),DataSets\in_progress_PI7.2.csv,PI7.2
+52,CI-8438,463546,Closed,mmaciejczyk,06/Apr/23 12:21 PM,13/Apr/23 12:00 AM,22/May/23 4:16 PM,Rewe Group,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+53,CI-8433,463279,Communicate,mmaciejczyk,05/Apr/23 5:12 PM,12/Apr/23 12:00 AM,,Traton SE,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+54,CI-8430,463090,Closed,nsanchezruiz,05/Apr/23 12:18 PM,12/Apr/23 12:00 AM,24/May/23 10:15 AM,VW,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+55,CI-8428,462963,Closed,kgostynska,05/Apr/23 9:19 AM,12/Apr/23 12:00 AM,19/May/23 7:26 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+56,CI-8421,462572,Explain,askarja,03/Apr/23 9:14 PM,12/Apr/23 12:00 AM,,Holtzbrink,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+57,CI-8420,462507,Closed,mmaciejczyk,03/Apr/23 3:46 PM,10/Apr/23 12:00 AM,05/Jun/23 3:46 PM,OBB,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+58,CI-8417,462361,Closed,kgostynska,03/Apr/23 10:14 AM,12/Apr/23 12:00 AM,08/May/23 8:48 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+59,CI-8399,462015,Closed,kgostynska,31/Mar/23 10:19 AM,07/Apr/23 12:00 AM,08/May/23 8:46 AM,Amadeus,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+60,CI-8398,461872,Closed,ssanz,30/Mar/23 4:52 PM,10/Apr/23 12:00 AM,18/May/23 12:20 PM,Vaillant,Incident Request (IR),DataSets\in_progress_PI7.2.csv,PI7.2
+61,CI-8368,459754,Closed,ssanz,24/Mar/23 2:27 PM,31/Mar/23 12:00 AM,18/May/23 11:44 AM,Holtzbrink,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+62,CI-8367,459734,Closed,kgostynska,24/Mar/23 1:42 PM,31/Mar/23 12:00 AM,06/Jun/23 1:52 PM,OBB,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+63,CI-8361,459339,Closed,lsada,23/Mar/23 2:57 PM,06/Apr/23 12:00 AM,12/Jun/23 10:49 AM,Spiegel,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+64,CI-8347,458433,Closed,askarja,21/Mar/23 7:58 PM,29/Mar/23 12:00 AM,13/Jun/23 5:27 PM,Deutschlandradio,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+65,CI-8339,457228,Closed,ssanz,17/Mar/23 4:51 PM,24/Mar/23 12:00 AM,19/May/23 8:37 AM,Allianz,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+67,CI-8303,455701,Closed,kgostynska,14/Mar/23 9:47 AM,21/Mar/23 12:00 AM,08/May/23 8:18 AM,LKW Walter,Incident Request (IR),DataSets\in_progress_PI7.2.csv,PI7.2
+68,CI-8302,455636,Closed,yutaka.yasumi,14/Mar/23 7:30 AM,21/Mar/23 12:00 AM,15/May/23 10:59 AM,Vaillant,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+69,CI-8294,454905,Communicate,mmaciejczyk,10/Mar/23 11:19 AM,17/Mar/23 12:00 AM,,VW,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+70,CI-8286,454791,Closed,yutaka.yasumi,10/Mar/23 1:33 AM,17/Mar/23 12:00 AM,15/May/23 5:50 AM,Continental,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+71,CI-8270,453483,Closed,ssanz,06/Mar/23 1:40 PM,13/Mar/23 12:00 AM,08/May/23 11:49 AM,Allianz,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+72,CI-8269,453481,Closed,ssanz,06/Mar/23 1:36 PM,13/Mar/23 12:00 AM,08/May/23 11:48 AM,Allianz,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+73,CI-8238,452000,Closed,nsanchezruiz,28/Feb/23 1:28 PM,31/Mar/23 12:00 AM,12/Jun/23 2:50 PM,Fiege,Incident Request (IR),DataSets\in_progress_PI7.2.csv,PI7.2
+74,CI-8219,450562,Communicate,kgostynska,22/Feb/23 1:28 PM,01/Mar/23 12:00 AM,,Amadeus,Incident Request (IR),DataSets\in_progress_PI7.2.csv,PI7.2
+75,CI-8177,448686,Verify,ssanz,15/Feb/23 4:35 PM,22/Feb/23 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+76,CI-8164,448243,Communicate,achattopadhyay,14/Feb/23 1:51 PM,21/Feb/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+77,CI-8093,445763,Closed,alejandro.ruizrobles,02/Feb/23 8:59 AM,09/Feb/23 12:00 AM,08/Jun/23 3:06 PM,Numiga,SR - Partner,DataSets\in_progress_PI7.2.csv,PI7.2
+78,CI-7904,437478,Verify,ssanz,20/Dec/22 5:24 PM,26/Dec/22 12:00 AM,,Bentley,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+79,CI-7858,435107,Verify,ssanz,13/Dec/22 12:22 PM,20/Dec/22 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+80,CI-7253,408597,Explain,ssanz,16/Aug/22 2:54 PM,09/Dec/22 12:00 AM,,OBB,Service Request (SR),DataSets\in_progress_PI7.2.csv,PI7.2
+0,CI-8684,474658,Closed,yutaka.yasumi,26/May/23 10:18 AM,31/May/23 12:00 AM,02/Jun/23 6:40 AM,Continental,Incident Request (IR),DataSets\in_progress_PI7.3.csv,PI7.3
+1,CI-8682,474597,Import in Production,yutaka.yasumi,26/May/23 3:31 AM,09/Jun/23 12:00 AM,,Endress Hauser,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+2,CI-8681,474595,Closed,yutaka.yasumi,26/May/23 3:12 AM,02/Jun/23 12:00 AM,16/Jun/23 11:19 AM,Eberspacher,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+3,CI-8680,474435,Closed,alejandro.ruizrobles,25/May/23 10:38 AM,02/Jun/23 12:00 AM,14/Jun/23 8:36 AM,LKW Walter,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+4,CI-8679,474387,Configure,lsada,25/May/23 9:19 AM,01/Jun/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+5,CI-8673,474083,Closed,wkatthan,23/May/23 3:51 PM,30/May/23 12:00 AM,02/Jun/23 5:29 PM,Continental,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+6,CI-8672,474081,Import in Production,ssanz,23/May/23 3:45 PM,30/May/23 12:00 AM,,Porsche,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+7,CI-8666,473794,Closed,ssanz,23/May/23 8:16 AM,30/May/23 12:00 AM,14/Jun/23 12:47 PM,Allianz,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+8,CI-8659,473378,Communicate,mmaciejczyk,19/May/23 12:33 PM,26/May/23 12:00 AM,,Rehau,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+9,CI-8658,473305,Closed,yutaka.yasumi,19/May/23 9:06 AM,26/May/23 12:00 AM,15/Jun/23 8:39 AM,Grupo Red Electrica,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+10,CI-8656,473066,Closed,askarja,18/May/23 9:56 AM,26/May/23 12:00 AM,13/Jun/23 5:28 PM,TeamBank AG,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+11,CI-8647,472816,Closed,nsanchezruiz,17/May/23 1:15 PM,29/May/23 12:00 AM,05/Jun/23 12:39 PM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+12,CI-8641,472614,Closed,mmaciejczyk,16/May/23 4:14 PM,23/May/23 12:00 AM,29/Jun/23 5:16 PM,Holtzbrink,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+13,CI-8637,472264,Closed,yutaka.yasumi,16/May/23 5:04 AM,18/May/23 12:00 AM,02/Jun/23 2:03 PM,Amadeus,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+14,CI-8636,472259,Verify,yutaka.yasumi,16/May/23 12:56 AM,26/May/23 12:00 AM,,CMS Hasche Sigle,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+15,CI-8632,471970,Configure,yutaka.yasumi,15/May/23 2:03 AM,19/May/23 12:00 AM,,Hugo Boss,Incident Request (IR),DataSets\in_progress_PI7.3.csv,PI7.3
+16,CI-8631,471896,Closed,alejandro.ruizrobles,12/May/23 5:51 PM,26/May/23 12:00 AM,19/Jun/23 12:06 PM,Numiga,SR - Partner,DataSets\in_progress_PI7.3.csv,PI7.3
+17,CI-8629,471820,Clarify,ssanz,12/May/23 2:33 PM,19/May/23 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+18,CI-8620,471645,Closed,alejandro.ruizrobles,12/May/23 9:33 AM,19/May/23 12:00 AM,30/May/23 4:19 PM,Numiga,SR - Partner,DataSets\in_progress_PI7.3.csv,PI7.3
+19,CI-8619,471620,Closed,ssanz,12/May/23 8:55 AM,17/May/23 12:00 AM,23/Jun/23 6:04 PM,Porsche,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+20,CI-8607,471146,Verify,mmaciejczyk,10/May/23 5:01 PM,17/May/23 12:00 AM,,Lufthansa City Center,Incident Request (IR),DataSets\in_progress_PI7.3.csv,PI7.3
+22,CI-8601,470827,Closed,yutaka.yasumi,10/May/23 2:08 AM,12/May/23 12:00 AM,29/May/23 3:25 AM,Continental,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+23,CI-8600,470619,Communicate,kgostynska,09/May/23 2:19 PM,16/May/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+24,CI-8599,470611,Communicate,kgostynska,09/May/23 2:05 PM,16/May/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+25,CI-8595,470438,Closed,kgostynska,09/May/23 9:36 AM,16/May/23 12:00 AM,06/Jun/23 7:32 AM,CMS Hasche Sigle,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+26,CI-8594,470413,Communicate,askarja,09/May/23 9:01 AM,16/May/23 12:00 AM,,VW,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+27,CI-8593,470369,Closed,askarja,08/May/23 6:17 PM,15/May/23 12:00 AM,13/Jun/23 5:27 PM,msg systems,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+28,CI-8592,470329,Closed,askarja,08/May/23 3:47 PM,15/May/23 12:00 AM,05/Jun/23 5:47 PM,Eberspacher,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+29,CI-8591,470324,Closed,yutaka.yasumi,08/May/23 3:20 PM,12/May/23 12:00 AM,29/May/23 3:26 AM,CEPSA,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+30,CI-8589,470309,Closed,askarja,08/May/23 2:38 PM,15/May/23 12:00 AM,05/Jun/23 5:48 PM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+31,CI-8588,470146,Closed,ssanz,07/May/23 8:08 PM,12/May/23 12:00 AM,06/Jun/23 1:54 PM,Endress Hauser,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+32,CI-8576,468697,Closed,kgostynska,28/Apr/23 9:19 AM,05/May/23 12:00 AM,13/Jun/23 7:25 AM,Vaillant,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+33,CI-8567,468092,Import to Test,mmaciejczyk,26/Apr/23 1:16 PM,03/May/23 12:00 AM,,CMS Hasche Sigle,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+34,CI-8566,468082,Closed,ssanz,26/Apr/23 12:49 PM,05/May/23 12:00 AM,06/Jun/23 1:57 PM,Orange,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+35,CI-8562,467852,Configure,nsanchezruiz,25/Apr/23 4:05 PM,08/May/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+36,CI-8561,467833,Closed,nsanchezruiz,25/Apr/23 3:24 PM,31/May/23 12:00 AM,31/May/23 3:18 PM,OBB,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+37,CI-8556,467320,Closed,yutaka.yasumi,24/Apr/23 10:17 AM,16/May/23 12:00 AM,05/Jun/23 1:21 AM,CMS Hasche Sigle,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+38,CI-8553,467146,Closed,ssanz,22/Apr/23 2:17 PM,29/Apr/23 12:00 AM,30/May/23 4:53 PM,Allianz,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+39,CI-8544,466548,Verify,askarja,20/Apr/23 10:01 AM,27/Apr/23 12:00 AM,,Rheinmetall,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+40,CI-8536,466057,Closed,askarja,19/Apr/23 12:35 AM,27/Apr/23 12:00 AM,05/Jun/23 10:04 PM,Hugo Boss,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+41,CI-8519,465776,Closed,askarja,18/Apr/23 12:35 PM,25/Apr/23 12:00 AM,05/Jun/23 5:46 PM,Eberspacher,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+42,CI-8513,465535,Closed,yutaka.yasumi,18/Apr/23 7:25 AM,25/Apr/23 12:00 AM,02/Jun/23 2:02 PM,CMS Hasche Sigle,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+43,CI-8508,465493,Communicate,yutaka.yasumi,18/Apr/23 2:16 AM,02/May/23 12:00 AM,,Endress Hauser,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+44,CI-8499,465411,Verify,nsanchezruiz,17/Apr/23 1:53 PM,24/Apr/23 12:00 AM,,Porsche,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+45,CI-8464,464340,Closed,askarja,11/Apr/23 11:13 PM,18/Apr/23 12:00 AM,29/Jun/23 4:44 PM,VW,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+46,CI-8433,463279,Communicate,mmaciejczyk,05/Apr/23 5:12 PM,12/Apr/23 12:00 AM,,Traton SE,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+47,CI-8421,462572,Explain,askarja,03/Apr/23 9:14 PM,12/Apr/23 12:00 AM,,Holtzbrink,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+48,CI-8420,462507,Closed,mmaciejczyk,03/Apr/23 3:46 PM,10/Apr/23 12:00 AM,05/Jun/23 3:46 PM,OBB,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+49,CI-8367,459734,Closed,kgostynska,24/Mar/23 1:42 PM,31/Mar/23 12:00 AM,06/Jun/23 1:52 PM,OBB,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+50,CI-8361,459339,Closed,lsada,23/Mar/23 2:57 PM,06/Apr/23 12:00 AM,12/Jun/23 10:49 AM,Spiegel,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+51,CI-8347,458433,Closed,askarja,21/Mar/23 7:58 PM,29/Mar/23 12:00 AM,13/Jun/23 5:27 PM,Deutschlandradio,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+52,CI-8294,454905,Communicate,mmaciejczyk,10/Mar/23 11:19 AM,17/Mar/23 12:00 AM,,VW,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+53,CI-8238,452000,Closed,nsanchezruiz,28/Feb/23 1:28 PM,31/Mar/23 12:00 AM,12/Jun/23 2:50 PM,Fiege,Incident Request (IR),DataSets\in_progress_PI7.3.csv,PI7.3
+54,CI-8219,450562,Communicate,kgostynska,22/Feb/23 1:28 PM,01/Mar/23 12:00 AM,,Amadeus,Incident Request (IR),DataSets\in_progress_PI7.3.csv,PI7.3
+55,CI-8177,448686,Verify,ssanz,15/Feb/23 4:35 PM,22/Feb/23 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+56,CI-8164,448243,Communicate,achattopadhyay,14/Feb/23 1:51 PM,21/Feb/23 12:00 AM,,Amadeus,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+57,CI-8093,445763,Closed,alejandro.ruizrobles,02/Feb/23 8:59 AM,09/Feb/23 12:00 AM,08/Jun/23 3:06 PM,Numiga,SR - Partner,DataSets\in_progress_PI7.3.csv,PI7.3
+58,CI-7904,437478,Verify,ssanz,20/Dec/22 5:24 PM,26/Dec/22 12:00 AM,,Bentley,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+59,CI-7858,435107,Verify,ssanz,13/Dec/22 12:22 PM,20/Dec/22 12:00 AM,,Allianz,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3
+60,CI-7253,408597,Explain,ssanz,16/Aug/22 2:54 PM,09/Dec/22 12:00 AM,,OBB,Service Request (SR),DataSets\in_progress_PI7.3.csv,PI7.3

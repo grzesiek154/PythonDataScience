@@ -1,8 +1,20 @@
 Query for created tickets
 
+
+
+Power BI query
+
+https://jira.ifao.net/rest/api/2/search?  +
+
+jql=.....  +
+
+&maxResults=3000
+
 Created
 
 project = CI AND  issuetype  in ("Expense Delivery") AND "Type of Request" in ("Service Request (SR)", "Incident Request (IR)") AND createdDate >= 2023-01-01 AND createdDate < 2023-06-01 AND "Case Number/s" is not EMPTY AND "Epic Link" is EMPTY
+
+
 
 jql=project%20%3D%20CI%20AND%20%20issuetype%20%20in%20("Expense%20Delivery")%20AND%20"Type%20of%20Request"%20in%20("Incident%20Request%20(IR)"%2C%20"Service%20Request%20(SR)")%20AND%20createdDate%20>%3D%202023-01-01%20AND%20createdDate%20<%202023-06-01%20AND%20labels%20!%3D%20"Partners"%20AND%20labels%20!%3D%20"Internal"%20and%20"Case%20Number%2Fs"%20is%20not%20EMPTY
 
@@ -22,7 +34,7 @@ jql=project%20%3D%20CI%20AND%20%20issuetype%20%20in%20("Expense%20Delivery")%20A
 
 
 
-Advance Editor
+Advance Editor filter for the data from jira
 
 let
     Source = Json.Document(Web.Contents("https://jira.ifao.net/rest/api/2/search?" & "jql=project%20%3D%20CI%20AND%20%20issuetype%20%20in%20(""Expense%20Delivery"")%20AND%20""Type%20of%20Request""%20in%20(""Incident%20Request%20(IR)""%2C%20""Service%20Request%20(SR)"")%20AND%20createdDate%20>%3D%202023-03-01%20AND%20createdDate%20<%202023-06-01" & "&maxResults=3000")),

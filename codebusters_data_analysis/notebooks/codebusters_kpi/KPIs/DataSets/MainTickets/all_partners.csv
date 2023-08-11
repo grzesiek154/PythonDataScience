@@ -1,0 +1,1818 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project description,Project url,Resolution,Assignee,Reporter,Creator,Created,Updated,Last Viewed,Resolved,Due Date,Votes,Labels,Labels,Labels,Description,Environment,Watchers,Watchers,Watchers,Original Estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Inward issue link (Blocks),Inward issue link (Blocks),Inward issue link (Relates),Inward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Attachment,Attachment,Attachment,Attachment,Attachment,Custom field (ART Sync Notes),Custom field (Activity),Custom field (Actual Business Value),Custom field (Actual Iteration),Custom field (Actual downtime),Custom field (Additional Information),Custom field (Attached file with changes),Custom field (Automatic Transition),Custom field (Benefit Hypothesis),Custom field (Business Justification),Custom field (Case Creation Date),Custom field (Case Creation Date/Time),Custom field (Case Number/s),Custom field (Category of problem),Custom field (Client status),Custom field (Commitment Level),Custom field (Complexity),Custom field (Configure),Custom field (Customer/s),Custom field (DB Change included),Custom field (Date of First Response [CHART]),Custom field (Developer),Custom field (EMS Database Version/s),Custom field (Effective Assignee),Custom field (Effective Resolution),Custom field (Effective Status),Custom field (Environment types),Custom field (Epic Link),Custom field (Escalation contact),Custom field (Executive Summary),Custom field (Expected Behavior),Custom field (Expected downtime),Custom field (Expense Database Version/s),Custom field (External Expert),Custom field (Fallback procedure),Custom field (Feature Validation),Custom field (Feature Validation Result),Custom field (Feature Validation Test Set URL),Custom field (Findings),Custom field (Fix Priority),Custom field (General Information),Custom field (ITS Team Assigned),Custom field (Import),Custom field (Import),Custom field (Import),Custom field (Incident date/time),Custom field (Initial Request Date by Customer),Custom field (Investigating Methods),Custom field (Is planned),Custom field (Issue Links Overview),Custom field (Job Size (WSJF)),Custom field (MDs spend),Custom field (Memory),Custom field (Notes),Custom field (OLD Agile Release Train (ART)),Custom field (Original story points),Custom field (PCI-DSS Reviews),Custom field (PCI-DSS related),Custom field (PDef Transition),Custom field (PSD document),Custom field (Parent Key),Custom field (Parent Link),Custom field (Personal Notes),Custom field (Planned Business Value),Custom field (Planned Iteration),Custom field (Priority Index),Custom field (Product Definition),Custom field (Proposed Corrective Actions),Custom field (Proposed Solution),Custom field (Rank),Custom field (Reason to Reopen),Custom field (Reason to Suspend),Custom field (Rejection reason),Custom field (Release Date),Custom field (Release Notes),Custom field (Remaining Story Points),Custom field (Reported Date),Custom field (Request Type),Custom field (Required Skill Level),Custom field (Resources),Custom field (Restart Category),Custom field (Restart Type),Custom field (Retention or Growth (WSJF)),Custom field (Review Date),Custom field (Risk Reduction/Opportunity (WSJF)),Custom field (Risk Reduction/Opportunity explanation),Custom field (Risks),Custom field (Root Cause),Custom field (SAFe Epic Type),Custom field (SAFe Feature Type),Custom field (SOR document),Custom field (Security/PCI Compliance Decision),Custom field (Server : System : Location : Division),Custom field (Session),Custom field (Severity),Custom field (Showstopper (WSJF)),Custom field (Showstopper explanation),Custom field (Size),Custom field (Slot time frame),Sprint,Sprint,Sprint,Sprint,Sprint,Sprint,Sprint,Custom field (Start Date),Custom field (Status Information),Custom field (Status Information),Custom field (Status Information),Custom field (Story Points),Custom field (Subtask Overview),Custom field (Support from FT),Custom field (Suspended),Custom field (System),Custom field (T-Shirt sized estimation),Custom field (TMS location/division affected),Custom field (Target end),Custom field (Target end),Custom field (Target start),Custom field (Target start),Custom field (Team),Custom field (Test Set URL),Custom field (Testing and Validation),Custom field (Time Criticality (WSJF)),Custom field (Time Criticality explanation),Custom field (Timeline),Custom field (Total Expense Volume p.a.),Custom field (Travel QA Responsible),Custom field (Type of Expense Delivery Task),Custom field (Type of Request),Custom field (URL),Custom field (UX Analyst),Custom field (UX Guidelines),Custom field (UX Researcher),Custom field (UX Visual Designer),Custom field (UX Writer),Custom field (UXR Deliverables),Custom field (UXR Personas),Custom field (UXW RTM Code),Custom field (User-business Value (WSJF)),Custom field (User-business Value explanation),Custom field (Validation),Comment,Comment,Comment,Comment,Comment,Comment
+ProcurX EverC - Add FDFs and receipts,CI-8999,489633,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,24/Jul/23 3:46 PM,02/Aug/23 3:37 PM,07/Aug/23 3:43 PM,02/Aug/23 3:37 PM,31/Jul/23 12:00 AM,0,Partners,,,"System: ProcuRX-EverC
+
+Hello team,
+
+Please, the customer wants the following changes:
+
+*FDFs*
+ * Budget number should not be mandatory
+ * If travel for different department must be renamed as Department
+ * Add a new FDF at {*}receipt level for all the receipts{*}:
+ ** Name of FDF: Budget number
+ ** Type: Free text
+ ** Mandatory: no
+ ** Visible: all the users
+ ** Editable: owner, arranger and Auditor (as usual)
+
+*Receipts*
+ * Please, add the new receipts:
+
+|*Laundry*|expense.basereceipt.receipt.laundry| |
+|*Conference*|expense.basereceipt.receipt.conference| |
+|*MLG*|expense.basereceipt.receipt.mlg| |
+|*Shipment*|expense.basereceipt.receipt.shipment| |
+|*Team activity*|expense.basereceipt.receipt.team.activity| |
+|*Parking*|expense.basereceipt.receipt.parking| |
+|*Visa/Passport*|expense.basereceipt.receipt.visa| |
+|*Office expense*|expense.basereceipt.receipt.office.supplies| |
+
+Team activity should be like business entertainment
+ * Rename ""Accommodation"" receipt. The new name is: Lodging
+
+I will do the EMS configuration for the receipts.
+
+Thank you!
+
+Alejandro",,,,,,,,,,0,139860,,,,,,,,,,,,,,,12.0,,,,,,,,,24/Jul/23 12:00 AM,,2-17679197903,,,Committed,,Configure,ProcurX,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i23rf2:yxp2",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: Bali ; mega
+System: ProcuRX-EverC",,3 - Medium,YES,,,,Codebusters-PI-23.3-2,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"01/Aug/23 1:43 PM;alejandro.ruizrobles;Hello [~mkuchciak] ,
+
+The ticket works as expected but the customer did the following changes in the last minute:
+ * Budget Number FDF at the header of the statement needs to be mandatory (we need to revert the change)
+ * ""If travel for different department"" FDF should come back to the configuration (we need to revert the change)
+ * We need to add a new FDF:
+ ** Name of FDF: Report Type
+ ** Type: List
+ ** Values: Travel report / Local report
+ ** Mandatory: no
+ ** Visible: all the users
+ ** Editable: owner, arranger and Auditor (as usual)
+ ** At the header of the statement
+ * Budget number FDF for receipts needs a regrex expresion. It needs to be a maximum of 20 numbers/signs (like the FDF at the header of the statement)
+ * Add a new receipt:
+ ** Insurance (expense.basereceipt.receipt.insurance)
+
+Thank you and my apologies for this :(
+
+Alejandro;;;",,,,,
+Numiga Cleverbridge - Change timeouts for approval and auditing,CI-8980,488527,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,18/Jul/23 2:31 PM,20/Jul/23 11:58 AM,07/Aug/23 3:44 PM,20/Jul/23 11:58 AM,21/Jul/23 12:00 AM,0,Partners,,,"System: bcdtravel-de-cleverbridge
+
+Hello team,
+
+The customer would like to change the timeouts for the followings:
+
+Approval --> 14 days
+
+Auditing --> 100 days
+
+Thank you!
+
+Alejandro",,,,,,,,,,0,13140,,,,,,,,,,,,,,,9.0,,,,,,,,,18/Jul/23 12:00 AM,,2-17670776073,,,Committed,,Configure,Numiga,,,mkuchciak,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i23rf2:ywo",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; mega
+System: bcdtravel-de-cleverbridge
+",,3 - Medium,YES,,,,Codebusters-PI-23.3-2,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+ProcurX EverC - Add regrex expression in FDF,CI-8972,488119,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,17/Jul/23 8:33 AM,28/Jul/23 1:06 AM,07/Aug/23 3:44 PM,28/Jul/23 1:06 AM,24/Jul/23 12:00 AM,0,Partners,,,"System: ProcuRX-EverC
+
+Hello team,
+
+Please, I need the following changes in the Budget number FDF:
+ * The user only can introduce numbers and signs
+ * The information can come from the Booking workflow
+
+Thank you!
+
+Alejandro",,,,,,,,,,0,82740,,,,,,,,,,,,,,,9.0,,,,,,,,,17/Jul/23 12:00 AM,,2-17665810583,,,Committed,,Configure,ProcurX,,,ahrycenko,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i23rf2:yy",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: mega ; BALI
+System: ProcuRX-EverC",,3 - Medium,YES,,,,Codebusters-PI-23.3-2,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga BerlinHyp - Increase the timeout,CI-8968,487949,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,14/Jul/23 12:09 PM,20/Jul/23 11:57 AM,07/Aug/23 3:44 PM,20/Jul/23 11:57 AM,18/Jul/23 12:00 AM,0,Partners,,,"System: bcdtravel-de-berlinhyp
+
+Hello team,
+
+Please, increase the timeout for the Auditor, right now, it is 28 days and it should be 100 days.
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,14/Jul/23 12:00 AM,,2-17661732633,,,Committed,,Configure,Numiga,,,jtkacz,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i23rf2:yw",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: Bali ; Mega
+System: bcdtravel-de-berlinhyp
+",,3 - Medium,YES,,,,Codebusters-PI-23.3-2,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+ProcurX EverC - Make FDFs mandatory,CI-8956,487348,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,12/Jul/23 11:16 AM,20/Jul/23 11:00 AM,07/Aug/23 3:44 PM,20/Jul/23 11:00 AM,19/Jul/23 12:00 AM,0,Partners,,,"System: ProcuRX-EverC
+
+Hello team,
+
+Please, make ""Start date"" and ""End date"" FDFs mandatory.
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,12/Jul/23 12:00 AM,,2-17527083823,,,Committed,,Configure,ProcurX,,,jtkacz,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i23rf2:z",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: mega ; BALI
+System: ProcuRX-EverC
+Location: all",,3 - Medium,YES,,,,Codebusters-PI-23.3-2,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Munckhof - Change mileage amount for a location,CI-8947,486492,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,10/Jul/23 10:16 AM,01/Aug/23 10:12 AM,07/Aug/23 3:44 PM,01/Aug/23 10:12 AM,17/Jul/23 12:00 AM,0,Partners,,,"system: munckhof-enterprise-nedschroef
+
+Location: GB - Nedschroef Fasteners Ltd. Oxford
+
+Hello team,
+
+The customer wants to change the mileage amount for the electric car, the new amount is £0.26 per mile.
+
+The cut off date is: 01/07/2023
+
+Thank you team!
+
+Alejandro",,,,,,,,,,0,71280,,,,,,,,,"24/Jul/23 12:24 PM;alejandro.ruizrobles;image-2023-07-24-12-24-23-791.png;https://jira.ifao.net/secure/attachment/207584/image-2023-07-24-12-24-23-791.png","24/Jul/23 12:25 PM;alejandro.ruizrobles;image-2023-07-24-12-25-25-229.png;https://jira.ifao.net/secure/attachment/207585/image-2023-07-24-12-25-25-229.png","24/Jul/23 3:51 PM;alejandro.ruizrobles;image-2023-07-24-15-51-42-074.png;https://jira.ifao.net/secure/attachment/207649/image-2023-07-24-15-51-42-074.png",,,,12.0,,,,,,,,,10/Jul/23 12:00 AM,,2-17636929233,,,Committed,,Configure,Munckhof,,2023-07-18 18:08:08.482,ahrycenko,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i23rf2:xi",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: Travel ; BALI
+System: munckhof-enterprise-nedschroef
+Location: GB - Nedschroef Fasteners Ltd. Oxford",,3 - Medium,YES,,,,Codebusters-PI-23.3-2,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"18/Jul/23 6:08 PM;ahrycenko;is there more location in GB for this customer?
+
+Can changes be applied for all GB?;;;","24/Jul/23 12:24 PM;alejandro.ruizrobles;Hi [~ahrycenko] 
+
+I only can see one location for GB: 
+
+!image-2023-07-24-12-24-23-791.png|width=186,height=276!
+
+What are the other locations?;;;","24/Jul/23 12:25 PM;alejandro.ruizrobles;Hi [~ahrycenko] ,
+
+Can you upload again the configuration? I tested it on BALI but I don't see the changes:.
+
+!image-2023-07-24-12-25-25-229.png|width=372,height=363!
+
+I am sure your changes were overlapped :)
+
+Thank you!;;;","24/Jul/23 3:51 PM;alejandro.ruizrobles;It works as expected:
+
+!image-2023-07-24-15-51-42-074.png|width=417,height=382!;;;",,
+Numiga Hensoldt - Add pending reminder for Approver,CI-8946,486478,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,10/Jul/23 9:52 AM,18/Jul/23 4:04 PM,07/Aug/23 3:44 PM,18/Jul/23 4:04 PM,17/Jul/23 12:00 AM,0,Partners,,,"System: bcdtravel-de-hensoldt
+
+Hello team,
+
+Please, implement pendingApprovalRemainderEmailPeriod for this system. The Approver should receive the reminder 7 days before the automatic reject.
+
+Thank you!
+
+Alejandro",,,,,,,,,,0,81660,,,,,,,,,,,,,,,9.0,,,,,,,,,10/Jul/23 12:00 AM,,2-17636817443,,,Committed,,Configure,Numiga,,,ahrycenko,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i23rf2:x",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: mega ; BALI
+System: bcdtravel-de-hensoldt
+Location: all",,3 - Medium,YES,,,,Codebusters-PI-23.3-2,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga Hensoldt - Implement same configuration for other Trip purpose,CI-8945,486471,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Rejected,,alejandro.ruizrobles,alejandro.ruizrobles,10/Jul/23 9:45 AM,19/Jul/23 2:53 PM,07/Aug/23 3:44 PM,19/Jul/23 2:53 PM,14/Jul/23 12:00 AM,0,Partners,,,"System: bcdtravel-de-hensoldt
+
+Hello team,
+
+When the user chooses a value in ""Trip Purpose"" FDF, a different configurations applies. The customer wants the system calculates  ""Kombination Dienstreise Privatreise"" value in the same way as ""Dienstreise"" value.
+
+I tried it but it does not work as expected.
+
+Thank you!
+
+Alejandro",,ahrycenko,alejandro.ruizrobles,,,,,,,0,2940,,,,,,,,,,,,,,,6.0,,,,,,,,,10/Jul/23 12:00 AM,,2-17564110673,,,Committed,,Configure,Numiga,,2023-07-18 17:40:36.501,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i23rf2:y",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: mega ; BALI
+System: bcdtravel-de-hensoldt
+Location: all",,3 - Medium,YES,,,,Codebusters-PI-23.3-2,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"18/Jul/23 5:40 PM;ahrycenko;duplicated CI-8944;;;",,,,,
+Numiga Hensoldt - Implement same configuration for other Trip purpose,CI-8944,486464,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,10/Jul/23 9:42 AM,24/Jul/23 12:39 PM,07/Aug/23 3:44 PM,24/Jul/23 12:39 PM,14/Jul/23 12:00 AM,0,Partners,,,"System: bcdtravel-de-hensoldt
+
+Hello team,
+
+When the user chooses a value in the Trip purpose FDF, a different configuration applies. The customer wants ""Kombination Dienstreise Privatreise"" value has the same configuration as ""Dienstreise""
+
+Please, could you implement it? I tried it but it does not work as expected.
+
+Thank you!
+
+Alejandro",,,,,,,,,,0,7800,,,,,,,,,,,,,,,9.0,,,,,,,,,10/Jul/23 12:00 AM,,2-17564110673,,,Committed,,Configure,Numiga,,2023-07-17 16:51:16.383,ahrycenko,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i23rf2:v9",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: mega ; BALI
+System: bcdtravel-de-hensoldt
+Location: all",,3 - Medium,YES,,,,Codebusters-PI-23.3-2,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"17/Jul/23 4:51 PM;ahrycenko;To Alejandro RUIZ ROBLES in null role in CI-10244204
+do you want to have new configuration or make ""Kombination Dienstreise Privatreise"" refer to existing configuration of ""Dienstreise""?;;;","18/Jul/23 11:09 AM;alejandro.ruizrobles;Hi [~ahrycenko] ,
+
+The ""Kombination Dienstreise Privatreise"" should have the same behavior as ""Dienstreise"" so you don't need to create nothing from scratch :) 
+
+The cut off day is July 1st.
+
+Thank you!;;;","18/Jul/23 11:10 AM;alejandro.ruizrobles;From CI-10244204
+Clarified;;;","18/Jul/23 5:44 PM;ahrycenko;Configuration completed
+
+ReceiptBasedActualAbsenceListCalculator will be replaced CI-7500 for now topic is blocked
+
+Affected sections are:
+
+Receipt types
+
+Report advanced
+
+Custom calculation scripts;;;",,
+"Numiga Fiege IT - Add mileage map feature, rename a receipt and system texts",CI-8933,485825,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,06/Jul/23 9:30 AM,11/Jul/23 12:00 PM,07/Aug/23 3:44 PM,11/Jul/23 12:00 PM,13/Jul/23 12:00 AM,0,Partners,,,"System: lcc-lueckertz-fiege
+
+Hello team,
+
+Please, do the following changes:
+
+1.- Add the mileage map feature
+
+2.- Remove ""/LSVA""  from the ""Road Tolls"" receipt. It should affect all the translations
+
+3.- Add the following system text for the ""Meals"" receipt (""Pasti"" receipt):
+English: Limit of € 30,00 only for own meals during travels. For meals with customers and suppliers, please use the ""Representation"" section.
+Italian: Limite di € 30,00 solo per i pasti propri durante i viaggi. Per i pasti con clienti e fornitori, utilizzare la sezione ""spese di rappresentanza"".
+ 
+Thank you!
+
+Alejandro
+
+ ",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,06/Jul/23 12:00 AM,,2-17634958683,,,Committed,,Configure,Numiga,,,jtkacz,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i23rf2:k",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: World ; BALI
+System: lcc-lueckertz-fiege
+Location: TESTSTANDORT Fiege Italien",,3 - Medium,YES,,,,Codebusters-PI-23.3-1,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga MOIA - Remove regrex expression from a FDF,CI-8924,485500,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,04/Jul/23 3:24 PM,06/Jul/23 8:18 AM,07/Aug/23 3:44 PM,06/Jul/23 8:18 AM,11/Jul/23 12:00 AM,0,Partners,,,"System: volkswagen-MOIA
+
+Hello team,
+
+Please, remove the regrex expression from ""Employee number"" FDF:
+
+!image-2023-07-04-15-23-17-627.png|width=423,height=366!
+
+Thank you!
+
+Alejandro
+
+ ",,,,,,,,,,,,,,,,,,,,"04/Jul/23 3:23 PM;alejandro.ruizrobles;image-2023-07-04-15-23-17-627.png;https://jira.ifao.net/secure/attachment/204719/image-2023-07-04-15-23-17-627.png",,,,,,9.0,,,,,,,,,04/Jul/23 12:00 AM,,2-17495794773,,,Committed,,Configure,Numiga,,,jtkacz,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i23rez:z",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: Travel ; Bali
+System: volkswagen-MOIA
+",,3 - Medium,YES,,,,Codebusters-PI-23.3-1,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga MOIA - Per diems are 0 for an Expense configuration,CI-8923,485418,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,04/Jul/23 1:42 PM,11/Jul/23 12:07 PM,07/Aug/23 3:44 PM,11/Jul/23 12:07 PM,11/Jul/23 12:00 AM,0,Partners,,,"System: volkswagen-MOIA
+
+Hello team,
+
+The per diems for the configuration One Day Trip should be 0.00€ . Could you help me here? I tried in the EMS but the per diems are still appearing and I don't know if I am doing something wrong.
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,04/Jul/23 12:00 AM,,2-17495794773,,,Committed,,Configure,Numiga,,,jtkacz,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i23rez:w",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: Travel ; BALI
+System: volkswagen-MOIA
+Configuration: One Day Trip",,3 - Medium,YES,,,,Codebusters-PI-23.3-1,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga VFL Wolfsburg - Change VAT for a receipt,CI-8920,485356,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,04/Jul/23 10:59 AM,05/Jul/23 6:37 PM,07/Aug/23 3:44 PM,05/Jul/23 6:37 PM,11/Jul/23 12:00 AM,0,Partners,,,"System: ama-VW-Beteiligungen-DE
+
+Hello team,
+
+Please, For the ""Gifts above 35 EUR"" receipt, we need to store ""none"" as default in the VAT and remove the rest of tax rates for this receipt. Only ""none"" should be available for this receipt.
+
+Thank you!
+
+Alejandro",,,,,,,,,,0,180,,,,,,,,,,,,,,,9.0,,,,,,,,,04/Jul/23 12:00 AM,,2-17624486223,,,Committed,,Configure,Numiga,,,jtkacz,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i23rez:i",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; Travel
+System: ama-VW-Beteiligungen-DE
+Location: all",,3 - Medium,YES,,,,Codebusters-PI-23.3-1,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga Cleverbridge - Unhide attachments for receipts,CI-8916,485057,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,03/Jul/23 10:00 AM,07/Jul/23 8:30 AM,07/Aug/23 3:44 PM,07/Jul/23 8:30 AM,06/Jul/23 12:00 AM,0,Partners,,,"System: bcdtravel-de-cleverbridge
+
+Hello team,
+
+Please, we need to unhide the attachments for the receipts on Thursday 6th at the end of the business day. The format for the attachments should be all.
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,03/Jul/23 12:00 AM,,2-17622941813,,,Committed,,Configure,Numiga,,,jtkacz,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i23re5:",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; mega
+System: bcdtravel-de-cleverbridge
+Location: all",,3 - Medium,YES,,,,Codebusters-PI-23.3-1,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"04/Jul/23 1:44 PM;alejandro.ruizrobles;Hi [~jtkacz] ,
+
+Create the PR on Thursday 6th in the afternoon, so it will be ready on Friday 7th :)
+
+Thank you!
+
+Alejandro;;;",,,,,
+Numiga Nordsee - Increase approval timeouts in the workflow,CI-8908,484613,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,29/Jun/23 4:16 PM,03/Jul/23 2:27 PM,07/Aug/23 3:44 PM,03/Jul/23 2:27 PM,06/Jul/23 12:00 AM,0,Partners,,,"System: nordsee
+
+Hello team,
+
+Please, add the following approval timeouts:
+
+Approval--> 20 days
+Auditing-->56  days
+Accounted to finished-->64 days
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,29/Jun/23 12:00 AM,,2-17604480893,,,Committed,,Configure,Numiga,,,jtkacz,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i23re4:",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; travel
+System: nordsee
+Location: all",,3 - Medium,YES,,,,Codebusters-PI-23.3-1,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga Hensoldt - Change Bank account in SEPA file,CI-8872,483676,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,26/Jun/23 1:21 PM,03/Jul/23 2:21 PM,07/Aug/23 3:44 PM,03/Jul/23 2:21 PM,03/Jul/23 12:00 AM,0,Partners,,,"System: bcdtravel-de-hensoldt
+
+Hello team,
+
+Please, change the bank account in the SEPA file. This is the new information:
+
+Numiga GmbH
+
+IBAN: DE33 2907 0050 0229 3272 00
+
+BIC: DEUTDEHBXXX
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,26/Jun/23 12:00 AM,,2-17598922323,,,Committed,,Configure,Numiga,,,jtkacz,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i23jna:r",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; mega
+System: bcdtravel-de-hensoldt
+Location: all",,3 - Medium,YES,,,,Codebusters-PI-23.3-1,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga Cariad - Change Bank account for SEPA file,CI-8871,483671,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,26/Jun/23 1:14 PM,03/Jul/23 2:22 PM,07/Aug/23 3:44 PM,03/Jul/23 2:22 PM,03/Jul/23 12:00 AM,0,Partners,,,"System: Volkswagen-CSO
+
+Hello team,
+
+Please, change the bank account in the SEPA file. This is the new information:
+
+Numiga GmbH
+
+IBAN: DE33 2907 0050 0229 3272 00
+
+BIC: DEUTDEHBXXX
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,26/Jun/23 12:00 AM,,2-17598945503,,,Committed,,Configure,Numiga,,,jtkacz,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i23jna:i",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; Travel
+System: Volkswagen-CSO
+Location: all",,3 - Medium,YES,,,,Codebusters-PI-23.3-1,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga Elli - Change Bank account in SEPA file,CI-8870,483664,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,26/Jun/23 1:05 PM,03/Jul/23 2:25 PM,07/Aug/23 3:44 PM,03/Jul/23 2:25 PM,03/Jul/23 12:00 AM,0,Partners,,,"System: volkswagen-group-charging
+
+Hello team,
+
+Please, change the bank account in the SEPA file. This is the new information:
+
+Numiga GmbH
+
+IBAN: DE33 2907 0050 0229 3272 00
+
+BIC: DEUTDEHBXXX
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,26/Jun/23 12:00 AM,,2-17598954693,,,Committed,,Configure,Numiga,,,jtkacz,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i23jna:9",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: Travel
+System: volkswagen-group-charging
+Configuration: all",,3 - Medium,YES,,,,Codebusters-PI-23.3-1,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga MOIA - Change Bank account in SEPA file,CI-8869,483660,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,26/Jun/23 1:00 PM,03/Jul/23 2:24 PM,07/Aug/23 3:44 PM,03/Jul/23 2:24 PM,03/Jul/23 12:00 AM,0,Partners,,,"System: volkswagen-MOIA
+
+Hello team,
+
+Please, change the bank account in the SEPA file. This is the new information:
+
+Numiga GmbH
+
+IBAN: DE33 2907 0050 0229 3272 00
+
+BIC: DEUTDEHBXXX
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,26/Jun/23 12:00 AM,,2-17598943253,,,Committed,,Configure,Numiga,,,jtkacz,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i23jna:",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; Travel
+System: volkswagen-MOIA
+Configuration: all",,3 - Medium,YES,,,,Codebusters-PI-23.3-1,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga MOIA - Unhide section,CI-8856,483291,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,23/Jun/23 11:20 AM,27/Jun/23 2:38 PM,07/Aug/23 3:44 PM,27/Jun/23 2:38 PM,28/Jun/23 12:00 AM,0,Partners,,,"System: volkswagen-MOIA
+
+Hello team,
+
+We need to unhide the meal deductions section for the ""Expenses"" configuration. We need to keep the meal deduction section hidden for ""One day trip"" configuration.
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,23/Jun/23 12:00 AM,,2-17495794773,,,Committed,,Configure,Numiga,,,jtkacz,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:ynzxzzr",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; Travel
+System: volkswagen-MOIA
+Configuration: Expenses",,3 - Medium,YES,,,,Codebusters-PI-23.3-1,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga - Create numiga-master template for FR,CI-8810,481221,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,16/Jun/23 2:33 PM,11/Jul/23 2:02 PM,07/Aug/23 3:44 PM,11/Jul/23 2:02 PM,26/Jun/23 12:00 AM,0,Partners,,,"System: numiga-master-fr ; numiga-master-fr-test
+
+Hello team,
+
+We need to create a numiga master template based on the current ERS. I need your support for the VEGAS part. EMS configuration will be done by me.
+
+*Receipts (available and default VAT in ERS)*
+|*VEGAS code*|*Receipt (EN)*|*Receipt (FR)*|*Business entertainment*|
+|ticket.flight|Flight|Vol| |
+|fee|Credit card fee|Frais de carte bancaire| |
+|hotel|Hotel|Hôtel| |
+|other|Other expenses|Autres frais| |
+|*NEW*|Other flight expenses and/or luggage expenses|Autres frais liés au vol ou aux bagages| |
+|ticket.mainline|Train|Train| |
+|car.rental|Rental car|Voiture de location| |
+|entertainment|Entertainment expenses|Frais de divertissement|Yes|
+|numiga.subsistance|Subsistence costs|Frais de séjour| |
+|numiga.conference|Conference fees|Frais de conférence| |
+|numiga.entrance|Entrance|Entrée| |
+|numiga.ticket.ferry|Ferry|Ferry| |
+|ticket.local|Public transport|Transports public| |
+|numiga.material.office|Office materials|Matériel de bureau| |
+|car.parking|Parking fee|Frais de stationnement| |
+|numiga.car.fuel|Petrol / Fuel|Essence/carburant| |
+|numiga.telephone|Telephone|Téléphone| |
+|numiga.postage|Postage|Frais de courrier | |
+|*NEW*|Gifts|Cadeaux| |
+|car.taxi|Taxi|Taxi| |
+|numiga.car.toll|Toll|Péage| |
+|entertainment.employees|Entertainment expenses with employees|Frais de divertissment avec les employés|Yes|
+|numiga.bahncard|Rail card|Carte ferroviaire| |
+|numiga.banking.fee|Bank fee|Frais bancaires| |
+|numiga.subsistance.breakfast|Breakfast (foreign)|Petit-déjeuner (étranger)| |
+|numiga.servicecharge|Fee (Numiga)|Frais (Numiga)| |
+|numiga.fee|Fee (travel agency)|Frais (Travel Agency)| |
+|numiga.hotel.breakfast|Hotel breakfast|Petit-déjeuner à l'hôtel| |
+|numiga.rent|Rent|Louer| |
+|numiga.car.rental.fuel|Rental car fuel|Carburant de voiture de location| |
+|numiga.car.rental.accident|Rental car accident|Accident de voiture de location| |
+|numiga.car.rental.insurance|Rental car insurance|Assurance voiture de location| |
+|numiga.parking.own|Parking own car|Parking voiture privé| |
+|numiga.cleaning|Cleaning Expenses|Frais de nettoyage| |
+|numiga.fee.participant|Participation fee|Frais de participation| |
+|numiga.visa|Visa costs|Frais de visa| |
+|numiga.advancePayment|Advance payment|Paiements avancés| |
+
+All the receipts are available in numiga-master-test (staging) or numiga-master (BALI) so we only need to copy/paste and change the translations and add two new receipts.
+
+*Tax rates*
+
+They are in the ERS.
+
+*Itinerary section*
+
+It will be done by me using the EMS
+
+*Free Data Fields*
+
+Please, ping me for this topic because the main ones should be as numiga-master + we need to add the FR DFD for the mileage
+|FDF Name - 1st language|FDF Name - 2nd language|FDF type|Values if FDF type = List - 1st language|Values if FDF type = List - 2nd language|Mandatory|Source|Position in UI|Selected receipts only (please specify)|Roles (""Edit"" includes ""See""|Where should the FDF be visible?|TMS Code (filled by Amadeus)|
+|Traveller|Arranger|Approver|Auditor|Accountant|Administrator|UI|PDF report|Export file|
+|Trip number|Numero de voyage|Text| | |No|Booking|Expense Statement| |Edit|Edit|See|Edit|See|See|Visible|Visible|Visible| |
+|Cost Center|Centre de Coût|Text| | |Yes|Booking or profile (depending on where the info is present)|Expense Statement| |Edit|Edit|See|Edit|See|See|Visible|Visible|Visible|Cost_Center|
+|Employee Number|Numero d'employé|Text| | |Yes|Booking or profile (depending on where the info is present)|Expense Statement| |Edit|Edit|See|Edit|See|See|Visible|Visible|Visible|Employee_Number|
+|Department|Departement|Text| | |No|Booking or profile (depending on where the info is present)|Expense Statement| |Edit|Edit|See|Edit|See|See|Visible|Not visible|Visible|Department|
+|Ordre de mission|Order Number|Text| | |No|Booking or profile (depending on where the info is present)|Expense Statement| |Edit|Edit|See|Edit|See|See|Visible|Not visible|Visible|Order_Number|
+|Numero de projet|Project Number|Text| | |No|Booking or profile (depending on where the info is present)|Expense Statement| |Edit|Edit|See|Edit|See|See|Visible|Not visible|Visible|Project_Number|
+|Employee group|Groupe d'employé|Text| | |No|Booking or profile (depending on where the info is present)|Expense Statement| |See|See|See|Edit|See|See|Visible|Not visible|Visible|Employee_Group|
+|Trip purpose|Motif du déplacement|Text| | |Yes|Booking|Expense Statement| |Edit|Edit|See|Edit|See|See|Visible|Not visible|Visible|Trip purpose|
+|Base Mileage|Kilométrage de base|Text| | |No|User profile|Expense Statement| |Sehen + Suchen|Sehen + Suchen|Sehen + Suchen|Sehen + Suchen|Sehen + Suchen|Sehen + Suchen|Visible|Not visible|Visible|Base Mileage|
+|Already submitted mileage|Kilométrage déjà soumis|Text| | |No| |Daily allowance level|Mileage section|See|See|See|See|See|See|Visible|Not visible|Visible| |
+|Total nights spent|Nombre de nuits|Text| | |No| |Receipt type level|Hotel / Hotel breakfast|Edit|Edit|See|Edit|See|See|Visible|Not visible|Visible| |
+
+For the following topics, copy and paste from numiga-master:
+ * Export file
+ * DFDs (like mileage map, TPA reason, etc.)
+ * System text file configuration is like numiga-master
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,"16/Jun/23 2:15 PM;alejandro.ruizrobles;Numiga_Master_France_ERS.xlsx;https://jira.ifao.net/secure/attachment/202063/Numiga_Master_France_ERS.xlsx",,,,,,12.0,,,,,,,,,16/Jun/23 12:00 AM,,2-17572041893,,,Committed,,Configure,Numiga,,2023-07-06 14:57:44.532,jtkacz,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,true,,,,Hello,,,,,,,,,,,,,"0|i20pql:ynzxw9",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; staging
+System: numiga-master-fr ; numiga-master-fr-test
+",,3 - Medium,YES,,,,Codebusters-PI-23.3-1,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"05/Jul/23 8:38 PM;alejandro.ruizrobles;Hi [~jtkacz] ,
+
+Employee group FDF is missing :)
+
+Could you add it?
+
+Thank you!
+
+Alejandro;;;","06/Jul/23 2:57 PM;jtkacz;Hi [~alejandro.ruizrobles] ,
+
+it was added before but visible only for two roles. Now should be fixed :);;;",,,,
+Numiga LCC - Create (copy/paste) a new system,CI-8807,480768,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,15/Jun/23 6:38 PM,28/Jun/23 7:22 PM,07/Aug/23 3:44 PM,28/Jun/23 7:22 PM,22/Jun/23 12:00 AM,0,Partners,,,"System: lcc-demo-numiga
+
+Hello team,
+
+Please, we need:
+ * Copy and paste numiga-master-test VEGAS code and create a new folder for a new system: lcc-demo-numiga
+ * Engine configuration will be done using EMS so I will do it when the VEGAS part is done.
+ * If you want, you don't need to copy itinerary section as it can be done using EMS
+ * Only 2022 configuration + different configurations must apply.
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,15/Jun/23 12:00 AM,,2-17568772293,,,Committed,,Configure,Numiga,,,jtkacz,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:ynzxi",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; World
+System: lcc-demo-numiga
+Configuration: main configuration",,3 - Medium,YES,,,,Codebusters-PI-7.3,Codebusters-PI-23.3-1,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+ProcuRX-EverC - New Expense configuration,CI-8753,478233,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,jbonnavion,jbonnavion,08/Jun/23 4:41 PM,24/Jul/23 3:41 PM,07/Aug/23 3:44 PM,24/Jul/23 3:41 PM,15/Jun/23 12:00 AM,0,Partners,,,"System: ProcuRX-EverC
+
+Hello team,
+
+Please, add the following information in the system:
+
+*1.- Receipts* (just English, no other language applies)
+|*Flights*|expense.basereceipt.receipt.ticket.flight | |
+|{*}Accommodation{{*}}|expense.basereceipt.receipt.hotel| |
+|*Per Diem*|expense.basereceipt.receipt.per.diem| |
+|*Rental car*|expense.basereceipt.receipt.car.rental| |
+|*Transportation*|expense.basereceipt.receipt.transportation| |
+|*Communication*|expense.basereceipt.receipt.comm.other| |
+|*Entertainment Other*|expense.basereceipt.receipt.entertainement.other| |
+|*Flight expenses*|expense.basereceipt.receipt.ticket.flight.other| |
+
+*Entertainment Other -* This receipt has business entertainment behavior
+
+Default tax rate for Israel for all the receipts: none
+
+Default tax rate for any country for all the receipts: none
+
+*2.-Hide sections*
+
+Please, hide the following features in the itinerary section (meal deductions, accommodation and mileage).
+
+Please, hide cash advance.
+
+*3.-Free Data Fields*
+
+EN: trip purpose
+ * Type of FDF: list
+ * tms code: trip purpose
+ * Mandatory: yes
+ * The information comes: from booking and fixed list
+ * Can edit: owner, arranger and auditor
+ * Can see: approver, accountant and administrator
+ * Appears: top of the statement (at the header)
+
+EN: budget number
+ * From 1 to 10 characters (digits and signs only)
+ * Type of FDF: free text
+ * Tms code: BUDGET ITEM (numbers only)
+ * Mandatory: yes
+ * The information comes: from booking
+ * Can edit: owner, arranger and auditor
+ * Can see: approver, accountant and administrator
+ * Appears: top of the statement (at the header)
+
+EN: If travel for different department
+ * Type of FDF: list with drop down menu
+ ** G&A
+ ** R&D
+ ** Product
+ ** Sales
+ ** Marketing
+ * Tms code: not from TMS
+ * Mandatory: no
+
+ * Can edit: owner, arranger and auditor
+ * Can see: approver, accountant and administrator
+ * Appears: top of the statement (at the header)
+
+ ** 
+
+EN: Private vacation dates
+ * Type of FDF: free text
+ * Tms code: not from TMS
+ * Mandatory: no
+
+ * Can edit: owner, arranger and auditor
+ * Can see: approver, accountant and administrator
+ * Appears: top of the statement (at the header)
+
+ ** 
+
+EN: start date
+ * In the same way as screenshot (procurx-pangea):
+
+ 
+
+!image-2023-06-08-16-38-07-891.png!
+
+ 
+
+EN: End date
+ * In the same way as screenshot (procurx-pangea):
+
+!image-2023-06-08-16-37-58-302.png!
+
+ 
+
+These FDFs (start date and end date) should appear for *car rental and hotel receipts only.*
+
+*3.-Export file*
+ * Please, add the export file that you can find in the following systems: procurx-jifiti/Bionic
+ * Per Diem receipt should apply for Per Diem Amount column.
+ * *GL accounts, tax rate keys, etc. will be done by us in EMS.*
+
+*Thank you*
+
+*Julie*",,jbonnavion,,,,,,,,0,68220,,,,,,,,,"08/Jun/23 4:37 PM;jbonnavion;image-2023-06-08-16-37-45-184.png;https://jira.ifao.net/secure/attachment/200820/image-2023-06-08-16-37-45-184.png","08/Jun/23 4:37 PM;jbonnavion;image-2023-06-08-16-37-58-302.png;https://jira.ifao.net/secure/attachment/200819/image-2023-06-08-16-37-58-302.png","08/Jun/23 4:38 PM;jbonnavion;image-2023-06-08-16-38-07-891.png;https://jira.ifao.net/secure/attachment/200818/image-2023-06-08-16-38-07-891.png",,,,9.0,,,,,,,,,08/Jun/23 12:00 AM,,2-17527083823,,,Committed,,Configure,ProcurX,,2023-06-23 09:12:46.8,ddykiert,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:ynzy",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: Mega; Bali
+System: ProcuRX-EverC",,3 - Medium,YES,,,,Codebusters-PI-7.3,Codebusters-PI-23.3-1,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"23/Jun/23 9:12 AM;ddykiert;Hello [~jbonnavion] , it was implemented on bali. Please verify before import to prod.;;;","29/Jun/23 9:54 AM;jbonnavion;Thanks [~ddykiert] , yes please import to prod;;;",,,,
+Numiga MOIA - Remove configurations and add a new one,CI-8751,477625,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,07/Jun/23 12:51 PM,19/Jun/23 11:23 AM,07/Aug/23 3:44 PM,19/Jun/23 11:23 AM,16/Jun/23 12:00 AM,0,Partners,,,"System: volkswagen-MOIA
+
+Hello team,
+
+Please, I need the following changes:
+ * Remove the following configurations:
+ ** Trip home (DE: Heimreise)
+ ** Mileage allowance collective statement (DE: Kilometergeld-Sammelabrechnung)
+ ** Training ""full catering"" (DE: Schulung ""Vollverpflegung"")
+ * Rename ""Business trip"" configuration:
+ ** EN: Expenses
+ ** DE: Expenses
+ * Add a new configuration:
+ ** Name: 
+ *** EN: One day trip
+ *** DE: One day trip
+ ** It should have the same configuration (receipts, FDFs, export, etc. like ""Expenses"" configuration) but there are some exceptions:
+ *** Hide meal deductions section in the itinerary
+ *** Hide accommodation section in the itinerary
+
+Cutoff is not necessary because the system is not in live.
+
+Thank you!
+
+Alejandro",,,,,,,,,,0,6540,,,,CI-8750,,,,,,,,,,,12.0,,,,,,,,,07/Jun/23 12:00 AM,,2-17495794773,,,Committed,,Configure,Numiga,,,mkuchciak,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@717ffcbd,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:ynzu",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: Travel, Bali
+System: volkswagen-MOIA
+Location: all",,3 - Medium,YES,,,,Codebusters-PI-7.3,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"15/Jun/23 5:46 PM;alejandro.ruizrobles;Hi [~mkuchciak] ,
+
+I don't see the changes on BALI. Most probably someone reverted the changes or Jenkins failed :(
+
+Could you recheck it?
+
+Thank you!
+
+Alejandro;;;",,,,,
+Numiga MOIA - Changes in VEGAS,CI-8750,477616,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,07/Jun/23 12:37 PM,19/Jun/23 11:23 AM,07/Aug/23 3:44 PM,19/Jun/23 11:23 AM,14/Jun/23 12:00 AM,0,escalated,Partners,,"System: volkswagen-MOIA
+
+Hello team,
+
+I need the following changes in VEGAS:
+
+*FDFs*
+ * Trip Number (DE: Reisenummer): to be deleted
+ * Employee Number (Personalnummer): not editable for user and Auditor, it only needs to be visible for them
+ * Department (DE: Standort des Reisenden): not editable for user and Auditor, it only needs to be visible for them
+ * Internal account (DE: Interner Account): to be deleted
+ * Order number (DE: Auftragsnummer): to be deleted
+ * Project number (DE: Projektnummer): to be deleted
+ * Trip purpose (DE:Grund / Zweck der Reise): to be mandatory
+ * Location of employee (DE: Einsatzort des Reisenden): to be deleted
+ * Division (Siglum) (DE: Abteilung (Siglum): to be deleted
+
+*Meal deduction (itinerary)*
+ * Hide this section
+
+*Accommodation allowances (itinerary)*
+ * Remove Hotel option
+
+The system is not in live so you can do the changes directly in the current configuration without cutoff day.
+
+Thank you!
+
+Alejandro",,,,,,,,,,0,6540,,,,,,CI-8751,,,,,,,,,12.0,,,,,,,,,07/Jun/23 12:00 AM,,2-17495794773,,,Committed,,Configure,Numiga,,,mkuchciak,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@69e7e7df,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:ynzt",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: Travel, Bali
+System: volkswagen-MOIA
+Location: all",,3 - Medium,YES,,,,Codebusters-PI-7.3,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"15/Jun/23 5:46 PM;alejandro.ruizrobles;Hi [~mkuchciak] ,
+
+I don't see the changes on BALI. Most probably someone reverted the changes or Jenkins failed :(
+
+Could you recheck it?
+
+Thank you!
+
+Alejandro;;;",,,,,
+Numiga Fiege IT - Add 2 new receipts,CI-8742,477428,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,06/Jun/23 9:01 PM,16/Jun/23 9:21 AM,07/Aug/23 3:44 PM,16/Jun/23 9:21 AM,13/Jun/23 12:00 AM,0,Partners,,,"System: lcc-lueckertz-fiege
+
+Location: TESTSTANDORT Fiege Italien
+
+Hello team,
+
+We need to add the following receipts:
+||Receipt EN||Receipt IT||GL account||Debit Posting||Credit Posting||Posting text||
+|Car wash|Lavaggio auto|360600|40|50|Car wash|
+|Parking|Parcheggio|363000|40|50|Parking|
+
+Thank you team!
+
+Alejandro",,,,,,,,,,0,63600,,,,,,,,,,,,,,,9.0,,,,,,,,,06/Jun/23 12:00 AM,,2-17529177663,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:ynzqzzzzxi",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; world
+System: lcc-lueckertz-fiege
+Location: TESTSTANDORT Fiege Italien",,3 - Medium,YES,,,,Codebusters-PI-7.3,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+"Numiga Fiege IT - Change default VAT, system text and add standard validation rule in Engine",CI-8718,476392,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,02/Jun/23 11:20 AM,07/Jun/23 3:33 PM,07/Aug/23 3:44 PM,07/Jun/23 3:33 PM,09/Jun/23 12:00 AM,0,Partners,,,"System: lcc-lueckertz-fiege
+
+Location: TESTSTANDORT Fiege Italien
+
+Hello team,
+
+Please, I need the following changes for the VAT: 
+Only the tax rates (regular, reduced and reduce_2) must be displayed for the receipts Flight Costs, Hotel accommodation and Rental car in the drop down menu. The rest of the receipts, they only must have 0% without any possibility to be changed.
+
+System text:
+The current one is:
+Limit of € 25.00 for dinner only, with the exception of lunches with customers and suppliers. Lunch not refunded as the company provides meal vouchers with the exception of lunches with customers and suppliers.
+The new one is (it applies for all the languages as you can see in VEGAS):
+Limit of € 30.00 for dinner only, with the exception of lunches with customers and suppliers. Lunch not refunded as the company provides meal vouchers with the exception of lunches with customers and suppliers.
+
+Please, I don't know if we can add the validation that if the receipt meals (expense.basereceipt.receipt.reimbursement.meal) is more than 30€, an error appears in Engine. If it is possible, please, implement it with the following error message: According to the Expense policy, the maximum amount is 30€. 
+If it is not possible, please, implement the standard validator FixedReceiptReimbursementLimitValidator with 30€ as maximum for this receipt.
+
+Thank you team!
+
+Alejandro",,,,,,,,,,0,8880,,,,,,,,,,,,,,,9.0,,,,,,,,,02/Jun/23 12:00 AM,,2-17529177663,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:ynzqzzyi",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; world
+System: lcc-lueckertz-fiege
+Location: TESTSTANDORT Fiege Italien",,3 - Medium,YES,,,,Codebusters-PI-7.3,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga VFL Wolfsburg - Remove validation/format in the FDFs,CI-8655,472964,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,17/May/23 8:07 PM,23/May/23 3:06 PM,07/Aug/23 3:44 PM,23/May/23 3:06 PM,24/May/23 12:00 AM,0,FridaySweep,Partners,,"System: ama-VW-Beteiligungen-DE
+
+Hello team,
+
+Please, remove the validation/format in the following FDFs:
+ * Employee Number (DE: Personalnummer) (we need to remove: regEx expression=""[0-9]\{8,8}"")
+ * Division (Siglum) (DE: Abteilung (Siglum)) (we need to remove: regEx expression=""[a-zA-Z_]\{1,8}"")
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,17/May/23 12:00 AM,,2-17480268633,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:ynzq",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI, Travel
+System: ama-VW-Beteiligungen-DE
+Location: main configuration",,3 - Medium,YES,,,,Codebusters-PI-7.3,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga Rhenus - Create a new calculation for per diems based on FDF value,CI-8631,471896,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,12/May/23 5:51 PM,19/Jun/23 12:06 PM,07/Aug/23 3:44 PM,19/Jun/23 12:06 PM,26/May/23 12:00 AM,0,Partners,,,"System: lcc-lueckertz-rhenus
+Location: Rhenus Universal Silo Transporte GmbH 3803010000 (it appears in the folder 7005806620 in Engine)
+
+Hello team,
+
+We need to create the following calculation for per diems based on a FDF value:
+
+FDF: Mitarbeitergruppe
+FDF value: Rhenus Universal Silo Transport – RUST
+
+-Meal deductions: as market template
+-Accommodation allowances:
+•Vehicle - 28€
+Per diems:
+• Less than 8 hours: 0
+•More than 8 hours: 14€
+• First day of trip is 14€, second day of trip is 14€ and the same during the rest of the days until the end of the business trip (to sum up: 14€ for all the days).
+
+When this value in the FDF is not selected, the current configuration should apply.
+
+Thank you!
+
+Alejandro
+",,,,,,,,,,0,170760,,,,,,,,,"12/May/23 5:47 PM;alejandro.ruizrobles;TMS value.jpg;https://jira.ifao.net/secure/attachment/196620/TMS+value.jpg",,,,,,11.0,,,,,,,,,12/May/23 12:00 AM,,2-17267775243,,,Committed,,Configure,Numiga,,2023-05-29 13:22:42.444,ahrycenko,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Productive System,Test System,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:ynz",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: mega ;  staging ;  BALI
+System: lcc-lueckertz-rhenus
+Location: Rhenus Universal Silo Transporte GmbH 3803010000 (it appears in the folder 7005806620 in Engine)",,3 - Medium,YES,,,,Codebusters-PI-7.3,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"29/May/23 1:22 PM;ahrycenko;To Alejandro RUIZ ROBLES in null role in CI-10240615
+cutoff?;;;","29/May/23 1:50 PM;alejandro.ruizrobles;Thank you Adam,
+
+We need start from beginning of May: 01/05/2023
+
+Apologies!;;;",,,,
+Numiga Rhenus - Change GL account for paid by company receipts in a location,CI-8620,471645,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,12/May/23 9:33 AM,30/May/23 4:19 PM,07/Aug/23 3:44 PM,30/May/23 4:19 PM,19/May/23 12:00 AM,0,FridaySweep,Partners,,"System: lcc-lueckertz-rhenus
+
+Hello team,
+
+Please, change the GL account for the ""paid by company"" receipts in RCL Velten GmbH 6060510000 location.
+
+At the moment the GL account is 492100 and the customer wants {*}176211{*}.
+
+Thank you so much!
+
+Alejandro",,,,,,,,,,0,4140,,,,,,,,,,,,,,,11.0,,,,,,,,,12/May/23 12:00 AM,,2-17461741953,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Productive System,Test System,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:ynyi",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ;  staging ; world
+System: lcc-lueckertz-rhenus
+Location: RCL Velten GmbH 6060510000
+",,3 - Medium,YES,,,,Codebusters-PI-7.3,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga Universal - Copy the export from the rest of locations,CI-8603,471072,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,10/May/23 2:44 PM,26/May/23 9:42 AM,07/Aug/23 3:44 PM,26/May/23 9:42 AM,17/May/23 12:00 AM,0,Partners,,,"System: lcc-ibero-universal
+
+Hello team,
+
+We made a change in the export (CI-8247). It should affect all the locations but the customer claimed that for the location CAPinside is not applying.
+
+Please, could you configure it in the same way?
+
+Thank you!
+
+Alejandro ",,,,,,,,,,0,68460,,,,,,,,,,,,,,,9.0,,,,,,,,,10/May/23 12:00 AM,,2-17453940013,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:ynn4",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: world ; BALI
+System: lcc-ibero-universal
+Location: all",,3 - Medium,YES,,,,Codebusters-PI-7.3,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga Venus Kroschu - Update FDF list,CI-8597,470604,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,09/May/23 1:50 PM,17/May/23 8:13 PM,07/Aug/23 3:44 PM,17/May/23 8:13 PM,16/May/23 12:00 AM,0,Partners,,,"System: lcc-venus-kroschu
+
+Hello team,
+
+Please, add the following values in the ""Destination Expense"" (Ziel Expense) FDF:
+
+KSD-Cu
+KSK-AN
+KSK-La
+KSRi
+KSUK-OX
+
+It is the same word for English and German
+
+Thank you!
+
+Alejandro",,,,,,,,,,0,2580,,,,,,,,,,,,,,,9.0,,,,,,,,,09/May/23 12:00 AM,,2-17452941453,,,Committed,,Configure,Numiga,,2023-05-15 10:15:42.21,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:ynmc",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ;  world
+System: lcc-venus-kroschu
+Configuration: main configuration",,3 - Medium,YES,,,,Codebusters-PI-7.3,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"15/May/23 10:15 AM;pjakubiec;Changes are ready to test in bali, however KSRi is already implemented in the system, I added it but it's twice in the fdf now, let me know if it should be this way or not [~aruizrobles]  :);;;","15/May/23 5:37 PM;alejandro.ruizrobles;Hi [~pjakubiec] ,
+
+I tested it and it works as expected. Please, remove one KSRi because it is duplicated :)
+
+Thank you so much!
+
+Alejandro;;;",,,,
+Numiga Moia - Remove and rename receipts,CI-8581,469414,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,03/May/23 1:12 PM,23/May/23 9:07 PM,07/Aug/23 3:44 PM,23/May/23 9:07 PM,10/May/23 12:00 AM,0,Partners,,,"System: volkswagen-MOIA
+
+Hello team,
+
+Please, remove the following receipts from the configuration:
+ * Bank fee (DE:Bankgebühr) - expense.basereceipt.receipt.numiga.banking.fee
+ * Petrol / Fuel (DE: Benzin) - expense.basereceipt.receipt.numiga.car.fuel
+ * Entrance (DE: Eintritt) - expense.basereceipt.receipt.numiga.entrance
+ * Ferry (DE: Fähre) - expense.basereceipt.receipt.numiga.ticket.ferry
+ * Breakfast (foreign) (DE:Frühstück (Ausland)) - expense.basereceipt.receipt.numiga.subsistance.breakfast
+ * Fee (Numiga) (DE: Gebühr (Numiga)) - expense.basereceipt.receipt.numiga.servicecharge
+ * Fee (travel agency) (DE:Gebühr (Reisebüro)) - expense.basereceipt.receipt.numiga.fee
+ * Credit card fee (DE:Kreditkartengebühr) - expense.basereceipt.receipt.fee
+ * Toll (DE:Mautgebühr) - expense.basereceipt.receipt.numiga.car.toll
+ * Rent (DE: Miete) - expense.basereceipt.receipt.numiga.rent
+ * Rental car fuel (DE: Mietwagen Benzin) - expense.basereceipt.receipt.numiga.car.rental.fuel
+ * Rental car accident (DE: Mietwagen Unfallschaden) - expense.basereceipt.receipt.numiga.car.rental.accident
+ * Rental car insurance (DE: Mietwagen Versicherung) - expense.basereceipt.receipt.numiga.car.rental.insurance
+ * Parking own car (DE: Parken eigener PKW) - expense.basereceipt.receipt.car.parking
+ * Cleaning Expenses (DE: Reinigung) - expense.basereceipt.receipt.numiga.cleaning
+ * Other taxable (trips home) (DE:Sonstiges steuerpflichtig (Heimreisen)) - expense.basereceipt.receipt.numiga.other.tax.hometravel
+ * Other taxable (Partner) (DE: Sonstiges steuerpflichtig (Partner)) -expense.basereceipt.receipt.numiga.other.tax.partner
+ * Participation fee (DE: Teilnahmegebühren) - expense.basereceipt.receipt.numiga.fee.participant
+ * Visa costs (DE: Visakosten) - expense.basereceipt.receipt.numiga.visa
+ * Advance payment (DE: Vorschusszahlung) - expense.basereceipt.receipt.numiga.advancePayment
+
+Please, rename the following receipts:
+||Current name||New name||New name (DE)||VEGAS code||
+|Entertainment expenses|Hospitality expenses (with externals)|Bewirtungskosten (mit Externen)|expense.basereceipt.receipt.entertainment|
+|Entertainment expenses with employees|Hospitality expenses (only internals)|Bewirtungskosten (nur Interna)|expense.basereceipt.receipt.entertainment.employees|
+|Telephone|IT supply|IT-Versorgung|expense.basereceipt.receipt.numiga.telephone|
+|Subsistence costs|Amenities|Annehmlichkeiten|expense.basereceipt.receipt.numiga.subsistance|
+
+*I will remove the receipts from the EMS configuration. The system is not in live so you don't need to create a new configuration.*
+
+ 
+
+Thank you!
+
+Alejandro",,,,,,,,,,0,153720,,,,,,,,,,,,,,,9.0,,,,,,,,,03/May/23 12:00 AM,,2-17431549883,,,Committed,,Configure,Numiga,,,fkarpinski,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:ykc",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: Travel, Bali
+System: volkswagen-MOIA
+Location: all",,3 - Medium,YES,,,,Codebusters-PI-7.2,Codebusters-PI-7.3,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"12/May/23 5:03 PM;alejandro.ruizrobles;EMS configuration done on BALI;;;",,,,,
+Numiga VFL Wolfsburg - Remove a receipt,CI-8568,468149,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,26/Apr/23 3:30 PM,04/May/23 5:55 PM,07/Aug/23 3:44 PM,04/May/23 5:55 PM,03/May/23 12:00 AM,0,Partners,,,"System: ama-VW-Beteiligungen-DE
+
+Hello team,
+
+Please, remove in VEGAS de following receipt:
+ * Parking own car (DE: Parken eigener PKW)
+
+I will remove it from the EMS.
+
+*The system is not in live so you don't need to create a new configuration.*
+
+Best regards,
+
+Alejandro",,,,,,,,,,0,22620,,,,,,,,,,,,,,,9.0,,,,,,,,,26/Apr/23 12:00 AM,,2-17415423863,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:yo",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; Travel
+System: ama-VW-Beteiligungen-DE
+Location: all",,3 - Medium,YES,,,,Codebusters-PI-7.2,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga GBO - Remove receipt from configuration,CI-8434,463294,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,05/Apr/23 5:43 PM,12/Apr/23 2:31 PM,07/Aug/23 3:44 PM,12/Apr/23 2:31 PM,12/Apr/23 12:00 AM,0,FridaySweep,Partners,,"System: gbo
+
+Location: Greiner Bio One GmbH
+
+Hello team,
+
+Please, remove the receipt:
+ * Profesional clothing (DE: Berufskleidung)
+
+Only for Greiner Bio One GmbH location. As the system is in prod, the changes must apply from 10.04.2023
+
+I will do the EMS configuration.
+
+Thank you!
+
+Alejandro",,,,,,,,,,0,82380,,,,,,,,,,,,,,,9.0,,,,,,,,,05/Apr/23 12:00 AM,,2-17353271893,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,06.04.2023 - ok,,,,,,,"0|i1zp0u:zy",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; Travel
+System: gbo
+Location: Greiner Bio One GmbH",,3 - Medium,YES,,,,Codebusters-PI-7.1,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga OGE - Change period of time for vehicle types amount,CI-8427,462869,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,04/Apr/23 5:02 PM,12/Apr/23 2:10 PM,07/Aug/23 3:44 PM,12/Apr/23 2:10 PM,11/Apr/23 12:00 AM,0,Partners,,,"System: ama-bcd-oge-de
+
+Hello team,
+
+Based on the ticket CI-6832  and CI-7606, we made a change for the amount of certain vehicles in the mileage section. The dates are from 01.06.2022 to 31.03.2023. *The customer wants to increase the dates until 31.12.2023.*
+
+Thank you team!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,04/Apr/23 12:00 AM,,2-17349559613,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,"06.04.2023 - might be FridaySweep, but one has to be careful during changing the periods and updating accounting config",,,,,,,"0|i1zp0u:zr",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; Amadeus
+System: ama-bcd-oge-de
+Configuration: all",,3 - Medium,YES,,,,Codebusters-PI-7.1,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga - Remove breakfast receipt calculation for per diems,CI-8338,457190,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,17/Mar/23 3:17 PM,24/Apr/23 6:12 PM,07/Aug/23 3:44 PM,24/Apr/23 6:12 PM,21/Mar/23 12:00 AM,0,Partners,,,"System: numiga-master-test ; volkswagen-group-charging
+
+Hello team,
+
+Please, we need to remove the custom calculation when there is the receipt breakfast and on the same day a absence with foreign country, the per diems are limited. The limitation must be removed and it would be like normal receipts and normal per diems.
+
+Best regards,
+
+Alejandro",,mbucko,,,,,,,,0,240,,,,,,,,,,,,,,,11.0,,,,,,,,,17/Mar/23 12:00 AM,,2-17289729103,,,Committed,,Configure,Numiga,,2023-03-29 09:15:28.69,,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Productive System,Test System,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1y2v7:vtr",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; STAGING ; TRAVEL
+Systems: numiga-master-test ; volkswagen-group-charging",,3 - Medium,YES,,,,Codebusters-PI-6.4,Codebusters-PI-7.1,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"17/Mar/23 3:21 PM;alejandro.ruizrobles;Hi [~dykiert]  and [~devries] , could you take action here? :) Thank you in advance!;;;","29/Mar/23 9:15 AM;ddykiert;Hello [~aruizrobles], done directly on prod.;;;","29/Mar/23 10:10 AM;alejandro.ruizrobles;Thank you [~dykiert] !;;;",,,
+Numiga - Remove formats for FDFs,CI-8319,456556,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,16/Mar/23 9:27 AM,20/Mar/23 11:38 AM,07/Aug/23 3:44 PM,20/Mar/23 11:38 AM,23/Mar/23 12:00 AM,0,Partners,,,"System:  numiga-master-test
+
+Hello team,
+
+Please, remove the formats/restrictions for the following FDFs:
+ * Cost center (DE: Kostenstelle)
+ * Personal number (DE: Personalnummer)
+ * Division (Siglum) (DE: Abteilung (Siglum))
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,11.0,,,,,,,,,16/Mar/23 12:00 AM,,2-17284624993,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Productive System,Test System,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1ycej:r",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; staging
+Systems: numiga-master (BALI) ; numiga-master-test (staging) ; ama-bcd-demo-numiga-de (amadeus) ; ama-de-volkswagenblueprint (travel) ; lcc-demo-numiga (world) ; ama-par-numiga (staging) ; ama-par-numiga (amadeus2)
+Configuration: all
+Location: all",,3 - Medium,YES,,,,Codebusters-PI-6.4,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"16/Mar/23 3:56 PM;alejandro.ruizrobles;Hello Maciej,
+
+Remove the validation/expressions for the last configuration because it will affect new implementations.
+
+Thank you!
+
+Alejandro;;;",,,,,
+DERPART - Light offer duplicate VEGAS,CI-8315,456393,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,jbonnavion,jbonnavion,15/Mar/23 3:03 PM,13/Apr/23 2:23 PM,07/Aug/23 3:44 PM,13/Apr/23 2:22 PM,22/Mar/23 12:00 AM,0,Partners,,,"Server: BALI, World
+
+System: derpart-demo-one
+
+ 
+
+Hi,
+
+For a new system with EMS, we would you to duplicate the following setting:
+
+1- Copy the main configuration from light-offer-demo and the DE-German-light-offer location from system light-offer-demo:
+
+!image-2023-03-15-15-06-20-040.png|width=595,height=155!
+
+2- Mix the main configuration and the location configuration to be applied in the whole system.
+
+3- Modify the TMS code for the ""Cost center"" FDF, TMS code: Kostenstelle
+
+!image-2023-03-15-15-08-05-211.png|width=424,height=188!
+
+ 
+
+The EMS configuration will be done by me.
+
+Thank you
+
+Julie",,ahrycenko,alejandro.ruizrobles,jbonnavion,,,,,,0,7620,,,,,,CI-7243,,,"15/Mar/23 3:06 PM;alejandro.ruizrobles;image-2023-03-15-15-06-20-040.png;https://jira.ifao.net/secure/attachment/188679/image-2023-03-15-15-06-20-040.png","15/Mar/23 3:08 PM;alejandro.ruizrobles;image-2023-03-15-15-08-05-211.png;https://jira.ifao.net/secure/attachment/188680/image-2023-03-15-15-08-05-211.png",,,,,9.0,,,,,,,,,15/Mar/23 12:00 AM,,2-17277150453,,,Committed,,Configure,DERPART,,2023-03-15 18:00:36.994,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@53644b3d,0,,,,,,Hello,,,,,,,,,,,,,"0|i1j7qu:zzzzzyxj2r",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI, World
+
+System: derpart-demo-one",,3 - Medium,YES,,,,Codebusters-PI-6.4,Codebusters-PI-7.1,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"15/Mar/23 6:00 PM;alejandro.ruizrobles;It is the same process and adapting the TMS code based on the Jira description;;;","03/Apr/23 11:11 AM;jbonnavion;Hi [~ahrycenko] ,
+
+ 
+
+The Vegas configuration is fine in BALI, please move the changes into PROD.
+
+The EMS configuration will be done by me in PROD, as I did for BALI.
+
+Thanks
+
+Julie
+
+ ;;;","11/Apr/23 6:48 PM;jbonnavion;Hi [~ahrycenko] ,
+
+ 
+
+Do you have a update please on this one?
+
+If you can get back to us tomorrow please, that would be good (Wednesday 12th) 
+
+Thank you,
+
+Julie;;;",,,
+Numiga FEV - Remove receipts from the configuration,CI-8312,456181,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,15/Mar/23 9:51 AM,29/Mar/23 3:51 PM,07/Aug/23 3:44 PM,29/Mar/23 3:51 PM,22/Mar/23 12:00 AM,0,Partners,,,"System: lcc-hagemann-fev
+
+Hello team,
+
+Please, remove the following receipts:
+
+-Rail abroad (DE: Bahn Ausland) (expense.basereceipt.receipt.ticket.mainline.abroad)
+
+-Petrol abroad (DE: Benzin Ausland) (expense.basereceipt.receipt.numiga.car.fuel.abroad)
+
+-Bus abroad (DE: Bus Ausland) (expense.basereceipt.receipt.ticket.bus.abroad)
+
+-Plane abroad (DE: Flugzeug Ausland) (expense.basereceipt.receipt.ticket.flight.abroad)
+
+-Hotel abroad (DE: Hotel Ausland) (expense.basereceipt.receipt.hotel.abroad)
+
+-Breakfast (foreign) (DE: Frühstück (Ausland) (expense.basereceipt.receipt.numiga.subsistance.breakfast)
+
+-Internet abroad (DE: Internet Ausland) (expense.basereceipt.receipt.internet.abroad)
+
+-Rental car abroad (DE:  Mietwagen Ausland) (expense.basereceipt.receipt.car.rental.abroad)
+
+-Taxi abroad (DE: Taxi Ausland) (expense.basereceipt.receipt.car.taxi.abroad)
+
+ 
+
+I will remove the receipts from the EMS.
+
+Thank you!
+
+Alejandro
+
+ ",,,,,,,,,,0,1860,,,,,,,,,,,,,,,9.0,,,,,,,,,15/Mar/23 12:00 AM,,2-17278670123,,,Committed,,Configure,Numiga,,2023-03-17 12:30:51.977,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1ycei:6",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; world
+System: lcc-hagemann-fev
+Configuration: main",,3 - Medium,YES,,,,Codebusters-PI-6.4,Codebusters-PI-7.1,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"17/Mar/23 12:30 PM;ahrycenko;To Alejandro RUIZ ROBLES in null role in CI-10235688
+I need date from where changes will be applied.;;;","17/Mar/23 12:49 PM;alejandro.ruizrobles;Hi Adam,
+
+True, I forgot it.
+
+From 15032023
+
+Best regards,
+
+Alejandro;;;","17/Mar/23 12:51 PM;alejandro.ruizrobles;From CI-10235688
+From 15032032;;;",,,
+Numiga Moia - Fix problems in the export file,CI-8299,455585,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,13/Mar/23 5:31 PM,20/Mar/23 9:42 AM,07/Aug/23 3:44 PM,20/Mar/23 9:42 AM,17/Mar/23 12:00 AM,0,Partners,,,"System: volkswagen-MOIA
+
+Hello team,
+
+Please, we need to fix the export file. We added the SEPA file and we forgot the zip container is enabled.
+
+Please, we need to enable zip container with Export. It should be like volkswagen-group-charging system.
+      <FDF code=""expense.export"">
+        <item value=""default"">
+          <FDF code=""zip"">
+            <item value=""true"" />
+          </FDF>",,,,,,,,,,,,,,,,,ITE-1671,,,,,,,,,9.0,,,,,,,,,13/Mar/23 12:00 AM,,2-17277369943,,,Committed,,Configure,Numiga,,,djagodzki,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@633b151,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzxwz9",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI: TRAVEL
+System: volkswagen-MOIA
+Location: main configuration",,3 - Medium,YES,,,,Codebusters-PI-6.4,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga VFL Wolfsburg - Remove a receipt,CI-8276,453986,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,07/Mar/23 5:24 PM,14/Mar/23 9:47 AM,07/Aug/23 3:44 PM,14/Mar/23 9:47 AM,14/Mar/23 12:00 AM,0,Partners,,,"System: ama-VW-Beteiligungen-DE
+
+Hello team,
+
+Please, remove the following receipt from the configuration: 
+
+          <typeName code=""expense.basereceipt.receipt.numiga.bahncard"">
+            <name locale=""de_DE"">Bahncard</name>
+            <name locale=""en_US"">Bahncard</name>
+          </typeName>
+
+The system is not in live so we can remove it from the current configuration directly.
+
+Best regards,
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,07/Mar/23 12:00 AM,,2-17258928493,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1ycbv:r",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; Travel
+System: ama-VW-Beteiligungen-DE
+Configuration: main",,3 - Medium,YES,,,,Codebusters-PI-6.4,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga - Add a tax rate for a receipt,CI-8260,453010,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,03/Mar/23 5:56 PM,21/Mar/23 10:14 AM,07/Aug/23 3:44 PM,21/Mar/23 10:14 AM,10/Mar/23 12:00 AM,0,Partners,,,"System:  ama-par-numiga-duravit
+
+Hello team,
+
+Please, add the tax rate ""reduced"" for the ""food costs, snacks and drinks"" receipt.
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,03/Mar/23 12:00 AM,,2-17246225443,,,Committed,,Configure,Numiga,,2023-03-14 08:21:49.969,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1y2v7:zc",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: Amadeus2 ; BALI
+System: ama-par-numiga-duravit
+Configuration: main",,3 - Medium,YES,,,,Codebusters-PI-6.4,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"13/Mar/23 11:13 AM;alejandro.ruizrobles;Waiting for BALI because we cannot test right now (ITS-37291);;;","14/Mar/23 8:21 AM;mwituszynski;Hi [~aruizrobles] ,
+
+I think Bali is working now. 
+
+I wish you nice day;;;","17/Mar/23 7:39 AM;mwituszynski;Hi [~aruizrobles] ,
+
+Did you have a chance to verify the ticket on bali.
+
+I wish you nice Friday,
+
+Mikolaj;;;","17/Mar/23 8:34 AM;alejandro.ruizrobles;Hi [~mwituszynski] ,
+
+Yes, I verified it on BALI :)
+
+Best regards,
+
+Alejandro;;;","17/Mar/23 8:36 AM;mwituszynski;Hi [~aruizrobles] ,
+
+Thanks so I am creating PR and inform you once merged.;;;","17/Mar/23 8:37 AM;alejandro.ruizrobles;Thank you so much!
+
+Have a good Friday!;;;"
+Numiga Duravit - Add new receipt,CI-8259,453008,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,03/Mar/23 5:46 PM,13/Mar/23 9:49 AM,07/Aug/23 3:44 PM,13/Mar/23 9:49 AM,10/Mar/23 12:00 AM,0,Partners,,,"System:  ama-par-numiga-duravit
+
+Hello team,
+
+Please, add the following receipt:
+
+DE: Sonstige Gebühren
+
+EN: Other expenses
+
+Default VAT: none
+Available VAT: none/reduced/regular
+
+EMS configuration will be done by me.
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,03/Mar/23 12:00 AM,,2-17246225003,,,Committed,,Configure,Numiga,,,mwituszynski,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1y2v7:z6",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: Amadeus2 ; BALI
+System: ama-par-numiga-duravit
+Configuration: main",,3 - Medium,YES,,,,Codebusters-PI-6.4,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga Universal - Change a column in the export,CI-8247,452731,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,02/Mar/23 4:14 PM,21/Mar/23 5:00 PM,07/Aug/23 3:44 PM,21/Mar/23 5:00 PM,16/Mar/23 12:00 AM,0,Partners,,,"System: lcc-ibero-universal
+
+Hello team,
+
+Please, we need to change the information from the column P in the CSV export file. Instead of the travel expense report date in the ""Special Purpose / Reference"" (""Sonder Verwendungszweck / Referenz"") field (column P), the Expense ID from Cytric should be stored there.
+
+Please, let me know if there is some question.
+
+Best regards,
+
+Alejandro",,,,,,,,,,0,69540,,,,,,,,,,,,,,,9.0,,,,,,,,,02/Mar/23 12:00 AM,,2-17199180463,,,Committed,,Configure,Numiga,,2023-03-17 12:19:03.487,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1y2v7:wr",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: world ; BALI
+System: lcc-ibero-universal
+Location: all",,3 - Medium,YES,,,,Codebusters-PI-6.4,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"17/Mar/23 12:19 PM;ahrycenko;To Alejandro RUIZ ROBLES in null role in CI-10235685
+from which period changes should be applied?;;;","17/Mar/23 12:55 PM;alejandro.ruizrobles;From CI-10235685
+From 01.03.2023;;;",,,,
+Numiga FEV - Hide FDF for owner of statement,CI-8226,450975,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,23/Feb/23 3:50 PM,27/Feb/23 4:42 PM,07/Aug/23 3:44 PM,27/Feb/23 4:42 PM,02/Mar/23 12:00 AM,0,Partners,,,"System: lcc-hagemann-fev
+
+Hello team,
+
+Please, the following FDFs must no be visible for owner/arranger of the statement:
+ * Employee Number (Personalnummer)
+ * Department (Standort des Reisenden)
+ * Internal Account (Interner Account)
+ * Manager (Genehmiger)
+ * Authorizer Email 1 (Authorizer Email 1)
+ * Location of employee (Einsatzort des Reisenden)
+ * Division (Siglum) (Abteilung (Siglum))
+ * Manager name (Name des Vorgesetzten)
+ * Manager employee id (Personalnummer des Vorgesetzten)
+ * Manager email address (Emailadresse des Vorgesetzten)
+
+For the rest of the roles will remain as they are today.
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,23/Feb/23 12:00 AM,,2-17219993713,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1y2v7:s",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; world
+System: lcc-hagemann-fev
+Configuration: main configuration",,3 - Medium,YES,,,,Codebusters-PI-6.3,Codebusters-PI-6.4,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga VFL Wolfsburg - Schedule automatic export job,CI-8178,448801,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Rejected,,alejandro.ruizrobles,alejandro.ruizrobles,16/Feb/23 10:22 AM,16/Feb/23 6:10 PM,07/Aug/23 3:44 PM,16/Feb/23 6:10 PM,20/Feb/23 12:00 AM,0,Partners,,,"System: ama-VW-Beteiligungen-DE ; volkswagen-MOIA
+
+Hello team,
+
+Based on the ticket CI-7755 , I thought the export job was implemented for this system.
+
+Please, add the automatic export job everyday at 5.00am in the morning for this system.
+
+Based on the ticket CI-7987, I thought the export job was implemented for this system.
+
+Please, add the automatic export job everyday at 5.00am in the morning for this system.
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,CI-7987,CI-7755,,"16/Feb/23 6:10 PM;alejandro.ruizrobles;image-2023-02-16-18-10-37-683.png;https://jira.ifao.net/secure/attachment/184118/image-2023-02-16-18-10-37-683.png","16/Feb/23 6:10 PM;alejandro.ruizrobles;image-2023-02-16-18-10-49-581.png;https://jira.ifao.net/secure/attachment/184119/image-2023-02-16-18-10-49-581.png",,,,,5.0,,,,,,,,,16/Feb/23 12:00 AM,,2-17199458683,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@9d7d48d1,0,,,,,,Hello,,,,,,,,,,,,,"0|i1x6b2:yz6",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: travel
+System: ama-VW-Beteiligungen-DE ; volkswagen-MOIA",,2 - Serious,YES,,,,Codebusters-PI-6.3,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"16/Feb/23 6:10 PM;alejandro.ruizrobles;!image-2023-02-16-18-10-37-683.png!
+
+!image-2023-02-16-18-10-49-581.png!;;;",,,,,
+Numiga Rhenus - Add a new tax rate for locations,CI-8138,447085,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,08/Feb/23 1:54 PM,22/Feb/23 9:22 AM,07/Aug/23 3:44 PM,22/Feb/23 9:22 AM,15/Feb/23 12:00 AM,0,escalated,Partners,TOP_Customer,"System: [lcc-lueckertz-rhenus|https://bali.sofia.ifao.net/ibe/?system=lcc-lueckertz-rhenus]
+
+Hello team,
+
+We need to implement the FR VAT for the following locations:
+
+Rhenus Forest Logistics GmbH & Co. KG 4200040000
+Rhenus Forest Logistics GmbH & Co. KG 4200050000
+Rhenus Forest Logistics GmbH & Co. KG 4200060000
+
+The following VAT needs to be implemented:
+ * Regular (tax key: LJ)
+ * Reduced (tax key: LK)
+ * reduced_2 (tax key: L5)
+
+The default VAT for all the receipts is: regular
+
+Tax rates available should be: reduced, reduced_2 and none
+
+Please, let me know if there is some question.
+
+Best regards,
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,11.0,,,,,,,,,08/Feb/23 12:00 AM,,2-17173695533,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Productive System,Test System,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1x6b2:ys",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; staging; mega
+System:  lcc-lueckertz-rhenus
+Location:
+Rhenus Forest Logistics GmbH & Co. KG 4200040000
+Rhenus Forest Logistics GmbH & Co. KG 4200050000
+Rhenus Forest Logistics GmbH & Co. KG 4200060000",,3 - Medium,YES,,,,Codebusters-PI-6.3,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga Fiege IT - Adapt the configuration,CI-8136,447059,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,08/Feb/23 1:08 PM,17/Feb/23 10:53 AM,07/Aug/23 3:44 PM,17/Feb/23 10:53 AM,15/Feb/23 12:00 AM,0,CICouncil_Candidate,Partners,TOP_Customer,"System: [lcc-lueckertz-fiege|https://bali.sofia.ifao.net/ibe/?system=lcc-lueckertz-fiege]
+
+Hello team,
+
+Please we need to do the following changes for the IT location:
+ # The following receipts must not be changed to non-reimbursable by the market template ITE-1548 :
+Hotel accommodation
+Flight costs
+Rental car
+ # All the receipts that are paid by company should not appear in the export, they should not generate a posting record.
+
+Thank you team!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,08/Feb/23 12:00 AM,,2-17171542973,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1x6b2:yo",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; world
+System: lcc-lueckertz-fiege
+Location: TESTSTANDORT Fiege Italien",,3 - Medium,YES,,,,Codebusters-PI-6.3,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga Duravit - Add new receipt,CI-8102,446156,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,03/Feb/23 2:28 PM,10/Feb/23 10:12 AM,07/Aug/23 3:44 PM,09/Feb/23 10:45 AM,10/Feb/23 12:00 AM,0,Partners,,,"System:  ama-par-numiga-duravit
+
+Hello team,
+
+Please, add the following receipt:
+
+DE: Aufw.Mietkostenzuschuss
+
+EN: Exp.rental cost allowance
+
+EMS configuration will be done by me.
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,03/Feb/23 12:00 AM,,2-17159072203,,,Committed,,Configure,Numiga,,2023-02-08 08:44:14.445,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzxwy",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: Amadeus2 ; BALI
+System: ama-par-numiga-duravit
+Configuration: main",,3 - Medium,YES,,,,Codebusters-PI-6.3,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"08/Feb/23 8:44 AM;djagodzki;[~aruizrobles] 
+
+Hello,
+It is done on BALI. EMS setup needs to be done.
+I assumed the tax mapping should be done like other rental reciepts if it should be done different, let me know :)
+{code:java}
+<typeOfReceipt code=""expense.basereceipt.receipt.numiga.exp.rental.cost.allowance"" defaultTaxRate=""expense.baseReceipt.taxRate.regular"">
+  <taxRates>
+    <taxRate code=""expense.baseReceipt.taxRate.none"" />
+    <taxRate code=""expense.baseReceipt.taxRate.regular"" />
+  </taxRates>
+</typeOfReceipt> {code}
+&
+{code:java}
+<typeOfReceipt code=""expense.basereceipt.receipt.numiga.exp.rental.cost.allowance"" defaultTaxRate=""expense.baseReceipt.taxRate.none"">
+  <taxRates>
+    <taxRate code=""expense.baseReceipt.taxRate.none"" />
+  </taxRates>
+</typeOfReceipt> {code};;;","08/Feb/23 5:41 PM;alejandro.ruizrobles;Hi  [~djagodzki] ,
+
+It works as expected. I forgot the VAT mapping, it is correct except the default VAT, it should be ""none"" by default and the rest VAT as available.
+
+Thank you in advance! You can move it to prod :)
+
+Best regards,
+
+Alejandro;;;",,,,
+Numiga VFL Wolfsburg - Certified Scanning DB users,CI-8093,445763,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,02/Feb/23 8:59 AM,08/Jun/23 3:06 PM,07/Aug/23 3:44 PM,08/Jun/23 3:06 PM,09/Feb/23 12:00 AM,0,Partners,,,"System: ama-VW-Beteiligungen-DE
+
+Hello team,
+
+Based on the ticket CI-8022 ,  the users didn't receive the emails with the credentials to access into the DB. Could you verify it?
+||Name||Surname||Email||
+|Alena|Meyer|alena.meyer@vfl-wolfsburg.de|
+|Jennifer|Gerloff|jennifer.gerloff@vfl-wolfsburg.de|
+|Irina|Sasse|irina.sasse@vfl-wolfsburg.de|
+|Cornelia|Stein-Gericke,|cornelia.stein-gericke@vfl-wolfsburg.de|
+|Norbert|Ling|norbert.ling@vfl-wolfsburg.de|
+
+Thank you!
+
+Alejandro",,jnopre,,,,,,,,0,29340,,ITS-41665,DAR-1877,,,,,,,,,,,,7.0,,,,,,,,,02/Feb/23 12:00 AM,,2-17081794473,,,Committed,,Configure,Numiga,,2023-06-07 17:51:29.545,mkuchciak,,,,Closed,,,,,,,,,,,,,,,,,Productive System,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@f19a2034,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:y8t",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: Travel ; BALI
+System: ama-VW-Beteiligungen-DE",,3 - Medium Urgent,YES,,,,Codebusters-PI-6.3,Codebusters-PI-6.4,Codebusters-PI-7.1,Codebusters-PI-7.2,Codebusters-PI-7.3,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"07/Jun/23 5:51 PM;msalajan;Mails were sent now.;;;",,,,,
+Numiga Moia - Add SEPA file in the export,CI-8047,443341,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,24/Jan/23 12:33 PM,09/Feb/23 5:16 PM,07/Aug/23 3:44 PM,09/Feb/23 5:16 PM,31/Jan/23 12:00 AM,0,Partners,,,"System: volkswagen-MOIA
+
+Hello team,
+
+We need to add the SEPA file for this system as it is in bcdtravel-de-hensoldt, volkswagen-cso or volkswagen-group-charging. 
+
+Please, let me know if you have any doubt.
+
+Thank you in advance!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,24/Jan/23 12:00 AM,,2-17126018623,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzxww",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: Travel
+System: volkswagen-MOIA
+",,3 - Medium,YES,,,,Codebusters-PI-6.2,Codebusters-PI-6.3,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga Universal - Create two new locations,CI-8039,443101,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,23/Jan/23 1:30 PM,31/Jan/23 5:57 PM,07/Aug/23 3:44 PM,31/Jan/23 5:57 PM,31/Jan/23 12:00 AM,0,Partners,,,"System: lcc-ibero-universal
+
+Hello team,
+
+Please, we need to create two new locations for this system:
+
+1.-First location:
+
+Name: UI BVK Kapitalverwaltungsgesellschaft mbH
+
+Receipts, FDFs, VAT mapping, etc. are the same as main configuration
+
+Accounting and tax key (V0)  is the same as main configuration
+
+Should we create a new location in the configuration? I don't think so but I prefer to hear your preferences.
+
+2.-Second location:
+
+Name: CAPInside GmbH
+
+Receipts, FDFs, etc. are the same as main configuration.
+
+VAT mapping is different, it is regular by default for all the receipts and reduced and none as available (it is the same as the location [UI Enlyte-Gesellschaft mbH|https://repository.secure.ifao.net:7443/projects/VEG/repos/ce-configs/browse/configurations/world/lcc-ibero-universal/UI%20Enlyte-Gesellschaft%20mbH])
+
+Accounting and tax keys are the same as main configuration
+
+ 
+
+*Please, let me know if you have some doubt.*
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,11.0,,,,,,,,,23/Jan/23 12:00 AM,,2-17113856553,,,Committed,,Configure,Numiga,,2023-01-26 15:42:33.438,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzztz1w",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; world
+System:  lcc-ibero-universal
+Locations: 
+UI BVK Kapitalverwaltungsgesellschaft mbH
+CAPInside GmbH
+",,3 - Medium,YES,,,,Codebusters-PI-6.2,Codebusters-PI-6.3,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"26/Jan/23 3:42 PM;djagodzki;[~aruizrobles] 
+Hello,
+
+Regarding the first location {*}UI BVK Kapitalverwaltungsgesellschaft mbH{*}, if Vegas configuration and engine configuration is the same as main system-wide configuration there is no need to create config files for this location. Adding this location in TMS is enough.
+
+Regarding second location {*}CAPInside GmbH{*}, please provide the validity date from which the new location specific configuration should be used. Main config's validity date is 01-01-2018.;;;","26/Jan/23 4:29 PM;alejandro.ruizrobles;Hello [~djagodzki] ,
+
+Perfect, for the first location. I wanted to be sure.
+
+Regarding the second location, the validation date is from 01.01.2023
+
+Thank you!;;;","27/Jan/23 10:19 AM;djagodzki;It's done on BALI.
+I needed to make cost-center FDF non mandatory to be able to calculate statement.;;;","27/Jan/23 2:52 PM;alejandro.ruizrobles;Hi [~djagodzki] ,
+
+I solved the issue with the FDF so you can do it mandatory again. It works as expected so we can move the changes to prod.
+
+Thank you!
+
+ ;;;",,
+Numiga csmbaking - Update configuration settings of export,CI-8038,443091,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,23/Jan/23 12:38 PM,26/Jan/23 10:28 AM,07/Aug/23 3:44 PM,26/Jan/23 10:28 AM,27/Jan/23 12:00 AM,0,Partners,,,"Hello team,
+
+We need to update the following part of the code:
+
+!image-2023-01-23-12-33-51-721.png|width=551,height=80!
+
+The code says that if the account number starts with ""10"" then print the whole account number to SAKO_SAP - else print only 4 digits of the account number. We need to add the part *if the account number starts with ""20"" then print the whole account number and keep the ""10"".*
+
+Besides, we need to update this section in the export. Instead of Z4, it needs to be *ZE*
+
+!image-2023-01-23-12-36-40-815.png!
+
+ 
+
+Thank you team!
+
+Alejandro",,,,,,,,,,,,,,,,,CI-7952,ITE-1536,,"23/Jan/23 12:33 PM;alejandro.ruizrobles;image-2023-01-23-12-33-51-721.png;https://jira.ifao.net/secure/attachment/180786/image-2023-01-23-12-33-51-721.png","23/Jan/23 12:36 PM;alejandro.ruizrobles;image-2023-01-23-12-36-40-815.png;https://jira.ifao.net/secure/attachment/180785/image-2023-01-23-12-36-40-815.png",,,,,9.0,,,,,,,,,23/Jan/23 12:00 AM,,2-17040566023,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@823c780f,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzztz1s",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; Travel
+System: csmbaking
+",,3 - Medium,YES,,,,Codebusters-PI-6.2,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga VFL Wolfsburg - Certified Scanning DB users,CI-8022,441937,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,17/Jan/23 9:19 AM,19/Jan/23 5:40 PM,07/Aug/23 3:44 PM,19/Jan/23 5:40 PM,24/Jan/23 12:00 AM,0,Partners,,,"System: ama-VW-Beteiligungen-DE
+
+Hello team,
+
+Please, could you provide access to our archive system for the following users?
+||Name||Surname||Email||
+|Alena|Meyer|alena.meyer@vfl-wolfsburg.de|
+|Jennifer|Gerloff|jennifer.gerloff@vfl-wolfsburg.de|
+|Irina|Sasse|irina.sasse@vfl-wolfsburg.de|
+|Cornelia|Stein-Gericke,|cornelia.stein-gericke@vfl-wolfsburg.de|
+|Norbert|Ling|norbert.ling@vfl-wolfsburg.de|
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,7.0,,,,,,,,,17/Jan/23 12:00 AM,,2-17081794473,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzztyzzzzzzzu",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: Travel ; BALI
+System: ama-VW-Beteiligungen-DE",,3 - Medium,YES,,,,Codebusters-PI-6.2,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga Moia - Certified Scanning DB users,CI-8021,441934,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,17/Jan/23 9:12 AM,08/Jun/23 3:06 PM,07/Aug/23 3:44 PM,08/Jun/23 3:06 PM,24/Jan/23 12:00 AM,0,Partners,,,"System: volkswagen-MOIA
+
+Hello team,
+
+Please, could you provide access to our archive system for the following users?
+||Name||Surname||Email||
+|Michael|Schröder|michael.schroeder@moia.io|
+|Antonia|Kraus|antonia.kraus@moia-operations.io|
+|Paul|Kerschke|paul.kerschke@moia.io|
+|Lina|Gripp|lina.gripp@moia.io|
+
+Thank you!
+
+Alejandro",,,,,,,,,,0,29280,,ITS-41665,,CI-7987,,,,,,,,,,,13.0,,,,,,,,,17/Jan/23 12:00 AM,,2-17081798683,,,Committed,,Configure,Numiga,,2023-06-07 17:51:47.463,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@2e2d675b,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:ynzqzzzzv",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; Travel
+System: volkswagen-MOIA",,3 - Medium,YES,,,,Codebusters-PI-6.2,Codebusters-PI-7.3,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"07/Jun/23 5:51 PM;msalajan;Mails were sent now.;;;",,,,,
+Numiga Moia - Add all type of attachments,CI-8010,441353,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,13/Jan/23 10:38 AM,20/Jan/23 11:17 AM,07/Aug/23 3:44 PM,20/Jan/23 11:17 AM,20/Jan/23 12:00 AM,0,Partners,,,"System: volkswagen-MOIA
+
+Hello team, 
+
+Please, add all type of attachments:
+
+image/jpg
+image/jpeg
+image/png
+image/gif
+image/tif
+application/pdf
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,CI-7987,,,,,,,,,,,9.0,,,,,,,,,13/Jan/23 12:00 AM,,2-17084672913,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@4713ecf7,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzztyzzzzzzyr",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; Travel
+System: volkswagen-MOIA
+Configuration: main configuration
+",,3 - Medium,YES,,,,Codebusters-PI-6.2,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga VFL Wolfsburg - Add all type of attachments,CI-8009,441346,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,13/Jan/23 10:32 AM,23/Jan/23 9:09 AM,07/Aug/23 3:44 PM,23/Jan/23 9:09 AM,20/Jan/23 12:00 AM,0,Partners,,,"System: ama-VW-Beteiligungen-DE
+
+Hello team,
+
+Please, update the configuration with all the attachments:
+
+image/jpg
+image/jpeg
+image/png
+image/gif
+image/tif
+application/pdf
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,13/Jan/23 12:00 AM,,2-17084694493,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzztyzzzzzzyi",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ;  Travel
+System: ama-VW-Beteiligungen-DE
+Configuration: main configuration",,3 - Medium,YES,,,,Codebusters-PI-6.2,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga - Add all type of attachments in the configuration,CI-8007,441339,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,13/Jan/23 10:14 AM,20/Jan/23 9:09 AM,07/Aug/23 3:44 PM,20/Jan/23 9:09 AM,20/Jan/23 12:00 AM,0,Partners,,,"System: numiga-master-test
+
+Hello team,
+
+Please, add all the types of attachments:
+
+image/jpg 
+image/jpeg 
+image/png 
+image/gif 
+image/tif
+application/pdf
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,13/Jan/23 12:00 AM,,2-17084725483,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,true,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzztyzzzzzzy",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; staging
+System: numiga-master-test
+Configuration: main configuration",,3 - Medium,YES,,,,Codebusters-PI-6.2,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga VFL Wolfsburg - Change TMS code for FDFs,CI-8000,441080,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,12/Jan/23 10:46 AM,17/Jan/23 12:09 PM,07/Aug/23 3:44 PM,17/Jan/23 12:09 PM,18/Jan/23 12:00 AM,0,Partners,,,"System: ama-VW-Beteiligungen-DE
+
+Hello team,
+
+Please, adapt the TMS codes for the following FDFs:
+ * Cost Center
+
+Current tms code: Cost_Center
+
+*New tms code: COST CENTER*
+
+!image-2023-01-12-10-44-05-834.png|width=366,height=128!
+ * Employee number
+
+Current tms code: Employee_Number
+
+*New tms code: EMPLOYEE ID*
+
+!image-2023-01-12-10-45-11-675.png|width=427,height=181!
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,CI-7986,,,"12/Jan/23 10:44 AM;alejandro.ruizrobles;image-2023-01-12-10-44-05-834.png;https://jira.ifao.net/secure/attachment/179313/image-2023-01-12-10-44-05-834.png","12/Jan/23 10:45 AM;alejandro.ruizrobles;image-2023-01-12-10-45-11-675.png;https://jira.ifao.net/secure/attachment/179312/image-2023-01-12-10-45-11-675.png",,,,,9.0,,,,,,,,,12/Jan/23 12:00 AM,,2-17078332363,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@25ef2964,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzztyzzzzzxq",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; Travel
+System: ama-VW-Beteiligungen-DE
+Configuration: main configuration",,3 - Medium,YES,,,,Codebusters-PI-6.2,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga Moia - Update TMS codes in the FDFs,CI-7997,441058,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,12/Jan/23 10:21 AM,20/Jan/23 10:56 AM,07/Aug/23 3:44 PM,20/Jan/23 10:56 AM,18/Jan/23 12:00 AM,0,Partners,,,"System: volkswagen-MOIA
+
+Hello team,
+
+Please, I need the following adjustments in the TMS codes for the following FDFs:
+ * Cost center
+
+Current tms code: Cost_Center
+
+*New tms code: Kostenstelle*
+
+!image-2023-01-12-10-18-12-427.png|width=410,height=98!
+ * Employee number
+
+Current tms code: Employee_Number
+
+New tms code: *Personalnummer*
+
+!image-2023-01-12-10-19-26-426.png|width=377,height=110!
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,CI-7987,,CI-7987,,,"12/Jan/23 10:18 AM;alejandro.ruizrobles;image-2023-01-12-10-18-12-427.png;https://jira.ifao.net/secure/attachment/179304/image-2023-01-12-10-18-12-427.png","12/Jan/23 10:19 AM;alejandro.ruizrobles;image-2023-01-12-10-19-26-426.png;https://jira.ifao.net/secure/attachment/179303/image-2023-01-12-10-19-26-426.png",,,,,9.0,,,,,,,,,12/Jan/23 12:00 AM,,2-17078297673,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@45b7b8c1,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzztyzzzzzzwr",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; Travel
+System: volkswagen-MOIA
+Configuration: main",,3 - Medium,YES,,,,Codebusters-PI-6.2,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga Rhenus - Add a new receipt,CI-7990,440916,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,11/Jan/23 4:50 PM,08/Mar/23 4:45 PM,07/Aug/23 3:44 PM,08/Mar/23 4:45 PM,18/Jan/23 12:00 AM,0,Partners,,,"System: lcc-lueckertz-rhenus
+
+Hello team,
+
+Please, create the following receipt for the following locations:
+
+*Locations:*
+
+Rhenus Forest Logistics GmbH & Co. KG 4200040000
+Rhenus Forest Logistics GmbH & Co. KG 4200050000
+Rhenus Forest Logistics GmbH & Co. KG 4200060000
+
+*Receipt:*
+
+DE: Lkw-Maut
+
+EN: Truck toll
+
+GL account: 701010
+
+Posting text: Fremdleistungen LKW-Maut
+
+VAT mapping:
+
+DE
+
+Default: expense.baseReceipt.taxRate.none
+
+Drop down menu: expense.baseReceipt.taxRate.regular
+
+NL
+
+Default: expense.baseReceipt.taxRate.none
+
+Drop down menu: expense.baseReceipt.taxRate.reduced ; expense.baseReceipt.taxRate.regular
+
+AT
+
+Default: expense.baseReceipt.taxRate.none
+
+Drop dow menu: expense.baseReceipt.taxRate.reduced ; expense.baseReceipt.taxRate.regular ; expense.baseReceipt.taxRate.reduced_2 ; expense.baseReceipt.taxRate.reduced_4
+
+ANY
+
+Default: expense.baseReceipt.taxRate.none
+
+ 
+
+Thank you!
+
+Alejandro
+
+ ",,,,,,,,,,,,,,,,,,,,,,,,,,11.0,,,,,,,,,11/Jan/23 12:00 AM,,2-17013598353,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Productive System,Test System,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzztyzzzzzzw6",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI; staging; mega
+System: lcc-lueckertz-rhenus
+Location:
+Rhenus Forest Logistics GmbH & Co. KG 4200040000
+Rhenus Forest Logistics GmbH & Co. KG 4200050000
+Rhenus Forest Logistics GmbH & Co. KG 4200060000",,3 - Medium,YES,,,,Codebusters-PI-6.2,Codebusters-PI-6.3,Codebusters-PI-6.4,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga Moia - Implement SFTP path and schedule export job,CI-7987,440793,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,11/Jan/23 12:47 PM,16/Feb/23 2:51 PM,07/Aug/23 3:44 PM,24/Jan/23 4:06 PM,18/Jan/23 12:00 AM,0,Partners,,,"System: volkswagen-MOIA
+
+Hello team,
+
+Please, implement the following sftp path:
+
+....@data.numiga.com/MOIA/Buchungsdaten/In/
+
+(User and password can be provided separately or you can find it in the VEGAS code in the system: ama-VW-Beteiligungen-DE)
+
+Please, schedule the automatic export job everyday at 5.00am in the morning.
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,ITS-34607,,CI-8178,CI-7997,CI-8021,CI-8010,CI-7997,,,,,,,9.0,,,,,,,,,11/Jan/23 12:00 AM,,2-17073469603,,,Committed,,Configure,Numiga,,2023-01-18 15:08:18.881,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@e0d51fea,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzztyzzzzzxm",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; Travel
+System: volkswagen-MOIA
+Location: main configuration",,3 - Medium,YES,,,,Codebusters-PI-6.2,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"18/Jan/23 3:08 PM;mkuchciak;All related tickets to be done on this branch.;;;",,,,,
+Numiga VFL Wolfsburg - Update SFTP path,CI-7986,440789,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,11/Jan/23 12:39 PM,19/Jan/23 5:28 PM,07/Aug/23 3:44 PM,19/Jan/23 5:28 PM,18/Jan/23 12:00 AM,0,Partners,,,"System: ama-VW-Beteiligungen-DE
+
+Hello team,
+
+Please, update the SFTP path because the current one is wrong:
+
+....@data.numiga.com/VFL_Wolfsburg/Buchungsdaten/In/
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,CI-8000,,,,,,,,,,,9.0,,,,,,,,,11/Jan/23 12:00 AM,,2-17073443753,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@2fa78c76,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzztyzzzzzxk",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; Travel
+System: ama-VW-Beteiligungen-DE
+Location: main configuration",,3 - Medium,YES,,,,Codebusters-PI-6.2,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga csmbaking - Update configuration settings of export,CI-7952,438984,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,04/Jan/23 9:45 AM,23/Jan/23 12:39 PM,07/Aug/23 3:44 PM,18/Jan/23 2:19 PM,11/Jan/23 12:00 AM,0,FridaySweep,Partners,TOP_Customer,"System: csmbaking
+
+Hello team,
+
+Please, update the configuration setting of export. Right now, there is a rule where only creates a txt file if Accounts Payable Number FDF starts with 10. We need to keep this rule and include the number 20 (ITE-1451).
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,CI-8038,ITE-1536,ITE-1451,,,,,,,,,9.0,,,,,,,,,04/Jan/23 12:00 AM,,2-17040566023,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@f04902f9,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzztyzzzzy9",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; travel
+System: csmbaking
+Configuration: all",,3 - Medium,YES,,,,Codebusters-PI-6.1,Codebusters-PI-6.2,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga GBO - Create new location,CI-7948,438711,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,03/Jan/23 10:07 AM,12/Jan/23 11:25 AM,07/Aug/23 3:44 PM,12/Jan/23 11:25 AM,12/Jan/23 12:00 AM,0,Partners,,,"System: gbo
+
+Hello team,
+
+We need to create a new location: Greiner GmbH . It is a copy of Greiner Bio-One GmbH so we need to copy the VEGAS folder with the new name of the location.
+
+The Engine part will be done using the EMS by me.
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,12.0,,,,,,,,,03/Jan/23 12:00 AM,,2-16921731503,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzztyzzzzsi",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; Travel
+System: gbo
+Location: Greiner GmbH",,3 - Medium,YES,,,,Codebusters-PI-6.1,Codebusters-PI-6.2,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"09/Jan/23 12:34 PM;alejandro.ruizrobles;Hi [~mkuchciak] ,
+
+I was talking with the Partner and they asked me in the last minutes few deviations:
+
+1.- We need to unhide the attachments in the receipts for this location
+
+2.- We need to add the attachment mandatory validation for this location. Please, I need you to update the advance settings validations because there are some parameters deprecated.
+
+Thank you in advance!
+
+Alejandro;;;",,,,,
+Numiga Moia - Create a new system,CI-7947,438670,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,02/Jan/23 6:00 PM,05/Jan/23 12:27 PM,07/Aug/23 3:44 PM,05/Jan/23 12:27 PM,09/Jan/23 12:00 AM,0,Partners,,,"System: volkswagen-MOIA
+
+Hello team,
+
+Please, we need:
+ * Copy and paste numiga-master-test VEGAS code and remove the current configuration for volkswagen-MOIA
+ * Remove Engine folder for volkswagen-MOIA
+ * Engine configuration will be done using EMS so I will do it when the VEGAS part is done and engine folder deleted
+ * Only 2022 configuration + different configurations must apply.
+
+Thank you!
+
+Alejandro",,nbarbero,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,02/Jan/23 12:00 AM,,2-17032167983,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzztyzzzzy",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: Travel ; BALI
+System: volkswagen-MOIA
+",,3 - Medium,YES,,,,Codebusters-PI-6.1,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga Fiege IT - Change tax key for IT,CI-7876,436253,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,15/Dec/22 5:01 PM,23/Dec/22 1:18 PM,07/Aug/23 3:44 PM,23/Dec/22 1:18 PM,22/Dec/22 12:00 AM,0,Partners,,,"System: lcc-lueckertz-fiege
+
+Hello team,
+
+Please change a tax key for TESTSTANDORT Fiege Italien location.  It only applies for this location.
+
+The current tax key for none (0%) for IT is 20 and it needs to be 01.
+
+Thank you!
+
+Alejandro",,jbonnavion,,,,,,,,,,,,,,,,,,,,,,,,9.0,,,,,,,,,15/Dec/22 12:00 AM,,2-16963541603,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzzsi",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI; world
+System: lcc-lueckertz-fiege
+Location: TESTSTANDORT Fiege Italien",,3 - Medium,YES,,,,Codebusters-PI5.4,Codebusters-PI-6.1,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,,,,,,
+Numiga GBO - Adapt the Export file,CI-7807,432492,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,03/Dec/22 1:20 PM,21/Mar/23 4:54 PM,07/Aug/23 3:44 PM,21/Mar/23 4:54 PM,15/Dec/22 12:00 AM,0,Partners,,,"System= gbo
+
+Hello team,
+
+The customer wants to add an additional file in the current export file to take into account the income tax relevant (wage postings). For example, hey pay more daily allowances in Germany up to 50% per day. 
+
+The current export must not be modified.
+
+The additional one is a txt where the structure is specified in the following document: *Schnittstelle_Schnittstellenbeschreibung_Bruttolohnimport* . The original one is in German but I provide the translation in English (thanks to a translator). It is also a txt. file
+
+Besides, I have an example how the new export should be for a test statement that I did. The test statement is *359483 Testing whole sections(1)* with the current export *48107-trav_17112022.* It should have in addition the new file which would be {*}FinalBeispiel_Import (1){*}.
+
+I hope it is clear. Please, ping me if there is some doubt.
+
+Best regards,
+
+Alejandro",,,,,,,,,,0,9420,,,,,,,,,"03/Dec/22 1:18 PM;alejandro.ruizrobles;359483 Testing whole sections (1).pdf;https://jira.ifao.net/secure/attachment/175249/359483+Testing+whole+sections+%281%29.pdf","03/Dec/22 1:18 PM;alejandro.ruizrobles;48107-trav_17112022.txt;https://jira.ifao.net/secure/attachment/175248/48107-trav_17112022.txt","03/Dec/22 1:18 PM;alejandro.ruizrobles;FinalBeispiel_Import (1).txt;https://jira.ifao.net/secure/attachment/175247/FinalBeispiel_Import+%281%29.txt","03/Dec/22 1:04 PM;alejandro.ruizrobles;Schnittstelle_Schnittstellenbeschreibung_Bruttolohnimport (1).pdf;https://jira.ifao.net/secure/attachment/175250/Schnittstelle_Schnittstellenbeschreibung_Bruttolohnimport+%281%29.pdf","03/Dec/22 1:42 PM;alejandro.ruizrobles;Standard interface for the gross wage import into Sage Human Resources.pdf;https://jira.ifao.net/secure/attachment/175253/Standard+interface+for+the+gross+wage+import+into+Sage+Human+Resources.pdf",,17.0,,,,,,,,,03/Dec/22 12:00 AM,,2-16904213353,,,Committed,,Configure,Numiga,,,djagodzki,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzxwzi",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: travel ; BALI
+System: gbo
+Configuration: all",,3 - Medium,YES,,,,Codebusters-PI5.4,Codebusters-PI-6.1,Codebusters-PI-6.2,Codebusters-PI-6.3,Codebusters-PI-6.4,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"25/Jan/23 9:11 AM;alejandro.ruizrobles;Hi [~djagodzki] ,
+
+The customer is verifying the export. I will let you know if we have the green light to move the export to production or we need to fix something.
+
+Best regards,
+
+Alejandro;;;","27/Jan/23 1:21 PM;alejandro.ruizrobles;Hi [~djagodzki] ,
+
+I got the feedback from the end customer. The information is correct but we need to remove the header line in the export because this line is recognized as an error during the import.
+
+The header line is this one:
+
+MDNr; AbrMon; AbrJahr; ANNr; LANr;Dat1; KoSt1 2; KoTr1 3; AA1; Number; Amount; Surcharge; LAText; LGAText
+
+Thank you!
+
+Alejandro;;;","17/Feb/23 12:53 PM;alejandro.ruizrobles;Waiting feedback from end customer;;;","28/Feb/23 1:56 PM;alejandro.ruizrobles;Hi [~djagodzki] ,
+
+I got the feedback from the end customer. They want the last changes to process the information correct. We need to remove the information from the cost center and the posting text, they don't need that it appears in the export. We need to keep the position but empty. 
+
+Thank you!
+
+Alejandro;;;",,
+Numiga OGE - Change link in the email,CI-7806,432465,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,02/Dec/22 4:36 PM,20/Dec/22 10:20 AM,07/Aug/23 3:44 PM,20/Dec/22 10:20 AM,12/Dec/22 12:00 AM,0,Partners,vegas,,"System: ama-bcd-oge-de
+
+Hello team,
+
+Please, add the same structure of the emails for the passive approval email because the configuration is missing in the system text configuration file and the SAML link does not apply. *We need to apply the solution 2* from the ITE https://jira.ifao.net/browse/ITE-1409.
+
+Thank you
+
+Alejandro",,,,,,,,,,,,,,,,,ITE-1409,CI-7715,,,,,,,,9.0,,,,,,,,,02/Dec/22 12:00 AM,,2-16811560283,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@c3d23e70,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzz9",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: Amademea ; BALI
+System: ama-bcd-oge-de
+Configuration: all",,3 - Medium,YES,,,,Codebusters-PI5.4,Codebusters-PI-6.1,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"13/Dec/22 5:00 PM;alejandro.ruizrobles;Hi [~pjakubiec] ,
+
+Please, could you move the changes to prod? :) Thank you so much!
+
+Best regards,
+
+Alejandro;;;",,,,,
+Numiga GBO - create new receipts,CI-7773,431180,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,28/Nov/22 4:58 PM,20/Dec/22 2:24 PM,07/Aug/23 3:44 PM,20/Dec/22 2:24 PM,01/Jan/23 12:00 AM,0,Partners,,,"System: gbo
+
+Hello team,
+
+Please, create the following receipts for all the locations and main configuration:
+||Receipt name (DE)||Receipt name (EN)||Available VAT||Default VAT||
+|Bewirtung nicht abzugsfähig|Hospitality - not deductible|none, reduced, regular|regular|
+|Trinkgeld Bewirtung nicht abzugsfähig|Tip hospitality - not deductible|none|none|
+
+Please, provide me the VEGAS hook because I will do the changes in the EMS.
+
+The new receipts must be available from *01.01.2023*
+
+Thank you!
+
+Alejandro",,,,,,,,,,,,,,,,,,,,,,,,,,12.0,,,,,,,,,28/Nov/22 12:00 AM,,2-16881535933,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzs",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: BALI ; Travel
+System: gbo
+Location: Greiner Bio One und Greiner Perfoam and main configuration.",,3 - Medium,YES,,,,Codebusters-PI5.4,Codebusters-PI-6.1,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"01/Dec/22 1:34 PM;alejandro.ruizrobles;Hi [~pjakubiec] ,
+
+I forget to mention that the receipt *Hospitality - not deductible* should be as business entertainment behavior.
+
+Thank you!
+
+Alejandro;;;","12/Dec/22 11:03 AM;alejandro.ruizrobles;Hi [~pjakubiec] ,
+
+Thank you so much for the update. It works as expected on BALI.
+
+Best regards,
+
+Alejandro;;;",,,,
+Numiga VFL Wolfsburg - Create a new system,CI-7755,430512,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,23/Nov/22 4:38 PM,16/Feb/23 10:23 AM,07/Aug/23 3:44 PM,04/Jan/23 11:46 AM,30/Nov/22 12:00 AM,0,Partners,,,"System: ama-VW-Beteiligungen-DE
+
+Hello team,
+
+Please, we need:
+ * Copy and paste numiga-master-test VEGAS code and create a new folder for a new system: ama-VW-Beteiligungen-DE
+ * Engine configuration will be done using EMS so I will do it when the VEGAS part is done.
+ * Please, add the following SFTP path for the export file (user and password will be provided separately via teams):/VFLWolfsburg/Buchungsdaten/In/
+ * Please, add the automatic export job everyday at 5.00am in the morning
+ * Only 2022 configuration + different configurations must apply.
+
+Thank you so much!
+
+Alejandro",,,,,,,,,,,,,,,CI-8178,,,,,,,,,,,9.0,,,,,,,,,23/Nov/22 12:00 AM,,2-16862550073,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@6253f134,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuwc",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: travel ; BALI
+System: ama-VW-Beteiligungen-DE
+",,3 - Medium,YES,,,,Codebusters-PI5.4,Codebusters-PI-6.1,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"08/Dec/22 8:40 PM;alejandro.ruizrobles;Hello [~pjakubiec] ,
+
+The configurations from 2018 to 2020 can be removed to production. These configurations are not required. Only the 2022 configuration + the different configurations must apply. 
+
+Please [~mstaszek] , could you add the schedule export job? :)
+
+Thank you in advance!
+
+Alejandro;;;","12/Dec/22 10:08 AM;alejandro.ruizrobles;Hello [~pjakubiec] ,
+
+The start date for the system is correct. The system will be in live in 2023 so no issue.
+
+Best regards,
+
+Alejandro;;;","21/Dec/22 9:12 AM;alejandro.ruizrobles;Hello [~pjakubiec] ,
+
+Please, move the changes to production. We have a delay of 1 month and the customer is escalating the case.
+
+Best regards,
+
+Alejandro;;;",,,
+Numiga Scania - Changes in Receipts and a FDF,CI-7736,429541,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,21/Nov/22 11:31 AM,19/Dec/22 7:50 AM,07/Aug/23 3:44 PM,19/Dec/22 7:50 AM,28/Nov/22 12:00 AM,0,Partners,,,"System: Scania
+
+Hello team,
+
+We need to do the following changes for the receipts:
+||Receipt (DE)||Receipt (EN)||VEGAS hook||VAT available||VAT default||Type of change||
+|BahnCard|BahnCard|expense.basereceipt.receipt.scania.bahncard| | |Delete|
+|Bahnfahrkarte|Ticket (Mainline)|expense.basereceipt.receipt.ticket.mainline| | |Delete|
+|Benzinkosten|Petrol|expense.basereceipt.receipt.scania.petrol|none, regular|regular| |
+|Bewirtung|Business entertainment|expense.basereceipt.receipt.entertainment|none, reduced, regular|regular| |
+|Bücher/Zeitschriften|Books / Magazines|expense.basereceipt.receipt.scania.books|none, reduced, regular|reduced|Adjust tax rate|
+|Büromaterial|Office supplies|expense.basereceipt.receipt.scania.officeSupplies|none, reduced, regular|regular|Adjust tax rate|
+|Flugticket|Ticket flight|expense.basereceipt.receipt.ticket.flight| | |delete|
+|Fortbildung|Education|expense.basereceipt.receipt.scania.education|none, regular|regular| |
+|Geschenke an MA ab 10,- €|Gifts to employees above 10 Euro|expense.basereceipt.receipt.scania.giveAway.employee|none, reduced, regular|regular| |
+|Geschenke bis 35,-€ *netto p.P.*|Gifts up to 35 Euro, *net p.P.*|expense.basereceipt.receipt.scania.giveAway.small|none, reduced, regular|regular|Adjust receipt name in UI (add the bold part)|
+|Geschenke über 35,-€ *netto p.P.*|Gifts above 35 Euro, *net p.P.*|expense.basereceipt.receipt.scania.giveAway.large|none, reduced, regular|none|Adjust receipt name in UI (add the bold part)|
+|Kurierdienst/Express-Porto|Courier service|expense.basereceipt.receipt.scania.courierService| | |Delete|
+|Mietwagen|Rental car|expense.basereceipt.receipt.car.rental|none, regular|regular| |
+|Mietwagen (DW-Ersatz)|Car Rental (DW-Ersatz)|expense.basereceipt.receipt.scania.rentalCarDw|none, regular|regular| |
+|Parkgebühren|Parking|expense.basereceipt.receipt.scania.parking|none, regular|regular| |
+|Porto+Briefmarken|Postage+Stamps|expense.basereceipt.receipt.scania.postage|none, reduced, regular|none|adjust tax rate|
+|Privat KM|Private mileage|expense.basereceipt.receipt.scania.privateMileage| | |delete|
+|So. Reisekosten|Other travel expense|expense.basereceipt.receipt.other|none, reduced, regular|regular| |
+|Spenden|Donations|expense.basereceipt.receipt.scania.donations| | |delete|
+|Taxi ab 50 km|Taxi above 50 km|expense.basereceipt.receipt.scania.taxi.longDistance| | |delete|
+|Taxi bis 50 km|Taxi below 50 km|expense.basereceipt.receipt.scania.taxi.shortDistance| | |delete|
+|Telefon|Phone|expense.basereceipt.receipt.scania.phone|none, regular|regular| |
+|Unterh. Dienstwagen|Company car|expense.basereceipt.receipt.scania.companyCar|none, regular|regular| |
+|Verpflegungskosten|Subsistence costs|expense.basereceipt.receipt.scania.subsistance|none, reduced, regular|none| |
+|Übern. Lt. Beleg|Accommodation|expense.basereceipt.receipt.hotel|none, reduced, regular|reduced|adjust tax rate|
+|Sonstige Personalkosten|Other personal costs| |none, reduced, regular|regular|new receipt, add new receipt with VAT|
+|Bahn/Taxi/Flug|Train/Taxi/Flight| |none, reduced, regular|reduced|new receipt, add new receipt with VAT|
+
+We would need to create a new configuration file so the date should be 01/12/2022.
+
+Besides, remove ""Wochenendeinsatz"" FDF from the configuration
+
+Thank you team!
+
+Alejandro",,jbonnavion,,,,,,,,,,,,,,,,,,,,,,,,12.0,,,,,,,,,21/Nov/22 12:00 AM,,2-16849465893,,,Committed,,Configure,Numiga,,2022-12-06 15:49:41.003,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyztw",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: travel, BALI
+System: Scania
+Configuration: main configuration and location",,3 - Medium,YES,,,,Codebusters-PI5.4,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"01/Dec/22 8:39 AM;alejandro.ruizrobles;Hi [~pjakubiec] ,
+
+The FDF still exists in the configuration and we need to remove it. The receipts are correct.
+
+We need to move the changes today in production.
+
+Regards,
+
+Alejandro;;;","06/Dec/22 3:49 PM;jbonnavion;Hi [~pjakubiec] ,
+
+Any update on this one?
+
+It needs to be done asap please
+
+Thank you
+
+Julie;;;","09/Dec/22 1:48 PM;pjakubiec;Hello [~bonnavion],
+changes in prod.;;;",,,
+Numiga Elli - Add new formats for attachments,CI-7700,428349,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,alejandro.ruizrobles,alejandro.ruizrobles,15/Nov/22 4:39 PM,12/Apr/23 1:53 PM,07/Aug/23 3:44 PM,12/Apr/23 1:53 PM,22/Nov/22 12:00 AM,0,Partners,,,"System: volkswagen-group-charging
+
+Hello team,
+
+Please, add the following formats for attachments:
+ * JPG
+ * TIFF
+
+Thank you!
+
+Alejandro",,jbonnavion,,,,,,,,,,,CE-4186,,ITE-1374,,,,,"17/Nov/22 1:30 PM;alejandro.ruizrobles;image-2022-11-17-13-30-15-060.png;https://jira.ifao.net/secure/attachment/172801/image-2022-11-17-13-30-15-060.png",,,,,,15.0,,,,,,,,,15/Nov/22 12:00 AM,,2-16828673993,,,Committed,,Configure,Numiga,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@3ec6d2ba,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzx5t2",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: Travel
+System: volkswagen-group-charging
+Configuration: all",,3 - Medium,YES,,,,Codebusters-PI5.3,Codebusters-PI5.4,Codebusters-PI-6.1,Codebusters-PI-6.2,Codebusters-PI-6.3,Codebusters-PI-6.4,Codebusters-PI-7.1,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@58eeafa1,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@62a0056e,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@8896b01,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Service Request (SR),,,,,,,,,,0,,,"17/Nov/22 1:30 PM;alejandro.ruizrobles;Hi [~mkuchciak] ,
+
+When I try to upload a JPG file, an error appears:
+
+!image-2022-11-17-13-30-15-060.png|width=720,height=327!
+
+Could you verify it? :)
+
+Thank you!;;;",,,,,

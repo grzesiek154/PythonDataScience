@@ -403,3 +403,21 @@ A **bin**—sometimes called a class interval—is a way of sorting data in a [h
 - The high value (sometimes called *bin high*) which for this example is 79 89 100.
 
 In most cases though, choosing bins isn’t going to be that simple  especially for large data sets. When dealing with large sets of numbers, you’re usually better off using technology like [Microsoft Excel](https://office.microsoft.com/en-us/excel/) to create a histogram ([how to create a histogram in Excel](https://www.statisticshowto.com/probability-and-statistics/excel-statistics/histogram-in-excel/)), because if your bin choice doesn’t make for a nice-looking diagram you  can dynamically change the bin values without having to draw a graph.
+
+
+
+
+
+# Percentiles vs average vs median
+
+
+
+Percentiles and averages are both measures of central tendency used to summarize data, but they provide different insights. The average, or mean, is calculated by summing all the values in a dataset and dividing by the number of values. It is a useful measure to determine the overall trend or central value of a set of numbers. However, the average can be easily skewed by extreme values or outliers, as it takes into account all values equally. On the other hand, percentiles divide a dataset into 100 equal parts, with each part representing a percentage. For example, the 75th percentile represents the value below which 75% of the data falls. 
+
+The difference between the average and the 50th percentile lies in what they represent in a dataset.
+
+The average, also known as the mean, provides a measure of central tendency by summing up all the values in the dataset and dividing by the total number of values. It gives us an idea of the typical or average value in the dataset. However, the average can be influenced by extreme values or outliers, which may skew the representation of the data.
+
+On the other hand, the 50th percentile represents the median of a dataset. It is the value below which 50% of the data falls and above which the other 50% of the data falls. The median is useful in understanding the typical value in a dataset, especially when there are outliers present.
+
+In summary, while the average provides an overall idea of the typical value, the 50th percentile or median specifically represents the middle value of a dataset, dividing it into two equal parts.

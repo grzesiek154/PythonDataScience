@@ -1,0 +1,1509 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project description,Project url,Resolution,Assignee,Reporter,Creator,Created,Updated,Last Viewed,Resolved,Due Date,Votes,Labels,Labels,Labels,Labels,Description,Environment,Watchers,Watchers,Watchers,Original Estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Inward issue link (Blocks),Inward issue link (Blocks),Inward issue link (Created from Investigation Task),Inward issue link (Relates),Inward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Custom field (ART Sync Notes),Custom field (Activity),Custom field (Actual Business Value),Custom field (Actual Iteration),Custom field (Actual downtime),Custom field (Additional Information),Custom field (Affected Products),Custom field (Attached file with changes),Custom field (Automatic Transition),Custom field (Benefit Hypothesis),Custom field (Business Justification),Custom field (Case Creation Date),Custom field (Case Creation Date/Time),Custom field (Case Number/s),Custom field (Category of problem),Custom field (Client status),Custom field (Commitment Level),Custom field (Complexity),Custom field (Configure),Custom field (CustomLogic),Custom field (Customer/s),Custom field (DB Change included),Custom field (Date of First Response [CHART]),Custom field (Developer),Custom field (EMS Database Version/s),Custom field (Effective Assignee),Custom field (Effective Resolution),Custom field (Effective Status),Custom field (Environment types),Custom field (Epic Link),Custom field (Escalation contact),Custom field (Executive Summary),Custom field (Expected Behavior),Custom field (Expected downtime),Custom field (Expense Database Version/s),Custom field (External Expert),Custom field (Fallback procedure),Custom field (Feature Validation),Custom field (Feature Validation Result),Custom field (Feature Validation Test Set URL),Custom field (Findings),Custom field (Fix Priority),Custom field (General Information),Custom field (ITS Team Assigned),Custom field (Import),Custom field (Import),Custom field (Import),Custom field (Incident date/time),Custom field (Initial Request Date by Customer),Custom field (Investigating Methods),Custom field (Is planned),Custom field (Issue Links Overview),Custom field (Job Size (WSJF)),Custom field (MDs spend),Custom field (Memory),Custom field (Notes),Custom field (OLD Agile Release Train (ART)),Custom field (Original story points),Custom field (PCI-DSS Reviews),Custom field (PCI-DSS related),Custom field (PDef Transition),Custom field (PSD document),Custom field (Parent Key),Custom field (Parent Link),Custom field (Personal Notes),Custom field (Planned Business Value),Custom field (Planned Iteration),Custom field (Priority Index),Custom field (Product Definition),Custom field (Proposed Corrective Actions),Custom field (Proposed Solution),Custom field (Rank),Custom field (Reason to Reopen),Custom field (Reason to Suspend),Custom field (Rejection reason),Custom field (Release Date),Custom field (Release Notes),Custom field (Remaining Story Points),Custom field (Reported Date),Custom field (Request Type),Custom field (Required Skill Level),Custom field (Resources),Custom field (Restart Category),Custom field (Restart Type),Custom field (Retention or Growth (WSJF)),Custom field (Review Date),Custom field (Risk Reduction/Opportunity (WSJF)),Custom field (Risk Reduction/Opportunity explanation),Custom field (Risks),Custom field (Root Cause),Custom field (SAFe Epic Type),Custom field (SAFe Feature Type),Custom field (SOR document),Custom field (Security/PCI Compliance Decision),Custom field (Server : System : Location : Division),Custom field (Session),Custom field (Severity),Custom field (Showstopper (WSJF)),Custom field (Showstopper explanation),Custom field (Size),Custom field (Slot time frame),Sprint,Sprint,Sprint,Sprint,Sprint,Sprint,Custom field (Start Date),Custom field (Status Information),Custom field (Status Information),Custom field (Status Information),Custom field (Status Information),Custom field (Status Information),Custom field (Status Information),Custom field (Status Information),Custom field (Story Points),Custom field (Subtask Overview),Custom field (Support from FT),Custom field (Suspended),Custom field (System),Custom field (T-Shirt sized estimation),Custom field (TMS location/division affected),Custom field (Target end),Custom field (Target end),Custom field (Target start),Custom field (Target start),Custom field (Team),Custom field (Test Set URL),Custom field (Testing and Validation),Custom field (Time Criticality (WSJF)),Custom field (Time Criticality explanation),Custom field (Timeline),Custom field (Total Expense Volume p.a.),Custom field (Travel QA Responsible),Custom field (Type of Expense Delivery Task),Custom field (Type of Request),Custom field (URL),Custom field (UX Analyst),Custom field (UX Guidelines),Custom field (UX Researcher),Custom field (UX Visual Designer),Custom field (UX Writer),Custom field (UXR Deliverables),Custom field (UXR Personas),Custom field (UXW RTM Code),Custom field (User-business Value (WSJF)),Custom field (User-business Value explanation),Custom field (Validation),Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment
+Total Energies - Stop Export for all locations ,CI-8796,479834,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,ssanz,ssanz,13/Jun/23 5:47 PM,13/Jun/23 6:11 PM,06/Jul/23 5:04 PM,13/Jun/23 6:11 PM,14/Jun/23 12:00 AM,0,TOP_Customer,,,,"h5. Dear Team,
+h5. Please could you stop the export for all Total Energies ?
+
+Seems that there is a bug and statement are sent several times in export.
+
+ITE-1891
+
+Thanks in advance.
+
+Best regards,
+
+Sandra",,ssanz,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.0,,,,,,,,,,13/Jun/23 12:00 AM,,2-17564748213,,,Committed,,Configure,,TotalEnergies,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i22zjb:",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server amdeus2
+system ama-fr-totalenergies
+Location ALL",,3 - Medium,YES,,,,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,,,,,,,,,,,,
+REWE - Incorrect per diem calculate on DE location,CI-8744,477446,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,yutaka.yasumi,yutaka.yasumi,07/Jun/23 5:56 AM,15/Jun/23 12:04 PM,06/Jul/23 5:04 PM,15/Jun/23 12:04 PM,12/Jun/23 12:00 AM,0,,,,,"Hello team,
+
+Could you please check and adjust the per diem calucuate on DE location.
+The per diem calculation for a same day business trip is incorrect.
+Per diem is applied from 8 hours 01 minutes or more.
+
+1st day trip (same day return trip)
+Absences from 0 hours to exactly 8 hours -> no per diem are paid
+Absence for more than 8 hours, i.e. from 8:01 hours -> payment of the €14.00 expenses
+00:00h to 08:00h > No per diem
+08:01h to 24:00h > 14,00EUR
+
+Sample: ES13423861
+[^13423861 Test Spesen.pdf]
+
+!image-2023-06-07-12-53-47-031.png|width=539,height=287!
+
+FYI.
+Trip with overnight stay:
+{color:#ff0000}*Everything should stay the same here. Please do not make any changes!!!*{color}
+Arrival and departure day less than 14 hours -> expenses payment €7.00
+Arrival and departure day from 14 hours -> expenses payment 14.00 €
+Intermediate day (absence of more than 24 hours) -> €28.00
+
+Best regards,
+Customer Support",,,,,,,,,,0,1020,,,,,,,,,,"07/Jun/23 5:55 AM;yutaka.yasumi;13423861 Test Spesen.pdf;https://jira.ifao.net/secure/attachment/200503/13423861+Test+Spesen.pdf","07/Jun/23 5:53 AM;yutaka.yasumi;image-2023-06-07-12-53-47-031.png;https://jira.ifao.net/secure/attachment/200504/image-2023-06-07-12-53-47-031.png","08/Jun/23 12:20 PM;yutaka.yasumi;image-2023-06-08-19-20-15-112.png;https://jira.ifao.net/secure/attachment/200773/image-2023-06-08-19-20-15-112.png","08/Jun/23 12:20 PM;yutaka.yasumi;image-2023-06-08-19-20-32-832.png;https://jira.ifao.net/secure/attachment/200774/image-2023-06-08-19-20-32-832.png","09/Jun/23 1:23 AM;yutaka.yasumi;image-2023-06-09-08-23-49-713.png;https://jira.ifao.net/secure/attachment/200838/image-2023-06-09-08-23-49-713.png",,,,,,,,,,,,,,14.0,,,,,,,,,,07/Jun/23 12:00 AM,,2-17540711323,,,Committed,,Configure,,Rewe Group,,,,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Productive System,Test System,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:ynzqzzzzyi",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"WORLD / DER-CO-REWEGROUP-DE
+Location: All",,3 - Medium,YES,,,,Codebusters-PI-7.3,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"08/Jun/23 12:19 PM;yutaka.yasumi;From CI-10241499
+Not working on Bali. Still incorrect the per diem;;;","08/Jun/23 12:20 PM;yutaka.yasumi;[~dykiert] 
+Hello Dominik san,
+Not working on Bali Still incorrect the per diem.
+
+!image-2023-06-08-19-20-15-112.png|width=572,height=282!
+
+!image-2023-06-08-19-20-32-832.png|width=565,height=441!;;;","09/Jun/23 1:23 AM;yutaka.yasumi;[~dykiert] 
+Hello Dominik san,
+Bali is working now! please deploy it to staging.
+!image-2023-06-09-08-23-49-713.png|width=660,height=494!;;;","12/Jun/23 10:37 AM;yutaka.yasumi;From CI-10241631
+Staging is ok!
+Please deploy it to prod.;;;","15/Jun/23 12:04 PM;yutaka.yasumi;From CI-10241970
+Thank you;;;",,,,,,,
+Eutelsat - STOP AUTOMATIC EXPORT,CI-8704,475894,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,ssanz,ssanz,31/May/23 7:07 PM,04/Jul/23 11:20 AM,06/Jul/23 5:04 PM,01/Jun/23 12:29 PM,01/Jun/23 12:00 AM,0,,,,,"Dear Team,
+
+ 
+
+Please could you stop all export for Eutelsat locations?
+
+ 
+
+It seems that the Expense exports sent to SFTP for SAP integration take into account travel lines already paid by BTA cards. These lines should not appear in the exports and are now creating duplicate payments to the employee in addition to the BTA payment. 
+
+ 
+
+They ask to stop the export until they have verify all statements already exported and corrected from their side.
+
+ 
+
+Locations impacted ALL FR-Eutelsat SA
+
+!image-2023-05-31-19-07-05-088.png|width=406,height=171!
+
+ 
+
+Thank you.
+
+Cheers,
+
+Sandra",,,,,,,,,,,,,,,,CI-8921,,,,,"31/May/23 7:07 PM;ssanz;image-2023-05-31-19-07-05-088.png;https://jira.ifao.net/secure/attachment/199654/image-2023-05-31-19-07-05-088.png",,,,,,,,,,,,,,,,,,7.0,,,,,,,,,,31/May/23 12:00 AM,,2-17523764333,,,Committed,,Configure,,Eutelsat,,,,,,,Closed (relates to),,,,,,,,,,,,,,,,,Productive System,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@6f3d076b,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:ynzqzm",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"sever: amadeus2
+system: ama-fr-eutelsat
+Location All FR Eutelsat SA",,3 - Medium,YES,,,,Codebusters-PI-7.3,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,,,,,,,,,,,,
+"Continental -  Remove valication rule for ""breakfast out of bill""",CI-8684,474658,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,yutaka.yasumi,yutaka.yasumi,26/May/23 10:18 AM,02/Jun/23 6:40 AM,05/Jul/23 1:13 PM,02/Jun/23 6:40 AM,31/May/23 12:00 AM,0,,,,,"Hello team,
+
+Could you please remove the valication rule for ""breakfast out of bill"".
+We alreay open the CI-7909 and CI-8518. but still validation rule on engine config on 20230501 - 999999.
+
+Could you please romove the validation rule on custome logic engine config: 20230501 - 999999.
+[https://repository.secure.ifao.net:7443/projects/EXP/repos/engine-configs/browse/CalculationConfiguration/ama-de-continental/fr/default/20230501-99990101/customlogic.properties.xml]
+
+Best regard,
+Yutaka",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.0,,,,,,,,,,26/May/23 12:00 AM,,2-17507549263,,,Committed,,Configure,,Continental,,,jtkacz,,,,Closed,,,,,,,,,,,,,,,,,Productive System,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:ynzqw",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Amadeus / ama-de-continental
+Location: FR",,3 - Medium,YES,,,,Codebusters-PI-7.3,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"02/Jun/23 6:40 AM;yutaka.yasumi;From CI-10240935
+Thank you;;;",,,,,,,,,,,
+EUTELSAT - URL Link in Approval e-mail doesn't work,CI-8675,474100,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,ssanz,ssanz,23/May/23 4:19 PM,25/May/23 2:41 PM,06/Jul/23 5:04 PM,25/May/23 2:41 PM,30/May/23 12:00 AM,0,,,,,"Dear Team,
+
+The Approver receive the Approval e-mail but when she tick in ""HERE"" to enter, she got an error page.
+
+ 
+
+!image-2023-05-23-16-18-19-185.png|width=490,height=137!
+
+ 
+
+Please could you fixed ?
+
+Thank you.
+
+Best regards,
+
+Sandra",,,,,,,,,,0,1440,,,,,,,,,,"23/May/23 4:18 PM;ssanz;image-2023-05-23-16-18-19-185.png;https://jira.ifao.net/secure/attachment/198385/image-2023-05-23-16-18-19-185.png",,,,,,,,,,,,,,,,,,7.0,,,,,,,,,,10/May/23 12:00 AM,,2-17457313573,,,Committed,,Configure,,Eutelsat,,2023-05-24 09:55:19.092,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:ynzqo",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: Amadeus2
+System: ama-de-eutelsat
+Location: ALL",,3 - Medium,YES,,,,Codebusters-PI-7.3,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"24/May/23 9:55 AM;djagodzki;Hello [~ssanz], please provide more details in the description next time when we will have a portal base url problem or any similar problem.
+
+A note for me - short summary what needs to be done in this case:
+ * Fix should be done in system config and FR config. Other locations should be changed on both BALI and PROD.
+ * *IsExpenseMailSuppressed* needs to be set to true in the configs.
+ * Moreover: add proper link in system texts after suppressing it in the config, similar to the setup done for TotalEnergies. What should be changed compared to Total are: the link in CDATA and the translations.
+
+I will prepare the fixes, build them on BALI and let you and [~fkazmierczak] know. After this we will be able to go to PROD.;;;",,,,,,,,,,,
+lcc-smartbooking-ap - Increase the max size for attachment.,CI-8590,470321,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,ssanz,ssanz,08/May/23 3:17 PM,17/May/23 6:15 PM,06/Jul/23 5:04 PM,17/May/23 6:15 PM,11/May/23 12:00 AM,0,,,,,"Dear Team,
+
+lcc-smartbooking-ap complain because they got the error message ""File selected for upload exceeds the maximum size"".
+
+ 
+
+!image-2023-05-08-15-18-16-146.png!
+
+ 
+
+{+}KIBANA LOG{+}: [Kibana (ifao.net)|https://es.secure.ifao.net/s/ng/app/kibana#/doc/4b176900-5112-11ed-9b28-fdd4edbd9080/ng.2023-19/doc?id=7Upx-4cBEB1xF6rBT-K1&_g=()]
+
+!image-2023-05-08-15-18-27-105.png!
+
+ 
+
+Please could you increase the maximum size for this system ? Apparently they use the ""expense one"".
+
+I only put production because I didn't see any BALI system and no staging system.
+
+Thank you.
+
+Best regards,
+
+Sandra",,,,,,,,,,,,,,,,,,ITE-1814,,,"08/May/23 3:18 PM;ssanz;image-2023-05-08-15-18-16-146.png;https://jira.ifao.net/secure/attachment/195625/image-2023-05-08-15-18-16-146.png","08/May/23 3:18 PM;ssanz;image-2023-05-08-15-18-27-105.png;https://jira.ifao.net/secure/attachment/195626/image-2023-05-08-15-18-27-105.png",,,,,,,,,,,,,,,,,7.0,,,,,,,,,,04/May/23 12:00 AM,,2-17439896313,,,Committed,,Configure,,Customer not yet listed,,2023-05-10 12:21:17.115,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@699ec834,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:yni",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server WORLD
+System lcc-smartbooking-ap
+Location ALL",,3 - Medium,YES,,,,Codebusters-PI-7.3,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"10/May/23 12:21 PM;jtkacz;Hello [~ssanz],
+
+I increased the max file size from 2MB to 5 MB but it didn't help out and still shows that max file size is 0MB. Here configuration is correct. Could you please open ITE to investigate the case?
+
+Thank you!;;;","15/May/23 12:18 PM;jtkacz;ok, I created ITE https://jira.ifao.net/browse/ITE-1814
+
+Please update Case Number in there;;;","15/May/23 12:46 PM;jtkacz;Hello [~ssanz] , please familiarize with ITE. According to Doreen's investigation this behavior is correct for system running on EXPENSE ONE.
+
+Thanks!;;;","17/May/23 6:05 PM;ssanz;Thank you Jakub.
+
+ ;;;",,,,,,,,
+"Amadeus - not working on customelogic of ""customSubActors.CustomScriptSubActor""",CI-8578,468781,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,yutaka.yasumi,yutaka.yasumi,28/Apr/23 11:54 AM,16/May/23 11:15 AM,06/Jul/23 5:04 PM,16/May/23 11:15 AM,05/May/23 12:00 AM,0,,,,,"Hello team,
+
+We receive incident the the not working on custome logic of ""customSubActors.CustomScriptSubActor"".
+
+The ""CA - Amadeus Canada"" location has a limit validator for ""Personal meals on trip"".
+
+However, if the user travels to the USA and claims in USD, they will receive a validation error even if they are below the limit.
+The CA location has a USD limit set by code, but I don't think there is a code to check in USD at the ""CA - Amadeus Canada"" location.
+Since there is no code to check USD, I think it checks the limit value with ""CAD"".
+
+In CI-7867 and CI-8263, We requested a validation rule for a specific cost center, but for some reason I think the USD currency code was also deleted at the same time.
+
+Could you please adjust it.
+
+Sample ES : {{14248611}}
+Amount: 73USD 
+!image-2023-04-28-18-48-15-529.png|width=601,height=338!
+
+Amount: 73USD
+Country ""Other"" 
+!image-2023-04-28-18-48-56-857.png|width=929,height=477!
+
+Engine config: calculation.properties
+!image-2023-04-28-18-50-07-128.png|width=385,height=389!
+CA default customlogic.properties.
+!image-2023-04-28-18-50-38-049.png|width=492,height=374!
+
+CA - amadeus canada customlogic.properties.
+[https://repository.secure.ifao.net:7443/projects/EXP/repos/engine-configs/browse/CalculationConfiguration/ama-es-amadeus/ca/default/20230301-99990101/771187448/customlogic.properties.xml]
+
+!image-2023-04-28-18-51-30-089.png|width=530,height=376!
+
+Best regards,
+Yutaka",,,,,,,,,,,,,,,,,,,,,"28/Apr/23 11:48 AM;yutaka.yasumi;image-2023-04-28-18-48-15-529.png;https://jira.ifao.net/secure/attachment/194598/image-2023-04-28-18-48-15-529.png","28/Apr/23 11:48 AM;yutaka.yasumi;image-2023-04-28-18-48-56-857.png;https://jira.ifao.net/secure/attachment/194597/image-2023-04-28-18-48-56-857.png","28/Apr/23 11:50 AM;yutaka.yasumi;image-2023-04-28-18-50-07-128.png;https://jira.ifao.net/secure/attachment/194596/image-2023-04-28-18-50-07-128.png","28/Apr/23 11:50 AM;yutaka.yasumi;image-2023-04-28-18-50-38-049.png;https://jira.ifao.net/secure/attachment/194595/image-2023-04-28-18-50-38-049.png","28/Apr/23 11:51 AM;yutaka.yasumi;image-2023-04-28-18-51-30-089.png;https://jira.ifao.net/secure/attachment/194594/image-2023-04-28-18-51-30-089.png",,,,,,,,,,,,,,7.0,,,,,,,,,,26/Apr/23 12:00 AM,,2-17414720913,,,Committed,,Configure,,Amadeus,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:yk",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"AMADEUS-C / ama-es-amadeus
+Location: CA",,3 - Medium,YES,,,,Codebusters-PI-7.2,Codebusters-PI-7.3,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"16/May/23 11:15 AM;yutaka.yasumi;From CI-10239806
+Thank you;;;",,,,,,,,,,,
+"Spiegel - Error for ""illegalTypeOfReceipt""",CI-8558,467585,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,yutaka.yasumi,yutaka.yasumi,25/Apr/23 8:10 AM,25/May/23 9:24 AM,06/Jul/23 5:04 PM,25/May/23 9:24 AM,28/Apr/23 12:00 AM,0,,,,,"Hello team.
+
+We received incident the error for ""illegalTypeOfReceipt"".
+
+Receipt type: Entertainment 19%
+
+!image-2023-04-25-15-09-42-527.png|width=742,height=172!
+
+!image-2023-04-25-15-01-14-120.png|width=756,height=366!
+
+Error
+KIBANAlog:
+[https://es.secure.ifao.net/s/ng/app/kibana#/discover?_g=()&_a=(columns:!(logId.message),index:'4b176900-5112-11ed-9b28-fdd4edbd9080',interval:auto,query:(language:lucene,query:error.expense.baseReceipt.illegalTypeOfReceipt),sort:!(logId.time,desc))]
+
+!image-2023-04-25-15-08-31-724.png|width=1245,height=345!
+
+Best regards,
+Yutaka",,askarja,,,,,,,,0,85380,,,,,,,,,,"25/Apr/23 8:01 AM;yutaka.yasumi;image-2023-04-25-15-01-14-120.png;https://jira.ifao.net/secure/attachment/193689/image-2023-04-25-15-01-14-120.png","25/Apr/23 8:08 AM;yutaka.yasumi;image-2023-04-25-15-08-31-724.png;https://jira.ifao.net/secure/attachment/193688/image-2023-04-25-15-08-31-724.png","25/Apr/23 8:09 AM;yutaka.yasumi;image-2023-04-25-15-09-42-527.png;https://jira.ifao.net/secure/attachment/193687/image-2023-04-25-15-09-42-527.png",,,,,,,,,,,,,,,,7.0,,,,,,,,,,25/Apr/23 12:00 AM,,2-17410618383,,,Committed,,Configure,,Spiegel,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:ygc",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"MEGA / Spiegel
+Location; SPIEGEL TV GmbH, Hamburg",,3 - Medium,YES,,,,Codebusters-PI-7.2,Codebusters-PI-7.3,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"25/May/23 9:24 AM;yutaka.yasumi;From CI-10239659
+Thank you;;;",,,,,,,,,,,
+"Continental -  Remove valication rule for ""breakfast out of bill""",CI-8518,465773,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,yutaka.yasumi,yutaka.yasumi,18/Apr/23 12:32 PM,15/May/23 5:54 AM,06/Jul/23 5:04 PM,15/May/23 5:54 AM,21/Apr/23 12:00 AM,0,,,,,"Hello team,
+
+The ""Breakfast out of bill"" limit limit validation rule was removed in CI-7909, but is now valid again.
+If the user enters an amount greater than 11EUR, they will receive an error.
+
+!image-2023-04-18-19-28-54-492.png|width=763,height=297!
+
+Could you please remove the validation rule for ""breakfast out of bill""
+
+Engine
+
+!image-2023-04-18-19-29-58-503.png|width=867,height=265!
+
+!image-2023-04-18-19-30-57-373.png|width=1167,height=407!
+
+Thank you
+
+Best regards,
+Yutaka",,,,,,,,,,,,,,,,,,CI-7909,,,"18/Apr/23 12:28 PM;yutaka.yasumi;image-2023-04-18-19-28-54-492.png;https://jira.ifao.net/secure/attachment/192863/image-2023-04-18-19-28-54-492.png","18/Apr/23 12:29 PM;yutaka.yasumi;image-2023-04-18-19-29-58-503.png;https://jira.ifao.net/secure/attachment/192862/image-2023-04-18-19-29-58-503.png","18/Apr/23 12:30 PM;yutaka.yasumi;image-2023-04-18-19-30-57-373.png;https://jira.ifao.net/secure/attachment/192861/image-2023-04-18-19-30-57-373.png",,,,,,,,,,,,,,,,7.0,,,,,,,,,,18/Apr/23 12:00 AM,,2-17390430053,,,Committed,,Configure,,Continental,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@4293ee87,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pqg:",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Amadeus / ama-de-continental
+Location: All FR",,3 - Medium,YES,,,,Codebusters-PI-7.2,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"15/May/23 5:54 AM;yutaka.yasumi;From CI-10238585
+Thank you;;;",,,,,,,,,,,
+Endress Hauser - Wrong calculation of NetAmount & TaxAmount for company car in XML File,CI-8507,465491,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,yutaka.yasumi,yutaka.yasumi,18/Apr/23 1:18 AM,23/May/23 1:16 AM,06/Jul/23 5:04 PM,23/May/23 1:16 AM,24/Apr/23 12:00 AM,0,escalated,leftoverIsYummy,waitingForDevelopment,,"Hello team,
+
+Customer reported issue the Wrong calculation of NetAmount & TaxAmount for company car in XML File causes 0,01 GBP balance.
+I think that the there is an error of 0.01 GBP due to roundup twice (Tax and net amount).
+Could you please adjust the custome logic.
+
+PDF report
+
+!image-2023-04-18-08-02-36-076.png|width=580,height=156!
+XML file
+!image-2023-04-18-08-07-19-522.png|width=554,height=304!
+
+•    Amount *46,35* (is the gross amount and includes 20% tax rate) 
+•    TaxAmount = 46,35 / (1 + 20%)  * 20% = 7,725 (  rounded up 7,73)
+•    NetAmount = 46,35 - 7,73 = *38.62{color:#de350b} (should be 38,62 not 38,63 ?){color}*
+•    Therefore NetAmount + TaxAmount = *{color:#de350b}46,36{color}* and that’s the problem
+
+Engine
+!image-2023-04-18-08-16-20-469.png|width=638,height=162!
+Best ",,stefanie.schmitt,,,,,,,,0,19020,,,,,,,EXPENG-1192,,,"18/Apr/23 1:18 AM;yutaka.yasumi;559863-20230414095941 (2).txt;https://jira.ifao.net/secure/attachment/192762/559863-20230414095941+%282%29.txt","18/Apr/23 1:18 AM;yutaka.yasumi;Further explanation of the issue (1).docx;https://jira.ifao.net/secure/attachment/192763/Further+explanation+of+the+issue+%281%29.docx","18/Apr/23 1:02 AM;yutaka.yasumi;image-2023-04-18-08-02-36-076.png;https://jira.ifao.net/secure/attachment/192766/image-2023-04-18-08-02-36-076.png","18/Apr/23 1:07 AM;yutaka.yasumi;image-2023-04-18-08-07-19-522.png;https://jira.ifao.net/secure/attachment/192765/image-2023-04-18-08-07-19-522.png","18/Apr/23 1:16 AM;yutaka.yasumi;image-2023-04-18-08-16-20-469.png;https://jira.ifao.net/secure/attachment/192764/image-2023-04-18-08-16-20-469.png",,,,,,,,,,,,,,11.0,,,,,cytric,,,,,18/Apr/23 12:00 AM,,2-17380500133,,,Committed,,Configure,,Endress Hauser,,2023-05-08 14:31:02.193,,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Productive System,Test System,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@3cbe7aaa,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:yam",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Amadeus / ama-ch-eh
+Location: GB",,3 - Medium,YES,,,,Codebusters-PI-7.2,Codebusters-PI-7.3,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"08/May/23 2:31 PM;ddykiert;created Bug for this issue: https://jira.ifao.net/browse/EXPENG-1192;;;","12/May/23 12:11 PM;ddykiert;pushed ticket due to [~ssanz] mail;;;","16/May/23 11:13 AM;yutaka.yasumi;From CI-10239828
+Test is ok!
+Please deoloy it to prod location ({{{}Endress+Hauser Ltd.){}}};;;","23/May/23 1:16 AM;yutaka.yasumi;From CI-10240059
+Thank you;;;",,,,,,,,
+"lcc-smartbooking-ap - EMS error for ""error.expense.reportPhaseErrorOccured""",CI-8477,464753,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,yutaka.yasumi,yutaka.yasumi,13/Apr/23 12:30 PM,08/May/23 2:14 AM,05/Jul/23 1:11 PM,08/May/23 2:14 AM,20/Apr/23 12:00 AM,0,EMS,,,,"Hello tam,
+
+!image-2023-04-13-19-35-15-897.png|width=429,height=72!
+
+We have that role you can access the EMS from the management tab.
+In the EMS you open the ""advanced system settings"" block and add the following setting in the system properties:
+engine.useEMS.active=true
+
+Afterwards your system will use the EMS for calculations.
+
+!image-2023-04-13-19-34-39-476.png!
+
+Best regards,
+Yutaka",,,,,,,,,,,,,,,,,,,,,"13/Apr/23 12:34 PM;yutaka.yasumi;image-2023-04-13-19-34-39-476.png;https://jira.ifao.net/secure/attachment/192369/image-2023-04-13-19-34-39-476.png","13/Apr/23 12:35 PM;yutaka.yasumi;image-2023-04-13-19-35-15-897.png;https://jira.ifao.net/secure/attachment/192371/image-2023-04-13-19-35-15-897.png",,,,,,,,,,,,,,,,,7.0,,,,,,,,,,13/Apr/23 12:00 AM,,2-17376802343,,,Committed,,Configure,,Lufthansa City Center,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1zk71:e",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"World / lcc-smartbooking-ap	
+",,3 - Medium,YES,,,,Codebusters-PI-7.1,Codebusters-PI-7.2,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"08/May/23 2:14 AM;yutaka.yasumi;From CI-10238156
+Thank you ;;;",,,,,,,,,,,
+oebb:fix  receipt mapping ,CI-8471,464652,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Rejected,,nsanchezruiz,nsanchezruiz,13/Apr/23 9:35 AM,12/Jun/23 10:38 AM,06/Jul/23 5:04 PM,08/May/23 3:28 PM,19/Apr/23 12:00 AM,0,Lessons_Learned_BAYANI,,,," 
+
+CURRENT:
+
+The train ticket paid for by the company is mapped to the document type ""public transport"" and as a result to the wrong wage type 9RBZ 
+
+Example: #11075919 CREATED 28.02.23 10:45 CET
+
+log: [https://es.secure.ifao.net/s/ee/goto/fda523b9f19f7f044a9a9f64ae2b3748]
+
+ 
+
+!image-2023-04-13-09-28-22-945.png!
+TARGET:
+ # The train ticket paid for by the company MUST BE  mapped to the document type ""train ticket"" and subsequently to wage type 964B.
+ # The ""Public transport"" document type must not be selectable for train tickets paid for by the company.
+ # this was working correctly in the past so we need :
+
+          a) reason why stopped working
+
+          b) since when stopped working
+
+          c) effective date will be based on above as it should have always worked
+
+ ",,,,,,,,,,,,,,,,ITE-1793,,ITE-1793,,,"13/Apr/23 9:33 AM;nsanchezruiz;11075919 Audit AXOÖ.pdf;https://jira.ifao.net/secure/attachment/192323/11075919+Audit+AXO%C3%96.pdf","13/Apr/23 9:28 AM;nsanchezruiz;image-2023-04-13-09-28-22-945.png;https://jira.ifao.net/secure/attachment/192324/image-2023-04-13-09-28-22-945.png","13/Apr/23 9:43 AM;nsanchezruiz;image-2023-04-13-09-43-29-446.png;https://jira.ifao.net/secure/attachment/192325/image-2023-04-13-09-43-29-446.png",,,,,,,,,,,,,,,,5.0,,,,,,,,,,31/Mar/23 12:00 AM,,2-17336980993,,,Committed,,Configure,,OBB,,2023-05-04 10:53:56.664,,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Productive System,Test System,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@5b3e61d,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:ya7",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"system:oebb
+server:mega
+locations: all",,3 - Medium,YES,,,,Codebusters-PI-7.1,Codebusters-PI-7.2,Codebusters-PI-7.3,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"13/Apr/23 9:43 AM;nsanchezruiz;booking
+
+!image-2023-04-13-09-43-29-446.png!;;;","04/May/23 10:53 AM;ddykiert;To Nuria SANCHEZ RUIZ in null role in CI-10239180
+Hello [~nsanchez] , please create ITE for this, because configuration seems to be okay for me.
+ ;;;",,,,,,,,,,
+Endress Hauser - Incorect Credit postings record,CI-8469,464620,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,yutaka.yasumi,yutaka.yasumi,13/Apr/23 8:22 AM,17/May/23 1:15 PM,06/Jul/23 5:04 PM,17/May/23 1:15 PM,20/Apr/23 12:00 AM,0,,,,,"Hello team,
+
+{color:#ff0000}*Please deploy to a test location of prod first. we can deploy to production location after customer testing.*{color}
+
+Could you please adjust the Credit postings record.
+
+Meal restrictions do not apply as the location is foreign(Germany and Franch). But in the Credit posting record an unknown amount of 10 X 3 EUR is posted.
+So, Credit posting total amount has 114,50 EUR and does not match Debit record. 
+
+In this case, Credit posting total amount should be 84,50 EUR.
+
+If the location is a foreign country, please adjust so that the amount exceeding the limit is not posted to Credit recorded.
+!image-2023-04-13-15-03-33-012.png|width=615,height=360!
+
+IT location custome logic as below
+Meal receipts have the following limits set at Italia location.
+
+Italy domestic:
+Meal Breakfast : 3.5 EUR
+Meal Lunch: 18 EUR
+Meal Dinner: 33 EUR
+
+foreign countries:
+*No limit on Meal types*
+
+{color:#172b4d}{{The problem relates to all this receipt types:}}{color}
+{color:#ff0000}*{{car washing}}*{color}
+{color:#ff0000}*{{Meals (Breakfast)}}*{color}
+{color:#ff0000}*{{Meals (Lunch)}}*{color}
+{color:#ff0000}*{{Meals (Dinner)}}*{color}
+{color:#ff0000}*{{Meals expenses (supplier)- lunch}}*{color}
+{color:#ff0000}*{{Meals expenses (supplier)- dinner}}*{color}
+{color:#ff0000}*{{Meals expenses (customers)}}*{color}
+{color:#ff0000}*{{Business entertainment expenses (customers)}}*{color}
+{color:#ff0000}*{{Business entertainment expenses (suppliers)}}*{color}
+
+!image-2023-04-13-15-14-15-005.png!
+
+Export file:
+{code:java}
+      <PostingRecord>
+        <AccountNumber>BEEC</AccountNumber>
+        <CostUnit></CostUnit>
+        <CostCenter></CostCenter>
+        <Amount>64.00</Amount>
+        <NetAmount>64.00</NetAmount>
+        <TaxRate>0.00</TaxRate>
+        <TaxAmount>0.00</TaxAmount>
+        <TaxRateKey>V0</TaxRateKey>
+        <PostingKey>40</PostingKey>
+        <PostingRecordType>DEBIT</PostingRecordType>
+        <PostingText>Business entertainment events (customers)</PostingText>
+        <ElementID>15544791</ElementID>
+      </PostingRecord>
+      <PostingRecord>
+        <AccountNumber>ERSTA</AccountNumber>
+        <CostUnit></CostUnit>
+        <CostCenter></CostCenter>
+        <Amount>288.00</Amount>
+        <NetAmount>288.00</NetAmount>
+        <TaxRate>0.00</TaxRate>
+        <TaxAmount>0.00</TaxAmount>
+        <TaxRateKey>V0</TaxRateKey>
+        <PostingKey>31</PostingKey>
+        <PostingRecordType>CREDIT</PostingRecordType>
+        <PostingText>Erstattung</PostingText>
+        <ElementID>15544388</ElementID>
+      </PostingRecord>
+      <PostingRecord>
+        <AccountNumber>CARW</AccountNumber>
+        <CostUnit></CostUnit>
+        <CostCenter></CostCenter>
+        <Amount>10.00</Amount>
+        <NetAmount>10.00</NetAmount>
+        <TaxRate>0.00</TaxRate>
+        <TaxAmount>0.00</TaxAmount>
+        <TaxRateKey>V0</TaxRateKey>
+        <PostingKey>50</PostingKey>
+        <PostingRecordType>CREDIT</PostingRecordType>
+        <PostingText>Car washing</PostingText>
+        <ElementID>15544451</ElementID>
+      </PostingRecord>
+      <PostingRecord>
+        <AccountNumber>CARW</AccountNumber>
+        <CostUnit></CostUnit>
+        <CostCenter></CostCenter>
+        <Amount>25.00</Amount>
+        <NetAmount>25.00</NetAmount>
+        <TaxRate>0.00</TaxRate>
+        <TaxAmount>0.00</TaxAmount>
+        <TaxRateKey>V0</TaxRateKey>
+        <PostingKey>40</PostingKey>
+        <PostingRecordType>DEBIT</PostingRecordType>
+        <PostingText>Car washing</PostingText>
+        <ElementID>15544451</ElementID>
+      </PostingRecord>
+      <PostingRecord>
+        <AccountNumber>BECUS</AccountNumber>
+        <CostUnit></CostUnit>
+        <CostCenter></CostCenter>
+        <Amount>10.00</Amount>
+        <NetAmount>10.00</NetAmount>
+        <TaxRate>0.00</TaxRate>
+        <TaxAmount>0.00</TaxAmount>
+        <TaxRateKey>V0</TaxRateKey>
+        <PostingKey>50</PostingKey>
+        <PostingRecordType>CREDIT</PostingRecordType>
+        <PostingText>Meals expenses (customers)</PostingText>
+        <ElementID>15544757</ElementID>
+      </PostingRecord>
+      <PostingRecord>
+        <AccountNumber>BECUS</AccountNumber>
+        <CostUnit></CostUnit>
+        <CostCenter></CostCenter>
+        <Amount>54.00</Amount>
+        <NetAmount>54.00</NetAmount>
+        <TaxRate>0.00</TaxRate>
+        <TaxAmount>0.00</TaxAmount>
+        <TaxRateKey>V0</TaxRateKey>
+        <PostingKey>40</PostingKey>
+        <PostingRecordType>DEBIT</PostingRecordType>
+        <PostingText>Meals expenses (customers)</PostingText>
+        <ElementID>15544757</ElementID>
+      </PostingRecord>
+      <PostingRecord>
+        <AccountNumber>MEALL</AccountNumber>
+        <CostUnit></CostUnit>
+        <CostCenter></CostCenter>
+        <Amount>10.00</Amount>
+        <NetAmount>10.00</NetAmount>
+        <TaxRate>0.00</TaxRate>
+        <TaxAmount>0.00</TaxAmount>
+        <TaxRateKey>V0</TaxRateKey>
+        <PostingKey>50</PostingKey>
+        <PostingRecordType>CREDIT</PostingRecordType>
+        <PostingText>Meals expenses (supplier) - dinner</PostingText>
+        <ElementID>15544746</ElementID>
+      </PostingRecord>
+      <PostingRecord>
+        <AccountNumber>MEALL</AccountNumber>
+        <CostUnit></CostUnit>
+        <CostCenter></CostCenter>
+        <Amount>43.00</Amount>
+        <NetAmount>43.00</NetAmount>
+        <TaxRate>0.00</TaxRate>
+        <TaxAmount>0.00</TaxAmount>
+        <TaxRateKey>V0</TaxRateKey>
+        <PostingKey>40</PostingKey>
+        <PostingRecordType>DEBIT</PostingRecordType>
+        <PostingText>Meals expenses (supplier) - dinner</PostingText>
+        <ElementID>15544746</ElementID>
+      </PostingRecord>
+    </PostingRecords>
+  </ExpenseStatement>
+</Export> {code}
+Custome logic:
+!image-2023-04-13-15-17-00-179.png|width=682,height=311!
+
+!image-2023-04-13-15-20-26-696.png|width=1355,height=608!
+
+Best regards,
+Yutaka",,,,,,,,,,0,15240,,,,,,,CI-7582,,,"13/Apr/23 8:12 AM;yutaka.yasumi;15304476 Test Amount XML Limits (3)-1.pdf;https://jira.ifao.net/secure/attachment/192300/15304476+Test+Amount+XML+Limits+%283%29-1.pdf","13/Apr/23 8:13 AM;yutaka.yasumi;558034-20230411015108.txt;https://jira.ifao.net/secure/attachment/192299/558034-20230411015108.txt","13/Apr/23 8:03 AM;yutaka.yasumi;image-2023-04-13-15-03-33-012.png;https://jira.ifao.net/secure/attachment/192301/image-2023-04-13-15-03-33-012.png","13/Apr/23 8:14 AM;yutaka.yasumi;image-2023-04-13-15-14-15-005.png;https://jira.ifao.net/secure/attachment/192298/image-2023-04-13-15-14-15-005.png","13/Apr/23 8:16 AM;yutaka.yasumi;image-2023-04-13-15-16-53-044.png;https://jira.ifao.net/secure/attachment/192297/image-2023-04-13-15-16-53-044.png","13/Apr/23 8:17 AM;yutaka.yasumi;image-2023-04-13-15-17-00-179.png;https://jira.ifao.net/secure/attachment/192296/image-2023-04-13-15-17-00-179.png","13/Apr/23 8:20 AM;yutaka.yasumi;image-2023-04-13-15-20-26-696.png;https://jira.ifao.net/secure/attachment/192295/image-2023-04-13-15-20-26-696.png","19/Apr/23 9:19 AM;yutaka.yasumi;image-2023-04-19-16-19-27-981.png;https://jira.ifao.net/secure/attachment/193004/image-2023-04-19-16-19-27-981.png","08/May/23 1:27 AM;yutaka.yasumi;image-2023-05-08-08-27-24-329.png;https://jira.ifao.net/secure/attachment/195543/image-2023-05-08-08-27-24-329.png",,,,,,,,,,15.0,,,,,cytric,,,,,13/Apr/23 12:00 AM,,2-17333356333,,,Committed,,Configure,,Endress Hauser,,2023-04-24 14:19:27.931,pjakubiec,,,,Closed,,,,,,,,,,,,,,,,,Productive System,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@10fb3ef9,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:ya6",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Amadeus/ama-ch-eh
+Location: Only IT location",,3 - Medium,YES,,,,Codebusters-PI-7.1,Codebusters-PI-7.2,Codebusters-PI-7.3,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"19/Apr/23 9:19 AM;yutaka.yasumi;From CI-10238045
+Bali is ok!
+Please deploy it to testlocation on prod.
+
+!image-2023-04-19-16-19-27-981.png|width=434,height=278!;;;","24/Apr/23 2:51 AM;yutaka.yasumi;From CI-10238226
+test is ok!
+Please deploy it to prod location.;;;","24/Apr/23 2:19 PM;pwenner;OVcx case has been recovered back to the customer today 24APR. We wait for their feedback or for auto-closure.;;;","08/May/23 1:26 AM;yutaka.yasumi;From CI-10238478
+{{Customer double checked and tested it for both productive locations.}}
+{{For Endress+Hauser Sicestherm S.r.L., Pessano it is fine.}}
+{{But for Endress+Hauser Italia S.p.a, Cernusco not working.}}
+
+{{{}Could you please adjust it to location ""{}}}{{{}Endress+Hauser Italia S.p.a, Cernusco"".{}}}
+{{Thank you in advance.}}
+
+{{!image-2023-05-08-08-27-24-329.png|width=831,height=311!}};;;","17/May/23 1:15 PM;yutaka.yasumi;From CI-10239690
+Thank you;;;",,,,,,,
+cepsa:calculations: validation error if tip included in a receipt,CI-8454,463949,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,nsanchezruiz,nsanchezruiz,10/Apr/23 12:30 PM,08/May/23 1:44 PM,06/Jul/23 5:04 PM,08/May/23 1:44 PM,17/Apr/23 12:00 AM,0,,,,,"according to client for the location, *when a tip is included in a receipt there should be  a validation error and the traveler should not be able to submit the statement.*
+
+According to client should be in place since 2018 but I could not find any rule in Bitbucket for this at all.. :(
+
+example:
+ * #{{{}*{{14148890}}* {}}}{{created 27jan23 20:25 (attached report)}}
+ * log: https://es.secure.ifao.net/s/ee/goto/770cad13263af0d173eea8803c194891
+ * user:JRODRIGUE3
+ * location:ES COMPAÑÍA ESPAÑOLA DE PETRÓLEOS, S.A. (CEPSA), Madrid
+ * tpg:staff
+ * configuration: 03perdiem(dietas)
+ * !image-2023-04-10-12-22-29-192.png!
+
+!image-2023-04-10-12-22-17-947.png!
+
+ 
+h2. target:
+
+can you please ensure this rule is in place correctly?
+
+ 
+
+ ",,,,,,,,,,0,74100,,,,,,,,,,"10/Apr/23 12:25 PM;nsanchezruiz;14148890 Curso Igualdad Sevilla 25 1 2023.pdf;https://jira.ifao.net/secure/attachment/191895/14148890+Curso+Igualdad+Sevilla+25+1+2023.pdf","24/Apr/23 4:24 PM;nsanchezruiz;FW_ ACO-ES CEPSA - RE_ Tips functionality.msg;https://jira.ifao.net/secure/attachment/193645/FW_+ACO-ES+CEPSA+-+RE_+Tips+functionality.msg","10/Apr/23 12:22 PM;nsanchezruiz;image-2023-04-10-12-22-17-947.png;https://jira.ifao.net/secure/attachment/191897/image-2023-04-10-12-22-17-947.png","10/Apr/23 12:22 PM;nsanchezruiz;image-2023-04-10-12-22-29-192.png;https://jira.ifao.net/secure/attachment/191896/image-2023-04-10-12-22-29-192.png","26/Apr/23 2:01 PM;nsanchezruiz;image-2023-04-26-14-01-36-111.png;https://jira.ifao.net/secure/attachment/194006/image-2023-04-26-14-01-36-111.png","26/Apr/23 2:03 PM;nsanchezruiz;image-2023-04-26-14-03-05-618.png;https://jira.ifao.net/secure/attachment/194008/image-2023-04-26-14-03-05-618.png","26/Apr/23 2:27 PM;nsanchezruiz;image-2023-04-26-14-27-47-850.png;https://jira.ifao.net/secure/attachment/194022/image-2023-04-26-14-27-47-850.png","26/Apr/23 2:28 PM;nsanchezruiz;image-2023-04-26-14-28-05-156.png;https://jira.ifao.net/secure/attachment/194021/image-2023-04-26-14-28-05-156.png","26/Apr/23 2:32 PM;nsanchezruiz;image-2023-04-26-14-32-24-910.png;https://jira.ifao.net/secure/attachment/194023/image-2023-04-26-14-32-24-910.png","26/Apr/23 2:39 PM;nsanchezruiz;image-2023-04-26-14-39-02-959.png;https://jira.ifao.net/secure/attachment/194035/image-2023-04-26-14-39-02-959.png","26/Apr/23 2:40 PM;nsanchezruiz;image-2023-04-26-14-40-06-263.png;https://jira.ifao.net/secure/attachment/194034/image-2023-04-26-14-40-06-263.png","26/Apr/23 2:41 PM;nsanchezruiz;image-2023-04-26-14-41-22-132.png;https://jira.ifao.net/secure/attachment/194033/image-2023-04-26-14-41-22-132.png","26/Apr/23 2:43 PM;nsanchezruiz;image-2023-04-26-14-43-09-551.png;https://jira.ifao.net/secure/attachment/194032/image-2023-04-26-14-43-09-551.png","26/Apr/23 2:48 PM;nsanchezruiz;image-2023-04-26-14-48-57-516.png;https://jira.ifao.net/secure/attachment/194031/image-2023-04-26-14-48-57-516.png","26/Apr/23 2:53 PM;nsanchezruiz;image-2023-04-26-14-53-26-332.png;https://jira.ifao.net/secure/attachment/194030/image-2023-04-26-14-53-26-332.png","26/Apr/23 2:33 PM;nsanchezruiz;screenshot-1.png;https://jira.ifao.net/secure/attachment/194026/screenshot-1.png","26/Apr/23 2:35 PM;nsanchezruiz;screenshot-2.png;https://jira.ifao.net/secure/attachment/194027/screenshot-2.png",,12.0,,,,,,,,,,10/Apr/23 12:00 AM,,2-17365297153,,,Committed,,Configure,,CEPSA,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1zk71:4",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"system:ama-es-cepsa
+server:amadeus
+location: ALL ",,3 - Medium,YES,,,,Codebusters-PI-7.1,Codebusters-PI-7.2,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"24/Apr/23 4:26 PM;nsanchezruiz;[~mkuchciak] 
+
+client advised this configutaion is for all locations all configuration keys.
+
+it applies since 2018, see attached email and configuration doc:
+
+https://amadeusworkplace.sharepoint.com/:w:/r/sites/ExpenseDeliveryteam/_layouts/15/Doc.aspx?sourcedoc=%7BDC690877-EE75-4522-B633-1C2FDFA5F36D%7D&file=cytric_Expense_configuration_Cepsa_CO_PE.pptx.docx&action=default&mobileredirect=true&DefaultItemOpen=1
+
+ ;;;","26/Apr/23 2:01 PM;nsanchezruiz;bali
+3dietas
+ !image-2023-04-26-14-01-36-111.png!
+2justified:
+ !image-2023-04-26-14-03-05-618.png|thumbnail! 
+ !image-2023-04-26-14-27-47-850.png|thumbnail! 
+ !image-2023-04-26-14-28-05-156.png|thumbnail! 
+ !image-2023-04-26-14-39-02-959.png|thumbnail! 
+ !image-2023-04-26-14-40-06-263.png|thumbnail! 
+ !image-2023-04-26-14-41-22-132.png|thumbnail! 
+ !image-2023-04-26-14-43-09-551.png|thumbnail! 
+ !image-2023-04-26-14-48-57-516.png|thumbnail! 
+ !image-2023-04-26-14-53-26-332.png|thumbnail! ;;;","26/Apr/23 2:37 PM;nsanchezruiz;bali PT location {color:red}failed:{color} for these receipts
+
+!image-2023-04-26-14-32-24-910.png!
+ !screenshot-1.png|thumbnail! 
+ !screenshot-2.png|thumbnail! ;;;","28/Apr/23 2:55 PM;nsanchezruiz;bali pt  !image-2023-04-28-14-52-50-127.png!;;;",,,,,,,,
+init - unable posted the value to PDF report,CI-8435,463434,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,yutaka.yasumi,yutaka.yasumi,06/Apr/23 2:49 AM,06/Apr/23 10:10 AM,06/Jul/23 5:04 PM,06/Apr/23 10:10 AM,13/Apr/23 12:00 AM,0,,,,,"Hello team,
+
+Customer reported the not posted value to PDF report.
+Could you please adjust the PDF report.
+
+Statement:
+FDF / Sachkosten ID:S115350
+!image-2023-04-06-09-48-00-654.png|width=886,height=374!
+PDF report
+!image-2023-04-06-09-46-59-429.png|width=609,height=311!
+
+Best regards,
+Yutaka",,,,,,,,,,,,,,,,,,,,,"06/Apr/23 2:47 AM;yutaka.yasumi;image-2023-04-06-09-46-59-429.png;https://jira.ifao.net/secure/attachment/191566/image-2023-04-06-09-46-59-429.png","06/Apr/23 2:48 AM;yutaka.yasumi;image-2023-04-06-09-48-00-654.png;https://jira.ifao.net/secure/attachment/191565/image-2023-04-06-09-48-00-654.png",,,,,,,,,,,,,,,,,7.0,,,,,,,,,,06/Apr/23 12:00 AM,,2-17349816793,,,Committed,,Configure,,Init AG,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1zp0u:y",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"WORLD / der-co-init
+Location :  init AG Digitale Kommunikation",,3 - Medium,YES,,,,Codebusters-PI-7.1,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"06/Apr/23 10:10 AM;yutaka.yasumi;From CI-10237163
+Thank you;;;",,,,,,,,,,,
+amadeus: wrong export posting amounts ,CI-8425,462813,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Rejected,,nsanchezruiz,nsanchezruiz,04/Apr/23 2:58 PM,05/Apr/23 11:57 AM,06/Jul/23 5:04 PM,05/Apr/23 11:57 AM,10/Apr/23 12:00 AM,0,,,,,"Dear team
+
+ama-es-amades has reported the following issues:
+
+2-17042052583 (solved) -4jan - *CI-7970* example #13499269 Created 19.12.2022 
+2-17061782163 (solved) -4jan - *CI-7970*  example:  13318761 created 12.12.2022 08:45 13293664 Created 09.12.2022 15:42
+2-17284964093 pending-15mar -{*}CI-8318{*} example 14156747 Created 17.03.2023 03:43
+2-17307684973 pending-22mar -{*}CI-8318{*} example 14084830 Created 08.02.2023 01:15 14156747 Created 17.03.2023 03:43
+2-17329479673 pending -3apr - *CI-8424* example #14186402 Created 24.03.2023 05:44 
+
+issue reported in all above cases:
+
+export amount for total perdiem seems to be duplicated 
+
+ 
+h2. target:
+
+this Ci is opened because we need the following information in regards to above:
+ * What has happened to stop working/What was the problem?
+ * why does it keep happening and it has not been solved when first time it was reported 4jan23?
+ * what actions where taken to avoid recurrence ?as it keeps happening client needs to know 
+ * How can you guarantee it is fixed for good and will not recur?
+
+ 
+
+thank you
+
+ 
+
+ 
+
+ 
+
+ ",,,,,,,,,,,,,,,,,,CI-8424,CI-8318,CI-7970,,,,,,,,,,,,,,,,,,,7.0,,,,,,,,,,04/Apr/23 12:00 AM,,2-17329479673,,,Committed,,Configure,,Amadeus,,2023-04-05 11:38:40.366,,,,,Closed,,,,,,,,,,,,,,,,,N/A,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@4c3736bc,0,,,,,,Hello,,,,,,,,,,,,,"0|i1zp0u:q",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"system:ama-es-amadeus
+server: AMADEUS-C
+locations:all",,3 - Medium,YES,,,,Codebusters-PI-7.1,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"05/Apr/23 11:38 AM;ddykiert;will be fixed with CI-8318;;;","05/Apr/23 11:44 AM;nsanchezruiz;[~dykiert]
+
+i need anser to all above questions
+
+ ;;;","05/Apr/23 11:54 AM;ddykiert;* What has happened to stop working/What was the problem?
+ ** same problem with custom calculation script as reported before
+
+ 
+ * why does it keep happening and it has not been solved when first time it was reported 4jan23?
+ ** Issue was reported for one location and was only fixed within this location. Unfortunately this script was implemented in other locations too but not fixed there
+
+ 
+ * what actions where taken to avoid recurrence ?as it keeps happening client needs to know 
+ ** was fixed for all locations now
+
+ 
+ * How can you guarantee it is fixed for good and will not recur?
+ ** I promise you :D
+
+ ;;;",,,,,,,,,
+Amadeus - Unbalanced lines in export file,CI-8424,462772,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Rejected,,kgostynska,kgostynska,04/Apr/23 1:25 PM,05/Apr/23 1:23 PM,06/Jul/23 5:04 PM,05/Apr/23 1:23 PM,11/Apr/23 12:00 AM,0,,,,,"Hello team,
+
+can I ask you for your assistance?
+Customer reported an issue with unbalanced lines when exporting the file from cytric to SAP. The difference is on the perdiems account (GL 61010000). The correct amount is 98.00 EUR and in the file amount is 168.00 EUR instead. That is why the lines are unbalanced.
+
+Please, see the attachments with pdf report and export file.
+
+Below Kibana log:
+
+[https://es.secure.ifao.net/s/ee/app/kibana#/discover?_g=(refreshInterval:(pause:!t,value:0),time:(from:'2023-03-23T23:00:00.000Z',mode:absolute,to:'2023-03-26T21:59:59.999Z'))&_a=(columns:!(marker,level,message,contextData.correlationId),filters:!(('$state':(store:appState),meta:(alias:!n,disabled:!f,index:'3afe1f90-e0e8-11ec-b748-a7b709a9fb27',key:contextData.expense.expenseStatementId,negate:!f,params:(query:'14186402',type:phrase),type:phrase,value:'14186402'),query:(match:(contextData.expense.expenseStatementId:(query:'14186402',type:phrase))))),index:'3afe1f90-e0e8-11ec-b748-a7b709a9fb27',interval:auto,query:(language:lucene,query:'14186402'),sort:!(timeMillis,desc))]
+
+ 
+
+!image-2023-04-04-13-24-00-591.png|width=595,height=541!
+
+ 
+
+{{ +Cytric Server:+  *{{[""httpsamadeuscytricnet""]}}*}}
+{{ +Cytric System name:+  *{{ama-es-amadeus}}*}}
+{{ +Expense statement ID:+  *{{14186402}}*}}
+{{ +Location of the affected user ID:+  *{{ES - Amadeus IT Group SA (1011)}}*}}
+{{ +Module:+  *{{Expense}}*}}
+{{ +User ID:+  *{{00010386}}*}}
+
+ 
+
+If you need additional information, please let me know.
+
+ 
+
+Thank you in advance!
+
+BR
+Karolina",,,,,,,,,,,,,,,CI-6942,CI-8425,,CI-8318,,,"04/Apr/23 1:21 PM;kgostynska;00010386-14186402-20230327044611 (2).txt;https://jira.ifao.net/secure/attachment/191240/00010386-14186402-20230327044611+%282%29.txt","04/Apr/23 1:21 PM;kgostynska;14186402 Leadership conference (3).pdf;https://jira.ifao.net/secure/attachment/191239/14186402+Leadership+conference+%283%29.pdf","04/Apr/23 1:24 PM;kgostynska;image-2023-04-04-13-24-00-591.png;https://jira.ifao.net/secure/attachment/191238/image-2023-04-04-13-24-00-591.png",,,,,,,,,,,,,,,,5.0,,,,,,,,,,29/Mar/23 12:00 AM,,2-17329479673,,,Committed,,Configure,,Amadeus,,2023-04-05 11:39:35.58,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@a56c8fa7,0,,,,,,Hello,,,,,,,,,,,,,"0|i1zp0u:p",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Amadeus / ama-es-amadeus
+ES - Amadeus IT Group SA",,3 - Medium,YES,,,,Codebusters-PI-7.1,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"05/Apr/23 11:39 AM;ddykiert;will be fixed with CI-8318;;;",,,,,,,,,,,
+VAillant - Change G/L account for TypeOfReceipt.ENTERTAINMENT_MIXED_SUFFIX,CI-8398,461872,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Rejected,,ssanz,ssanz,30/Mar/23 4:52 PM,18/May/23 12:20 PM,06/Jul/23 5:04 PM,18/May/23 12:20 PM,10/Apr/23 12:00 AM,0,,,,,"Dear Team,
+
+Please could you change the ""TypeOfReceipt.ENTERTAINMENT_MIXED_SUFFIX"" G/L account ""78011000"" instead ""623800"" for Vaillant French locations
+
+Thank you.
+
+Best regards,
+
+Sandra
+
+ 
+
++*French Locations:*+ 
+
+!image-2023-03-30-16-50-41-506.png!
+
+!image-2023-03-30-16-46-53-174.png!",,,,,,,,,,0,5160,,,,,,,,,,"30/Mar/23 4:46 PM;ssanz;image-2023-03-30-16-46-53-174.png;https://jira.ifao.net/secure/attachment/190661/image-2023-03-30-16-46-53-174.png","30/Mar/23 4:50 PM;ssanz;image-2023-03-30-16-50-41-506.png;https://jira.ifao.net/secure/attachment/190660/image-2023-03-30-16-50-41-506.png","10/Apr/23 4:13 PM;ssanz;image-2023-04-10-16-13-54-675.png;https://jira.ifao.net/secure/attachment/191941/image-2023-04-10-16-13-54-675.png","14/Apr/23 12:05 PM;ssanz;image-2023-04-14-12-05-03-898.png;https://jira.ifao.net/secure/attachment/192584/image-2023-04-14-12-05-03-898.png","30/Apr/23 11:37 AM;ssanz;image-2023-04-30-11-37-20-597.png;https://jira.ifao.net/secure/attachment/194747/image-2023-04-30-11-37-20-597.png",,,,,,,,,,,,,,14.0,,,,,,,,,,29/Mar/23 12:00 AM,,2-17329762033,,,Committed,,Configure,,Vaillant,,2023-04-19 15:13:25.687,pjakubiec,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Productive System,Test System,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i20pql:y9l",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: amadeus
+System PROD: ama-de-vaillant
+System Staging: ama-de-vaillant-staging
+Location: FR Locations",,3 - Medium,YES,,,,Codebusters-PI-7.1,Codebusters-PI-7.2,Codebusters-PI-7.3,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"10/Apr/23 4:13 PM;ssanz;TEST in BALI NOK.
+
+Expected Acc.No. ""78011000"" and in my example below we still saw the old Acc.No. ""623800""
+
+ES378985
+
+!image-2023-04-10-16-13-54-675.png!;;;","14/Apr/23 12:14 PM;ssanz;TEST Bali ok 
+
+ES379432
+
+ ;;;","19/Apr/23 3:13 PM;pjakubiec;Hello [~ssanz] 
+
+Does Vaillant have staging? Shouldn't it be test location on prod?;;;","30/Apr/23 11:38 AM;ssanz;Hi [~pjakubiec] , OK in test location FR 
+
+Waiting for Customer now
+
+!image-2023-04-30-11-37-20-597.png|width=396,height=213!;;;","05/May/23 7:13 PM;ssanz;still waiting for customer;;;","18/May/23 11:56 AM;ssanz;Hi [~pjakubiec] , please cancel this CI. Customer never reply. Thank you. BR, Sandra;;;",,,,,,
+SEAT:undefined receipt type:please create credit card fee receipt for flight bookings ,CI-8360,459333,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Rejected,,nsanchezruiz,nsanchezruiz,23/Mar/23 2:52 PM,05/Apr/23 9:40 AM,06/Jul/23 5:04 PM,05/Apr/23 9:39 AM,29/Mar/23 12:00 AM,0,waitingForFeedback,,,,"+current:+
+
+for booking flight source receipt is not defined and they get error:
+
+{color:#ff0000}undefined type of receipt{color}
+
+example: {{*{{15185561*}} }}Created 22.03.2023 15:53
+
+(I have now added the receipt manually)
+
+we need credit card fee receipt available for flight booking sources
+
+{{ *{{*}} }}
+
+!image-2023-03-23-14-47-57-690.png!
+
++target:+
+
+please create association for flight  booking  to receipt :flight/aiport tax
+
+effective:as soon as deployed
+
+ 
+
+ 
+
+ ",,pjakubiec,segener,,,,,,,,,,,,,,,,,,"23/Mar/23 2:47 PM;nsanchezruiz;image-2023-03-23-14-47-57-690.png;https://jira.ifao.net/secure/attachment/189726/image-2023-03-23-14-47-57-690.png","30/Mar/23 11:00 AM;nsanchezruiz;image-2023-03-30-11-00-12-228.png;https://jira.ifao.net/secure/attachment/190508/image-2023-03-30-11-00-12-228.png","30/Mar/23 12:33 PM;nsanchezruiz;image-2023-03-30-12-33-16-480.png;https://jira.ifao.net/secure/attachment/190569/image-2023-03-30-12-33-16-480.png","30/Mar/23 12:33 PM;nsanchezruiz;screenshot-1.png;https://jira.ifao.net/secure/attachment/190570/screenshot-1.png",,,,,,,,,,,,,,,5.0,,,,,,,,,,23/Mar/23 12:00 AM,,2-17311799053,,,Committed,,Configure,,Customer not yet listed,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1zln3:",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"system:ama-es-Seat
+server:amadeus
+locations:all
+",,3 - Medium,YES,,,,Codebusters-PI-7.1,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"30/Mar/23 11:00 AM;nsanchezruiz;test !image-2023-03-30-11-00-12-228.png!;;;","30/Mar/23 12:24 PM;nsanchezruiz;[~pjakubiec]  we will need fee receipt for flights created
+
+thank you!;;;","30/Mar/23 12:33 PM;nsanchezruiz;credit card fee for above example:
+
+ !screenshot-1.png|thumbnail! 
+
+ !image-2023-03-30-12-33-16-480.png!
+;;;","05/Apr/23 9:40 AM;nsanchezruiz;client closed case;;;",,,,,,,,
+"lcc-smartbooking-nova / lcc-nova-demo - EMS error for ""error.expense.reportPhaseErrorOccured""",CI-8321,456627,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,yutaka.yasumi,yutaka.yasumi,16/Mar/23 11:21 AM,29/Mar/23 4:30 PM,06/Jul/23 5:04 PM,29/Mar/23 4:29 PM,20/Mar/23 12:00 AM,0,,,,,"Hello team,
+
+Error:
+!image-2023-03-16-19-19-57-320.png!
+
+We have that role you can access the EMS from the management tab.
+In the EMS you open the ""advanced system settings"" block and add the following setting in the system properties:
+engine.useEMS.active=true
+
+Afterwards your system will use the EMS for calculations.
+
+!image-2023-03-16-19-20-21-515.png|width=1069,height=521!
+
+Best regards,
+Yutaka",,yutaka.yasumi,,,,,,,,,,,,,,,,CI-7921,,,"16/Mar/23 11:19 AM;yutaka.yasumi;image-2023-03-16-19-19-57-320.png;https://jira.ifao.net/secure/attachment/188794/image-2023-03-16-19-19-57-320.png","16/Mar/23 11:20 AM;yutaka.yasumi;image-2023-03-16-19-20-21-515.png;https://jira.ifao.net/secure/attachment/188793/image-2023-03-16-19-20-21-515.png",,,,,,,,,,,,,,,,,7.0,,,,,cytric,,,,,16/Mar/23 12:00 AM,,2-17289295763,,,Committed,,Configure,,Lufthansa City Center,,2023-03-29 16:30:30.261,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@729053e,0,,,,,,Hello,,,,,,,,,,,,,"0|i1ycek:l",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"WORLD 
+System: lcc-smartbooking-nova / lcc-nova-demo
+location: All",,3 - Medium,YES,,,,Codebusters-PI-6.4,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"29/Mar/23 4:30 PM;mmaciejczyk;Dear [~aruizrobles].
+
+In system: lcc-smartbooking-nova
+we have successfully calculated the expense statement: #13019285
+In system: lcc-nova-demo
+we have successfully calculated expense statement: #13019336
+
+ 
+
+Wish you lovely afternoon,
+
+Milosz;;;",,,,,,,,,,,
+Amadeus - Incorrect Posting record amount,CI-8318,456512,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,yutaka.yasumi,yutaka.yasumi,16/Mar/23 1:31 AM,19/Apr/23 2:53 PM,06/Jul/23 5:04 PM,19/Apr/23 2:53 PM,20/Mar/23 12:00 AM,0,,,,,"Hello team,
+
+Could you pleaase adjust the Posting record amount.
+
+1. ES: 14084830
+
+Customers reported that the different Exported Per diem values.
+Perdiems should be {color:#de350b}*214.5*{color} (as it is shown in the pdf report which is correct) but appears instead {color:#de350b}*324.50.*
+
+*!image-2023-03-16-09-31-05-851.png|width=1157,height=341!*{color}PDF report:
+!image-2023-03-16-09-26-50-309.png|width=530,height=324!
+
+Export file:
+!image-2023-03-16-09-27-12-031.png|width=719,height=210!
+KIBANA log:
+
+[https://es.secure.ifao.net/s/ee/app/kibana#/discover?_g=()&_a=(columns:!(marker,level,message,contextData.correlationId),index:'3afe1f90-e0e8-11ec-b748-a7b709a9fb27',interval:auto,query:(language:lucene,query:'14084830'),sort:!(timeMillis,desc))]
+
+!image-2023-03-16-09-28-23-103.png!
+
+!image-2023-03-16-09-27-41-854.png|width=588,height=336!
+
+2. ES:14156747
+!image-2023-03-22-21-09-51-133.png|width=1047,height=324!
+
+PDF report:
+!image-2023-03-22-21-11-21-428.png|width=644,height=543!
+
+!image-2023-03-22-21-11-56-086.png|width=608,height=461!
+Export file:
+
+!image-2023-03-22-21-14-06-981.png|width=930,height=197!
+
+KIBANA log:
+[https://es.secure.ifao.net/s/ee/app/kibana#/discover?_g=()&_a=(columns:!(marker,level,message,contextData.correlationId),index:'3afe1f90-e0e8-11ec-b748-a7b709a9fb27',interval:auto,query:(language:lucene,query:'14156747'),sort:!(timeMillis,desc))]
+
+
+!image-2023-03-22-21-16-31-420.png|width=652,height=351!
+
+Best regards,
+Yutaka",,kgostynska,,,,,,,,,,,,,,CI-8424,CI-8425,,,,"16/Mar/23 1:29 AM;yutaka.yasumi;02400089-14084830-20230309035423.txt;https://jira.ifao.net/secure/attachment/188715/02400089-14084830-20230309035423.txt","16/Mar/23 1:29 AM;yutaka.yasumi;14084830 Team Meeting Madrid   Cytric Easy Event.pdf;https://jira.ifao.net/secure/attachment/188716/14084830+Team+Meeting+Madrid+++Cytric+Easy+Event.pdf","16/Mar/23 1:26 AM;yutaka.yasumi;image-2023-03-16-09-26-50-309.png;https://jira.ifao.net/secure/attachment/188720/image-2023-03-16-09-26-50-309.png","16/Mar/23 1:27 AM;yutaka.yasumi;image-2023-03-16-09-27-12-031.png;https://jira.ifao.net/secure/attachment/188719/image-2023-03-16-09-27-12-031.png","16/Mar/23 1:27 AM;yutaka.yasumi;image-2023-03-16-09-27-41-854.png;https://jira.ifao.net/secure/attachment/188718/image-2023-03-16-09-27-41-854.png","16/Mar/23 1:28 AM;yutaka.yasumi;image-2023-03-16-09-28-23-103.png;https://jira.ifao.net/secure/attachment/188717/image-2023-03-16-09-28-23-103.png","16/Mar/23 1:31 AM;yutaka.yasumi;image-2023-03-16-09-31-05-851.png;https://jira.ifao.net/secure/attachment/188714/image-2023-03-16-09-31-05-851.png","22/Mar/23 1:09 PM;yutaka.yasumi;image-2023-03-22-21-09-51-133.png;https://jira.ifao.net/secure/attachment/189565/image-2023-03-22-21-09-51-133.png","22/Mar/23 1:11 PM;yutaka.yasumi;image-2023-03-22-21-11-21-428.png;https://jira.ifao.net/secure/attachment/189566/image-2023-03-22-21-11-21-428.png","22/Mar/23 1:11 PM;yutaka.yasumi;image-2023-03-22-21-11-56-086.png;https://jira.ifao.net/secure/attachment/189567/image-2023-03-22-21-11-56-086.png","22/Mar/23 1:13 PM;yutaka.yasumi;image-2023-03-22-21-13-56-283.png;https://jira.ifao.net/secure/attachment/189568/image-2023-03-22-21-13-56-283.png","22/Mar/23 1:14 PM;yutaka.yasumi;image-2023-03-22-21-14-06-981.png;https://jira.ifao.net/secure/attachment/189569/image-2023-03-22-21-14-06-981.png","22/Mar/23 1:16 PM;yutaka.yasumi;image-2023-03-22-21-16-31-420.png;https://jira.ifao.net/secure/attachment/189570/image-2023-03-22-21-16-31-420.png",,,,,,7.0,,,,,cytric,,,,,16/Mar/23 12:00 AM,,"2-17284964093, 2-17307684973",,,Committed,,Configure,,Amadeus,,2023-04-05 11:55:51.16,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@e1db0524,0,,,,,,Hello,,,,,,,,,,,,,"0|i1ycej:i",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Amadeus / ama-es-amadeus
+NL - Amadeus Benelux N.V (The Netherlands Branch) (1041)
+BE - Amadeus Benelux N.V. (1040)",,3 - Medium,YES,,,,Codebusters-PI-6.4,Codebusters-PI-7.1,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"22/Mar/23 1:17 PM;yutaka.yasumi;Add same issue /ES: {{*{{14156747}}*}};;;","05/Apr/23 11:55 AM;nsanchezruiz;h2. [~dykiert]  {color:#FF0000}please fix this issue in all locations as it keeps recurring in different locations{color}
+
+thank you!!;;;","19/Apr/23 2:53 PM;yutaka.yasumi;From CI-10237211
+Thank you;;;",,,,,,,,,
+"Allianz - Double Budgeting, pdf report remove line ""Mahlzeitenversteuerung über die Gehaltsabrechnung""",CI-8316,456446,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,ssanz,ssanz,15/Mar/23 4:46 PM,14/Apr/23 12:32 PM,06/Jul/23 5:04 PM,14/Apr/23 12:32 PM,22/Mar/23 12:00 AM,0,,,,,"Dear Team,
+
+Currently for the configuration ""Double Budgeting"", when user travels by car and add the kilometers done, they have a ""Payment of tax for meal via payroll"" because after 20km done the amount change to 0,38€ instead 0,30€ per kilometer.
+
+After verification, it appears that this difference is allowed by the German government and it's not taxable.
+
+I did a test in staging and the line ""Mahlzeitenversteuerung über die Gehaltsabrechnung"" (Payment of tax for meal via payroll) is not sent in the export (see attached)
+
+So I assume that it's only shown in the pdf report.
+
+Please could you remove it ?
+
+Thanks for your help.
+
+Best regards,
+
+Sandra",,,,,,,,,,0,4140,,,,,,,,,,"15/Mar/23 4:44 PM;ssanz;287191 test Allianz.pdf;https://jira.ifao.net/secure/attachment/188699/287191+test+Allianz.pdf","15/Mar/23 4:44 PM;ssanz;69340-20230315.xml;https://jira.ifao.net/secure/attachment/188698/69340-20230315.xml","04/Apr/23 9:03 AM;nsanchezruiz;image-2023-04-04-09-03-17-991.png;https://jira.ifao.net/secure/attachment/191137/image-2023-04-04-09-03-17-991.png",,,,,,,,,,,,,,,,11.0,,,,,,,,,,01/Mar/23 12:00 AM,,2-17238572643,,,Committed,,Configure,,Allianz,,2023-04-04 09:03:20.378,,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Productive System,Test System,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1ycej:",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"server: Amadeus 
+System: ama-de-allianz
+Configuration: Double Budgeting",,3 - Medium,YES,,,,Codebusters-PI-6.4,Codebusters-PI-7.1,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"04/Apr/23 9:03 AM;nsanchezruiz;bali
+
+!image-2023-04-04-09-03-17-991.png!;;;",,,,,,,,,,,
+"BCD/LKW: the PDF is missing the note: ""Bitte beachten Sie, dass die gezahlte Kilometererstattung steuerpflichtig ist.""",CI-8303,455701,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,kgostynska,kgostynska,14/Mar/23 9:47 AM,08/May/23 8:18 AM,06/Jul/23 5:04 PM,08/May/23 8:18 AM,21/Mar/23 12:00 AM,0,,,,,"Dear Team,
+
+The customer has made some tests and reported that the PDF report is missing the note: ""Please note that the mileage reimbursement paid is taxable.""/ in German language: ""Bitte beachten Sie, dass die gezahlte Kilometererstattung steuerpflichtig ist.""
+
+I have checked and I found this information in EMS -> Report (advanced)
+In Ressource bundles (.properties) --> (please, see print screens below) and there everything is correct but still this message is not arriving in the PDF report.
+
+Please, check it and fix it if possible.
+
+This has to be done for test locations only: {{{}*{EXPENSE LKW Testing and Test LKW EXPENSE NEW*{}}}}
+
+Thank you in advance!
+Karolina
+
+!image-2023-03-14-09-24-54-272.png|width=699,height=281!
+
+ 
+
+!image-2023-03-14-09-25-24-160.png|width=483,height=556!",,,,,,,,,,0,9720,,,,,,,,,,"14/Mar/23 9:24 AM;kgostynska;image-2023-03-14-09-24-54-272.png;https://jira.ifao.net/secure/attachment/188361/image-2023-03-14-09-24-54-272.png","14/Mar/23 9:25 AM;kgostynska;image-2023-03-14-09-25-24-160.png;https://jira.ifao.net/secure/attachment/188360/image-2023-03-14-09-25-24-160.png",,,,,,,,,,,,,,,,,15.0,,,,,,,,,,08/Mar/23 12:00 AM,,2-15177891213,,,Committed,,Configure,,LKW Walter,,,,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,true,,,,Hello,,,,,,,,,,,,,"0|i1ycel:",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: MEGA System: BCD-AT-LKW
+Location: EXPENSE LKW Testing and/or Test LKW EXPENSE NEW",,3 - Medium,YES,,,,Codebusters-PI-6.4,Codebusters-PI-7.1,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,,,,,,,,,,,,
+TUI - information missing in the export for ES14621435,CI-8277,454229,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,ssanz,ssanz,08/Mar/23 3:09 PM,18/Apr/23 2:15 PM,06/Jul/23 5:04 PM,18/Apr/23 2:15 PM,15/Mar/23 12:00 AM,0,,,,,"Dear Team,
+
+Please could you review the information sent to the Export for TUI for the statement 14621435?
+
+In the posting record ""WAGE"" the cost center, the Tax rate key and the posting key are missing.
+
+Thank you.
+
+Best regards,
+
+Sandra
+
+ 
+
+ES14621435 information missing
+
+!image-2023-03-08-15-05-58-213.png|width=296,height=443!
+
+ 
+
+ES 14399045 information present 
+
+!image-2023-03-08-15-07-26-327.png|width=310,height=331!",,mdevries,,,,,,,,,,,,,,,,,,,"22/Mar/23 2:13 PM;ssanz;TUI 548648-1380740171-TDMR-20230321103853.xml;https://jira.ifao.net/secure/attachment/189592/TUI+548648-1380740171-TDMR-20230321103853.xml","08/Mar/23 3:05 PM;ssanz;image-2023-03-08-15-05-58-213.png;https://jira.ifao.net/secure/attachment/187168/image-2023-03-08-15-05-58-213.png","08/Mar/23 3:07 PM;ssanz;image-2023-03-08-15-07-26-327.png;https://jira.ifao.net/secure/attachment/187167/image-2023-03-08-15-07-26-327.png","22/Mar/23 1:54 PM;ssanz;image-2023-03-22-13-54-47-595.png;https://jira.ifao.net/secure/attachment/189587/image-2023-03-22-13-54-47-595.png","22/Mar/23 1:55 PM;ssanz;image-2023-03-22-13-55-30-240.png;https://jira.ifao.net/secure/attachment/189588/image-2023-03-22-13-55-30-240.png","22/Mar/23 2:08 PM;ssanz;image-2023-03-22-14-08-05-781.png;https://jira.ifao.net/secure/attachment/189591/image-2023-03-22-14-08-05-781.png","23/Mar/23 4:30 PM;ssanz;image-2023-03-23-16-30-23-086.png;https://jira.ifao.net/secure/attachment/189790/image-2023-03-23-16-30-23-086.png",,,,,,,,,,,,11.0,,,,,,,,,,06/Mar/23 12:00 AM,,2-17253230053,,,Committed,,Configure,,TUI AG,,2023-03-14 17:25:02.837,mdevries,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Productive System,Test System,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1zk6y:n",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: Amadeus
+System: ama-de-TUI",,3 - Medium,YES,,,,Codebusters-PI-6.4,Codebusters-PI-7.1,Codebusters-PI-7.2,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"13/Mar/23 2:39 PM;ssanz;Hi, 
+
+Please have also a look in the Posting Key ""Steuerfreie Verpflegungspauschale"" which seems missing as well.
+
+Please could you check all information sent to the TUI export. Thank you. BR, Sandra;;;","14/Mar/23 5:25 PM;mdevries;Hi [~ssanz], due to the missing parts for the professional expenses I asked the engine team how to add the missing values. I let you know then!;;;","22/Mar/23 2:13 PM;ssanz;Hi [~devries] , As talked via chat, I asked to TUI to run a new export to verify if today the WAGE are properly shown. Unfortunately it' snot the case, for some statement WAGE are still not inform.
+
+What I can see all this statement sent have only mileage allowance and the WAGE is missing in the part ""Lohnbuchungen"".
+
+And statements impacted, seems to be related to the location ""DE- TUI GROUP GERMANY"" and division ""DE - TUI Deutschland GmbH (Retail)""[^TUI 548648-1380740171-TDMR-20230321103853.xml] 
+
+!image-2023-03-22-14-08-05-781.png|width=504,height=278!
+
+E.g.:  EXPORT 548648 21.03.2023 at 10:39
+
+14624468
+
+!image-2023-03-22-13-54-47-595.png|width=184,height=292!
+
+14624995
+
+14624483
+
+14861311
+
+ 
+
+Thank you. BR, Sandra;;;","23/Mar/23 4:30 PM;ssanz;Test in BALI #376285 seems still wrong
+
+ 
+
+!image-2023-03-23-16-30-23-086.png|width=531,height=262!;;;","28/Mar/23 12:32 PM;ssanz;TEST done Yesterday in UAT and everything worked properly but today TUI replied us that their test are still wrong in TUI-UAT.
+
+So I did a new test, same than yesterday and indeed the test today shows again the WAGE.
+
+My ES done yesterday 15276071 -> Expense Statement Type: 2 Non Travel Related Expense
+
+Test done by TUI this morning 15286892 -> Expense Statement Type: 2 Non Travel Related Expense -> Wrong
+
+Test done by me right now 15293604  -> Expense Statement Type: 2 Non Travel Related Expense -> Wrong;;;",,,,,,,
+Allianz - Export issue,CI-8273,453848,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,ssanz,ssanz,07/Mar/23 1:31 PM,10/Apr/23 10:50 AM,06/Jul/23 5:04 PM,10/Apr/23 10:50 AM,08/Mar/23 12:00 AM,0,escalated,TOP_Customer,,,"Dear Team,
+
+ 
+
+This CI is related ITE-1655
+
+Please could you analyze the Export script, why it might fail with the error below and fix the error script ?
+
+Related to the export 526331 (10.02.2023 at 03:00) which is still in processing.
+
+ 
+
+Export ""idling"" infinitely 
+
+SAExp:iConf -> JavaScript error of Export script
+
+ 
+
++Root Cause:+
+
+A property ""amount"" is called on a null object (a price or other object). Can be prevented by null checks.
+
+Seems one of the statements contained in the Export has a object as ""null"" where an object is expected.
+
+ 
+
+Thank you.
+
+Best regards,
+
+Sandra",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11.0,,,,,,,,,,14/Feb/23 12:00 AM,,2-17191099333,,,Committed,,Configure,,Allianz,,2023-03-07 14:45:06.879,,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Productive System,Test System,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1ycbv:9",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: amadeus
+System: ama-de-allianz
+Location: DE-Allianz Beratungs- und Vertriebs AG AD",,3 - Medium,YES,,,,Codebusters-PI-6.4,Codebusters-PI-7.1,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"07/Mar/23 2:45 PM;mdevries;The export that stucks refers to ""DE-Allianz Beratungs- und Vertriebs AG AD, Muenchen"";;;","08/Mar/23 11:56 AM;mdevries;The https://jira.ifao.net/browse/ITS-37105 reset the export. It is about the following statements, if some tests would be necessary. 
+13601437, 13660208, 13695790, 13821213, 13828474, 13838674, 13870994, 13903794, 13906902, 13989741, 13997126, 13998577, 14005192, 14010128, 14011839, 14014372, 14019125, 14060769, 14067274, 14097504, 14104389, 14159176, 14167619, 14206080, 14217313, 14235866, 14251237, 14251425, 14257623, 14297975, 14303663, 14303806, 14331116, 14337719, 14337867, 14340338, 14340761, 14340895, 14340939, 14341043, 14344851, 14346238, 14351307, 14354655, 14355618, 14369045, 14370001, 14370806, 14371194, 14373937, 14375047, 14375050, 14376461, 14376720, 14378862, 14379429, 14381641, 14385140, 14385218, 14385330, 14385753, 14386396, 14386934, 14387793, 14387991, 14388362, 14388678, 14388748, 14389313, 14389690, 14389717, 14389726, 14389765, 14389874, 14390288, 14390469, 14390499, 14390866, 14390934, 14391070, 14391184, 14391266, 14391339, 14391358, 14391508, 14391948, 14391954, 14392469, 14392560, 14392618, 14393262, 14393416, 14393488, 14393503, 14393591, 14393613, 14393691, 14394184, 14394934, 14395027, 14395878, 14396130, 14396610, 14396888, 14397058, 14397399, 14397837, 14398070, 14398331, 14398564, 14399410, 14399783, 14399828, 14400020, 14400095, 14400096, 14401299, 14401473, 14401502, 14402612, 14403846, 14405327;;;","16/Mar/23 2:22 PM;ssanz;Hi [~devries], Please close this CI. Thanks. BR, Sandra;;;",,,,,,,,,
+"Allianz - Reminder e-mail sent to users in profile type ""Gastprofile""",CI-8254,452951,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,ssanz,ssanz,03/Mar/23 1:15 PM,05/May/23 7:12 PM,06/Jul/23 5:04 PM,05/May/23 7:12 PM,10/Mar/23 12:00 AM,0,TOP_Customer,,,,"h5. Dear Team,
+In December I opened the CI-7873 because the users with the profile Type ""Gastprofile"" in the locations ""Metafinanz Informationssysteme GmbH Muenchen"" received reminder e-mail while this Profile Type has not Expense.
+Today Allianz complains that almost in all DE locations, users in profile type ""Gastprofile"" receive reminder e-mail.
+Please could you have a look and remove this reminder from all profile type ""Gastprofile"".
+Thank you.
+Best regards,
+Sandra",,,,,,,,,,,,,CIB-1856,ITE-1678,,,,,,,"20/Mar/23 1:18 PM;mkuchciak;Allianz Locations.xlsx;https://jira.ifao.net/secure/attachment/189109/Allianz+Locations.xlsx",,,,,,,,,,,,,,,,,,7.0,,,,,,,,,,28/Feb/23 12:00 AM,,2-17233191903,,,Committed,,Configure,,Allianz,,2023-03-20 12:41:36.341,mkuchciak,,,,Closed,,,,,,,,,,,,,,,,,Productive System,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@d10a130f,0,,,,,,Hello,,,,,,,,,,,,,"0|i1zk6y:i",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: amadeus
+System: ama-de-allianz
+Location: ALl DE",,3 - Medium,YES,,,,Codebusters-PI-6.4,Codebusters-PI-7.1,Codebusters-PI-7.2,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"20/Mar/23 12:41 PM;mkuchciak;Hello [~ssanz],
+
+I have a couple questions which are prerequisites to start working on the CI as it looks like I need to reschedule all email reminders.
+ # I see that all *+VIP Gast+* has also inactive Expense - shall I exclude them from the reminders like for {*}Gastprofile{*}?
+ # According to your file I see some locations where Expense is not active ({*}e.g. DE-Allianz Direct Versicherungs-AG{*}). Can you confirm if the reminders in there should be turned off for all profile types ({*}Mitarbeiter, VIP Gast etc.{*})?
+ # For *ABV and KBV* we should keep all scheduled reminders? For all profile types ({*}e.g. Mitarbeiter, LADA, Süd/Ost etc.{*})?
+
+Thank you!
+
+ ;;;","21/Mar/23 10:30 AM;askarja;Hello [~mkuchciak], here is the customers feedback:
+
+QUESTION:
+
+{{I forward some questions to you that came up from the developer who works on CI-8254:}}
+{{- all ""VIP Gast"" has also inactive Expense - shall they be excluded from the reminders like for Gastprofile?}}
+{{- According to the file attached (Allianz locations) there are some locations where Expense is not active (e.g. DE-Allianz Direct Versicherungs-AG). Can you confirm if the reminders in there should be turned off for all profile types (Mitarbeiter, VIP Gast etc.)?}}
+{{- for ABV and KBV we should keep all scheduled reminders? For all profile types (e.g. Mitarbeiter, LADA, Süd/Ost etc.)?}}
+{{ }}
+----
+{{ANSWER
+
+Customer Update }}
+{{_20/03/2023 14:42:36_}}
+{{update}}
+{{ }}
+{{Dear Annette,}}
+{color:#de350b}{{VIP GAST shall be also excluded from the reminder like Gastprofile.}}{color}
+{color:#de350b}{{For all locations where Expense is not active shal be excluded as well.}}{color}
+{color:#de350b}{{ABV and KBV shall be also exlcuded for reminder emails regarding unassigend expenses.}}{color}
+{{Kind regards}}
+{{Ömür}};;;","21/Mar/23 1:42 PM;askarja;QUESTION:
+
+{{sorry to bother you again, but the developer has one last question:}}
+{{he found that for location }}\{{DE-Adeus Aktienregister - Service GmbH }}{{profile type Gastprofile has active Expense.}}
+{{Is this correct? Or shall he deactivate Expense for this location / profile type?}}
+{{Thank you in advance and best regards,}}
+{{Annette}}
+
+ANSWER:
+
+{{Dear Annette,}}
+{{no problem.}}
+{color:#de350b}{{Pleas also deactivate Expense for DE-Adeus Aktienregister -Service GmbH with profile type ""Gastprofil""}}{color}
+{{Many thanks and kind regards}}
+{{Ömür}};;;",,,,,,,,,
+oeb: hotel paid by company receipt should go to gl account 961z,CI-8192,449794,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Rejected,,nsanchezruiz,nsanchezruiz,20/Feb/23 2:31 PM,14/Mar/23 2:01 PM,06/Jul/23 5:04 PM,22/Feb/23 3:01 PM,02/Mar/23 12:00 AM,0,TOP_Customer,,,,"* paid by company receipt should go to gl account 961Z
+
+!image-2023-02-20-14-29-02-452.png!
+ * we have an example were it has gone to account 861A:
+
+#10158153 Created 22.11.2022 15:35please ensure regardless of tax it always goes to correct gl account  !image-2023-02-20-14-30-13-701.png!
+
+!image-2023-02-20-14-33-31-282.png!
+ 
+
+ 
+ ",,ddykiert,debert,,,,,,,,,,,,,,,,,,"20/Feb/23 2:32 PM;nsanchezruiz;10158153 Hamburg.pdf;https://jira.ifao.net/secure/attachment/184508/10158153+Hamburg.pdf","20/Feb/23 2:29 PM;nsanchezruiz;image-2023-02-20-14-29-02-452.png;https://jira.ifao.net/secure/attachment/184507/image-2023-02-20-14-29-02-452.png","20/Feb/23 2:30 PM;nsanchezruiz;image-2023-02-20-14-30-13-701.png;https://jira.ifao.net/secure/attachment/184506/image-2023-02-20-14-30-13-701.png","20/Feb/23 2:33 PM;nsanchezruiz;image-2023-02-20-14-33-12-318.png;https://jira.ifao.net/secure/attachment/184509/image-2023-02-20-14-33-12-318.png","20/Feb/23 2:33 PM;nsanchezruiz;image-2023-02-20-14-33-31-282.png;https://jira.ifao.net/secure/attachment/184510/image-2023-02-20-14-33-31-282.png",,,,,,,,,,,,,,6.0,,,,,,,,,,20/Feb/23 12:00 AM,,2-17208597543,,,Committed,,Configure,,OBB,,,,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Productive System,Test System,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1y2u1:",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"system:oebb
+server:mega
+locations:Rail Cargo Austria AG
+",,3 - Medium,YES,,,,Codebusters-PI-6.3,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"21/Feb/23 10:00 AM;nsanchezruiz;client notes>
+
+For clarification:
+
+1) If the company pays the costs, then it must be mapped to a wage type starting with 9.
+
+In this example, the company pays for the flight. This means that the correct wage type is 961Z. There are no alternatives with regard to sales tax.
+
+2) If the employee pays the costs, then a wage type starting with 8 must be mapped.
+
+Only here is the wage type selected according to the amount of sales tax.;;;","14/Mar/23 2:01 PM;nsanchezruiz;as per chat with dominy these changes were already implemented so only neede to recalculate ids;;;",,,,,,,,,,
+msg:wron 3 month configuration for taxable amounts,CI-8127,446771,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,nsanchezruiz,nsanchezruiz,07/Feb/23 2:38 PM,27/Feb/23 9:56 AM,06/Jul/23 5:04 PM,27/Feb/23 9:56 AM,14/Feb/23 12:00 AM,0,,,,,"MSG have a radio button for 3 month rule at statement level.
+
+!image-2023-02-07-14-31-45-637.png!
+
+3month rule is based on this logic
+h2. target:
+
+if 3month option: *taxable* is enabled we expect calculations as example
+
+#10684024:
+
+!image-2023-02-07-14-33-30-472.png!
+!image-2023-02-07-14-34-07-241.png!
+h2. current and wrong calculation:
+
+#12586203
+!image-2023-02-07-14-35-27-864.png! 
+!image-2023-02-07-14-35-42-233.png!
+
+ 
+please also advised since when stopped working .
+thank you
+ ",,,,,,,,,,,,,,,,,,,,,"07/Feb/23 2:39 PM;nsanchezruiz;12586203 Test Frühstücksabzug SP MSG WRONG ES.pdf;https://jira.ifao.net/secure/attachment/182712/12586203+Test+Fr%C3%BChst%C3%BCcksabzug+SP+MSG+WRONG+ES.pdf","07/Feb/23 2:39 PM;nsanchezruiz;Beispiel Frühstücksabzug MSG CORRECT EXAMPLE.pdf;https://jira.ifao.net/secure/attachment/182713/Beispiel+Fr%C3%BChst%C3%BCcksabzug+MSG+CORRECT+EXAMPLE.pdf","07/Feb/23 2:31 PM;nsanchezruiz;image-2023-02-07-14-31-45-637.png;https://jira.ifao.net/secure/attachment/182711/image-2023-02-07-14-31-45-637.png","07/Feb/23 2:33 PM;nsanchezruiz;image-2023-02-07-14-33-30-472.png;https://jira.ifao.net/secure/attachment/182710/image-2023-02-07-14-33-30-472.png","07/Feb/23 2:34 PM;nsanchezruiz;image-2023-02-07-14-34-07-241.png;https://jira.ifao.net/secure/attachment/182709/image-2023-02-07-14-34-07-241.png","07/Feb/23 2:35 PM;nsanchezruiz;image-2023-02-07-14-35-27-864.png;https://jira.ifao.net/secure/attachment/182708/image-2023-02-07-14-35-27-864.png","07/Feb/23 2:35 PM;nsanchezruiz;image-2023-02-07-14-35-42-233.png;https://jira.ifao.net/secure/attachment/182707/image-2023-02-07-14-35-42-233.png","20/Feb/23 8:37 AM;nsanchezruiz;image-2023-02-20-08-37-38-182.png;https://jira.ifao.net/secure/attachment/184411/image-2023-02-20-08-37-38-182.png",,,,,,,,,,,11.0,,,,,,,,,,17/Jan/23 12:00 AM,,2-17100276563,,,Committed,,Configure,,msg systems,,,,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Productive System,Test System,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1x6b2:ya",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"system:msg
+server: world
+locations:All",,3 - Medium,YES,,,,Codebusters-PI-6.3,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"07/Feb/23 2:39 PM;nsanchezruiz;attached pdf reports:
+ * correct
+ * wrong;;;","20/Feb/23 8:37 AM;nsanchezruiz;BALI
+
+!image-2023-02-20-08-37-38-182.png!;;;","22/Feb/23 8:38 AM;nsanchezruiz;waiting final fix in location;;;",,,,,,,,,
+man: wrong code in export file for meal deductions,CI-8030,442598,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,nsanchezruiz,nsanchezruiz,19/Jan/23 1:03 PM,22/Feb/23 8:37 AM,06/Jul/23 5:04 PM,22/Feb/23 8:37 AM,20/Jan/23 12:00 AM,0,,,,,"meal deduction code is either wrong in the export file or missing
+
+examples:
+
+·7977605
+
+!image-2023-01-19-12-59-05-604.png!
+·8351504
+
+!image-2023-01-19-12-59-54-506.png!
+
+correct codes:
+ * 619 National allowances with overnight stay
+ * 621 National allowances without overnight stay
+ * 620 International allowances with overnight stay
+ * 622 International allowances without overnight stay",,segener,,,,,,,,,,,,,,,,,,,"19/Jan/23 12:51 PM;nsanchezruiz;7977605 IAA Hannover.pdf;https://jira.ifao.net/secure/attachment/180492/7977605+IAA+Hannover.pdf","19/Jan/23 12:51 PM;nsanchezruiz;8351504 07 11 2022 - AC Hotel Murcia, AC Hotel Murcia - OVCAWJ.pdf;https://jira.ifao.net/secure/attachment/180493/8351504+07+11+2022+-+AC+Hotel+Murcia%2C+AC+Hotel+Murcia+-+OVCAWJ.pdf","19/Jan/23 12:50 PM;nsanchezruiz;Incidencia dieta internacional 442537-2022-10-19_0925.xlsx;https://jira.ifao.net/secure/attachment/180494/Incidencia+dieta+internacional+442537-2022-10-19_0925.xlsx","19/Jan/23 12:59 PM;nsanchezruiz;image-2023-01-19-12-59-05-604.png;https://jira.ifao.net/secure/attachment/180491/image-2023-01-19-12-59-05-604.png","19/Jan/23 12:59 PM;nsanchezruiz;image-2023-01-19-12-59-54-506.png;https://jira.ifao.net/secure/attachment/180490/image-2023-01-19-12-59-54-506.png","23/Jan/23 12:37 PM;nsanchezruiz;image-2023-01-23-12-37-48-777.png;https://jira.ifao.net/secure/attachment/180784/image-2023-01-23-12-37-48-777.png","23/Jan/23 4:25 PM;nsanchezruiz;image-2023-01-23-16-25-17-288.png;https://jira.ifao.net/secure/attachment/180841/image-2023-01-23-16-25-17-288.png","23/Jan/23 4:25 PM;nsanchezruiz;image-2023-01-23-16-25-32-540.png;https://jira.ifao.net/secure/attachment/180842/image-2023-01-23-16-25-32-540.png","23/Jan/23 4:25 PM;nsanchezruiz;image-2023-01-23-16-25-56-093.png;https://jira.ifao.net/secure/attachment/180843/image-2023-01-23-16-25-56-093.png","23/Jan/23 4:27 PM;nsanchezruiz;image-2023-01-23-16-27-18-498.png;https://jira.ifao.net/secure/attachment/180844/image-2023-01-23-16-27-18-498.png","24/Jan/23 1:49 PM;nsanchezruiz;image-2023-01-24-13-49-23-351.png;https://jira.ifao.net/secure/attachment/180953/image-2023-01-24-13-49-23-351.png","06/Feb/23 3:53 PM;nsanchezruiz;test 6feb bali.csv;https://jira.ifao.net/secure/attachment/182498/test+6feb+bali.csv","08/Feb/23 8:39 AM;nsanchezruiz;test bali man-es 7feb.csv;https://jira.ifao.net/secure/attachment/182832/test+bali+man-es+7feb.csv",,,,,,23.0,,,,,,,,,,19/Jan/23 12:00 AM,,2-17112715093,,,Committed,,Configure,,MAN,,2023-02-06 10:12:28.106,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1x6b0:g",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"system:man-es
+server:travel
+locations:all",,3 - Medium,YES,,,,Codebusters-PI-6.2,Codebusters-PI-6.3,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"19/Jan/23 1:08 PM;nsanchezruiz;attached all files + reports
+
+ ;;;","20/Jan/23 2:29 PM;nsanchezruiz;client wants to know when and why this stopped working, thanks!
+
+ ;;;","23/Jan/23 12:08 PM;nsanchezruiz;[~dykiert]  kilometers without itinerary Code 623 ;;;","23/Jan/23 12:37 PM;nsanchezruiz;unable to test bali all es are stuck forever !image-2023-01-23-12-37-48-777.png!;;;","23/Jan/23 4:27 PM;nsanchezruiz;bali
+
+!image-2023-01-23-16-25-17-288.png!!image-2023-01-23-16-25-32-540.png!
+
+!image-2023-01-23-16-27-18-498.png!!image-2023-01-23-16-25-56-093.png!;;;","24/Jan/23 1:49 PM;nsanchezruiz;bali !image-2023-01-24-13-49-23-351.png!;;;","27/Jan/23 2:35 PM;nsanchezruiz;notes: stopped working when perdiem where updated last time(subsistence perdiem) so logic has to be changed to avoid future issues;;;","30/Jan/23 1:27 PM;nsanchezruiz;[~dykiert] 
+
+ 
+
+overnight stay for client is that traveler spends the night in the ES
+
+example:
+
+ 
+
+1feb 0900-2feb 1200
+
+overnight stay
+
+ 
+
+1feb 0900-2300 / 2feb 0900-23
+
+no overnight stay because itinerary is broken (must spend the night)
+
+ 
+
+thank you;;;","31/Jan/23 12:24 PM;nsanchezruiz;[~dykiert] 
+
+example:
+
+ 
+
+2 Feb. with overnight stay 619
+3 Feb without overnight stay 621
+The trip is a 2-day trip with one overnight stay, so the first day is a per diem with overnight stay (619) and the return day is a per diem without overnight stay (621). 
+
+It must be taken into account that with overnight stay it has to be until 0:00 or full day and,  Without overnight stay until 23:55;;;","02/Feb/23 12:03 PM;nsanchezruiz;[~dykiert]  can u tell me an aprox of when our last issue will be solved??
+
+thanks!;;;","06/Feb/23 10:12 AM;ddykiert;Hello [~nsanchez] , I will try to fix today or tomorrow;;;","08/Feb/23 8:39 AM;nsanchezruiz;bali test attached today;;;"
+der-co-innit:not meal selection validation for itinerary/CI-7541,CI-7972,439958,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Rejected,,nsanchezruiz,nsanchezruiz,09/Jan/23 12:42 PM,26/Jan/23 9:58 AM,06/Jul/23 5:04 PM,26/Jan/23 9:58 AM,12/Jan/23 12:00 AM,0,CLBoard_Rejected,,,,"HI
+
+ client wants set up as in CI-7541 and currently is not correct for them: we have a check box for ´´no meal´´ instead of being within itinerary
+
+ 
+h2. target:
+
+1-: ´´no meal´´ selection in a line with the other meals within itinerary:
+
+!image-2023-01-09-12-39-00-563.png!
+2-if not meals are selected an error should be returned and should not be able to calculate/submit:
+
+DE: Bitte bestätigen Sie im Reiseverlauf ob Sie Mahlzeiten erhalten haben.
+
+EN: Please confirm in your itinerary by adjusting the check boxes, if you have either received meals or not.
+
+3- ensure a rule is in place that you can not select no meal in combination with a meal on the same day.
+
+{color:#de350b}Is this possible? I have been advised  is custom logic and client was advised by implementer this is possible {color}",,nsanchezruiz,,,,,,,,,,,,,,,,CI-7917,CI-7541,,"09/Jan/23 12:39 PM;nsanchezruiz;image-2023-01-09-12-39-00-563.png;https://jira.ifao.net/secure/attachment/178817/image-2023-01-09-12-39-00-563.png",,,,,,,,,,,,,,,,,,9.0,,,,,,,,,,16/Jan/23 12:00 AM,,2-16973773143,,,Committed,,Configure,True,DER,,2023-01-18 06:47:17.375,ddykiert,,,,Closed,,,,,,,,,,,,,,,,,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@2833d406,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzztyzzzzzw",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"system:der-co-init
+server:world
+locations:all",,3 - Medium,YES,,,,Codebusters-PI-6.2,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"18/Jan/23 6:47 AM;ddykiert;Hello [~nsanchez] , this ticket is related to CI-7917.
+
+This checkbox that you haven't received any meals does not belong to the meals This is not a correct setup, therefore our validator was not working unfortunately. Before we did this with custom scripts but this has to be requested by CL Board.
+
+Thats why this chexckbox moved to itinerary section with the related ticket.;;;","25/Jan/23 5:47 PM;agheorghe;Hi [~nsanchez]  this is not possible, custom logic is not accepted. the only solution accepted is the one with the FDF check box which is already implemented
+
+we cannot add it as meal type as is not a good practice and no longer accepted
+
+Please inform the customer that the other solution is no longer supported by our tool 
+
+Thanks;;;","26/Jan/23 9:22 AM;nsanchezruiz;thanks!!!!!;;;",,,,,,,,,
+HeidelbergCement - Converted amount is not delivered in the export,CI-7940,438429,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,ssanz,ssanz,30/Dec/22 10:21 AM,17/Feb/23 8:26 AM,05/Jul/23 9:59 AM,17/Feb/23 8:26 AM,06/Jan/23 12:00 AM,0,,,,,"Dear Team,
+
+Heidelberg Cement complain that in their export the converted amount is not delivered.
+
+I asked to ITE-1490 and the root cause is the custom scripted posting record generator. There is a bug in the script for the handling of present receipts. 
+
+Please fix the script (use converted amount/add the exchange rate to the used amount).
+
+Thank you.
+
+Best regards,
+
+Sandra
+
+ 
+
+!image-2022-12-30-10-20-01-899.png|width=1019,height=313!",,,,,,,,,,,,,,,,,,,,,"30/Dec/22 10:20 AM;ssanz;image-2022-12-30-10-20-01-899.png;https://jira.ifao.net/secure/attachment/177974/image-2022-12-30-10-20-01-899.png",,,,,,,,,,,,,,,,,,11.0,,,,,,,,,,09/Dec/22 12:00 AM,,2-16941809373,,,Committed,,Configure,,Heidelberg Cement,,,,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Productive System,Test System,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzztyzzzr",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server MEGA
+System heidelbergcement
+",,3 - Medium,YES,,,,Codebusters-PI-6.1,Codebusters-PI-6.2,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,,,,,,,,,,,,
+ProcuRX-Jifiti - Invalid target currency of exchange rate,CI-7932,438228,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Rejected,,nsanchezruiz,nsanchezruiz,27/Dec/22 2:47 PM,27/Dec/22 2:52 PM,06/Jul/23 4:59 PM,27/Dec/22 2:52 PM,03/Jan/23 12:00 AM,0,EMS,,,,"Could you please adjust the ""expense.currency""
+h2. current issue:
+
+Customer get the error for ""{*}Invalid target currency of exchange rate""{*}
+I found the past same EMS issue case. ITE-882/CI-7777
+
+The ""home currency"" is always determined by
+
+1) the currency in the TMS of the location of the user (see screenshot below) 
+2) the currency in the EMS/Engine configuration from the statutory properties settings (Could not check cause of missing Access/EMS Superadmin role)
+
+If 1) and 2) mismatch usually the observed error is shown.
+
+!image-2022-12-27-14-46-16-611.png!
+
+Example:
+#10109325 Created 17NOV22 22:21
+user: *nick.kappler@jifiti.com*
+*location: JIFITI USA, Columbus*
+ 
+ 
+h2. target:
+ # please fix issue
+ # please advise why we get error if it was supposed to be fixed with ci-7777",,,,,,,,,,,,,,,,,,CI-7777,,,"27/Dec/22 2:41 PM;nsanchezruiz;image-2022-12-27-14-41-39-209.png;https://jira.ifao.net/secure/attachment/177789/image-2022-12-27-14-41-39-209.png","27/Dec/22 2:46 PM;nsanchezruiz;image-2022-12-27-14-46-16-611.png;https://jira.ifao.net/secure/attachment/177788/image-2022-12-27-14-46-16-611.png",,,,,,,,,,,,,,,,,5.0,,,,,,,,,,19/Dec/22 12:00 AM,,2-16983607153,,,Committed,,Configure,,ProcurX,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@1e36f9ee,0,,,,,,Hello,,,,,,,,,,,,,"0|i1w5bz:",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"MEGA / ProcuRX-Jifiti
+Location: all",,3 - Medium,YES,,,,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"27/Dec/22 2:52 PM;nsanchezruiz;client requested closure;;;",,,,,,,,,,,
+EH: reminder emails update set up on dates/ITE-1484,CI-7930,438212,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,nsanchezruiz,nsanchezruiz,27/Dec/22 11:02 AM,04/Jan/23 10:31 AM,06/Jul/23 5:04 PM,04/Jan/23 10:31 AM,03/Jan/23 12:00 AM,0,,,,,"Please correct date for set up email reminders as per ITE-1484
+
+cut off date parameter in the Jobs application on the server was presented in a wrong format. Server expects ""dd/MM/yyyy"" - configured is ""dd-MM-yyyy"". This is set in all location level Jobs from EH (>10)
+
+!_SA_Error from all jobs unsettled trip reminder EH.png|thumbnail!
+
+Fix the set up of the jobs (all of them )
+
++*Follow up:*+
+
+Create task to fix the Jobs that are set up on the Amadeus env-a server for EH.
+
+------------
+
+original set up jobs:
+
+CI-7677
+CI-6503",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.0,,,,,,,,,,21/Dec/22 12:00 AM,,2-16993905273,,,Committed,,Configure,,Endress Hauser,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzztyzzw",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"system:  ama-ch-eh
+server:amadeus
+locations:all
+",,3 - Medium,YES,,,,Codebusters-PI-6.1,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,,,,,,,,,,,,
+EH:increase custom script size limitation/ITE-1475,CI-7929,438078,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Rejected,,nsanchezruiz,nsanchezruiz,23/Dec/22 10:06 AM,27/Dec/22 10:49 AM,06/Jul/23 5:04 PM,27/Dec/22 10:49 AM,03/Jan/23 12:00 AM,0,,,,,"dear team as per ITE-1475 please :
+code into the custom script a size limitation, for warning messages
+
+ref:
+
++*ssue as reported:*+
+
+Generic error on a specific statement during calculate action
+
++*Labels:*+
+
+SAExp:iConf - the statement is inoperable by invalid configuration
+
++*Root Cause:*+
+
+Multiple warning fields are stored in this statement wit too-large-content. This specifc case resembles ITE-1178. A field non-existing in ce-core is returned by the engine. Thus it is stored as Link. Links have a size limit in the Database smaller than the content:
+
+!_SA_NG Error_Link too long.png|thumbnail!
+
+Above the corresponding NG error.
+
+Here is the Engine calculation response: [^13181003_response.xml]
+
+In short - the calculate is functioning, but ce-core is not able to store the result, cause the result contains too many characters for the link.
+
+The issue is caused by changing the configuration of the warnings FDF retrospectively during the lifetime of this statement.
+ ",,,,,,,,,,,,,,,,,,ITE-1475,,,,,,,,,,,,,,,,,,,,,5.0,,,,,,,,,,19/Dec/22 12:00 AM,,2-16982951893,,,Committed,,Configure,,Endress Hauser,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@6081cf41,0,,,,,,Hello,,,,,,,,,,,,,"0|i1w4en:",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"system:ama-ch-eh
+server:amadeus
+locations:all",,3 - Medium,YES,,,,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"27/Dec/22 10:49 AM;nsanchezruiz;client:
+
+hank you for your feedback. This is really strange and unfortunately I don't know exactly what you mean. 
+Regarding the warning field, we already had 2 or more tickets in the past and also had the character limit of this field changed from 240 characters to 1500 characters. ( for e.g. 2-16673277933 or 2-16382386753) I have now informed the affected user that this expense statement is unfortunately broken and can not be repaired. He will create the expense statement completely new and deletes the broken one. 
+I hope that in the future similar cases due to the same backgrounds do not occur again. This is depending on the enormous effort for the user. ;;;",,,,,,,,,,,
+bcd-oge-de - Meal Allowance wrong calculate with 3MR,CI-7927,437936,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,ssanz,ssanz,22/Dec/22 3:16 PM,17/Jan/23 4:00 PM,06/Jul/23 5:04 PM,17/Jan/23 4:00 PM,29/Dec/22 12:00 AM,0,,,,,"Dear Team,
+
+It seems that something change in the 3 month rule calculation for the meals allowance.
+
+Normally we should have 1,87 for Breakfast and Lunch and Dinner around 3,50€ but today is calculate as if there is not 3MR.
+
+Please could you fix?
+
+Thank you.
+
+Best regards,
+
+Sandra
+
+ 
+
+!image-2022-12-22-15-15-40-594.png!",,,,,,,,,,,,,,,,,,,,,"22/Dec/22 3:15 PM;ssanz;image-2022-12-22-15-15-40-594.png;https://jira.ifao.net/secure/attachment/177528/image-2022-12-22-15-15-40-594.png","03/Jan/23 4:56 PM;nsanchezruiz;screenshot-1.png;https://jira.ifao.net/secure/attachment/178212/screenshot-1.png",,,,,,,,,,,,,,,,,11.0,,,,,,,,,,16/Dec/22 12:00 AM,,2-16974151823,,,Committed,,Configure,,Numiga,,2023-01-03 16:56:17.866,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzx5oki",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"server: amadeus
+system: ama-bcd-oge-de",,3 - Medium,YES,,,,Codebusters-PI-6.1,,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"03/Jan/23 4:56 PM;nsanchezruiz; !screenshot-1.png|thumbnail! ;;;",,,,,,,,,,,
+Porsche - Mandatory Address missing in Location (itinerary),CI-7901,437144,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Rejected,,ssanz,ssanz,19/Dec/22 5:10 PM,12/Jan/23 2:01 PM,06/Jul/23 5:04 PM,12/Jan/23 2:01 PM,26/Dec/22 12:00 AM,0,escalated,TOP_Customer,,,"Dear Team,
+
+Please could you verify and fixed the following issue? Since the new release the address is not shown any more in the Location while this is mandatory.
+
+e.g.: 8904710
+
+Thank you.
+
+Best regards,
+
+Sandra
+
+!image-2022-12-19-17-11-36-233.png|width=530,height=363!
+
+ 
+
+!image-2022-12-19-17-11-47-612.png|width=546,height=320!
+
+!image-2022-12-19-17-12-00-667.png|width=564,height=232!",,debert,segener,,,,,,,,,,,,,,,,,,"19/Dec/22 5:11 PM;ssanz;image-2022-12-19-17-11-25-597.png;https://jira.ifao.net/secure/attachment/177065/image-2022-12-19-17-11-25-597.png","19/Dec/22 5:11 PM;ssanz;image-2022-12-19-17-11-36-233.png;https://jira.ifao.net/secure/attachment/177066/image-2022-12-19-17-11-36-233.png","19/Dec/22 5:11 PM;ssanz;image-2022-12-19-17-11-47-612.png;https://jira.ifao.net/secure/attachment/177067/image-2022-12-19-17-11-47-612.png","19/Dec/22 5:12 PM;ssanz;image-2022-12-19-17-12-00-667.png;https://jira.ifao.net/secure/attachment/177068/image-2022-12-19-17-12-00-667.png","03/Jan/23 3:12 PM;mstaszek;image-2023-01-03-15-12-23-276.png;https://jira.ifao.net/secure/attachment/178175/image-2023-01-03-15-12-23-276.png","03/Jan/23 3:58 PM;mstaszek;image-2023-01-03-15-58-09-578.png;https://jira.ifao.net/secure/attachment/178188/image-2023-01-03-15-58-09-578.png",,,,,,,,,,,,,6.0,,,,,,,,,,12/Dec/22 12:00 AM,,2-16949445913,,,Committed,,Configure,,Porsche,,2023-01-03 15:13:08.192,,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Productive System,Test System,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzztwy",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"server Travel
+system Porsche",,3 - Medium,YES,,,,Codebusters-PI-6.1,Codebusters-PI-6.2,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"03/Jan/23 3:13 PM;mstaszek;Hello [~ssanz] :)
+
+There was no change in settings on expense side.
+All configurations has Corporate Layer set to true.
+
+!image-2023-01-03-15-12-23-276.png!
+
+This should work as designed.
+
+Thank you!;;;","03/Jan/23 4:01 PM;mstaszek;I checked on production
+!image-2023-01-03-15-58-09-578.png!
+
+
+It seems it works.
+
+Please confirm with customer if there is still any issue with that maybe in some specific location.
+
+I checked on 2 and ti was OK.
+
+Thank you!;;;",,,,,,,,,,
+osram:correct export configuration/ITE-1458,CI-7887,436609,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,nsanchezruiz,nsanchezruiz,16/Dec/22 2:40 PM,02/Jan/23 8:59 AM,06/Jul/23 5:04 PM,02/Jan/23 8:59 AM,21/Dec/22 12:00 AM,0,,,,,"as described on ITE-1458
+
+please fix configuration:
+
+ 
+
+Java Script error in the customer specific script.
+
+The function getFFN() is undefined.
+
+!image-2022-12-16-14-38-33-558.png!
+
+The function needs to be defined in all configs of Osram. Please see above an example where the function is called without being ever defined in the line script.
+
+Define the function getFFN() before calling it in the Export script (like in other Ostram line scripts) in *all* custom scripts of Osram/Ledvance",,,,,,,,,,,,,,,,,,ITE-1494,ITE-1458,,"16/Dec/22 2:38 PM;nsanchezruiz;image-2022-12-16-14-38-33-558.png;https://jira.ifao.net/secure/attachment/176881/image-2022-12-16-14-38-33-558.png",,,,,,,,,,,,,,,,,,9.0,,,,,,,,,,09/Dec/22 12:00 AM,,2-16941572953,,,Committed,,Configure,,Osram,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@22948642,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzztti",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"system: osram-international
+server:mega
+location:ams offer gmbh",,3 - Medium,YES,,,,Codebusters-PI5.4,Codebusters-PI-6.1,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"16/Dec/22 2:40 PM;nsanchezruiz;unable toc heck location as cam is unavailable for meg rights;;;",,,,,,,,,,,
+oebb:wrong cost type ,CI-7885,436508,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,nsanchezruiz,nsanchezruiz,16/Dec/22 1:35 PM,15/Mar/23 11:05 AM,06/Jul/23 5:04 PM,21/Dec/22 1:51 PM,22/Dec/22 12:00 AM,0,,,,,"Current: receipt Credit card fee paid by company, is mapped to LOA 864R 
+
+ SHOULD: be mapped to the cost type LOA 964Z 
+
+ Valid from: Retroactive from the beginning.
+
+example:
+
+Cytric Expense ID: 8091122 generated on 04/20/2022 
+
+ ",,,,,,,,,,,,,,,,,,CI-7375,,,"16/Dec/22 1:33 PM;nsanchezruiz;HRDRM-2429 8091122.pdf;https://jira.ifao.net/secure/attachment/176871/HRDRM-2429+8091122.pdf","20/Dec/22 3:06 PM;nsanchezruiz;image-2022-12-20-15-06-25-503.png;https://jira.ifao.net/secure/attachment/177142/image-2022-12-20-15-06-25-503.png",,,,,,,,,,,,,,,,,9.0,,,,,,,,,,05/Dec/22 12:00 AM,,2-16918767993,,,Committed,,Configure,,OBB,,2022-12-20 13:12:43.865,,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Productive System,Test System,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@99981aa,0,,true,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzztsi",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"system:oebb
+server:mega
+location: ÖBB-Technisches Services GmbH
+",,3 - Medium,YES,,,,Codebusters-PI5.4,Codebusters-PI-6.1,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"20/Dec/22 1:12 PM;mkuchciak;Hey [~nsanchez],
+
+This ticket is related to CI-7375. Prod is not ready yet. Dominik D. is waiting for confirmation from OEBB to move all to PROD. Therefore I made changes only on Bali and Staging. And correct GL a/c will be moved to PROD will Dominik's changes.;;;","20/Dec/22 3:06 PM;nsanchezruiz;unable to test in bali due to validator: !image-2022-12-20-15-06-25-503.png! i cannot chose> pbc;;;","20/Dec/22 3:43 PM;nsanchezruiz;waiting  for https://jira.ifao.net/browse/CI-7375;;;","21/Dec/22 1:39 PM;nsanchezruiz;advised only in staging
+
+[~mkuchciak]  do not pass into prd until client sends auth 
+
+thanks;;;","21/Dec/22 1:50 PM;nsanchezruiz;in prd will be on ci-7375;;;",,,,,,,
+bentley: Type of receipt is missing error.expense.200017/ITE-1446,CI-7865,435564,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,nsanchezruiz,nsanchezruiz,14/Dec/22 11:30 AM,21/Dec/22 9:17 AM,06/Jul/23 5:04 PM,21/Dec/22 9:17 AM,20/Dec/22 12:00 AM,0,,,,,"as per ite-1446  please adapt configuration sob receipt is available
+
+there is no Credit Card Fee configured in the system. Neither the receipt type nor the tax rates.
+
+example: #8527268
+
+!image-2022-12-14-11-28-19-550.png!!image-2022-12-14-11-28-36-894.png!
+
+ ",,,,,,,,,,,,,,,,,,ITE-1446,,,"14/Dec/22 11:28 AM;nsanchezruiz;image-2022-12-14-11-28-19-550.png;https://jira.ifao.net/secure/attachment/176501/image-2022-12-14-11-28-19-550.png","14/Dec/22 11:28 AM;nsanchezruiz;image-2022-12-14-11-28-36-894.png;https://jira.ifao.net/secure/attachment/176500/image-2022-12-14-11-28-36-894.png",,,,,,,,,,,,,,,,,9.0,,,,,,,,,,29/Nov/22 12:00 AM,,2-16894596763,,,Committed,,Configure,,Bentley,,,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@2b4809e7,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzz4",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"system: https://travel.cytric.net/ibe/cc/?system=volkswagen-bentley
+server:travel
+location:all",,3 - Medium,YES,,,,Codebusters-PI5.4,Codebusters-PI-6.1,,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"14/Dec/22 11:45 AM;nsanchezruiz;is urgent bcs otherwise flight Es cannot be presented;;;",,,,,,,,,,,
+AUDI - Wrong statements calculation,CI-7861,435312,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,ssanz,ssanz,13/Dec/22 3:15 PM,01/Mar/23 3:56 PM,06/Jul/23 5:04 PM,01/Mar/23 3:56 PM,20/Dec/22 12:00 AM,0,leftoverIsYummy,waitingForFeedback,,,"Dear Team,
+
+Following the ITE-1289, it seems that the reimbursment amount is not properly calculated.
+
+e.g.: 7799370
+
+ 
+
+!image-2022-12-13-15-13-04-812.png|width=404,height=154!
+
+ 
+
++Must be:+
+
+'Sachbezugswerte ...': 10,71 -> this amount is informational only and is not used for calculation
+
+'Summe ...': 87,14 -> is the sum of all receipts - paid by company and paid by Traveler
+
+'Zwischensumme': 87,14 -> is the sum of everything above (mileage, accommodation, receipts) but without the part 'Sachbezugswerte ...'
+
+Abzüglich ...': 7,14 -> is minus the receipts paid by company
+
+'Erstattungsberag...' 80,00 -> the reimbursment amount
+
+ 
+
+Please could you verify and fix?
+
+Thank you.
+
+Best regards,
+
+Sandra",,segener,,,,,,,,,,,,,,,,,,,"13/Dec/22 3:14 PM;ssanz;7799370 Reise Wolfsburg September 1.pdf;https://jira.ifao.net/secure/attachment/176412/7799370+Reise+Wolfsburg+September+1.pdf","13/Dec/22 3:13 PM;ssanz;image-2022-12-13-15-13-04-812.png;https://jira.ifao.net/secure/attachment/176413/image-2022-12-13-15-13-04-812.png",,,,,,,,,,,,,,,,,11.0,,,,,,,,,,18/Oct/22 12:00 AM,,2-16694802413,,,Committed,,Configure,,Audi,,2023-02-07 10:01:52.988,,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Productive System,Test System,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzzzzwi",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server Travel
+System AUDI ( https://travel.cytric.net/ibe/cc/?system=volkswagen-ABI)",,3 - Medium,YES,,,,Codebusters-PI5.4,Codebusters-PI-6.1,Codebusters-PI-6.2,Codebusters-PI-6.3,Codebusters-PI-6.4,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"17/Jan/23 4:16 PM;ssanz;Test BALI 366220 ok ;;;","07/Feb/23 10:01 AM;ddykiert;Hello [~ssanz] , any news here?;;;","23/Feb/23 11:48 AM;ssanz;Still waiting for customer;;;",,,,,,,,,
+"Allianz - Correct English translation for ""öffentliche Verkehrsmittel (Schienenverkehr) über 50 km""",CI-7787,431734,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Rejected,,ssanz,ssanz,30/Nov/22 4:24 PM,10/Feb/23 9:35 AM,06/Jul/23 5:04 PM,10/Feb/23 9:35 AM,06/Dec/22 12:00 AM,0,,,,,"Dear Team,
+
+Please could you correct the translation below for ABV AD and KBV locations :
+
+In German is already correct: „Öffentliche Verkehrsmittel (Schienenverkehr) über 50 km""
+
+But not in English, please change to „Public train ticket over 50km ""
+
+Thank you.
+
+Best regards,
+
+Sandra
+
+!image-2022-11-30-16-23-53-778.png|width=366,height=318!
+
+ 
+
+!image-2022-11-30-16-26-29-425.png|width=870,height=387!
+
+ 
+
+In EMS, in translation is already done
+
+ ",,ssanz,,,,,,,,,,,,,,,,,,,"30/Nov/22 4:23 PM;ssanz;image-2022-11-30-16-23-53-778.png;https://jira.ifao.net/secure/attachment/174835/image-2022-11-30-16-23-53-778.png","30/Nov/22 4:26 PM;ssanz;image-2022-11-30-16-26-29-425.png;https://jira.ifao.net/secure/attachment/174839/image-2022-11-30-16-26-29-425.png",,,,,,,,,,,,,,,,,10.0,,,,,,,,,,22/Nov/22 12:00 AM,,2-16864192623,,,Committed,,Configure,,Allianz,,,,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Productive System,Test System,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzyzuzxi",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server Amadeus
+system ama-de-allianz
+Location ABV AD and KBV",,3 - Medium,YES,,,,Codebusters-PI5.4,Codebusters-PI-6.1,Codebusters-PI-6.2,Codebusters-PI-6.3,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"28/Dec/22 2:17 PM;ssanz;Hi [~pjakubiec] , Case was closed because customer never replied. Please Close this CI. BR, Sandra;;;",,,,,,,,,,,
+Porsche AT - change the display on the PDF report,CI-7717,428927,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Rejected,,ssanz,ssanz,17/Nov/22 5:51 PM,02/Jan/23 10:05 AM,06/Jul/23 5:04 PM,02/Jan/23 10:02 AM,24/Nov/22 12:00 AM,0,EMS,TOP_Customer,,,"Dear Team,
+
+Please could you change the display on the PDF report, today i{color:#172b4d}t displays the absences in 24h blocks, despite we have day-based calculation. This occurs because the Validation AbsenceList settings are missing.{color}
+
+If you have any doubt, you can check on the reference system setup provide you by Doreen with the handover of those calculation rules.
+
+Thank you.
+
+Best regards,
+
+Sandra
+
+ 
+
+Today:
+
+!image-2022-11-17-17-50-19-615.png|width=500,height=149!
+
+ 
+
+Resquested:
+
+!image-2022-11-17-17-50-41-690.png|width=527,height=136!
+
+ ",,debert,segener,ssanz,,,,,,,,,,,,,,,,,"17/Nov/22 5:50 PM;ssanz;image-2022-11-17-17-50-19-615.png;https://jira.ifao.net/secure/attachment/172903/image-2022-11-17-17-50-19-615.png","17/Nov/22 5:50 PM;ssanz;image-2022-11-17-17-50-41-690.png;https://jira.ifao.net/secure/attachment/172902/image-2022-11-17-17-50-41-690.png",,,,,,,,,,,,,,,,,11.0,,,,,,,,,,08/Nov/22 12:00 AM,,2-16865024203,,,Committed,,Configure,,Porsche,,2022-11-22 17:43:31.663,,,,,Closed,,,,,,,,,,,,,,,,,,,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzx5te",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: TRAVEL
+System: vwgroup-porsche-holding-at
+Location: ALL",,3 - Medium,YES,,,,Codebusters-PI5.3,Codebusters-PI5.4,Codebusters-PI-6.1,,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"22/Nov/22 5:43 PM;nsanchezruiz;[~ssanz] porsche was unaware of this issue, but they have opened now a case 2-16865024203 ;;;","25/Nov/22 7:54 AM;ddykiert;Hello [~ssanz] , [~ebert] ,
+
+can you provide us the reference system please? and which validation setting do you mean? I don't see any specific settings in the AbsenceListValidator.;;;","06/Dec/22 1:52 PM;ssanz;Hi [~dykiert], this information comes from ITE-1346 and provide by Doreen. Please see with her, she will be a best support than me for that. Thank you. BR, Sandra;;;","14/Dec/22 3:01 PM;ddykiert;Hello [~ssanz] loaded directly to prod because bali is down.;;;","20/Dec/22 4:21 PM;nsanchezruiz;i cant test in bali bcs thye have removed the perdiems from it
+
+i cant wait any longer pls pas into staging;;;","22/Dec/22 4:00 PM;msalajan;[~dykiert] set this ticket as done in production. Can you please check? Is there any pending action?
+
+Thanks, [~ssanz] and [~nsanchez] ;;;","22/Dec/22 4:01 PM;nsanchezruiz;pending prd;;;","28/Dec/22 2:25 PM;nsanchezruiz;[~dykiert]  can u pls pass it into prd? thanks;;;","02/Jan/23 6:50 AM;ddykiert;Hello [~nsanchez] , [~salajan] it was loaded in prod. There isn't any staging system available for porsche at.
+
+ 
+
+[~nsanchez]  please check it on TRAVEL.;;;","02/Jan/23 10:05 AM;nsanchezruiz;solved 
+
+closed rejected by mistake when changing explain to close
+
+ ;;;",,
+Allianz - G/L account for motorcycle missing,CI-7706,428491,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,ssanz,ssanz,16/Nov/22 11:36 AM,17/Feb/23 8:25 AM,06/Jul/23 5:04 PM,17/Feb/23 8:25 AM,23/Nov/22 12:00 AM,0,BAYANI,CCC,EMS,TOP_Customer,"Dear Team,
+
+Please verify and add the G/L acount for motorcycle if it's missing the G/L to add is KMPAU.
+
+Thank you.
+
+BR, Sandra
+
+Check ABV AD + Business tripn config and double housekeeper config
+
+!image-2022-11-16-11-35-08-049.png!",,,,,,,,,,,,,,,,,,,,,"16/Nov/22 11:35 AM;ssanz;image-2022-11-16-11-35-08-049.png;https://jira.ifao.net/secure/attachment/172501/image-2022-11-16-11-35-08-049.png",,,,,,,,,,,,,,,,,,11.0,,,,,,,,,,14/Oct/22 12:00 AM,,2-16678843323,,,Committed,,Configure,,Allianz,,,,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Productive System,Test System,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzx5ti",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"server: amadeus
+system: ama-de-allianz
+Location: ABV AD",,3 - Medium,YES,,,,Codebusters-PI5.3,Codebusters-PI5.4,Codebusters-PI-6.1,Codebusters-PI-6.2,,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"16/Nov/22 3:00 PM;ssanz;ABV AD has not Çcongig Business trip and Double house Keeper.;;;",,,,,,,,,,,
+"Allianz - ""The maximal length of the free data field value is exceeded"".",CI-7674,427373,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,ssanz,ssanz,10/Nov/22 4:11 PM,17/Feb/23 8:24 AM,06/Jul/23 5:04 PM,17/Feb/23 8:24 AM,17/Nov/22 12:00 AM,0,waitingForFeedback,,,,"Dear Team,
+
+ 
+
+Allianz cpmplains because an user got the error message ""The maximal length of the free data field value is exceeded"".
+
+Statement 12280209
+
+User Juliette Bach
+
+Location UK - Allianz Global Corporate & Specialty SE, London
+
+ 
+
+There is 113 words in the Warnings, I assume the issue comes from the warnings fdf.
+
+ 
+
+Please could you have a look?
+
+Thank you.
+
+Best regards,
+
+Sandra",,,,,,,,,,,,,,,,,,CI-7460,,,"18/Jan/23 2:02 PM;nsanchezruiz;image-2023-01-18-14-02-16-265.png;https://jira.ifao.net/secure/attachment/180300/image-2023-01-18-14-02-16-265.png",,,,,,,,,,,,,,,,,,11.0,,,,,,,,,,08/Nov/22 12:00 AM,,2-16794601223,,,Committed,,Configure,,Allianz,,2023-01-18 14:02:18.421,,,,,Closed,,,,,,,,,,,,,,,,,Customer Test System,Productive System,Test System,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@735c573f,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzx5r",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: Amadeus
+System: ama-de-allianz
+Location: UK - Allianz Global Corporate & Specialty SE, London",,3 - Medium,YES,,,,Codebusters-PI5.3,Codebusters-PI5.4,Codebusters-PI-6.1,Codebusters-PI-6.2,Codebusters-PI-6.3,,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"18/Jan/23 2:02 PM;nsanchezruiz;staging !image-2023-01-18-14-02-16-265.png!;;;","07/Feb/23 11:23 AM;nsanchezruiz;no response from client, ocvx closed;;;",,,,,,,,,,
+der-co-init - Correct the calculation of the §4(5) EStG 30% amount,CI-7597,423336,Expense Delivery,Closed,CI,codebusters,software,mrohkamm,,,Done,,ssanz,ssanz,25/Oct/22 4:47 PM,07/Feb/23 9:04 AM,06/Jul/23 5:04 PM,07/Feb/23 9:04 AM,01/Nov/22 12:00 AM,0,,,,,"Dear Team,
+
+Der-co-init complains that the calculation of the calculation of the §4(5) EStG 30% amount is wrong because it doesn't include the TIP.
+
+ 
+
+In the example below you can see that only the entertainment is splitted into 70/30.
+
+100 EUR - 15,97 EUR (tax) = 84,03 EUR
+
+84,03 EUR x 30 % = 25,21 EUR
+
+!image-2022-10-25-16-46-26-667.png!
+
+Please could you fix?
+
+This customer has already EMS, I don't know if it's something that could be fix in EMS but if it's the case, please explain the steps to correct and like this BAYANI Team will do it in the future.
+
+ 
+
+Thank you.
+
+Best regards,
+
+Sandra",,ssanz,,,,,,,,,,,,,,,,,,,"25/Oct/22 4:46 PM;ssanz;image-2022-10-25-16-46-26-667.png;https://jira.ifao.net/secure/attachment/169793/image-2022-10-25-16-46-26-667.png","04/Nov/22 6:53 AM;ddykiert;image-2022-11-04-06-53-43-564.png;https://jira.ifao.net/secure/attachment/170810/image-2022-11-04-06-53-43-564.png","22/Nov/22 9:12 AM;ssanz;image-2022-11-22-09-12-16-390.png;https://jira.ifao.net/secure/attachment/173494/image-2022-11-22-09-12-16-390.png","12/Dec/22 11:08 AM;ssanz;image-2022-12-12-11-08-01-918.png;https://jira.ifao.net/secure/attachment/176188/image-2022-12-12-11-08-01-918.png","22/Dec/22 10:03 AM;ssanz;image-2022-12-22-10-03-17-199.png;https://jira.ifao.net/secure/attachment/177468/image-2022-12-22-10-03-17-199.png","22/Dec/22 10:03 AM;ssanz;image-2022-12-22-10-03-24-883.png;https://jira.ifao.net/secure/attachment/177469/image-2022-12-22-10-03-24-883.png","22/Dec/22 10:04 AM;ssanz;image-2022-12-22-10-04-53-468.png;https://jira.ifao.net/secure/attachment/177470/image-2022-12-22-10-04-53-468.png",,,,,,,,,,,,20.0,,,,,,,,,,07/Oct/22 12:00 AM,,2-16646803263,,,Committed,,Configure,,DER,,2022-11-04 06:54:45.193,,,,,Closed,,,,,,,,,,,,,,,,,Productive System,Test System,,,,,,net.ifao.jira.plugin.pmi.impl.field.searcher.issuelinksoverview.IssueLinksOverview@0,0,,,,,,Hello,,,,,,,,,,,,,"0|i1rkcl:hzx5qc",,,,,,,,,,,,,Retention,,0,,,,,Functional Feature,,,"Server: WORLD
+System: der-co-init
+Location: ALL",,3 - Medium,YES,,,,Codebusters-PI5.2,Codebusters-PI5.3,Codebusters-PI5.4,Codebusters-PI-6.1,Codebusters-PI-6.2,Codebusters-PI-6.3,,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@9573314,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@1e31da98,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@19ac8940,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@7e4b848c,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@4e34c7c2,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@5e413186,net.ifao.jira.plugin.pmi.impl.field.StatusInformation.StatusInformation@23da4587,,net.ifao.jira.plugin.pmi.impl.field.searcher.subtaskoverview.SubtaskOverview@0,,,,,,,,,,,,,0,,,,,,Incident Request (IR),,,,,,,,,,0,,,"04/Nov/22 6:54 AM;ddykiert;Hello [~ssanz] , can you share your statement id from the description please?
+
+ 
+
+If I am creating a new statement I get a complete different behaviour, see screen: 
+
+!image-2022-11-04-06-53-43-564.png|width=394,height=109!
+
+There isn't any split deductible and non deductible :(;;;","16/Nov/22 10:11 AM;ssanz;Hi [~dykiert], Sample is statement ID 11943940 sent by customer. Thank you. BR, Sandra;;;","16/Nov/22 12:13 PM;ddykiert;Hello [~ssanz] , your statement id is related to ama-de-allianz system but this ticket is related to der-co-init.;;;","22/Nov/22 9:13 AM;ssanz;!image-2022-11-22-09-12-16-390.png|width=576,height=237!
+
+Hi [~dykiert], as you can see this statement id is related to der-co-init. BR, Sandra;;;","12/Dec/22 11:15 AM;ssanz;Hi [~dykiert] , in BALI there is no split deductible and non-deductible. Thank you. BR, Sandra
+
+!image-2022-12-12-11-08-01-918.png|width=324,height=316!;;;","12/Dec/22 11:44 AM;ddykiert;Hi [~ssanz] please scroll down your pdf report to section entertainments details;;;","22/Dec/22 10:05 AM;ssanz;Hi [~dykiert] , I still don't see nothing. We have to see the  !image-2022-12-22-10-04-53-468.png! but with the right amount 30% of the entertainment without TIP
+
+!image-2022-12-22-10-03-24-883.png|width=412,height=300!;;;","02/Jan/23 11:59 AM;ddykiert;Hello [~ssanz],
+
+in Germany the amounts are only split into deductible and non deductible if it is an external entertainment. Please add at least one external participant and you will see it ;);;;","18/Jan/23 6:32 AM;ddykiert;Hello [~ssanz] , any news here?;;;","30/Jan/23 5:09 PM;nsanchezruiz;[~dykiert]  same gl account pls implement client is chasing(not your fault ) thanks!;;;",,
