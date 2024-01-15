@@ -19,3 +19,13 @@ IR_percentage = ROUND(DIVIDE(
         )
     )
 ,2) * 100
+
+
+-- Calculate the sum percentage of SP for a particular assigment for total developer story points usded
+
+                            ROUND(DIVIDE(
+                                Iteration1[SP - Planning],
+                                CALCULATE(
+                                    SUM(Iteration1[SP - Planning]),
+                                    ALLEXCEPT(Iteration1, Iteration1[Assignee])
+                                )) * 100, 0)

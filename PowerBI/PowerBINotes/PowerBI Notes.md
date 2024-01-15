@@ -504,6 +504,14 @@ Date = CALENDAR(MIN(all_tickets_appended[Resolved]), MAX(all_tickets_appended[Re
 
 # My Issues
 
+
+
+## "The column of the table was not found"
+
+https://www.popautomation.com/post/power-bi-column-of-the-table-wasnt-found-error
+
+![image-2-1024x307](../../../../../Users/GMALAR~1/AppData/Local/Temp/image-2-1024x307.png)
+
 ## Issue with not matching  relationship
 
 change the data type in "transform data" option

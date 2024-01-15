@@ -80,12 +80,3 @@ Dim_Date_2 = GENERATE(
 ) 
 
 
-            CurrentDate >= DATE(2022, 12, 19) && CurrentDate <= DATE(2023, 1, 8), "PI6.1",
-            CurrentDate >= DATE(2023, 1, 9) && CurrentDate <= DATE(2023, 1, 29), "PI6.2",
-            CurrentDate >= DATE(2023, 1, 30) && CurrentDate <= DATE(2023, 2, 19), "PI6.3",
-            CurrentDate >= DATE(2023, 2, 20) && CurrentDate <= DATE(2023, 3, 12), "PI6.4",
-            CurrentDate >= DATE(2023, 3, 13) && CurrentDate <= DATE(2023, 3, 26), "PI6 IP",
-            CurrentDate >= DATE(2023, 3, 27) && CurrentDate <= DATE(2023, 4, 16), "PI7.1",
-            CurrentDate >= DATE(2023, 4, 17) && CurrentDate <= DATE(2023, 5, 7), "PI7.2",
-            CurrentDate >= DATE(2023, 5, 8) && CurrentDate <= DATE(2023, 5, 28), "PI7.3",
-            CurrentDate >= DATE(2023, 5, 29) && CurrentDate <= DATE(2023, 6, 16), "PI7 IP",
